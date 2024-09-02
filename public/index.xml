@@ -13,7 +13,7 @@
       <link>https://example.org/post/2024/09/02/test-post-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/09/02/test-post-1/</guid>
-      <description>Hello world!</description>
+      <description>Hello world. This is a test.</description>
     </item>
     <item>
       <title>Another Note on A blogdown Tutorial</title>
