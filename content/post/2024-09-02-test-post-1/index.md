@@ -8,5 +8,3 @@ tags: []
 ---
 
 Hello world. This is a test.
-
-Test
