@@ -11,27 +11,10 @@
     <loc>https://example.org/post/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/note/2017/06/14/another-note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://example.org/about/</loc>
   </url><url>
     <loc>https://example.org/categories/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/categories/example/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/tutorial/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/note/2017/06/13/a-quick-note/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/about/</loc>
   </url>
 </urlset>
