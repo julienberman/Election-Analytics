@@ -13,7 +13,14 @@
       <link>https://example.org/post/2024/09/02/test-post-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/09/02/test-post-1/</guid>
-      <description>Hello world. This is a test.</description>
+      <description>Hello world. This is a test.&#xA;Test</description>
+    </item>
+    <item>
+      <title>Assignment 0 - Familiarity with Basic Data Wrangling and Modelling in R (Questions)</title>
+      <link>https://example.org/post/2024/08/24/assignment-0-familiarity-with-basic-data-wrangling-and-modelling-in-r-questions/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/08/24/assignment-0-familiarity-with-basic-data-wrangling-and-modelling-in-r-questions/</guid>
+      <description>This assignment is ungraded and is simply intended to give you a sense of what we will be doing in class and to be sure you have all the tools in place to successfully complete your blog posts. Whereas most of the programming you will do in this course is very open-ended, this assignment is designed to walk you step-by-step through some helpful functions. You should complete this assignment after you have successfully installed R/R Studio and set up your blog on GitHub.</description>
     </item>
     <item>
       <title>Another Note on A blogdown Tutorial</title>
