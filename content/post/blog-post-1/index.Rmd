@@ -1,26 +1,29 @@
 ---
-title: Blog Post 1
-author: Package Build
-date: '2024-09-04'
+title: 'Blog Post 1: Historical Election Data'
+author: Julien Berman
+date: '2024-09-05'
 slug: blog-post-1
 categories: []
 tags: []
 ---
-
 ```{r}
 # Load libraries.
 ## install via `install.packages("name")`
 library(ggplot2)
 library(maps)
 library(tidyverse)
+```
+In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extensions 1 and 3 as well as some exploratory analysis of my own.
 
-## set working directory here
-# setwd("~")
+# Electoral College Timeline
 
-####----------------------------------------------------------#
-#### Read and clean presidential popular vote.
-####----------------------------------------------------------#
+Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020. The following interactive map plots the electoral college results at the state level:
+```{r}
 
+```
+
+
+```{r}
 # Read presidential popular vote. 
 d_popvote <- read_csv("data/popvote_1948-2020.csv")
 
@@ -125,11 +128,4 @@ pred_2024 %>%
    breaks = c(-50, -25, 0, 25, 50),
    limits = c(-50, 50)) +
   theme_void()
-
-# Generate projected state winners and merge with electoral college votes to make 
-# summary of electoral college vote distributions. 
-# TODO
-
-## Harris: 
-## Trump: 
 ```
