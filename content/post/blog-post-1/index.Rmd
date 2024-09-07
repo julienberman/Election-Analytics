@@ -12,120 +12,297 @@ tags: []
 library(ggplot2)
 library(maps)
 library(tidyverse)
+library(usmap)
+library(plotly)
+library(gridExtra)
+library(sf)
+library(ggrepel)
+library(shiny)
+library(leaflet)
+library(stargazer)
+library(blogdown)
 ```
 In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extensions 1 and 3 as well as some exploratory analysis of my own.
 
 # Electoral College Timeline
 
-Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020. The following interactive map plots the electoral college results at the state level:
+Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020. The following interactive map plots the electoral college results for each election at the state level:
 ```{r}
+# load data
+state_wide <- read_csv("data/clean_wide_state_2pv_1948_2020.csv")
+national <- read_csv("data/popvote_1948-2020.csv")
+ec_full <- read_csv("data/ec_full.csv")
+home_state <- read_csv("data/home_state.csv")
+state_density <- read_csv("data/state_density.csv")
+
+# create state abbreviations table
+state_abbreviations <- tibble(
+  state = state.name,
+  abbr = state.abb
+)
+
+# clean national dataset
+national_clean <- national %>% 
+  select(c(year, pv2p, candidate, party, winner)) %>% 
+  pivot_wider(names_from = party, values_from = c(pv2p, candidate, winner)) %>% 
+  rename(d_natl_share = pv2p_democrat, 
+         r_natl_share = pv2p_republican,
+         d_cand = candidate_democrat,
+         r_cand = candidate_republican) %>% 
+  mutate(winner = ifelse(winner_democrat, d_cand, r_cand))
+
+df_ec <- state_wide %>%
+  # merge in abbreviations, presidential victors, electors. 
+  left_join(state_abbreviations, by = "state") %>%
+  left_join(national_clean, by = "year") %>%
+  left_join(ec_full, by = c("year", "state")) %>% 
+  select(year, state, abbr, electors, D_pv2p, R_pv2p, d_natl_share, r_natl_share, d_cand, r_cand, winner) %>% 
+  mutate(
+      state_winner = ifelse(D_pv2p > R_pv2p, 1, 0),
+      ) %>%
+  drop_na() %>% 
+  # create partisan lean variable
+  mutate(partisan_lean = D_pv2p - d_natl_share) %>% 
+  # create lagged partisan lean variable
+  group_by(state) %>%
+  mutate(
+    partisan_lean_lag1 = lag(partisan_lean, 1),
+    partisan_lean_lag2 = lag(partisan_lean, 2)
+  ) %>%
+  ungroup() %>%
+  filter(year >= 1964)
+
+
+# Calculate total electors won by each party per year
+electors_by_party <- df_ec %>%
+  group_by(year, state_winner) %>%
+  summarise(total_electors = sum(electors, na.rm = TRUE)) %>%
+  pivot_wider(names_from = state_winner, values_from = total_electors, 
+              names_prefix = "total_", names_sep = "_party_") %>%
+  rename(total_dem_electors = `total_1`, total_rep_electors = `total_0`) %>%
+  ungroup()
+
+# Merge the total electors won back into the original dataframe
+df_ec <- df_ec %>%
+  left_join(electors_by_party, by = "year")
+
+# create color scale
+color_scale <- list(
+  list(0, "red"),   # 0 corresponds to red (Republican)
+  list(1, "darkblue")   # 1 corresponds to blue (Democrat)
+)
+
+fig1 <- df_ec %>% 
+  # map
+  plot_ly(
+    type = 'choropleth',
+    locations = ~abbr,
+    locationmode = 'USA-states',
+    z = ~as.numeric(state_winner),  # 1 for Rep, 0 for Dem
+    frame = ~year,
+    text = ~paste(abbr, 
+                  "<br>Electoral Votes:", electors, 
+                  "<br>Democratic Vote Share:", sprintf("%.2f%%", D_pv2p), 
+                  "<br>Republican Vote Share:", sprintf("%.2f%%", R_pv2p)
+                  ),
+    hoverinfo = 'text',
+    colorscale = color_scale,  # Apply manual color mapping
+    showscale = FALSE  # Remove color bar
+  ) %>% 
+  layout(
+    geo = list(
+      scope = 'usa',
+      showlakes = FALSE,
+      lakecolor = 'rgb(255, 255, 255)',
+      projection = list(type = 'albers usa')  # Includes Alaska and Hawaii
+    ),
+    title = "Electoral College Outcomes: 1964-2020"
+  )
+  
+# Show the figure
+fig1
+```
+Notice that many states have, in recent years, consistently voted Republican (e.g. Alabama, Mississippi, Oklahoma) and many have consistently voted Democrat (e.g. California, New York, Maryland). These states are also typically won by large margins. In contrast, other states have fluctuated between parties (e.g. Pennsylvania, Wisconsin, Michigan). These are the states that could reasonably be won by either the Democrat or Republican candidate. They are typically won by small vote margins --- less than three percentage points --- and are called "swing" states because they contain large numbers of swing voters who lack a predisposition to a given political party.
+
+Let's identify the swing states for each election year. In the graph below, the lighter the color, the more hotly contested a particular state was.
+```{r}
+
+color_scale <- list(
+  c(0, "red"),       # 0% Democratic vote share = Red
+  c(0.25, "lightcoral"),  # 25% Democratic vote share = Light Red
+  c(0.5, "white"),    # 50% Democratic vote share = White
+  c(0.75, "lightblue"),   # 75% Democratic vote share = Light Blue
+  c(1, "darkblue")    # 100% Democratic vote share = Dark Blue
+)
+
+fig2 <- df_ec %>% 
+  # map
+  plot_ly(
+    type = 'choropleth',
+    locations = ~abbr,
+    locationmode = 'USA-states',
+    z = ~D_pv2p / 100,
+    frame = ~year,
+    text = ~paste(abbr, 
+                  "<br>Electoral Votes:", electors, 
+                  "<br>Democratic Vote Share:", sprintf("%.2f%%", D_pv2p), 
+                  "<br>Republican Vote Share:", sprintf("%.2f%%", R_pv2p)
+                  ),
+    hoverinfo = 'text',
+    colorscale = color_scale,  # Apply manual color mapping
+    cmin = 0,
+    cmax = 1,
+    showscale = FALSE  # Remove color bar
+  ) %>% 
+  layout(
+    geo = list(
+      scope = 'usa',
+      showlakes = FALSE,
+      lakecolor = 'rgb(255, 255, 255)',
+      projection = list(type = 'albers usa')  # Includes Alaska and Hawaii
+    ),
+    title = "State Level Vote Margins: 1964-2020"
+  )
+  
+# Show the figure
+fig2
 
 ```
+We can make several important observations from both of these maps. First, note that the Democratic vote share and the Republican vote share sum exactly to 100 percent. That is because we are measuring two-party vote share, not overall vote share. 
 
+Second, many states that once voted reliably republican in the 70s and 80s have been decided by much closer margins in recent elections. North Carolina and Arizona, for example, have only recently become swing states. This is part of a broader well-document demographic shift that has put many of the sun belt states in play for the Democrats. These states have been rapidly diversifying --- White voters are down double-digits since 2008 as a share of eligible voters in Arizona and North Carolina, whereas Latinos and AAPI voters are up significantly. Indeed, Gen Z is the least White generation in American history. These demographic shifts have already contributed to Democrats' success in Senate and gubernatorial races. Currently, a majority of the Sun Belt swing-state senators are Democrats, a stark contrast to 2008 when seven of the eight were Republicans.
+
+Third, the results of the previous election in a particular state are often fairly good predictors of the current election's outcome in that state. In 2020, nine states have light coloring: Florida, Georgia, North Carolina, Arizona, Texas, Nevada, Wisconsin, Michigan, and Pennsylvania. Sure enough, seven of those nine states are the ones that many election forecasters are currently predicting will be the most hotly contested this time around in 2024 ([_The Economist_](https://www.economist.com/interactive/us-2024-election/prediction-model/president), [_The New York Times_](https://www.nytimes.com/interactive/2024/us/elections/presidential-election-swing-states.html))
+
+Below, I attempt to implement a preliminary model that predicts the results of the 2024 election at the state level. I use the following indicators:
+* A state's partisan lean in the previous two presidential elections, measured by the difference between the two party vote share received by the Democratic candidate in the state and the two party vote share received by the Democratic candidate nationwide
+* The home states of the presidential candidate
+* A state's population density.
+Data on population density comes from the U.S. Census Bureau. 
 
 ```{r}
-# Read presidential popular vote. 
-d_popvote <- read_csv("data/popvote_1948-2020.csv")
+# clean home state data
+home_state_wide <- home_state %>% 
+  select(-candidate) %>% 
+  pivot_wider(
+    names_from = party, 
+    values_from = c(state_born, state_resident),
+    names_glue = "{party}_{.value}"
+  )
 
-# Subset data to most recent past election year. 
-d_popvote |> 
-  filter(year == 2020) |> 
-  select(party, candidate, pv2p)
-
-# Pivot data to wide format with party names as columns and two-party vote share as values.
-(d_popvote_wide <- d_popvote |>
-    select(year, party, pv2p) |>
-    pivot_wider(names_from = party, values_from = pv2p))
-
-# Modify winner column to show "D" if Democrats win and "R" if Republicans win. 
-(d_popvote_wide <- d_popvote_wide |> 
-    mutate(winner = case_when(democrat > republican ~ "D",
-                              TRUE ~ "R")))
-
-# Summarize data with respect to winners. 
-d_popvote_wide |> 
-  group_by(winner) |>
-  summarise(races = n())
-
-####----------------------------------------------------------#
-#### Visualize trends in national presidential popular vote. 
-####----------------------------------------------------------#
-
-# Visualize the two-party presidential popular over time. 
-# TODO
-
-####----------------------------------------------------------#
-#### State-by-state map of presidential popular votes.
-####----------------------------------------------------------#
-
-# Sequester shapefile of states from `maps` library.
-states_map <- map_data("state")
-
-# Read wide version of dataset that can be used to compare candidate votes with one another. 
-d_pvstate_wide <- read_csv("data/clean_wide_state_2pv_1948_2020.csv")
-
-# Merge d_pvstate_wide with state_map.
-d_pvstate_wide$region <- tolower(d_pvstate_wide$state)
-
-pv_map <- d_pvstate_wide |>
-  filter(year == 2020) |>
-  left_join(states_map, by = "region")
-
-# Make map grid of state winners for each election year available in the dataset. 
-
-# 2020 alone
-pv_map %>% 
-  mutate(winner = ifelse(D_pv > R_pv2p, "d", "r")) %>% 
-  ggplot(aes(long, lat, group = group)) +
-  geom_polygon(aes(fill = winner)) +
-  scale_fill_manual(values = c("dodgerblue4", "red")) +
-  theme_void()
-
-# all years, with scroller
-d_pvstate_wide %>% 
-  filter(year >= 1980) %>% 
-  left_join(states_map, by = "region") %>% 
-  mutate(winner = ifelse(D_pv > R_pv2p, "d", "r")) %>% 
-  ggplot(aes(long, lat, group = group)) +
-  facet_wrap(facets = year ~.) +
-  geom_polygon(aes(fill = winner), color = 'white') +
-  scale_fill_manual(values = c("dodgerblue4", "red")) +
-  theme_void() +
-  ggtitle("Presidential Vote Share (1980-2020)") +
-  theme(strip.text = element_text(size = 12), aspect.ratio = 1)
-  
-####----------------------------------------------------------#
-#### Forecast: simplified electoral cycle model. 
-####----------------------------------------------------------#
-
-# Create prediction (pv2p and margin) based on simplified electoral cycle model: 
-# vote_2024 = 3/4*vote_2020 + 1/4*vote_2016 (lag1, lag2, respectively). 
-pred_2024 <- d_pvstate_wide %>% 
-  filter(year == 2020) %>% 
-  left_join(states_map, by = "region") %>%
+df_ec_full <- df_ec %>%
+  # merge in home_state data and population density data
+  left_join(home_state_wide, by = "year", copy = TRUE) %>% 
+  left_join(state_density, by = c("year", "abbr")) %>% 
+  rename_all(tolower) %>% 
+  # create dummies for home_state
   mutate(
-    d_vote_2024 = 3/4 * D_pv2p + 1/4*  D_pv2p_lag1,
-    r_vote_2024 = 3/4 * R_pv2p + 1/4*  R_pv2p_lag1,
-    winner_2024 = ifelse(d_vote_2024 > r_vote_2024, "d", "r"),
-    margin_2024 = d_vote_2024 - r_vote_2024)
+    resident_dummy = case_when(
+      state == democrat_state_resident ~ 1,
+      state == republican_state_resident ~ -1,
+      TRUE ~ 0
+    ),
+    birth_dummy = case_when(
+      state == democrat_state_born ~ 1,
+      state == republican_state_born ~ -1,
+      TRUE ~ 0
+    )
+  ) %>% 
+  select(-c(pop, area, democrat_state_born, democrat_state_resident, republican_state_born, republican_state_resident))
 
-# plot who wins
-pred_2024 %>% 
-  ggplot(aes(long, lat, group = group)) +
-  geom_polygon(aes(fill = winner_2024)) +
-  scale_fill_manual(values = c("dodgerblue4", "red")) +
-  theme_void()
+# fit model
+df_ec_full_clean <- df_ec_full %>% 
+  na.omit()
 
-# plot margins
-pred_2024 %>% 
-  ggplot(aes(long, lat, group = group)) +
-  geom_polygon(aes(fill = margin_2024, color = "black")) +
-  scale_fill_gradient2(
-   high = "dodgerblue4",
-   low = "red",
-   mid = "white",
-   name = "win margin",
-   breaks = c(-50, -25, 0, 25, 50),
-   limits = c(-50, 50)) +
-  theme_void()
+model <- lm(d_pv2p ~ partisan_lean_lag1 + partisan_lean_lag2 + resident_dummy + birth_dummy + density, data = df_ec_full_clean)
+
+# Display the summary of the regression
+stargazer(model, type = "text")
+```
+The results from the Ordinary Least Squares regression above provide the following key insights:
+1. A one-unit increase in the partisan lean from the previous election is associated with a 0.403 increase in the state's Democratic vote share, holding other variables constant. This is highly statistically significant (p < 0.001).
+2. A one-unit increase in the partisan lean from two elections prior is associated with a 0.319 increase in the state's Democratic vote share, also highly statistically significant (p < 0.001). These first two results make sense, given that states that tend to skew more democratic than the national average are likely to have higher democratic two-party vote shares.
+3. When a Democratic candidate is from the state, the Democratic vote share increases by 3.654 points compared to a situation where neither candidate is from the state, significant at the 5% level (p = 0.017).
+4. The effect of a Democratic candidate being born in the state, while positive (2.429 points), is not statistically significant (p = 0.117).
+5. A one-unit increase in population density leads to a 0.007-point increase in the Democratic vote share, which is statistically significant (p < 0.001). This conclusion tracks with the well-documented trend that urban areas are much more likely to vote democratic than rural areas.
+
+Of course, this is only a preliminary model. The R^2 on the in-sample data is just 0.414, which tells us that approximately 41.4% of the variance in Democratic vote share is explained by the model's variables in the data that it was trained on. Further analysis will be conducted in future weeks, as I incorporate economic fundamentals, incumbency, and presidential approval ratings.
+
+The above model can be used to predict the electoral college results of the 2024 election. I have loaded in a dataframe with the values for the independent variables for the current year's data. Here is a map showing my prediction of the electoral college, which would lead to a comfortable republican victory.
+
+```{r}
+data_2024 <- read_csv("data/data_2024.csv")
+
+# get partisan lean for 2020 and 2016
+df_lags <- df_ec_full_clean %>%
+  filter(year %in% c(2020, 2016)) %>%
+  pivot_wider(names_from = year, values_from = partisan_lean, names_prefix = "partisan_lean_") %>% 
+  select(abbr, partisan_lean_2016, partisan_lean_2020)
+
+# Step 2: Merge the lagged partisan lean data with your 2024 prediction dataset (df_2024)
+df_2024_merged <- data_2024 %>%
+  left_join(df_lags, by = "abbr") %>%
+  rename(partisan_lean_lag1 = partisan_lean_2020,
+         partisan_lean_lag2 = partisan_lean_2016) %>% 
+  # consolidate the duplicate rows
+  group_by(state) %>%
+  mutate(
+    partisan_lean_lag1 = first(na.omit(partisan_lean_lag1)),  # Pick the non-NA value
+    partisan_lean_lag2 = first(na.omit(partisan_lean_lag2))   # Pick the non-NA value
+  ) %>% 
+  distinct()
+
+# make predictions
+pred <- predict(model, newdata = df_2024_merged)
+
+# create dataframe with these predictions
+pred_df <- tibble(
+  abbr = df_2024_merged$abbr,
+  # predictions
+  pred_d_pv2p = pred,
+  # 100 - predictions
+  pred_r_pv2p = 100 - pred,
+  state_winner = ifelse(pred_d_pv2p > pred_r_pv2p, 1, 0)
+)
+
+# merge vote share predictions back into the full 2024 dataset
+df_2024_final <- df_2024_merged %>% 
+  left_join(pred_df, by = "abbr") %>% 
+  print()
+
+# create interactive map!
+color_scale <- list(
+  list(0, "red"),   # 0 corresponds to red (Republican)
+  list(1, "darkblue")   # 1 corresponds to blue (Democrat)
+)
+
+fig3 <- df_2024_final %>% 
+  # map
+  plot_ly(
+    type = 'choropleth',
+    locations = ~abbr,
+    locationmode = 'USA-states',
+    z = ~state_winner,  # 1 for Dem, 0 for Rep
+    text = ~paste(abbr,
+                  "<br>Electoral Votes:", electors,
+                  "<br>Democratic Vote Share:", sprintf("%.2f%%", pred_d_pv2p), 
+                  "<br>Republican Vote Share:", sprintf("%.2f%%", pred_r_pv2p)
+                  ),
+    hoverinfo = 'text',
+    colorscale = color_scale,  # Apply manual color mapping
+    showscale = FALSE  # Remove color bar
+  ) %>% 
+  layout(
+    geo = list(
+      scope = 'usa',
+      showlakes = FALSE,
+      lakecolor = 'rgb(255, 255, 255)',
+      projection = list(type = 'albers usa')  # Includes Alaska and Hawaii
+    ),
+    title = "Predicted Electoral College Outcome for the 2024 Presidential Election"
+  )
+  
+# Show the figure
+fig3
+
 ```

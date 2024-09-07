@@ -1,0 +1,51 @@
+﻿year,state,abbr,electors,d_cand,r_cand,resident_dummy,birth_dummy,pop,area,density
+2024,Alabama,AL,9,"Biden, Joseph R.","Trump, Donald J.",0,0,5143033,52420,98.11
+2024,Alaska,AK,3,"Biden, Joseph R.","Trump, Donald J.",0,0,733536,665384,1.1
+2024,Arizona,AZ,11,"Biden, Joseph R.","Trump, Donald J.",0,0,7497004,113990,65.77
+2024,Arkansas,AR,6,"Biden, Joseph R.","Trump, Donald J.",0,0,3089060,53179,58.09
+2024,California,CA,54,"Biden, Joseph R.","Trump, Donald J.",0,0,38889770,163696,237.57
+2024,Colorado,CO,10,"Biden, Joseph R.","Trump, Donald J.",0,0,5914181,104094,56.82
+2024,Connecticut,CT,7,"Biden, Joseph R.","Trump, Donald J.",0,0,3625646,5543,654.09
+2024,Delaware,DE,3,"Biden, Joseph R.","Trump, Donald J.",1,0,1044321,2489,419.57
+2024,Florida,FL,30,"Biden, Joseph R.","Trump, Donald J.",-1,0,22975931,65758,349.4
+2024,Georgia,GA,16,"Biden, Joseph R.","Trump, Donald J.",0,0,11145304,59425,187.55
+2024,Hawaii,HI,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1430877,10932,130.89
+2024,Idaho,ID,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1990456,83569,23.82
+2024,Illinois,IL,19,"Biden, Joseph R.","Trump, Donald J.",0,0,12516863,57914,216.13
+2024,Indiana,IN,11,"Biden, Joseph R.","Trump, Donald J.",0,0,6892124,36420,189.24
+2024,Iowa,IA,6,"Biden, Joseph R.","Trump, Donald J.",0,0,3214315,56273,57.12
+2024,Kansas,KS,6,"Biden, Joseph R.","Trump, Donald J.",0,0,2944376,82278,35.79
+2024,Kentucky,KY,8,"Biden, Joseph R.","Trump, Donald J.",0,0,4540745,40408,112.37
+2024,Louisiana,LA,8,"Biden, Joseph R.","Trump, Donald J.",0,0,4559475,52378,87.05
+2024,Maine,ME,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1402106,35380,39.63
+2024,Maryland,MD,10,"Biden, Joseph R.","Trump, Donald J.",0,0,6196525,12406,499.48
+2024,Massachusetts,MA,11,"Biden, Joseph R.","Trump, Donald J.",0,0,7020058,10554,665.16
+2024,Michigan,MI,15,"Biden, Joseph R.","Trump, Donald J.",0,0,10041241,96714,103.82
+2024,Minnesota,MN,10,"Biden, Joseph R.","Trump, Donald J.",0,0,5761530,86936,66.27
+2024,Mississippi,MS,6,"Biden, Joseph R.","Trump, Donald J.",0,0,2940452,48432,60.71
+2024,Missouri,MO,10,"Biden, Joseph R.","Trump, Donald J.",0,0,6215144,69707,89.16
+2024,Montana,MT,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1142746,147040,7.77
+2024,Nebraska,NE,5,"Biden, Joseph R.","Trump, Donald J.",0,0,1988698,77348,25.71
+2024,Nevada,NV,6,"Biden, Joseph R.","Trump, Donald J.",0,0,3210931,110572,29.04
+2024,New Hampshire,NH,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1405105,9349,150.29
+2024,New Jersey,NJ,14,"Biden, Joseph R.","Trump, Donald J.",0,0,9320865,8723,1068.54
+2024,New Mexico,NM,5,"Biden, Joseph R.","Trump, Donald J.",0,0,2115266,121590,17.4
+2024,New York,NY,28,"Biden, Joseph R.","Trump, Donald J.",0,-1,19469232,54555,356.87
+2024,North Carolina,NC,16,"Biden, Joseph R.","Trump, Donald J.",0,0,10975017,53819,203.92
+2024,North Dakota,ND,3,"Biden, Joseph R.","Trump, Donald J.",0,0,788940,70698,11.16
+2024,Ohio,OH,17,"Biden, Joseph R.","Trump, Donald J.",0,0,11812173,44826,263.51
+2024,Oklahoma,OK,7,"Biden, Joseph R.","Trump, Donald J.",0,0,4088377,69899,58.49
+2024,Oregon,OR,8,"Biden, Joseph R.","Trump, Donald J.",0,0,4227337,98379,42.97
+2024,Pennsylvania,PA,19,"Biden, Joseph R.","Trump, Donald J.",0,1,12951275,46054,281.22
+2024,Rhode Island,RI,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1098082,1545,710.73
+2024,South Carolina,SC,9,"Biden, Joseph R.","Trump, Donald J.",0,0,5464155,32020,170.65
+2024,South Dakota,SD,3,"Biden, Joseph R.","Trump, Donald J.",0,0,928767,77116,12.04
+2024,Tennessee,TN,11,"Biden, Joseph R.","Trump, Donald J.",0,0,7204002,42144,170.94
+2024,Texas,TX,40,"Biden, Joseph R.","Trump, Donald J.",0,0,30976754,268596,115.33
+2024,Utah,UT,6,"Biden, Joseph R.","Trump, Donald J.",0,0,3454232,84897,40.69
+2024,Vermont,VT,3,"Biden, Joseph R.","Trump, Donald J.",0,0,647818,9616,67.37
+2024,Virginia,VA,13,"Biden, Joseph R.","Trump, Donald J.",0,0,8752297,42775,204.61
+2024,Washington,WA,12,"Biden, Joseph R.","Trump, Donald J.",0,0,7841283,71298,109.98
+2024,West Virginia,WV,4,"Biden, Joseph R.","Trump, Donald J.",0,0,1766107,24230,72.89
+2024,Wisconsin,WI,10,"Biden, Joseph R.","Trump, Donald J.",0,0,5931367,65496,90.56
+2024,Wyoming,WY,3,"Biden, Joseph R.","Trump, Donald J.",0,0,586485,97813,6

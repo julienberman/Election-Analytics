@@ -1,0 +1,751 @@
+year,state,abbr,electors,d_pv2p,r_pv2p,d_natl_share,r_natl_share,d_cand,r_cand,winner,state_winner,total_rep_electors,total_dem_electors,density,resident_dummy,birth_dummy
+1964,Alabama,AL,9,30.55,69.45102832,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,66.9,0,0
+1964,Alaska,AK,3,65.90790824,34.09209176,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,0.46,0,0
+1964,Arizona,AZ,10,49.5021737,50.4978263,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,13.69,-1,-1
+1964,Arkansas,AR,6,56.3621491,43.6378509,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,36.43,0,0
+1964,California,CA,55,59.16729365,40.83270635,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,116.37,0,0
+1964,Colorado,CO,9,61.59802586,38.40197414,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,18.99,0,0
+1964,Connecticut,CT,7,67.87913889,32.12086111,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,577.5,0,0
+1964,Delaware,DE,3,61.11304798,38.88695202,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,254.22,0,0
+1964,Florida,FL,27,51.14854237,48.85145763,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,107.06,0,0
+1964,Georgia,GA,15,45.87289897,54.12710103,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,73.52,0,0
+1964,Hawaii,HI,4,78.7611388,21.2388612,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,108.98,0,0
+1964,Idaho,ID,4,50.91682423,49.08317577,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,8.22,0,0
+1964,Illinois,IL,21,59.47192075,40.52807925,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,190.31,0,0
+1964,Indiana,IN,11,56.23761387,43.76238613,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,135.38,0,0
+1964,Iowa,IA,7,62.00673672,37.99326328,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,49.15,0,0
+1964,Kansas,KS,6,54.55257246,45.44742754,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,27,0,0
+1964,Kentucky,KY,8,64.22749646,35.77250354,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,78.75,0,0
+1964,Louisiana,LA,9,43.18543155,56.81456845,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,79.1,0,0
+1964,Maine,ME,4,68.84201961,31.15798039,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,32.17,0,0
+1964,Maryland,MD,10,65.4700302,34.5299698,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,357.24,0,0
+1964,Massachusetts,MA,12,76.46866702,23.53133298,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,695.08,0,0
+1964,Michigan,MI,17,66.83674475,33.16325525,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,144.8,0,0
+1964,Minnesota,MN,10,63.91247797,36.08752203,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,44.69,0,0
+1964,Mississippi,MS,6,12.8604459,87.1395541,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,47.77,0,0
+1964,Missouri,MO,11,64.04958746,35.95041254,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,64.47,0,0
+1964,Montana,MT,3,59.23513586,40.76486414,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,4.85,0,0
+1964,Nebraska,NE,5,52.6071892,47.3928108,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,19.28,0,0
+1964,Nevada,NV,5,58.58173414,41.41826586,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,3.88,0,0
+1964,New Hampshire,NH,4,63.89047981,36.10952019,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,73.92,0,0
+1964,New Jersey,NJ,15,65.96015418,34.03984582,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,897.7,0,0
+1964,New Mexico,NM,5,59.54090009,40.45909991,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,8.29,0,0
+1964,New York,NY,31,68.65099421,31.34900579,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,372.46,0,0
+1964,North Carolina,NC,15,56.15077513,43.84922487,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,98.57,0,0
+1964,North Dakota,ND,3,58.05783923,41.94216077,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,9.41,0,0
+1964,Ohio,OH,20,62.94299904,37.05700096,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,246.14,0,0
+1964,Oklahoma,OK,7,55.74633324,44.25366676,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,35.61,0,0
+1964,Oregon,OR,7,63.92186232,36.07813768,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,19.67,0,0
+1964,Pennsylvania,PA,21,65.16560862,34.83439138,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,257.01,0,0
+1964,Rhode Island,RI,4,80.87177436,19.12822564,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,855.9,0,0
+1964,South Carolina,SC,8,41.1054449,58.8945551,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",0,57,478,82.2,0,0
+1964,South Dakota,SD,3,55.61241548,44.38758452,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,9.24,0,0
+1964,Tennessee,TN,11,55.50662988,44.49337012,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,91.48,0,0
+1964,Texas,TX,34,63.43794662,36.56205338,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,39.21,1,1
+1964,Utah,UT,5,54.86448003,45.13551997,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,11.9,0,0
+1964,Vermont,VT,3,66.307514,33.692486,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,43.14,0,0
+1964,Virginia,VA,13,53.68992045,46.31007955,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,110.03,0,0
+1964,Washington,WA,11,62.37815408,37.62184592,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,44.47,0,0
+1964,West Virginia,WV,5,67.93684662,32.06315338,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,74.6,0,0
+1964,Wisconsin,WI,10,62.19504902,37.80495098,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,76.68,0,0
+1964,Wyoming,WY,3,56.55847978,43.44152022,61.34396784,38.65603216,"Johnson, Lyndon B.","Goldwater, Barry","Johnson, Lyndon B.",1,57,478,3.49,0,0
+1968,Alabama,AL,9,57.22790551,42.77209449,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,67.9,0,0
+1968,Alaska,AK,3,48.50091082,51.49908918,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,0.5,0,0
+1968,Arizona,AZ,10,38.99825037,61.00174963,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,14.8,0,0
+1968,Arkansas,AR,6,49.44366154,50.55633846,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,36.52,0,0
+1968,California,CA,55,48.33621425,51.66378575,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,124.34,0,-1
+1968,Colorado,CO,9,45.01886453,54.98113547,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,20.44,0,0
+1968,Connecticut,CT,7,52.75146357,47.24853643,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,611.76,0,0
+1968,Delaware,DE,3,47.97749424,52.02250576,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,273.15,0,0
+1968,Florida,FL,27,43.28439919,56.71560081,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,119.14,0,0
+1968,Georgia,GA,15,46.80421691,53.19578309,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,77.38,0,0
+1968,Hawaii,HI,4,60.71948752,39.28051248,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,114.28,0,0
+1968,Idaho,ID,4,35.05823863,64.94176137,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,8.4,0,0
+1968,Illinois,IL,21,48.39889451,51.60110549,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,197.78,0,0
+1968,Indiana,IN,11,43.03227878,56.96772122,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,141.98,0,0
+1968,Iowa,IA,7,43.5021742,56.4978258,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,50.17,0,0
+1968,Kansas,KS,6,38.7626492,61.2373508,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,27.08,0,0
+1968,Kentucky,KY,8,46.22827786,53.77172214,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,80.41,0,0
+1968,Louisiana,LA,9,54.59137794,45.40862206,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,82.7,0,0
+1968,Maine,ME,4,56.21601486,43.78398514,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,32.2,0,0
+1968,Maryland,MD,10,50.96160673,49.03839327,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,390.28,0,0
+1968,Massachusetts,MA,12,65.70560208,34.29439792,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,716.76,0,0
+1968,Michigan,MI,17,53.75229397,46.24770603,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,153.81,0,0
+1968,Minnesota,MN,10,56.56480792,43.43519208,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,46.51,1,0
+1968,Mississippi,MS,6,62.98879411,37.01120589,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,47.3,0,0
+1968,Missouri,MO,11,49.36109808,50.63890192,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,66.3,0,0
+1968,Montana,MT,3,45.11409279,54.88590721,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,4.81,0,0
+1968,Nebraska,NE,5,34.71593485,65.28406515,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,19.08,0,0
+1968,Nevada,NV,5,45.29472441,54.70527559,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,4.23,0,0
+1968,New Hampshire,NH,4,45.74173707,54.25826293,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,79.05,0,0
+1968,New Jersey,NJ,15,48.81720588,51.18279412,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,944.2,0,0
+1968,New Mexico,NM,5,43.3931675,56.6068325,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,8.19,0,0
+1968,New York,NY,31,52.90099183,47.09900817,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,382.24,-1,0
+1968,North Carolina,NC,15,42.52825745,57.47174255,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,102.71,0,0
+1968,North Dakota,ND,3,40.59707503,59.40292497,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,9,0,0
+1968,Ohio,OH,20,48.70506358,51.29493642,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,256.78,0,0
+1968,Oklahoma,OK,7,40.14853165,59.85146835,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,36.44,0,0
+1968,Oregon,OR,7,46.77003359,53.22996641,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,20.87,0,0
+1968,Pennsylvania,PA,21,51.94724724,48.05275276,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,261.96,0,0
+1968,Rhode Island,RI,4,66.82932251,33.17067749,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,891.68,0,0
+1968,South Carolina,SC,8,43.73532825,56.26467175,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,84.99,0,0
+1968,South Dakota,SD,3,44.06079204,55.93920796,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,8.81,0,1
+1968,Tennessee,TN,11,42.63441872,57.36558128,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,94.08,0,0
+1968,Texas,TX,34,50.78087169,49.21912831,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,41.31,0,0
+1968,Utah,UT,5,39.62260333,60.37739667,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,12.52,0,0
+1968,Vermont,VT,3,45.21001049,54.78998951,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,46.49,0,0
+1968,Virginia,VA,13,42.83765176,57.16234824,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,115.11,0,0
+1968,Washington,WA,11,51.14262872,48.85737128,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,49.11,0,0
+1968,West Virginia,WV,5,54.88053917,45.11946083,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",1,341,194,73.19,0,0
+1968,Wisconsin,WI,10,48.03717729,51.96282271,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,80,0,0
+1968,Wyoming,WY,3,38.9086994,61.0913006,49.59537839,50.40462161,"Humphrey, Hubert","Nixon, Richard M.","Nixon, Richard M.",0,341,194,3.34,0,0
+1972,Alabama,AL,9,26.06703976,73.93296024,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,69.74,0,0
+1972,Alaska,AK,3,37.3284569,62.6715431,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,0.57,0,0
+1972,Arizona,AZ,8,33.01560484,66.98439516,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,17.67,0,0
+1972,Arkansas,AR,6,30.85379663,69.14620337,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,38.76,0,0
+1972,California,CA,54,43.02886267,56.97113733,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,131.98,0,-1
+1972,Colorado,CO,8,35.59005963,64.40994037,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,23.18,0,0
+1972,Connecticut,CT,8,40.65826368,59.34173632,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,633.37,0,0
+1972,Delaware,DE,3,39.66772696,60.33227304,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,293.05,0,0
+1972,Florida,FL,25,27.87855471,72.12144529,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,139.11,0,0
+1972,Georgia,GA,13,24.7244081,75.2755919,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,83.04,0,0
+1972,Hawaii,HI,4,37.52081221,62.47918779,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,128.96,0,0
+1972,Idaho,ID,4,28.84479498,71.15520502,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,9.22,0,0
+1972,Illinois,IL,22,40.697874,59.302126,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,202.4,0,0
+1972,Indiana,IN,12,33.52228912,66.47771088,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,147.82,0,0
+1972,Iowa,IA,7,41.2675179,58.7324821,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,51.19,0,0
+1972,Kansas,KS,6,30.36594806,69.63405194,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,27.58,0,0
+1972,Kentucky,KY,8,35.42928871,64.57071129,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,83.96,0,0
+1972,Louisiana,LA,9,30.26840773,69.73159227,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,86.34,0,0
+1972,Maine,ME,4,38.50547427,61.49452573,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,33.51,0,0
+1972,Maryland,MD,10,37.88377678,62.11622322,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,416.73,0,0
+1972,Massachusetts,MA,12,54.50912985,45.49087015,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",1,523,12,734.92,0,0
+1972,Michigan,MI,18,42.65911873,57.34088127,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,159.69,0,0
+1972,Minnesota,MN,10,47.17975556,52.82024444,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,48.6,0,0
+1972,Mississippi,MS,7,20.0633954,79.9366046,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,49.18,0,0
+1972,Missouri,MO,11,37.70566488,62.29433512,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,69.07,0,0
+1972,Montana,MT,3,39.51599912,60.48400088,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,4.94,0,0
+1972,Nebraska,NE,5,29.49752641,70.50247359,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,19.76,0,0
+1972,Nevada,NV,4,36.31922362,63.68077638,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,4.98,0,0
+1972,New Hampshire,NH,4,35.26634137,64.73365863,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,87.09,0,0
+1972,New Jersey,NJ,15,37.39207311,62.60792689,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,988.68,0,0
+1972,New Mexico,NM,5,37.45360907,62.54639093,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,8.89,0,0
+1972,New York,NY,33,41.3093646,58.6906354,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,388.35,-1,0
+1972,North Carolina,NC,14,29.3724399,70.6275601,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,108.81,0,0
+1972,North Dakota,ND,3,36.57069579,63.42930421,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,9.15,0,0
+1972,Ohio,OH,21,38.96525022,61.03474978,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,262.42,0,0
+1972,Oklahoma,OK,8,24.56309657,75.43690343,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,38.71,0,0
+1972,Oregon,OR,7,44.65993364,55.34006636,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,22.89,0,0
+1972,Pennsylvania,PA,23,39.83070271,60.16929729,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,265.69,0,0
+1972,Rhode Island,RI,4,46.89924535,53.10075465,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,942.74,0,0
+1972,South Carolina,SC,8,28.34669019,71.65330981,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,90.31,0,0
+1972,South Dakota,SD,3,45.67082543,54.32917457,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,8.92,1,1
+1972,Tennessee,TN,11,30.52638324,69.47361676,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,99.34,0,0
+1972,Texas,TX,32,33.4268315,66.5731685,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,44.9,0,0
+1972,Utah,UT,5,28.06766431,71.93233569,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,13.82,0,0
+1972,Vermont,VT,3,36.78658342,63.21341658,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,50.07,0,0
+1972,Virginia,VA,13,30.74773361,69.25226639,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,121.84,0,0
+1972,Washington,WA,11,40.43732021,59.56267979,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,51.78,0,0
+1972,West Virginia,WV,5,36.38973818,63.61026182,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,74.63,0,0
+1972,Wisconsin,WI,11,45.01957097,54.98042903,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,82.9,0,0
+1972,Wyoming,WY,3,30.62932427,69.37067573,38.21099117,61.78900883,"McGovern, George","Nixon, Richard M.","Nixon, Richard M.",0,523,12,3.58,0,0
+1976,Alabama,AL,9,56.66672398,43.33327602,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,73.6,0,0
+1976,Alaska,AK,3,38.10817123,61.89182877,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,0.7,0,0
+1976,Arizona,AZ,8,41.38669698,58.61330302,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,20.65,0,0
+1976,Arkansas,AR,6,65.04885148,34.95114852,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,41.67,0,0
+1976,California,CA,54,49.08217269,50.91782731,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,140.64,0,0
+1976,Colorado,CO,8,44.09245617,55.90754383,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,25.38,0,0
+1976,Connecticut,CT,8,47.38998329,52.61001671,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,636.4,0,0
+1976,Delaware,DE,3,52.73013809,47.26986191,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,301.88,0,0
+1976,Florida,FL,25,52.68020187,47.31979813,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,160.52,0,0
+1976,Georgia,GA,13,66.93829486,33.06170514,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,88.62,1,1
+1976,Hawaii,HI,4,51.28263124,48.71736876,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,140.77,0,0
+1976,Idaho,ID,4,38.26700937,61.73299063,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,10.36,0,0
+1976,Illinois,IL,22,48.99716626,51.00283374,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,204.03,0,0
+1976,Indiana,IN,12,46.15122219,53.84877781,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,150.24,0,0
+1976,Iowa,IA,7,49.48383415,50.51616585,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,51.96,0,0
+1976,Kansas,KS,6,46.12445924,53.87554076,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,28.12,0,0
+1976,Kentucky,KY,8,53.65402865,46.34597135,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,88.83,0,0
+1976,Louisiana,LA,9,52.95957515,47.04042485,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,90.68,0,0
+1976,Maine,ME,4,49.5688211,50.4311789,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,35.26,0,0
+1976,Maryland,MD,10,53.03541992,46.96458008,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,424.61,0,0
+1976,Massachusetts,MA,12,58.11462217,41.88537783,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,732.8,0,0
+1976,Michigan,MI,18,47.25622595,52.74377405,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,161.47,-1,0
+1976,Minnesota,MN,10,56.64198197,43.35801803,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,49.8,0,0
+1976,Mississippi,MS,7,50.96788853,49.03211147,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,51.79,0,0
+1976,Missouri,MO,11,51.84190713,48.15809287,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,70.23,0,0
+1976,Montana,MT,3,46.21565385,53.78434615,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,5.2,0,0
+1976,Nebraska,NE,5,39.37354855,60.62645145,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,20.17,0,-1
+1976,Nevada,NV,4,47.73060407,52.26939593,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,5.89,0,0
+1976,New Hampshire,NH,4,44.26074705,55.73925295,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,94.24,0,0
+1976,New Jersey,NJ,15,48.89933153,51.10066847,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,989.32,0,0
+1976,New Mexico,NM,5,48.75523248,51.24476752,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,9.8,0,0
+1976,New York,NY,33,53.44519461,46.55480539,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,379.9,0,0
+1976,North Carolina,NC,14,55.5532925,44.4467075,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,115.11,0,0
+1976,North Dakota,ND,3,46.96198949,53.03801051,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,9.36,0,0
+1976,Ohio,OH,21,50.1163546,49.8836454,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,262.56,0,0
+1976,Oklahoma,OK,8,49.38477948,50.61522052,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,41.16,0,0
+1976,Oregon,OR,7,49.91282682,50.08717318,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,24.77,0,0
+1976,Pennsylvania,PA,23,51.35713909,48.64286091,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,265.45,0,0
+1976,Rhode Island,RI,4,55.67237732,44.32762268,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,914.98,0,0
+1976,South Carolina,SC,8,56.56610904,43.43389096,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,97.76,0,0
+1976,South Dakota,SD,3,49.25696563,50.74303437,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,9.04,0,0
+1976,Tennessee,TN,11,56.57294458,43.42705542,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,105.46,0,0
+1976,Texas,TX,32,51.59850323,48.40149677,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,49.27,0,0
+1976,Utah,UT,5,35.01994162,64.98005838,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,15.52,0,0
+1976,Vermont,VT,3,43.66136319,56.33863681,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,52.43,0,0
+1976,Virginia,VA,13,49.31358114,50.68641886,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,129.35,0,0
+1976,Washington,WA,11,47.97970643,52.02029357,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,55.47,0,0
+1976,West Virginia,WV,5,58.06951865,41.93048135,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,78.03,0,0
+1976,Wisconsin,WI,11,50.86164367,49.13835633,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",1,246,289,84.62,0,0
+1976,Wyoming,WY,3,40.16559539,59.83440461,51.13734917,48.86265083,"Carter, Jimmy","Ford, Gerald","Carter, Jimmy",0,246,289,4.09,0,0
+1980,Alabama,AL,9,49.32366169,50.67633831,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,76.85,0,0
+1980,Alaska,AK,3,32.70081436,67.29918564,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,0.71,0,0
+1980,Arizona,AZ,8,31.78791317,68.21208683,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,24.09,0,0
+1980,Arkansas,AR,6,49.68029406,50.31970594,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,43.95,0,0
+1980,California,CA,54,40.53337544,59.46662456,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,152.6,-1,0
+1980,Colorado,CO,8,36.06965979,63.93034021,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,28.04,0,0
+1980,Connecticut,CT,8,44.44280368,55.55719632,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,642.55,0,0
+1980,Delaware,DE,3,48.73321475,51.26678525,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,304.31,0,0
+1980,Florida,FL,25,40.94923705,59.05076295,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,182.23,0,0
+1980,Georgia,GA,13,57.66239969,42.33760031,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,94.72,1,1
+1980,Hawaii,HI,4,51.08405924,48.91594076,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,150.66,0,0
+1980,Idaho,ID,4,27.48677321,72.51322679,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,11.46,0,0
+1980,Illinois,IL,22,45.66033762,54.33966238,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,205.69,0,-1
+1980,Indiana,IN,12,40.20267133,59.79732867,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,153.07,0,0
+1980,Iowa,IA,7,42.93684973,57.06315027,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,52.15,0,0
+1980,Kansas,KS,6,36.52451056,63.47548944,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,28.95,0,0
+1980,Kentucky,KY,8,49.2872544,50.7127456,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,92.22,0,0
+1980,Louisiana,LA,9,47.18911401,52.81088599,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,96.94,0,0
+1980,Maine,ME,4,48.09051657,51.90948343,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,36.51,0,0
+1980,Maryland,MD,10,51.61913807,48.38086193,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,432.5,0,0
+1980,Massachusetts,MA,12,49.90932698,50.09067302,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,733.1,0,0
+1980,Michigan,MI,18,46.4535891,53.5464109,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,163.7,0,0
+1980,Minnesota,MN,10,52.21361456,47.78638544,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,51.31,0,0
+1980,Mississippi,MS,7,49.3216678,50.6783322,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,53.83,0,0
+1980,Missouri,MO,11,46.43458566,53.56541434,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,71.44,0,0
+1980,Montana,MT,3,36.33475555,63.66524445,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,5.42,0,0
+1980,Nebraska,NE,5,28.41755487,71.58244513,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,20.45,0,0
+1980,Nevada,NV,4,30.07267134,69.92732866,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,7.38,0,0
+1980,New Hampshire,NH,4,32.93230763,67.06769237,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,103.05,0,0
+1980,New Jersey,NJ,15,42.59085549,57.40914451,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,994.25,0,0
+1980,New Mexico,NM,5,40.09173326,59.90826674,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,10.79,0,0
+1980,New York,NY,33,50.8448638,49.1551362,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,371.99,0,0
+1980,North Carolina,NC,14,48.90031737,51.09968263,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,121.08,0,0
+1980,North Dakota,ND,3,29.01929025,70.98070975,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,9.48,0,0
+1980,Ohio,OH,21,44.26451499,55.73548501,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,263.73,0,0
+1980,Oklahoma,OK,8,36.62786672,63.37213328,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,44.27,0,0
+1980,Oregon,OR,7,44.44740616,55.55259384,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,27.51,0,0
+1980,Pennsylvania,PA,23,46.13836413,53.86163587,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,264.8,0,0
+1980,Rhode Island,RI,4,56.16605547,43.83394453,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,917.58,0,0
+1980,South Carolina,SC,8,49.36270673,50.63729327,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,104.1,0,0
+1980,South Dakota,SD,3,34.36654114,65.63345886,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,9.1,0,0
+1980,Tennessee,TN,11,49.85007754,50.14992246,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,111.6,0,0
+1980,Texas,TX,32,42.83265921,57.16734079,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,54.74,0,0
+1980,Utah,UT,5,22.03481496,77.96518504,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,17.92,0,0
+1980,Vermont,VT,3,46.41069204,53.58930796,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,55.41,0,0
+1980,Virginia,VA,13,43.18413947,56.81586053,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,135.57,0,0
+1980,Washington,WA,11,42.90465391,57.09534609,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,62.4,0,0
+1980,West Virginia,WV,5,52.36978172,47.63021828,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",1,456,79,81.01,0,0
+1980,Wisconsin,WI,11,47.40969142,52.59030858,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,86.76,0,0
+1980,Wyoming,WY,3,30.86737402,69.13262598,44.84244123,55.15755877,"Carter, Jimmy","Reagan, Ronald","Reagan, Ronald",0,456,79,4.88,0,0
+1984,Alabama,AL,9,38.73660465,61.26339535,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,77.87,0,0
+1984,Alaska,AK,3,30.94408735,69.05591265,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,0.9,0,0
+1984,Arizona,AZ,7,32.88327243,67.11672757,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,26.99,0,0
+1984,Arkansas,AR,6,38.7724119,61.2275881,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,44.55,0,0
+1984,California,CA,47,41.77546518,58.22453482,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,165.7,-1,0
+1984,Colorado,CO,8,35.63423016,64.36576984,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,30.56,0,0
+1984,Connecticut,CT,8,39.00083124,60.99916876,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,656.35,0,0
+1984,Delaware,DE,3,40.0463273,59.9536727,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,312.82,0,0
+1984,Florida,FL,21,34.66758679,65.33241321,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,204.45,0,0
+1984,Georgia,GA,12,39.80217985,60.19782015,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,100.74,0,0
+1984,Hawaii,HI,4,44.29627578,55.70372422,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,160.04,0,0
+1984,Idaho,ID,4,26.7244288,73.2755712,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,11.97,0,0
+1984,Illinois,IL,24,43.52674669,56.47325331,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,205.28,0,-1
+1984,Indiana,IN,12,37.92657088,62.07342912,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,152.17,0,0
+1984,Iowa,IA,8,46.27617467,53.72382533,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,51.16,0,0
+1984,Kansas,KS,7,32.97052289,67.02947711,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,29.63,0,0
+1984,Kentucky,KY,9,39.63581761,60.36418239,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,93.01,0,0
+1984,Louisiana,LA,10,38.58083884,61.41916116,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,101.01,0,0
+1984,Maine,ME,4,38.9308821,61.0691179,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,37.44,0,0
+1984,Maryland,MD,10,47.24247281,52.75752719,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,446.57,0,0
+1984,Massachusetts,MA,13,48.60166976,51.39833024,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,745.19,0,0
+1984,Michigan,MI,20,40.453675,59.546325,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,160.06,0,0
+1984,Minnesota,MN,10,50.09089077,49.90910923,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",1,525,10,52.22,1,1
+1984,Mississippi,MS,7,37.68496494,62.31503506,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,54.95,0,0
+1984,Missouri,MO,11,39.97524933,60.02475067,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,72.21,0,0
+1984,Montana,MT,4,38.69860124,61.30139876,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,5.64,0,0
+1984,Nebraska,NE,5,28.99524633,71.00475367,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,20.66,0,0
+1984,Nevada,NV,4,32.68431845,67.31568155,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,8.42,0,0
+1984,New Hampshire,NH,4,31.06554775,68.93445225,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,108.92,0,0
+1984,New Jersey,NJ,16,39.47860892,60.52139108,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,1013,0,0
+1984,New Mexico,NM,5,39.65040187,60.34959813,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,11.67,0,0
+1984,New York,NY,36,47.05828213,52.94171787,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,375.78,0,0
+1984,North Carolina,NC,13,37.97213705,62.02786295,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,126.52,0,0
+1984,North Dakota,ND,3,34.26541762,65.73458238,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,9.86,0,0
+1984,Ohio,OH,23,40.52931628,59.47068372,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,262.2,0,0
+1984,Oklahoma,OK,8,30.89017415,69.10982585,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,47.84,0,0
+1984,Oregon,OR,7,43.89528866,56.10471134,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,27.78,0,0
+1984,Pennsylvania,PA,25,46.29926852,53.70073148,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,263.61,0,0
+1984,Rhode Island,RI,4,48.17026976,51.82973024,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,930.26,0,0
+1984,South Carolina,SC,8,35.88122059,64.11877941,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,108.66,0,0
+1984,South Dakota,SD,3,36.70048676,63.29951324,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,9.19,0,0
+1984,Tennessee,TN,11,41.81815191,58.18184809,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,113.7,0,0
+1984,Texas,TX,29,36.21369483,63.78630517,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,61.12,0,0
+1984,Utah,UT,5,24.87997899,75.12002101,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,19.74,0,0
+1984,Vermont,VT,3,41.33508927,58.66491073,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,56.94,0,0
+1984,Virginia,VA,12,37.32431206,62.67568794,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,142.53,0,0
+1984,Washington,WA,10,43.15364898,56.84635102,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,65.24,0,0
+1984,West Virginia,WV,6,44.72756568,55.27243432,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,80.03,0,0
+1984,Wisconsin,WI,11,45.37798429,54.62201571,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,87.19,0,0
+1984,Wyoming,WY,3,28.59960024,71.40039976,40.87664881,59.12335119,"Mondale, Walter","Reagan, Ronald","Reagan, Ronald",0,525,10,5.2,0,0
+1988,Alabama,AL,9,40.2544316,59.7455684,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,79.29,0,0
+1988,Alaska,AK,3,37.83668257,62.16331743,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,0.95,0,0
+1988,Arizona,AZ,7,39.25650847,60.74349153,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,31.11,0,0
+1988,Arkansas,AR,6,42.80835729,57.19164271,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,44.99,0,0
+1988,California,CA,47,48.19268946,51.80731054,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,182.49,0,0
+1988,Colorado,CO,8,46.04617562,53.95382438,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,31.45,0,0
+1988,Connecticut,CT,8,47.41884954,52.58115046,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,675.33,0,0
+1988,Delaware,DE,3,43.7588104,56.2411896,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,331.26,0,0
+1988,Florida,FL,21,38.74792835,61.25207165,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,227.91,0,0
+1988,Georgia,GA,12,39.79638366,60.20361634,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,109.05,0,0
+1988,Hawaii,HI,4,54.80627598,45.19372402,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,168.12,0,0
+1988,Idaho,ID,4,36.71217715,63.28782285,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,11.91,0,0
+1988,Illinois,IL,24,48.950723,51.049277,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,204.89,0,0
+1988,Indiana,IN,12,39.87400888,60.12599112,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,153.1,0,0
+1988,Iowa,IA,8,55.14848114,44.85151886,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,49.55,0,0
+1988,Kansas,KS,7,43.2724983,56.7275017,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,30.09,0,0
+1988,Kentucky,KY,9,44.14623219,55.85376781,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,92.62,0,0
+1988,Louisiana,LA,10,44.80870768,55.19129232,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,98.45,0,0
+1988,Maine,ME,4,44.2289813,55.7710187,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,39,0,0
+1988,Maryland,MD,10,48.53556977,51.46443023,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,476.51,0,0
+1988,Massachusetts,MA,13,53.98258893,46.01741107,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,762.95,1,1
+1988,Michigan,MI,20,46.02195004,53.97804996,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,163.04,0,0
+1988,Minnesota,MN,10,53.55085993,46.44914007,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,53.96,0,0
+1988,Mississippi,MS,7,39.47891704,60.52108296,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,55,0,0
+1988,Missouri,MO,11,48.00308832,51.99691168,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,73.76,0,0
+1988,Montana,MT,4,47.01181028,52.98818972,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,5.5,0,0
+1988,Nebraska,NE,5,39.44591451,60.55408549,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,20.44,0,0
+1988,Nevada,NV,4,39.18141084,60.81858916,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,9.79,0,0
+1988,New Hampshire,NH,4,36.76636727,63.23363273,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,120.7,0,0
+1988,New Jersey,NJ,16,43.09884239,56.90115761,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,1039.54,0,0
+1988,New Mexico,NM,5,47.49008426,52.50991574,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,12.28,0,0
+1988,New York,NY,36,53.42205264,46.57794736,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,379.92,0,0
+1988,North Carolina,NC,13,41.84246213,58.15753787,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,133.02,0,0
+1988,North Dakota,ND,3,43.40464427,56.59535573,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,9.5,0,0
+1988,Ohio,OH,23,44.52593535,55.47406465,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,263.68,0,0
+1988,Oklahoma,OK,8,41.61018773,58.38981227,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,46.11,0,0
+1988,Oregon,OR,7,52.3836808,47.6163192,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,28.55,0,0
+1988,Pennsylvania,PA,25,48.830453,51.169547,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,264.3,0,0
+1988,Rhode Island,RI,4,55.87787055,44.12212945,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,963.64,0,0
+1988,South Carolina,SC,8,37.92785444,62.07214556,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,113.32,0,0
+1988,South Dakota,SD,3,46.80762119,53.19237881,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,9.2,0,0
+1988,Tennessee,TN,11,41.7813595,58.2186405,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,116.99,0,0
+1988,Texas,TX,29,43.65366707,56.34633293,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,63.64,-1,0
+1988,Utah,UT,5,32.61212517,67.38787483,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,20.56,0,0
+1988,Vermont,VT,3,48.21828692,51.78171308,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,59.44,0,0
+1988,Virginia,VA,12,39.64105394,60.35894606,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,152.45,0,0
+1988,Washington,WA,10,50.80771175,49.19228825,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,69.69,0,0
+1988,West Virginia,WV,6,52.3768932,47.6231068,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,75.98,0,0
+1988,Wisconsin,WI,11,51.82346629,48.17653371,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",1,426,109,88.79,0,0
+1988,Wyoming,WY,3,38.57512358,61.42487642,46.16754471,53.83245529,"Dukakis, Michael","Bush, George H.W.","Bush, George H.W.",0,426,109,4.79,0,0
+1992,Alabama,AL,9,46.17887354,53.82112646,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,81.56,0,0
+1992,Alaska,AK,3,43.42573796,56.57426204,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,1.03,0,0
+1992,Arizona,AZ,6,48.69809602,51.30190398,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,34.03,0,0
+1992,Arkansas,AR,6,59.99226707,40.00773293,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,45.97,1,1
+1992,California,CA,45,58.51672877,41.48327123,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,197.96,0,0
+1992,Colorado,CO,7,52.80206552,47.19793448,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,33.36,0,0
+1992,Connecticut,CT,8,54.12511671,45.87488329,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,675.95,0,0
+1992,Delaware,DE,3,55.1979927,44.8020073,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,353.02,0,0
+1992,Florida,FL,17,48.80315891,51.19684109,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,250.1,0,0
+1992,Georgia,GA,12,50.34212845,49.65787155,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,116.71,0,0
+1992,Hawaii,HI,4,56.71997773,43.28002227,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,179.03,0,0
+1992,Idaho,ID,4,40.33851698,59.66148302,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,12.89,0,0
+1992,Illinois,IL,26,58.58821821,41.41178179,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,209.29,0,0
+1992,Indiana,IN,13,46.16510547,53.83489453,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,157.48,0,0
+1992,Iowa,IA,8,53.73252911,46.26747089,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,50.24,0,0
+1992,Kansas,KS,7,46.45894441,53.54105559,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,30.87,0,0
+1992,Kentucky,KY,9,51.86877769,48.13122231,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,94.54,0,0
+1992,Louisiana,LA,10,52.66513786,47.33486214,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,98.03,0,0
+1992,Maine,ME,4,56.05587286,43.94412714,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,40.04,0,0
+1992,Maryland,MD,10,58.29990004,41.70009996,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,501.54,0,0
+1992,Massachusetts,MA,14,62.09222867,37.90777133,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,764.67,0,-1
+1992,Michigan,MI,21,54.61515965,45.38484035,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,167.5,0,0
+1992,Minnesota,MN,10,57.72134022,42.27865978,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,56.16,0,0
+1992,Mississippi,MS,7,45.07151053,54.92848947,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,55.64,0,0
+1992,Missouri,MO,12,56.5069661,43.4930339,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,75.38,0,0
+1992,Montana,MT,4,51.72405712,48.27594288,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,5.65,0,0
+1992,Nebraska,NE,5,38.68826957,61.31173043,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,20.84,0,0
+1992,Nevada,NV,3,51.82477752,48.17522248,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,12.12,0,0
+1992,New Hampshire,NH,4,50.79655136,49.20344864,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,124.07,0,0
+1992,New Jersey,NJ,17,51.42031835,48.57968165,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,1055.1,0,0
+1992,New Mexico,NM,4,55.14215677,44.85784323,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,13.02,0,0
+1992,New York,NY,41,62.1108254,37.8891746,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,382.9,0,0
+1992,North Carolina,NC,13,49.54153572,50.45846428,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,140.23,0,0
+1992,North Dakota,ND,3,42.12529523,57.87470477,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,9.21,0,0
+1992,Ohio,OH,25,51.16816335,48.83183665,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,268.79,0,0
+1992,Oklahoma,OK,8,44.3778817,55.6221183,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,46.65,0,0
+1992,Oregon,OR,6,56.63389152,43.36610848,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,30.98,0,0
+1992,Pennsylvania,PA,27,55.54852946,44.45147054,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,267.31,0,0
+1992,Rhode Island,RI,4,61.84372282,38.15627718,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,967.67,0,0
+1992,South Carolina,SC,8,47.64315457,52.35684543,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,119.58,0,0
+1992,South Dakota,SD,4,47.73896623,52.26103377,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,9.34,0,0
+1992,Tennessee,TN,10,52.59803665,47.40196335,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,121.64,0,0
+1992,Texas,TX,26,47.75783683,52.24216317,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,67.39,-1,0
+1992,Utah,UT,4,36.24642089,63.75357911,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,22.17,0,0
+1992,Vermont,VT,3,60.25420136,39.74579864,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,61.64,0,0
+1992,Virginia,VA,12,47.44498707,52.55501293,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,161.2,0,0
+1992,Washington,WA,9,57.59170107,42.40829893,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,77.18,0,0
+1992,West Virginia,WV,6,57.76883808,42.23116192,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,74.96,0,0
+1992,Wisconsin,WI,11,52.7945085,47.2054915,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",1,152,383,92.14,0,0
+1992,Wyoming,WY,3,46.20797657,53.79202343,53.62069584,46.37930416,"Clinton, Bill","Bush, George H.W.","Clinton, Bill",0,152,383,4.77,0,0
+1996,Alabama,AL,9,46.26612885,53.73387115,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,84.54,0,0
+1996,Alaska,AK,3,39.57149749,60.42850251,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,1.06,0,0
+1996,Arizona,AZ,6,51.22377115,48.77622885,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,39,0,0
+1996,Arkansas,AR,6,59.35282486,40.64717514,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,48.1,1,1
+1996,California,CA,45,57.21626523,42.78373477,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,203.76,0,0
+1996,Colorado,CO,7,49.24079237,50.75920763,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,36.76,0,0
+1996,Connecticut,CT,8,60.36350688,39.63649312,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,674.31,0,0
+1996,Delaware,DE,3,58.62365663,41.37634337,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,371.91,0,0
+1996,Florida,FL,17,53.1549612,46.8450388,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,267.18,0,0
+1996,Georgia,GA,12,49.3677308,50.6322692,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,126.59,0,0
+1996,Hawaii,HI,4,64.27615181,35.72384819,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,184.41,0,0
+1996,Idaho,ID,4,39.20097242,60.79902758,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,14.35,0,0
+1996,Illinois,IL,26,59.60509219,40.39490781,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,215.01,0,0
+1996,Indiana,IN,13,46.85159364,53.14840636,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,162.67,0,0
+1996,Iowa,IA,8,55.73338892,44.26661108,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,50.98,0,0
+1996,Kansas,KS,7,39.92763445,60.07236555,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,31.75,-1,-1
+1996,Kentucky,KY,9,50.52905118,49.47094882,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,97.68,0,0
+1996,Louisiana,LA,10,56.56083827,43.43916173,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,99.59,0,0
+1996,Maine,ME,4,62.66212042,37.33787958,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,40.22,0,0
+1996,Maryland,MD,10,58.63842349,41.36157651,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,517.35,0,0
+1996,Massachusetts,MA,14,68.63782541,31.36217459,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,776.4,0,0
+1996,Michigan,MI,21,57.32441337,42.67558663,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,172.26,0,0
+1996,Minnesota,MN,10,59.38068927,40.61931073,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,58.38,0,0
+1996,Mississippi,MS,7,47.25277625,52.74722375,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,57.76,0,0
+1996,Missouri,MO,12,53.54703748,46.45296252,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,77.91,0,0
+1996,Montana,MT,4,48.31258955,51.68741045,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,6.02,0,0
+1996,Nebraska,NE,5,39.4451775,60.5548225,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,21.43,0,0
+1996,Nevada,NV,3,50.58653136,49.41346864,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,14.54,0,0
+1996,New Hampshire,NH,4,55.61163171,44.38836829,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,129.42,0,0
+1996,New Jersey,NJ,17,59.9667932,40.0332068,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,1079.61,0,0
+1996,New Mexico,NM,4,54.02413056,45.97586944,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,14.06,0,0
+1996,New York,NY,41,67.73202938,32.26797062,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,384.21,0,0
+1996,North Carolina,NC,13,47.47001333,52.52998667,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,150,0,0
+1996,North Dakota,ND,3,46.08868099,53.91131901,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,9.32,0,0
+1996,Ohio,OH,25,53.59694918,46.40305082,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,273.17,0,0
+1996,Oklahoma,OK,8,45.59939089,54.40060911,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,47.9,0,0
+1996,Oregon,OR,6,54.69311572,45.30688428,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,33.28,0,0
+1996,Pennsylvania,PA,27,55.16120536,44.83879464,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,268.59,0,0
+1996,Rhode Island,RI,4,69.00421339,30.99578661,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,955.38,0,0
+1996,South Carolina,SC,8,46.88802408,53.11197592,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,124.17,0,0
+1996,South Dakota,SD,4,48.0664146,51.9335854,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,9.63,0,0
+1996,Tennessee,TN,10,51.28664234,48.71335766,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,128.91,0,0
+1996,Texas,TX,26,47.33937662,52.66062338,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,72.57,0,0
+1996,Utah,UT,4,37.98051218,62.01948782,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,24.61,0,0
+1996,Vermont,VT,3,63.18283038,36.81716962,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,63.4,0,0
+1996,Virginia,VA,12,48.93940549,51.06059451,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,168.33,0,0
+1996,Washington,WA,9,57.19465284,42.80534716,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,82.75,0,0
+1996,West Virginia,WV,6,58.35466518,41.64533482,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,75.52,0,0
+1996,Wisconsin,WI,11,55.91919666,44.08080334,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",1,152,383,95.26,0,0
+1996,Wyoming,WY,3,42.51208257,57.48791743,54.80402403,45.19597597,"Clinton, Bill","Dole, Robert","Clinton, Bill",0,152,383,4.94,0,0
+2000,Alabama,AL,9,42.39305808,57.60694192,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,87.73,0,0
+2000,Alaska,AK,3,32.06305144,67.93694856,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,1.1,0,0
+2000,Arizona,AZ,6,46.71740083,53.28259917,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,45.41,0,0
+2000,Arkansas,AR,6,47.19931049,52.80068951,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,51.44,0,0
+2000,California,CA,45,56.20299,43.79701,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,217.91,0,0
+2000,Colorado,CO,7,45.51408006,54.48591994,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,41.71,0,0
+2000,Connecticut,CT,8,59.25565805,40.74434195,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,704.19,0,-1
+2000,Delaware,DE,3,56.74006479,43.25993521,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,402.24,0,0
+2000,Florida,FL,17,49.99539059,50.00460941,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,297.19,0,0
+2000,Georgia,GA,12,44.01624638,55.98375362,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,142.05,0,0
+2000,Hawaii,HI,4,59.82729628,40.17270372,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,188.93,0,0
+2000,Idaho,ID,4,29.15150954,70.84849046,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,15.7,0,0
+2000,Illinois,IL,26,56.18001032,43.81998968,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,223.66,0,0
+2000,Indiana,IN,13,41.99521747,58.00478253,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,169.83,0,0
+2000,Iowa,IA,8,50.16277919,49.83722081,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,52.42,0,0
+2000,Kansas,KS,7,39.08309254,60.91690746,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,32.92,0,0
+2000,Kentucky,KY,9,42.27238473,57.72761527,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,101.91,0,0
+2000,Louisiana,LA,10,46.06075403,53.93924597,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,102.65,0,0
+2000,Maine,ME,4,52.74784154,47.25215846,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,41.38,0,0
+2000,Maryland,MD,10,58.43229894,41.56770106,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,543.33,0,0
+2000,Massachusetts,MA,14,64.78934376,35.21065624,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,811.57,0,0
+2000,Michigan,MI,21,52.63460648,47.36539352,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,176.03,0,0
+2000,Minnesota,MN,10,51.28641198,48.71358802,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,61.97,0,0
+2000,Mississippi,MS,7,41.39451516,58.60548484,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,60.71,0,0
+2000,Missouri,MO,12,48.28805134,51.71194866,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,81.39,0,0
+2000,Montana,MT,4,36.34363802,63.65636198,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,6.21,0,0
+2000,Nebraska,NE,5,34.82051914,65.17948086,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,22.29,0,0
+2000,Nevada,NV,3,48.1431615,51.8568385,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,18.38,0,0
+2000,New Hampshire,NH,4,49.3321998,50.6678002,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,138.24,0,0
+2000,New Jersey,NJ,17,58.21140942,41.78859058,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,1136.36,0,0
+2000,New Mexico,NM,4,50.03192603,49.96807397,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,15.01,0,0
+2000,New York,NY,41,63.57599158,36.42400842,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,402.38,0,0
+2000,North Carolina,NC,13,43.53600302,56.46399698,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,165.89,0,0
+2000,North Dakota,ND,3,35.27260343,64.72739657,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,9.31,0,0
+2000,Ohio,OH,25,48.16127778,51.83872222,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,277.48,0,0
+2000,Oklahoma,OK,8,38.91932878,61.08067122,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,50.3,0,0
+2000,Oregon,OR,6,50.23589199,49.76410801,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,35.73,0,0
+2000,Pennsylvania,PA,27,52.14847872,47.85152128,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,274.08,0,0
+2000,Rhode Island,RI,4,65.64911607,34.35088393,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,1015.73,0,0
+2000,South Carolina,SC,8,41.83789393,58.16210607,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,133.65,0,0
+2000,South Dakota,SD,4,38.38528743,61.61471257,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,9.96,0,0
+2000,Tennessee,TN,10,48.03713321,51.96286679,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,138.37,1,0
+2000,Texas,TX,26,39.04372985,60.95627015,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,79.97,-1,0
+2000,Utah,UT,4,28.27449457,71.72550543,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,27.32,0,0
+2000,Vermont,VT,3,55.4403509,44.5596491,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,65.91,0,0
+2000,Virginia,VA,12,45.85276369,54.14723631,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,179.45,0,0
+2000,Washington,WA,9,52.94477101,47.05522899,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,88.77,0,0
+2000,West Virginia,WV,6,46.75792598,53.24207402,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,75.02,0,0
+2000,Wisconsin,WI,11,50.1150683,49.8849317,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",1,260,275,98.94,0,0
+2000,Wyoming,WY,3,29.01769436,70.98230564,50.25952345,49.74047655,"Gore, Al","Bush, George W.","Bush, George W.",0,260,275,5.09,0,0
+2004,Alabama,AL,10,37.10222865,62.89777135,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,89.28,0,0
+2004,Alaska,AK,3,36.77371702,63.22628298,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,1.16,0,0
+2004,Arizona,AZ,5,44.72499497,55.27500503,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,49.74,0,0
+2004,Arkansas,AR,6,45.06425175,54.93574825,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,52.8,0,0
+2004,California,CA,40,55.04132045,44.95867955,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,228.08,0,0
+2004,Colorado,CO,6,47.63377044,52.36622956,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,44.11,0,1
+2004,Connecticut,CT,8,55.27494756,44.72505244,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,721.59,0,-1
+2004,Delaware,DE,3,53.83150625,46.16849375,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,424.96,0,0
+2004,Florida,FL,14,47.47632042,52.52367958,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,322.52,0,0
+2004,Georgia,GA,12,41.6457673,58.3542327,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,151.41,0,0
+2004,Hawaii,HI,4,54.404448,45.595552,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,198.28,0,0
+2004,Idaho,ID,4,30.67726182,69.32273818,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,16.82,0,0
+2004,Illinois,IL,26,55.20863405,44.79136595,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,226.46,0,0
+2004,Indiana,IN,13,39.57652375,60.42347625,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,173.77,0,0
+2004,Iowa,IA,9,49.66332074,50.33667926,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,52.86,0,0
+2004,Kansas,KS,7,37.13290122,62.86709878,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,33.42,0,0
+2004,Kentucky,KY,9,39.99238008,60.00761992,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,104.35,0,0
+2004,Louisiana,LA,10,42.66905873,57.33094127,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,104.49,0,0
+2004,Maine,ME,4,54.58301641,45.41698359,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,42.56,0,0
+2004,Maryland,MD,10,56.56541637,43.43428692,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,567.46,0,0
+2004,Massachusetts,MA,14,62.74285551,37.25714449,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,818.1,1,0
+2004,Michigan,MI,21,51.72584447,48.27415553,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,177.85,0,0
+2004,Minnesota,MN,10,51.76091061,48.23908939,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,63.9,0,0
+2004,Mississippi,MS,7,40.49499923,59.50500077,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,61.58,0,0
+2004,Missouri,MO,12,46.38028733,53.61971267,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,83.42,0,0
+2004,Montana,MT,4,39.49992382,60.50007618,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,6.39,0,0
+2004,Nebraska,NE,5,33.15266274,66.84733726,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,22.76,0,0
+2004,Nevada,NV,3,48.68240428,51.31759572,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,21.37,0,0
+2004,New Hampshire,NH,4,50.69028862,49.30971138,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,143.84,0,0
+2004,New Jersey,NJ,17,53.37053632,46.62946368,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,1163.84,0,0
+2004,New Mexico,NM,4,49.59966411,50.40033589,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,15.69,0,0
+2004,New York,NY,43,59.82979066,40.17020934,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,405.97,0,0
+2004,North Carolina,NC,13,43.758028,56.241972,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,175.56,0,0
+2004,North Dakota,ND,4,36.09064585,63.90935415,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,9.34,0,0
+2004,Ohio,OH,26,48.941256,51.058744,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,279.64,0,0
+2004,Oklahoma,OK,8,34.42959834,65.57040166,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,51.33,0,0
+2004,Oregon,OR,6,52.10862577,47.89137423,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,37.18,0,0
+2004,Pennsylvania,PA,29,51.2582821,48.7417179,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,276.9,0,0
+2004,Rhode Island,RI,4,60.57751058,39.42248942,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,1039.24,0,0
+2004,South Carolina,SC,8,41.36354174,58.63645826,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,139.85,0,0
+2004,South Dakota,SD,4,39.0867092,60.9132908,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,10.15,0,0
+2004,Tennessee,TN,11,42.81455455,57.18544545,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,143.4,0,0
+2004,Texas,TX,25,38.4898081,61.5101919,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,85.5,-1,0
+2004,Utah,UT,4,26.65356084,73.34643916,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,29.23,0,0
+2004,Vermont,VT,3,60.30100214,39.69899786,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,67.03,0,0
+2004,Virginia,VA,12,45.86630329,54.13369671,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,188.79,0,0
+2004,Washington,WA,9,53.64653768,46.35346232,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,92.8,0,0
+2004,West Virginia,WV,7,43.52028937,56.47971063,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,75.41,0,0
+2004,Wisconsin,WI,12,50.19180327,49.80819673,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",1,268,267,101.52,0,0
+2004,Wyoming,WY,3,29.68729683,70.31270317,48.73068404,51.26931596,"Kerry, John","Bush, George W.","Bush, George W.",0,268,267,5.24,0,0
+2008,Alabama,AL,10,39.10909725,60.89090275,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,92.97,0,0
+2008,Alaska,AK,3,38.93521508,61.06478492,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,1.2,0,0
+2008,Arizona,AZ,5,45.68609928,54.31390072,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,55.26,-1,-1
+2008,Arkansas,AR,6,39.82827939,60.17172061,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,55.2,0,0
+2008,California,CA,40,62.27844959,37.72155041,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,234.68,0,0
+2008,Colorado,CO,6,54.55063469,45.44936531,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,47.14,0,0
+2008,Connecticut,CT,8,61.31833825,38.68166175,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,731.8,0,0
+2008,Delaware,DE,3,62.63813865,37.36186135,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,452.11,0,0
+2008,Florida,FL,14,51.41966003,48.58033997,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,343.12,0,0
+2008,Georgia,GA,12,47.37166449,52.62833551,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,164.11,0,0
+2008,Hawaii,HI,4,72.99372588,27.00627412,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,207.41,0,1
+2008,Idaho,ID,4,36.97541019,63.02458981,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,18.54,0,0
+2008,Illinois,IL,26,62.73426404,37.26573596,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,229.29,1,0
+2008,Indiana,IN,13,50.52195345,49.47804655,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,179.11,0,0
+2008,Iowa,IA,9,54.84877779,45.15122221,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,53.99,0,0
+2008,Kansas,KS,7,42.38772418,57.61227582,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,34.32,0,0
+2008,Kentucky,KY,9,41.76657241,58.23342759,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,107.97,0,0
+2008,Louisiana,LA,10,40.54282584,59.45717416,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,101.81,0,0
+2008,Maine,ME,4,58.82952498,41.17047502,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,43.11,0,0
+2008,Maryland,MD,10,62.93008729,37.06991271,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,581.58,0,0
+2008,Massachusetts,MA,14,63.19707821,36.80292179,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,825.33,0,0
+2008,Michigan,MI,21,58.37130158,41.62869842,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,175.93,0,0
+2008,Minnesota,MN,10,55.229375,44.770625,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,65.9,0,0
+2008,Mississippi,MS,7,43.35806901,56.64193099,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,62.83,0,0
+2008,Missouri,MO,12,49.93242085,50.06757915,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,85.98,0,0
+2008,Montana,MT,4,48.83059672,51.16940328,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,6.71,0,0
+2008,Nebraska,NE,5,42.39092558,57.60907442,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,23.37,0,0
+2008,Nevada,NV,3,56.38673813,43.61326187,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,24.17,0,0
+2008,New Hampshire,NH,4,54.86854112,45.13145888,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,146.72,0,0
+2008,New Jersey,NJ,17,57.86462987,42.13537013,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,1174.16,0,0
+2008,New Mexico,NM,4,57.66490002,42.33509998,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,16.57,0,0
+2008,New York,NY,43,65.76385738,34.23614262,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,406.84,0,0
+2008,North Carolina,NC,13,50.1659633,49.8340367,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,191.09,0,0
+2008,North Dakota,ND,4,45.59134372,54.40865628,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,9.53,0,0
+2008,Ohio,OH,26,52.33384076,47.66615924,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,281.19,0,0
+2008,Oklahoma,OK,8,34.35491888,65.64508112,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,53.42,0,0
+2008,Oregon,OR,6,58.41372118,41.58627882,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,39.26,0,0
+2008,Pennsylvania,PA,29,55.22970382,44.77029618,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,281.4,0,0
+2008,Rhode Island,RI,4,64.19813751,35.80186249,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,1020.31,0,0
+2008,South Carolina,SC,8,45.45557081,54.54442919,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,150.41,0,0
+2008,South Dakota,SD,4,45.70429277,54.29570723,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,10.53,0,0
+2008,Tennessee,TN,11,42.3685282,57.6314718,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,151.56,0,0
+2008,Texas,TX,25,44.06406325,55.93593675,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,92.81,0,0
+2008,Utah,UT,4,35.47363863,64.52636137,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,32.41,0,0
+2008,Vermont,VT,3,68.89918174,31.10081826,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,67.48,0,0
+2008,Virginia,VA,12,53.18258441,46.81741559,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,197.83,0,0
+2008,Washington,WA,9,58.7520268,41.2479732,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,98.56,0,0
+2008,West Virginia,WV,7,43.32625623,56.67374377,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,76.4,0,0
+2008,Wisconsin,WI,12,57.05567825,42.94432175,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",1,168,367,103.86,0,0
+2008,Wyoming,WY,3,33.43797664,66.56202336,53.77076728,46.22923272,"Obama, Barack H.","McCain, John","Obama, Barack H.",0,168,367,5.62,0,0
+2012,Alabama,AL,11,38.78377147,61.21622853,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,94.89,0,0
+2012,Alaska,AK,3,42.68470952,57.31529048,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,1.28,0,0
+2012,Arizona,AZ,4,45.38661978,54.61338022,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,57.68,0,0
+2012,Arkansas,AR,8,37.84559465,62.15440535,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,56.69,0,0
+2012,California,CA,32,61.87281116,38.12718884,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,243.3,0,0
+2012,Colorado,CO,6,52.74798831,47.25201169,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,50.06,0,0
+2012,Connecticut,CT,8,58.77257748,41.22742252,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,741.91,0,0
+2012,Delaware,DE,3,59.44695492,40.55304508,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,468.12,0,0
+2012,Florida,FL,10,50.44225214,49.55774786,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,357.39,0,0
+2012,Georgia,GA,12,46.0433509,53.9566491,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,170.95,0,0
+2012,Hawaii,HI,3,71.7038485,28.2961515,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,217.16,0,1
+2012,Idaho,ID,4,33.57861316,66.42138684,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,19.28,0,0
+2012,Illinois,IL,27,58.57752339,41.42247661,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,231.73,1,0
+2012,Indiana,IN,13,44.7996254,55.2003746,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,182.26,0,0
+2012,Iowa,IA,10,52.95935193,47.04064807,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,55.05,0,0
+2012,Kansas,KS,8,38.88667325,61.11332675,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,35.26,0,0
+2012,Kentucky,KY,10,38.45722761,61.54277239,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,110.4,0,0
+2012,Louisiana,LA,10,41.25317439,58.74682561,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,105.61,0,0
+2012,Maine,ME,5,57.85992139,42.14007861,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,43.02,0,0
+2012,Maryland,MD,9,63.32172579,36.67827421,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,602.25,0,0
+2012,Massachusetts,MA,16,61.78568075,38.21431925,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,850.09,-1,0
+2012,Michigan,MI,20,54.80053207,45.19946793,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,175.05,0,-1
+2012,Minnesota,MN,11,53.94122646,46.05877354,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,67.53,0,0
+2012,Mississippi,MS,8,44.1981008,55.8018992,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,63.6,0,0
+2012,Missouri,MO,13,45.22133325,54.77866675,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,87.44,0,0
+2012,Montana,MT,4,42.96576814,57.03423186,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,6.9,0,0
+2012,Nebraska,NE,6,38.87060973,61.12939027,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,24.11,0,0
+2012,Nevada,NV,3,53.40754216,46.59245784,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,24.99,0,0
+2012,New Hampshire,NH,4,52.83375198,47.16624802,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,147.65,0,0
+2012,New Jersey,NJ,16,58.95196555,41.04803445,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,1192.2,0,0
+2012,New Mexico,NM,4,55.29520465,44.70479535,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,17.2,0,0
+2012,New York,NY,45,66.04269487,33.95730513,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,414.47,0,0
+2012,North Carolina,NC,14,48.9659651,51.0340349,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,200.12,0,0
+2012,North Dakota,ND,4,39.88879171,60.11120829,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,10.16,0,0
+2012,Ohio,OH,25,51.51405677,48.48594323,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,282,0,0
+2012,Oklahoma,OK,8,33.22768026,66.77231974,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,55.6,0,0
+2012,Oregon,OR,6,56.27116718,43.72883282,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,40.61,0,0
+2012,Pennsylvania,PA,32,52.731934,47.268066,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,284.85,0,0
+2012,Rhode Island,RI,4,64.01674598,35.98325402,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,1019.94,0,0
+2012,South Carolina,SC,8,44.6917453,55.3082547,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,156.67,0,0
+2012,South Dakota,SD,4,40.78150086,59.21849914,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,10.98,0,0
+2012,Tennessee,TN,11,39.64892847,60.35107153,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,156.57,0,0
+2012,Texas,TX,24,41.99210278,58.00789722,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,99.59,0,0
+2012,Utah,UT,4,25.3738111,74.6261889,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,34.73,0,0
+2012,Vermont,VT,3,68.24725883,31.75274117,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,67.69,0,0
+2012,Virginia,VA,12,51.96737669,48.03262331,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,206.7,0,0
+2012,Washington,WA,9,57.62829827,42.37170173,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,103.59,0,0
+2012,West Virginia,WV,8,36.32570237,63.67429763,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,77.09,0,0
+2012,Wisconsin,WI,12,53.46342998,46.53657002,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",1,202,335,105.31,0,0
+2012,Wyoming,WY,3,28.83936599,71.16063401,51.91525804,48.08474196,"Obama, Barack H.","Romney, Mitt","Obama, Barack H.",0,202,335,5.93,0,0
+2016,Alabama,AL,11,35.62585641,64.37414359,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,95.83,0,0
+2016,Alaska,AK,3,41.61434529,58.38565471,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,1.3,0,0
+2016,Arizona,AZ,4,48.1099766,51.8900234,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,61.08,0,0
+2016,Arkansas,AR,8,35.71486231,64.28513769,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,57.42,0,0
+2016,California,CA,32,66.12822054,33.87177946,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,251.11,0,0
+2016,Colorado,CO,6,52.68333337,47.31666663,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,53.4,0,0
+2016,Connecticut,CT,8,57.14154752,42.85845248,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,738.52,0,0
+2016,Delaware,DE,3,55.99862144,44.00137856,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,485.38,0,0
+2016,Florida,FL,10,49.38116453,50.61883547,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,381.75,0,0
+2016,Georgia,GA,12,47.3388274,52.6611726,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,177.87,0,0
+2016,Hawaii,HI,3,67.44133745,32.55866255,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,222.26,0,0
+2016,Idaho,ID,4,31.68982332,68.31017668,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,20.33,0,0
+2016,Illinois,IL,27,59.02005139,40.97994861,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,230.61,0,1
+2016,Indiana,IN,13,39.88269048,60.11730952,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,184.95,0,0
+2016,Iowa,IA,10,44.93645215,55.06354785,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,56.04,0,0
+2016,Kansas,KS,8,38.88852966,61.11147034,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,35.57,0,0
+2016,Kentucky,KY,10,34.32937098,65.67062902,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,111.7,0,0
+2016,Louisiana,LA,10,39.82832276,60.17167724,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,107.38,0,0
+2016,Maine,ME,5,51.59679113,48.40320887,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,43.13,0,0
+2016,Maryland,MD,9,64.00802004,35.9791244,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,614.15,0,0
+2016,Massachusetts,MA,16,64.65127869,35.34872131,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,870.58,0,0
+2016,Michigan,MI,20,49.88233178,50.11766822,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,175.99,0,0
+2016,Minnesota,MN,11,50.83169371,49.16830629,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,69.37,0,0
+2016,Mississippi,MS,8,40.91015268,59.08984732,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,63.69,0,0
+2016,Missouri,MO,13,40.181439,59.818561,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,88.35,0,0
+2016,Montana,MT,4,38.89033568,61.10966432,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,7.15,0,0
+2016,Nebraska,NE,6,36.45232589,63.54767411,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,24.79,0,0
+2016,Nevada,NV,3,51.29370942,48.70629058,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,26.57,0,0
+2016,New Hampshire,NH,4,50.19702844,49.80297156,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,149.66,0,0
+2016,New Jersey,NJ,16,57.28419014,42.71580986,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,1195.69,0,0
+2016,New Mexico,NM,4,54.65079493,45.34920507,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,17.23,0,0
+2016,New York,NY,45,63.4115065,36.5884935,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,415.75,1,-1
+2016,North Carolina,NC,14,48.0962542,51.9037458,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,208.44,0,0
+2016,North Dakota,ND,4,30.1907571,69.8092429,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,10.93,0,0
+2016,Ohio,OH,25,45.73231542,54.26768458,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,284.09,0,0
+2016,Oklahoma,OK,8,30.69526276,69.30473724,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,57.17,0,0
+2016,Oregon,OR,6,56.15583895,43.84416105,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,42.6,0,0
+2016,Pennsylvania,PA,32,49.62446419,50.37553581,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,285.19,0,0
+2016,Rhode Island,RI,4,58.31070409,41.68929591,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,1022.02,0,0
+2016,South Carolina,SC,8,42.53974364,57.46025636,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,164.66,0,0
+2016,South Dakota,SD,4,34.02814192,65.97185808,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,11.37,0,0
+2016,Tennessee,TN,11,36.37565695,63.62434305,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,161.23,0,0
+2016,Texas,TX,24,45.28677442,54.71322558,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,106.58,0,0
+2016,Utah,UT,4,37.61710165,62.38289835,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,37.02,0,0
+2016,Vermont,VT,3,65.18642632,34.81357368,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,67.43,0,0
+2016,Virginia,VA,12,52.82637628,47.17362372,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,212.39,0,0
+2016,Washington,WA,9,58.7869312,41.2130688,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",1,311,226,109.56,0,0
+2016,West Virginia,WV,8,27.83894775,72.16105225,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,76.02,0,0
+2016,Wisconsin,WI,12,49.59201096,50.40798904,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,106.28,0,0
+2016,Wyoming,WY,3,24.29468037,75.70531963,51.16249044,48.83750956,"Clinton, Hillary","Trump, Donald J.","Trump, Donald J.",0,311,226,6.02,0,0
+2020,Alabama,AL,11,37.08862517,62.91137483,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,99,0,0
+2020,Alaska,AK,3,44.73815128,55.26184872,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,1.29,0,0
+2020,Arizona,AZ,4,50.15683168,49.84316832,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,62.93,0,0
+2020,Arkansas,AR,8,35.78756672,64.21243328,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,57.83,0,0
+2020,California,CA,32,64.90891136,35.09108864,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,253.49,0,0
+2020,Colorado,CO,6,56.93831949,43.06168051,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,55.66,0,0
+2020,Connecticut,CT,8,60.19504909,39.80495091,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,744.26,0,0
+2020,Delaware,DE,3,59.62674416,40.37325584,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,506.37,1,0
+2020,Florida,FL,10,48.30524534,51.69475466,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,398.88,-1,0
+2020,Georgia,GA,12,50.11932966,49.88067034,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,184.95,0,0
+2020,Hawaii,HI,3,65.03266465,34.96733535,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,226.57,0,0
+2020,Idaho,ID,4,34.12285707,65.87714293,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,22.22,0,0
+2020,Illinois,IL,27,58.65904373,41.34095627,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,230.47,0,0
+2020,Indiana,IN,13,41.80495199,58.19504801,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,189.17,0,0
+2020,Iowa,IA,10,45.81673692,54.18326308,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,57.1,0,0
+2020,Kansas,KS,8,42.50657174,57.49342826,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,35.91,0,0
+2020,Kentucky,KY,10,36.7998971,63.2001029,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,113.41,0,0
+2020,Louisiana,LA,10,40.53555954,59.46444046,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,106.91,0,0
+2020,Maine,ME,5,54.67040458,45.32959542,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,44.14,0,0
+2020,Maryland,MD,9,67.02904705,32.97095295,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,631.94,0,0
+2020,Massachusetts,MA,16,67.11554954,32.88445046,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,896.9,0,0
+2020,Michigan,MI,20,51.41355934,48.58644066,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,178.24,0,0
+2020,Minnesota,MN,11,53.63951365,46.36048635,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,71.67,0,0
+2020,Mississippi,MS,8,41.61501417,58.38498583,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,63.12,0,0
+2020,Missouri,MO,13,42.16417936,57.83582064,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,89.33,0,0
+2020,Montana,MT,4,41.60281991,58.39718009,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,7.45,0,0
+2020,Nebraska,NE,6,40.21594775,59.78405225,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,25.51,0,0
+2020,Nevada,NV,3,51.22311734,48.77688266,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,28.27,0,0
+2020,New Hampshire,NH,4,53.74834772,46.25165228,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,153.59,0,0
+2020,New Jersey,NJ,16,58.07128359,41.92871641,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,1252.05,0,0
+2020,New Mexico,NM,4,55.51849015,44.48150985,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,17.45,0,0
+2020,New York,NY,45,61.71683489,38.28316511,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,427.78,0,-1
+2020,North Carolina,NC,14,49.31581747,50.68418253,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,214.28,0,0
+2020,North Dakota,ND,4,32.78259158,67.21740842,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,11.29,0,0
+2020,Ohio,OH,25,45.92330235,54.07669765,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,288.12,0,0
+2020,Oklahoma,OK,8,33.0599605,66.9400395,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,57.65,0,0
+2020,Oregon,OR,6,58.30715699,41.69284301,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,44.14,0,0
+2020,Pennsylvania,PA,32,50.58920526,49.41079474,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,290.11,0,1
+2020,Rhode Island,RI,4,60.59935988,39.40064012,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,1061.29,0,0
+2020,South Carolina,SC,8,44.07339125,55.92660875,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,169.99,0,0
+2020,South Dakota,SD,4,36.56522014,63.43477986,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,11.68,0,0
+2020,Tennessee,TN,11,38.17222963,61.82777037,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,167.66,0,0
+2020,Texas,TX,24,47.16927876,52.83072124,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,111.28,0,0
+2020,Utah,UT,4,39.30639488,60.69360512,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,39.82,0,0
+2020,Vermont,VT,3,68.29918655,31.70081345,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,69.53,0,0
+2020,Virginia,VA,12,55.154687,44.845313,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,217.98,0,0
+2020,Washington,WA,9,59.92550318,40.07449682,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,115.73,0,0
+2020,West Virginia,WV,8,30.20146769,69.79853231,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,74.47,0,0
+2020,Wisconsin,WI,12,50.31906327,49.68093673,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",1,231,306,108.51,0,0
+2020,Wyoming,WY,3,27.51956562,72.48043438,52.26985906,47.73014094,"Biden, Joseph R.","Trump, Donald J.","Biden, Joseph R.",0,231,306,5.94,0,0

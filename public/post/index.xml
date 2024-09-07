@@ -6,13 +6,13 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog Post 1</title>
-      <link>https://example.org/post/2024/09/04/blog-post-1/</link>
-      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/post/2024/09/04/blog-post-1/</guid>
+      <title>Blog Post 1: Historical Election Data</title>
+      <link>https://example.org/post/2024/09/05/blog-post-1/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/09/05/blog-post-1/</guid>
       <description># Load libraries. ## install via `install.packages(&amp;quot;name&amp;quot;)` library(ggplot2) library(maps) library(tidyverse) ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ── ## ✔ dplyr 1.1.4 ✔ readr 2.1.5 ## ✔ forcats 1.0.0 ✔ stringr 1.5.1 ## ✔ lubridate 1.9.3 ✔ tibble 3.2.1 ## ✔ purrr 1.0.2 ✔ tidyr 1.3.1 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() ## ✖ purrr::map() masks maps::map() ## ℹ Use the conflicted package (&amp;lt;http://conflicted.</description>
     </item>
   </channel>
