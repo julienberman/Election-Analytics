@@ -273,8 +273,7 @@ pred_df <- tibble(
 
 # merge vote share predictions back into the full 2024 dataset
 df_2024_final <- df_2024_merged %>% 
-  left_join(pred_df, by = "abbr") %>% 
-  print()
+  left_join(pred_df, by = "abbr")
 
 # create interactive map!
 color_scale <- list(
