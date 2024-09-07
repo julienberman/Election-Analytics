@@ -174,10 +174,12 @@ Second, many states that once voted reliably republican in the 70s and 80s have 
 
 Third, the results of the previous election in a particular state are often fairly good predictors of the current election's outcome in that state. In 2020, nine states have light coloring: Florida, Georgia, North Carolina, Arizona, Texas, Nevada, Wisconsin, Michigan, and Pennsylvania. Sure enough, seven of those nine states are the ones that many election forecasters are currently predicting will be the most hotly contested this time around in 2024 ([_The Economist_](https://www.economist.com/interactive/us-2024-election/prediction-model/president), [_The New York Times_](https://www.nytimes.com/interactive/2024/us/elections/presidential-election-swing-states.html))
 
+# Preliminary Electoral College Model
+
 Below, I attempt to implement a preliminary model that predicts the results of the 2024 election at the state level. I use the following indicators:
-* A state's partisan lean in the previous two presidential elections, measured by the difference between the two party vote share received by the Democratic candidate in the state and the two party vote share received by the Democratic candidate nationwide
-* The home states of the presidential candidate
-* A state's population density.
+- A state's partisan lean in the previous two presidential elections, measured by the difference between the two party vote share received by the Democratic candidate in the state and the two party vote share received by the Democratic candidate nationwide
+- The home states of the presidential candidate
+- A state's population density.
 Data on population density comes from the U.S. Census Bureau. 
 
 ```{r}
