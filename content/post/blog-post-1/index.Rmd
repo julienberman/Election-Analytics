@@ -6,7 +6,7 @@ slug: blog-post-1
 categories: []
 tags: []
 ---
-```{r echo=FALSE}
+```{r, echo=FALSE}
 # Load libraries.
 ## install via `install.packages("name")`
 library(ggplot2)
@@ -27,7 +27,7 @@ In this first blog post, I will analyze and visualize historical presidential el
 # Electoral College Timeline
 
 Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020. The following interactive map plots the electoral college results for each election at the state level:
-```{r echo=FALSE}
+```{r, echo=FALSE}
 # load data
 state_wide <- read_csv("data/clean_wide_state_2pv_1948_2020.csv")
 national <- read_csv("data/popvote_1948-2020.csv")
@@ -125,7 +125,7 @@ fig1
 Notice that many states have, in recent years, consistently voted Republican (e.g. Alabama, Mississippi, Oklahoma) and many have consistently voted Democrat (e.g. California, New York, Maryland). These states are also typically won by large margins. In contrast, other states have fluctuated between parties (e.g. Pennsylvania, Wisconsin, Michigan). These are the states that could reasonably be won by either the Democrat or Republican candidate. They are typically won by small vote margins --- less than three percentage points --- and are called "swing" states because they contain large numbers of swing voters who lack a predisposition to a given political party.
 
 Let's identify the swing states for each election year. In the graph below, the lighter the color, the more hotly contested a particular state was.
-```{r echo=FALSE}
+```{r, echo=FALSE}
 
 color_scale <- list(
   c(0, "red"),       # 0% Democratic vote share = Red
@@ -182,7 +182,7 @@ Below, I attempt to implement a preliminary model that predicts the results of t
 - A state's population density.
 Data on population density comes from the U.S. Census Bureau. 
 
-```{r echo=FALSE}
+```{r, echo=FALSE}
 # clean home state data
 home_state_wide <- home_state %>% 
   select(-candidate) %>% 
@@ -232,7 +232,7 @@ Of course, this is only a preliminary model. The R^2 on the in-sample data is ju
 
 The above model can be used to predict the electoral college results of the 2024 election. I have loaded in a dataframe with the values for the independent variables for the current year's data. Here is a map showing my prediction of the electoral college, which would lead to a comfortable republican victory.
 
-```{r echo=FALSE}
+```{r, echo=FALSE}
 data_2024 <- read_csv("data/data_2024.csv")
 
 # get partisan lean for 2020 and 2016
