@@ -13,7 +13,7 @@
       <link>https://example.org/post/2024/09/05/blog-post-1/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/09/05/blog-post-1/</guid>
-      <description>In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extensions 1 and 3 as well as some exploratory analysis of my own.&#xA;Electoral College Timeline Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020.</description>
+      <description>In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extension 1 as some exploratory analysis of my own.&#xA;Electoral College Timeline Below I have produced two electoral college maps for the previous presidential elections from 1948 to 2020. The following interactive map plots the electoral college results for each election at the state level:</description>
     </item>
     <item>
       <title>About Hugo XMin</title>

@@ -26,7 +26,7 @@ library(leaflet)
 library(stargazer)
 library(blogdown)
 ```
-In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extensions 1 and 3 as well as some exploratory analysis of my own.
+In this first blog post, I will analyze and visualize historical presidential election data in order to better understand trends in the electoral college and develop a naive predictive model for the 2024 election. I will complete extension 1 as some exploratory analysis of my own.
 
 # Electoral College Timeline
 
