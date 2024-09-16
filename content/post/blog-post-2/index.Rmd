@@ -295,15 +295,31 @@ bv_6 <- lm(margin_nat ~ sp500_agg, data = df_collapsed)
 bv_7 <- lm(margin_nat ~ unemp_agg, data = df_collapsed)
 
 
-stargazer(econ_model, bv_1, bv_2, bv_3, bv_4, bv_5, bv_6, bv_7,
-          type = "latex",
-          title = "OLS Regression Results for Economic Fundamentals Models",
-          dep.var.labels = c("National Vote Margin"),
-          covariate.labels = c("Jobs Growth", "PCE Growth", "RDPI Growth", "CPI Growth", "Sentiment Change", "S&P 500 Closing Price", "Unemployment")
-          )
-
+# stargazer(econ_model, bv_1, bv_2, bv_3, bv_4, bv_5, bv_6, bv_7,
+#         type = "latex",
+#          title = "OLS Regression Results for Economic Fundamentals Models",
+#          dep.var.labels = c("National Vote Margin"),
+#          covariate.labels = c("Jobs Growth", "PCE Growth", "RDPI Growth", "CPI Growth", "Sentiment Change", "S&P 500 #Closing Price", "Unemployment")
+#          )
 ```
-```{r ex_incl_grap_1, out.width = "50%", echo = FALSE, eval=TRUE}
+
+# Methodology
+
+Now, let's get into the weeds of the methodology. Much of my work this week was compiling and aggregating many different variables into a full election history that we will include in future regression analyses.
+
+First, I created a set of variables that measure incumbency. The "incumb" variable equals $1$ if the democratic candidate is an incumbent, $-1$ if the republican candidate is an incumbent, and $0$ otherwise. The "incumb_party" variable equals $1$ if the democratic party controlled the White House during the previous election cycle and $-1$ if the republican party controlled the White House. There is also an indicator that measures whether or not the candidate served in the previous administration.
+
+Second, I created a set of variables that measure "home state advantage." Home state advantage refers to the boost that candidates receive from their home states simply by virtue of having lived there. Actually, I split up home state advantage into pure home state advantage (where the candidate was born) and resident state advantage (where a candidate lived at the time of the election). Furthermore, the magnitude of the advantage is inversely proportional to the size of the state ([Beck & Rice (1983)](https://www.jstor.org/stable/2110984?seq=6)). Thus, to compute the size of the home state advantage, I first merged in data on the population of the 50 states and Washington D.C. from the United Census Bureau. (Totals for each year are calculated via linear imputation from the decennial census. I was unfortunately unable to find population data for the districts in Nebraska and Maine, though it is not an issue given that no presidential candidates have been from either of those two states.) Then, I normalized the population to a scale from $0$ to $1$ --- a process known as min-max normalization or feature scaling --- where $1$ represents the most populous state and $0$ represents the least. The variables for home state advantage and resident state advantages were then computed by multiplying these normalized population totals by an indicator that equals $1$ if the democratic candidate is from that state, $-1$ if the republican candidate is from that state, and $0$ otherwise.
+
+Third, I created a variable that measures the elasticity of a given state, which reflect how much a state's vote margin would change based on a 1 point swing in the national margin. The idea of "elasticity" comes from economics, where we are typically quite interested in the sensitivity of either demand or supply to a small change in the price of a good. For  continuous functions, elasticity can be calculated as:
+$$ \epsilon = \frac{\partial q}{\partial p} \cdot \frac{p}{q}$$
+But in the descrete case, we can calculate elasticity as:
+$$ \epsilon = \frac{\Delta m_{t,t-1}}{\Delta n_{t,t-1}}$$
+
+
+
+
+```{r ex_incl_grap_1, out.width = "90%", echo = FALSE, eval=TRUE}
 knitr::include_graphics("table1.png")
 ```
 

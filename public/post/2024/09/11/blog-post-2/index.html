@@ -58,56 +58,6 @@ Each variable in the above set serves a particular function.</li>
 <p><em>Stock market.</em> The stock market &mdash; specifically the closing value of the S&amp;P 500, the largest 500 companies listed on the New York Stock Exchange &mdash; serves as a proxy for economic optimism, particularly among wealthier voters and investors. Unlike the other economic indicators which typically reflect how voters are feeling about the economy as a whole, and therefore their views of the incumbent president, part of the stock market&rsquo;s predictive power comes from investors who are actively attempting to find trades projected to shoot sky-high in the event that one candidate or another comes to power.</p>
 <p><em>Consumer Sentiment.</em> Recently, consumer sentiment about the economy &mdash; i.e. how people think the economy is doing &mdash; is drastically different from the actual state of the economy (<a href="https://abcnews.go.com/538/vibes-americans-perception-economy-completely-changed/story?id=111211869">Radcliffe et. al. (2024)</a>). There are many explanations for this &ldquo;sentiment gap.&rdquo; Perhaps its because of the recent interest rate hikes that increase the cost of borrowing (<a href="https://www.nber.org/system/files/working_papers/w32163/w32163.pdf">Summers et. al. (2024)</a>) Perhaps it&rsquo;s because the period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s, after the oil price shock in response to Iraq&rsquo;s invasion of Kuwait. Regardless, this divergence suggests that traditional economic indicators may not entirely capture voters&rsquo; underlying  behavior, because they may have a warped understanding of the economy. I thus include the &ldquo;Index of Consumer Sentiment,&rdquo; aggregated from a University of Michigan survey.</p>
 <p><em>Unemployment.</em> Unemployment measures the percentage of the labor force that is actively seeking work but unable to find it. The unemployment rate also providing insight into labor market inefficiencies that total non-farm jobs do not capture. While job growth reflects the overall number of positions added to the economy, unemployment highlights the share of people left behind.</p>
-<pre><code>## 
-## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Mon, Sep 16, 2024 - 01:11:23
-## \begin{table}[!htbp] \centering 
-##   \caption{OLS Regression Results for Economic Fundamentals Models} 
-##   \label{} 
-## \begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
-## \\[-1.8ex]\hline 
-## \hline \\[-1.8ex] 
-##  &amp; \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
-## \cline{2-9} 
-## \\[-1.8ex] &amp; National Vote Margin &amp; \multicolumn{7}{c}{margin\_nat} \\ 
-## \\[-1.8ex] &amp; (1) &amp; (2) &amp; (3) &amp; (4) &amp; (5) &amp; (6) &amp; (7) &amp; (8)\\ 
-## \hline \\[-1.8ex] 
-##  Jobs Growth &amp; 7.037 &amp; $-$3.726 &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; (9.467) &amp; (2.746) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  PCE Growth &amp; $-$2.942 &amp;  &amp; $-$5.508$^{*}$ &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; (8.228) &amp;  &amp; (2.559) &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  RDPI Growth &amp; 3.209 &amp;  &amp;  &amp; $-$1.212 &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; (5.484) &amp;  &amp;  &amp; (2.961) &amp;  &amp;  &amp;  &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  CPI Growth &amp; $-$2.266 &amp;  &amp;  &amp;  &amp; $-$3.507 &amp;  &amp;  &amp;  \\ 
-##   &amp; (6.652) &amp;  &amp;  &amp;  &amp; (2.701) &amp;  &amp;  &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  Sentiment Change &amp; 0.466 &amp;  &amp;  &amp;  &amp;  &amp; $-$4.033 &amp;  &amp;  \\ 
-##   &amp; (4.388) &amp;  &amp;  &amp;  &amp;  &amp; (2.584) &amp;  &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  S&amp;P 500 Closing Price &amp; $-$2.491 &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 2.699 &amp;  \\ 
-##   &amp; (4.629) &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (2.804) &amp;  \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  Unemployment &amp; 3.007 &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 1.932 \\ 
-##   &amp; (9.202) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (2.780) \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-##  Constant &amp; 5.030$^{*}$ &amp; $-$0.805 &amp; $-$0.264 &amp; $-$0.264 &amp; 0.021 &amp; $-$0.342 &amp; $-$0.665 &amp; $-$0.481 \\ 
-##   &amp; (2.414) &amp; (2.816) &amp; (2.557) &amp; (2.959) &amp; (2.811) &amp; (2.734) &amp; (2.907) &amp; (2.941) \\ 
-##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
-## \hline \\[-1.8ex] 
-## Observations &amp; 15 &amp; 15 &amp; 15 &amp; 15 &amp; 15 &amp; 15 &amp; 15 &amp; 15 \\ 
-## R$^{2}$ &amp; 0.635 &amp; 0.124 &amp; 0.263 &amp; 0.013 &amp; 0.115 &amp; 0.158 &amp; 0.067 &amp; 0.036 \\ 
-## Adjusted R$^{2}$ &amp; 0.270 &amp; 0.057 &amp; 0.206 &amp; $-$0.063 &amp; 0.047 &amp; 0.093 &amp; $-$0.005 &amp; $-$0.038 \\ 
-## Residual Std. Error &amp; 8.539 (df = 7) &amp; 10.796 (df = 13) &amp; 9.904 (df = 13) &amp; 11.461 (df = 13) &amp; 10.852 (df = 13) &amp; 10.585 (df = 13) &amp; 11.144 (df = 13) &amp; 11.326 (df = 13) \\ 
-## F Statistic &amp; 1.741 (df = 7; 7) &amp; 1.841 (df = 1; 13) &amp; 4.633$^{*}$ (df = 1; 13) &amp; 0.168 (df = 1; 13) &amp; 1.687 (df = 1; 13) &amp; 2.437 (df = 1; 13) &amp; 0.927 (df = 1; 13) &amp; 0.483 (df = 1; 13) \\ 
-## \hline 
-## \hline \\[-1.8ex] 
-## \textit{Note:}  &amp; \multicolumn{8}{r}{$^{*}$p$&lt;$0.1; $^{**}$p$&lt;$0.05; $^{***}$p$&lt;$0.01} \\ 
-## \end{tabular} 
-## \end{table}
-</code></pre>
 <img src="table1.png" width="50%" />
 <pre><code>## [1] 236.8583
 </code></pre>

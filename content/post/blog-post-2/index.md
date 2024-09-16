@@ -47,57 +47,7 @@ _Consumer Sentiment._ Recently, consumer sentiment about the economy --- i.e. ho
 _Unemployment._ Unemployment measures the percentage of the labor force that is actively seeking work but unable to find it. The unemployment rate also providing insight into labor market inefficiencies that total non-farm jobs do not capture. While job growth reflects the overall number of positions added to the economy, unemployment highlights the share of people left behind.
 
 
-```
-## 
-## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Mon, Sep 16, 2024 - 01:11:23
-## \begin{table}[!htbp] \centering 
-##   \caption{OLS Regression Results for Economic Fundamentals Models} 
-##   \label{} 
-## \begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
-## \\[-1.8ex]\hline 
-## \hline \\[-1.8ex] 
-##  & \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
-## \cline{2-9} 
-## \\[-1.8ex] & National Vote Margin & \multicolumn{7}{c}{margin\_nat} \\ 
-## \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
-## \hline \\[-1.8ex] 
-##  Jobs Growth & 7.037 & $-$3.726 &  &  &  &  &  &  \\ 
-##   & (9.467) & (2.746) &  &  &  &  &  &  \\ 
-##   & & & & & & & & \\ 
-##  PCE Growth & $-$2.942 &  & $-$5.508$^{*}$ &  &  &  &  &  \\ 
-##   & (8.228) &  & (2.559) &  &  &  &  &  \\ 
-##   & & & & & & & & \\ 
-##  RDPI Growth & 3.209 &  &  & $-$1.212 &  &  &  &  \\ 
-##   & (5.484) &  &  & (2.961) &  &  &  &  \\ 
-##   & & & & & & & & \\ 
-##  CPI Growth & $-$2.266 &  &  &  & $-$3.507 &  &  &  \\ 
-##   & (6.652) &  &  &  & (2.701) &  &  &  \\ 
-##   & & & & & & & & \\ 
-##  Sentiment Change & 0.466 &  &  &  &  & $-$4.033 &  &  \\ 
-##   & (4.388) &  &  &  &  & (2.584) &  &  \\ 
-##   & & & & & & & & \\ 
-##  S&P 500 Closing Price & $-$2.491 &  &  &  &  &  & 2.699 &  \\ 
-##   & (4.629) &  &  &  &  &  & (2.804) &  \\ 
-##   & & & & & & & & \\ 
-##  Unemployment & 3.007 &  &  &  &  &  &  & 1.932 \\ 
-##   & (9.202) &  &  &  &  &  &  & (2.780) \\ 
-##   & & & & & & & & \\ 
-##  Constant & 5.030$^{*}$ & $-$0.805 & $-$0.264 & $-$0.264 & 0.021 & $-$0.342 & $-$0.665 & $-$0.481 \\ 
-##   & (2.414) & (2.816) & (2.557) & (2.959) & (2.811) & (2.734) & (2.907) & (2.941) \\ 
-##   & & & & & & & & \\ 
-## \hline \\[-1.8ex] 
-## Observations & 15 & 15 & 15 & 15 & 15 & 15 & 15 & 15 \\ 
-## R$^{2}$ & 0.635 & 0.124 & 0.263 & 0.013 & 0.115 & 0.158 & 0.067 & 0.036 \\ 
-## Adjusted R$^{2}$ & 0.270 & 0.057 & 0.206 & $-$0.063 & 0.047 & 0.093 & $-$0.005 & $-$0.038 \\ 
-## Residual Std. Error & 8.539 (df = 7) & 10.796 (df = 13) & 9.904 (df = 13) & 11.461 (df = 13) & 10.852 (df = 13) & 10.585 (df = 13) & 11.144 (df = 13) & 11.326 (df = 13) \\ 
-## F Statistic & 1.741 (df = 7; 7) & 1.841 (df = 1; 13) & 4.633$^{*}$ (df = 1; 13) & 0.168 (df = 1; 13) & 1.687 (df = 1; 13) & 2.437 (df = 1; 13) & 0.927 (df = 1; 13) & 0.483 (df = 1; 13) \\ 
-## \hline 
-## \hline \\[-1.8ex] 
-## \textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-## \end{tabular} 
-## \end{table}
-```
+
 <img src="table1.png" width="50%" />
 
 
