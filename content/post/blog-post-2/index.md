@@ -35,7 +35,7 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ```
 ## 
 ## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Sun, Sep 15, 2024 - 23:12:03
+## % Date and time: Sun, Sep 15, 2024 - 23:14:16
 ## \begin{table}[!htbp] \centering 
 ##   \caption{OLS Regression Results for Economic Fundamentals Models} 
 ##   \label{} 
@@ -86,5 +86,56 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ## \end{tabular} 
 ## \end{table}
 ```
+\begin{table}[!htbp] \centering 
+  \caption{OLS Regression Results for Economic Fundamentals Models} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-9} 
+\\[-1.8ex] & \multicolumn{8}{c}{National Vote Margin} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
+\hline \\[-1.8ex] 
+ Jobs Growth & $-$18.450$^{***}$ & $-$5.441$^{***}$ &  &  &  &  &  &  \\ 
+  & (0.728) & (0.249) &  &  &  &  &  &  \\ 
+  & & & & & & & & \\ 
+ PCE Change & 9.577$^{***}$ &  & $-$5.073$^{***}$ &  &  &  &  &  \\ 
+  & (0.672) &  & (0.287) &  &  &  &  &  \\ 
+  & & & & & & & & \\ 
+ RDPI Change & 0.315 &  &  & 0.585 &  &  &  &  \\ 
+  & (0.410) &  &  & (0.360) &  &  &  &  \\ 
+  & & & & & & & & \\ 
+ Incumbency & $-$11.078$^{***}$ &  &  &  & $-$4.135$^{***}$ &  &  &  \\ 
+  & (0.527) &  &  &  & (0.279) &  &  &  \\ 
+  & & & & & & & & \\ 
+ ics\_agg & $-$1.835$^{***}$ &  &  &  &  & $-$2.563$^{***}$ &  &  \\ 
+  & (0.349) &  &  &  &  & (0.328) &  &  \\ 
+  & & & & & & & & \\ 
+ sp500\_agg & $-$3.247$^{***}$ &  &  &  &  &  & 3.740$^{***}$ &  \\ 
+  & (0.361) &  &  &  &  &  & (0.275) &  \\ 
+  & & & & & & & & \\ 
+ unemp\_agg & $-$5.981$^{***}$ &  &  &  &  &  &  & 3.912$^{***}$ \\ 
+  & (0.689) &  &  &  &  &  &  & (0.279) \\ 
+  & & & & & & & & \\ 
+ incumb & 12.518$^{***}$ & 7.488$^{***}$ & 5.112$^{***}$ & 6.043$^{***}$ & 7.670$^{***}$ & 5.117$^{***}$ & 6.676$^{***}$ & 7.425$^{***}$ \\ 
+  & (0.344) & (0.325) & (0.356) & (0.446) & (0.364) & (0.418) & (0.359) & (0.365) \\ 
+  & & & & & & & & \\ 
+ Constant & 0.744$^{***}$ & $-$0.351 & 0.417 & 0.541 & $-$0.321 & $-$0.196 & $-$0.484$^{*}$ & $-$0.361 \\ 
+  & (0.181) & (0.251) & (0.289) & (0.339) & (0.277) & (0.305) & (0.281) & (0.279) \\ 
+  & & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 840 & 1,001 & 840 & 840 & 1,001 & 948 & 1,001 & 1,001 \\ 
+R$^{2}$ & 0.804 & 0.467 & 0.408 & 0.190 & 0.354 & 0.276 & 0.334 & 0.341 \\ 
+Adjusted R$^{2}$ & 0.803 & 0.466 & 0.407 & 0.188 & 0.352 & 0.275 & 0.333 & 0.339 \\ 
+Residual Std. Error & 4.775 (df = 831) & 7.766 (df = 998) & 8.276 (df = 837) & 9.680 (df = 837) & 8.550 (df = 998) & 9.111 (df = 945) & 8.677 (df = 998) & 8.635 (df = 998) \\ 
+F Statistic & 427.215$^{***}$ (df = 8; 831) & 436.596$^{***}$ (df = 2; 998) & 288.618$^{***}$ (df = 2; 837) & 98.325$^{***}$ (df = 2; 837) & 272.942$^{***}$ (df = 2; 998) & 180.551$^{***}$ (df = 2; 945) & 250.552$^{***}$ (df = 2; 998) & 257.808$^{***}$ (df = 2; 998) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; `\(^{**}\)`p$<$0.05; `\(^{***}\)`p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
 
 

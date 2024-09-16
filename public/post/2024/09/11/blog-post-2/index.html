@@ -53,7 +53,7 @@ Each variable in the above set serves a particular function.</li>
 <p><em>Inflation.</em> The period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s after the oil price shock in response to Iraq&rsquo;s invasion of Kuwait.</p>
 <pre><code>## 
 ## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Sun, Sep 15, 2024 - 23:12:03
+## % Date and time: Sun, Sep 15, 2024 - 23:14:16
 ## \begin{table}[!htbp] \centering 
 ##   \caption{OLS Regression Results for Economic Fundamentals Models} 
 ##   \label{} 
@@ -104,6 +104,55 @@ Each variable in the above set serves a particular function.</li>
 ## \end{tabular} 
 ## \end{table}
 </code></pre>
+<p>\begin{table}[!htbp] \centering
+\caption{OLS Regression Results for Economic Fundamentals Models}
+\label{}
+\begin{tabular}{@{\extracolsep{5pt}}lcccccccc}
+\[-1.8ex]\hline
+\hline \[-1.8ex]
+&amp; \multicolumn{8}{c}{\textit{Dependent variable:}} \
+\cline{2-9}
+\[-1.8ex] &amp; \multicolumn{8}{c}{National Vote Margin} \
+\[-1.8ex] &amp; (1) &amp; (2) &amp; (3) &amp; (4) &amp; (5) &amp; (6) &amp; (7) &amp; (8)\
+\hline \[-1.8ex]
+Jobs Growth &amp; $-$18.450$^{<em><strong>}$ &amp; $-$5.441$^{</strong></em>}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \
+&amp; (0.728) &amp; (0.249) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+PCE Change &amp; 9.577$^{<em><strong>}$ &amp;  &amp; $-$5.073$^{</strong></em>}$ &amp;  &amp;  &amp;  &amp;  &amp;  \
+&amp; (0.672) &amp;  &amp; (0.287) &amp;  &amp;  &amp;  &amp;  &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+RDPI Change &amp; 0.315 &amp;  &amp;  &amp; 0.585 &amp;  &amp;  &amp;  &amp;  \
+&amp; (0.410) &amp;  &amp;  &amp; (0.360) &amp;  &amp;  &amp;  &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+Incumbency &amp; $-$11.078$^{<em><strong>}$ &amp;  &amp;  &amp;  &amp; $-$4.135$^{</strong></em>}$ &amp;  &amp;  &amp;  \
+&amp; (0.527) &amp;  &amp;  &amp;  &amp; (0.279) &amp;  &amp;  &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+ics_agg &amp; $-$1.835$^{<em><strong>}$ &amp;  &amp;  &amp;  &amp;  &amp; $-$2.563$^{</strong></em>}$ &amp;  &amp;  \
+&amp; (0.349) &amp;  &amp;  &amp;  &amp;  &amp; (0.328) &amp;  &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+sp500_agg &amp; $-$3.247$^{<em><strong>}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 3.740$^{</strong></em>}$ &amp;  \
+&amp; (0.361) &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (0.275) &amp;  \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+unemp_agg &amp; $-$5.981$^{<em><strong>}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 3.912$^{</strong></em>}$ \
+&amp; (0.689) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (0.279) \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+incumb &amp; 12.518$^{<em><strong>}$ &amp; 7.488$^{</strong></em>}$ &amp; 5.112$^{<em><strong>}$ &amp; 6.043$^{</strong></em>}$ &amp; 7.670$^{<em><strong>}$ &amp; 5.117$^{</strong></em>}$ &amp; 6.676$^{<em><strong>}$ &amp; 7.425$^{</strong></em>}$ \
+&amp; (0.344) &amp; (0.325) &amp; (0.356) &amp; (0.446) &amp; (0.364) &amp; (0.418) &amp; (0.359) &amp; (0.365) \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+Constant &amp; 0.744$^{<strong><em>}$ &amp; $-$0.351 &amp; 0.417 &amp; 0.541 &amp; $-$0.321 &amp; $-$0.196 &amp; $-$0.484$^{</em>}$ &amp; $-$0.361 \
+&amp; (0.181) &amp; (0.251) &amp; (0.289) &amp; (0.339) &amp; (0.277) &amp; (0.305) &amp; (0.281) &amp; (0.279) \
+&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \
+\hline \[-1.8ex]
+Observations &amp; 840 &amp; 1,001 &amp; 840 &amp; 840 &amp; 1,001 &amp; 948 &amp; 1,001 &amp; 1,001 \
+R$^{2}$ &amp; 0.804 &amp; 0.467 &amp; 0.408 &amp; 0.190 &amp; 0.354 &amp; 0.276 &amp; 0.334 &amp; 0.341 \
+Adjusted R$^{2}$ &amp; 0.803 &amp; 0.466 &amp; 0.407 &amp; 0.188 &amp; 0.352 &amp; 0.275 &amp; 0.333 &amp; 0.339 \
+Residual Std. Error &amp; 4.775 (df = 831) &amp; 7.766 (df = 998) &amp; 8.276 (df = 837) &amp; 9.680 (df = 837) &amp; 8.550 (df = 998) &amp; 9.111 (df = 945) &amp; 8.677 (df = 998) &amp; 8.635 (df = 998) \
+F Statistic &amp; 427.215$^{</strong><em>}$ (df = 8; 831) &amp; 436.596$^{</em><strong>}$ (df = 2; 998) &amp; 288.618$^{</strong><em>}$ (df = 2; 837) &amp; 98.325$^{</em><strong>}$ (df = 2; 837) &amp; 272.942$^{</strong><em>}$ (df = 2; 998) &amp; 180.551$^{</em><strong>}$ (df = 2; 945) &amp; 250.552$^{</strong><em>}$ (df = 2; 998) &amp; 257.808$^{</em>*<em>}$ (df = 2; 998) \
+\hline
+\hline \[-1.8ex]
+\textit{Note:}  &amp; \multicolumn{8}{r}{$^{</em>}$p$&lt;$0.1; <code>\(^{**}\)</code>p$&lt;$0.05; <code>\(^{***}\)</code>p$&lt;$0.01} \
+\end{tabular}
+\end{table}</p>
 
 </main>
 
