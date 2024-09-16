@@ -7,7 +7,10 @@ categories: []
 tags: []
 ---
 
-`\(SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}\)`
+
+
+
+# Overview
 
 This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
 
@@ -26,16 +29,28 @@ Finally, and most importantly, I construct from scratch the "fundamentals" forec
 * Inflation, as measured by the annual change in the Consumer Price Index
 * The stock market, based on the closing value of the S&P 500 
 * The consumer sentiment index calculated by the University of Michigan
-Each variable in the above set serves a particular function. 
+Each variable in the above set serves a particular function.
+* The unemployment rate
 
+_Jobs._ Total non-farm jobs typically reflect overall employment health, with more jobs typically signaling economic growth, which can benefit the incumbent.
 
-_Inflation._ The period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s after the oil price shock in response to Iraq's invasion of Kuwait.
+_Personal Consumption Expenditure._ Expenditure data helps measures consumer spending, a key indication of economic vitality. If the economy is strong, consumers spend more on goods and services that they might otherwise forego. This metric is a key indicator for aggregate demand.
+
+_Real Disposable Personal Income._ Like personal consumption expenditure, real disposable personal income also measures the financial health of the consumer. However, rather than only measuring the total amount of money spent, RDPI measures the total amount of money earned, some of which the consumer will be able to save. 
+
+_Inflation._ Unlike job growth, which primarily affects those not already in a job, inflation affects everyone, because it affects the cost of living. Higher inflation reduces voters' purchasing power. In particular, due to a combination of the government's aggressive fiscal policy response to the COVID pandemic and a series of exogenous supply shocks, inflation skyrocketed during 2021 and 2022. Now, when people are surveyed about the economy, their primary concern is rising prices, inflation, and high cost of living ([Pew Research Center (2024)](https://www.pewresearch.org/politics/2024/05/23/publics-positive-economic-ratings-slip-inflation-still-widely-viewed-as-major-problem/), [Stantcheva (2024)](https://www.nber.org/papers/w32300)).
+
+_Stock market._ The stock market --- specifically the closing value of the S&P 500, the largest 500 companies listed on the New York Stock Exchange --- serves as a proxy for economic optimism, particularly among wealthier voters and investors. Unlike the other economic indicators which typically reflect how voters are feeling about the economy as a whole, and therefore their views of the incumbent president, part of the stock market's predictive power comes from investors who are actively attempting to find trades projected to shoot sky-high in the event that one candidate or another comes to power. 
+
+_Consumer Sentiment._ Recently, consumer sentiment about the economy --- i.e. how people think the economy is doing --- is drastically different from the actual state of the economy ([Radcliffe et. al. (2024)](https://abcnews.go.com/538/vibes-americans-perception-economy-completely-changed/story?id=111211869)). There are many explanations for this "sentiment gap." Perhaps its because of the recent interest rate hikes that increase the cost of borrowing ([Summers et. al. (2024)](https://www.nber.org/system/files/working_papers/w32163/w32163.pdf)) Perhaps it's because the period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s, after the oil price shock in response to Iraq's invasion of Kuwait. Regardless, this divergence suggests that traditional economic indicators may not entirely capture voters' underlying  behavior, because they may have a warped understanding of the economy. I thus include the "Index of Consumer Sentiment," aggregated from a University of Michigan survey.
+
+_Unemployment._ Unemployment measures the percentage of the labor force that is actively seeking work but unable to find it. The unemployment rate also providing insight into labor market inefficiencies that total non-farm jobs do not capture. While job growth reflects the overall number of positions added to the economy, unemployment highlights the share of people left behind.
 
 
 ```
 ## 
 ## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Sun, Sep 15, 2024 - 23:14:16
+## % Date and time: Mon, Sep 16, 2024 - 01:11:23
 ## \begin{table}[!htbp] \centering 
 ##   \caption{OLS Regression Results for Economic Fundamentals Models} 
 ##   \label{} 
@@ -44,98 +59,62 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ## \hline \\[-1.8ex] 
 ##  & \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
 ## \cline{2-9} 
-## \\[-1.8ex] & \multicolumn{8}{c}{National Vote Margin} \\ 
+## \\[-1.8ex] & National Vote Margin & \multicolumn{7}{c}{margin\_nat} \\ 
 ## \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
 ## \hline \\[-1.8ex] 
-##  Jobs Growth & $-$18.450$^{***}$ & $-$5.441$^{***}$ &  &  &  &  &  &  \\ 
-##   & (0.728) & (0.249) &  &  &  &  &  &  \\ 
+##  Jobs Growth & 7.037 & $-$3.726 &  &  &  &  &  &  \\ 
+##   & (9.467) & (2.746) &  &  &  &  &  &  \\ 
 ##   & & & & & & & & \\ 
-##  PCE Change & 9.577$^{***}$ &  & $-$5.073$^{***}$ &  &  &  &  &  \\ 
-##   & (0.672) &  & (0.287) &  &  &  &  &  \\ 
+##  PCE Growth & $-$2.942 &  & $-$5.508$^{*}$ &  &  &  &  &  \\ 
+##   & (8.228) &  & (2.559) &  &  &  &  &  \\ 
 ##   & & & & & & & & \\ 
-##  RDPI Change & 0.315 &  &  & 0.585 &  &  &  &  \\ 
-##   & (0.410) &  &  & (0.360) &  &  &  &  \\ 
+##  RDPI Growth & 3.209 &  &  & $-$1.212 &  &  &  &  \\ 
+##   & (5.484) &  &  & (2.961) &  &  &  &  \\ 
 ##   & & & & & & & & \\ 
-##  Incumbency & $-$11.078$^{***}$ &  &  &  & $-$4.135$^{***}$ &  &  &  \\ 
-##   & (0.527) &  &  &  & (0.279) &  &  &  \\ 
+##  CPI Growth & $-$2.266 &  &  &  & $-$3.507 &  &  &  \\ 
+##   & (6.652) &  &  &  & (2.701) &  &  &  \\ 
 ##   & & & & & & & & \\ 
-##  ics\_agg & $-$1.835$^{***}$ &  &  &  &  & $-$2.563$^{***}$ &  &  \\ 
-##   & (0.349) &  &  &  &  & (0.328) &  &  \\ 
+##  Sentiment Change & 0.466 &  &  &  &  & $-$4.033 &  &  \\ 
+##   & (4.388) &  &  &  &  & (2.584) &  &  \\ 
 ##   & & & & & & & & \\ 
-##  sp500\_agg & $-$3.247$^{***}$ &  &  &  &  &  & 3.740$^{***}$ &  \\ 
-##   & (0.361) &  &  &  &  &  & (0.275) &  \\ 
+##  S&P 500 Closing Price & $-$2.491 &  &  &  &  &  & 2.699 &  \\ 
+##   & (4.629) &  &  &  &  &  & (2.804) &  \\ 
 ##   & & & & & & & & \\ 
-##  unemp\_agg & $-$5.981$^{***}$ &  &  &  &  &  &  & 3.912$^{***}$ \\ 
-##   & (0.689) &  &  &  &  &  &  & (0.279) \\ 
+##  Unemployment & 3.007 &  &  &  &  &  &  & 1.932 \\ 
+##   & (9.202) &  &  &  &  &  &  & (2.780) \\ 
 ##   & & & & & & & & \\ 
-##  incumb & 12.518$^{***}$ & 7.488$^{***}$ & 5.112$^{***}$ & 6.043$^{***}$ & 7.670$^{***}$ & 5.117$^{***}$ & 6.676$^{***}$ & 7.425$^{***}$ \\ 
-##   & (0.344) & (0.325) & (0.356) & (0.446) & (0.364) & (0.418) & (0.359) & (0.365) \\ 
-##   & & & & & & & & \\ 
-##  Constant & 0.744$^{***}$ & $-$0.351 & 0.417 & 0.541 & $-$0.321 & $-$0.196 & $-$0.484$^{*}$ & $-$0.361 \\ 
-##   & (0.181) & (0.251) & (0.289) & (0.339) & (0.277) & (0.305) & (0.281) & (0.279) \\ 
+##  Constant & 5.030$^{*}$ & $-$0.805 & $-$0.264 & $-$0.264 & 0.021 & $-$0.342 & $-$0.665 & $-$0.481 \\ 
+##   & (2.414) & (2.816) & (2.557) & (2.959) & (2.811) & (2.734) & (2.907) & (2.941) \\ 
 ##   & & & & & & & & \\ 
 ## \hline \\[-1.8ex] 
-## Observations & 840 & 1,001 & 840 & 840 & 1,001 & 948 & 1,001 & 1,001 \\ 
-## R$^{2}$ & 0.804 & 0.467 & 0.408 & 0.190 & 0.354 & 0.276 & 0.334 & 0.341 \\ 
-## Adjusted R$^{2}$ & 0.803 & 0.466 & 0.407 & 0.188 & 0.352 & 0.275 & 0.333 & 0.339 \\ 
-## Residual Std. Error & 4.775 (df = 831) & 7.766 (df = 998) & 8.276 (df = 837) & 9.680 (df = 837) & 8.550 (df = 998) & 9.111 (df = 945) & 8.677 (df = 998) & 8.635 (df = 998) \\ 
-## F Statistic & 427.215$^{***}$ (df = 8; 831) & 436.596$^{***}$ (df = 2; 998) & 288.618$^{***}$ (df = 2; 837) & 98.325$^{***}$ (df = 2; 837) & 272.942$^{***}$ (df = 2; 998) & 180.551$^{***}$ (df = 2; 945) & 250.552$^{***}$ (df = 2; 998) & 257.808$^{***}$ (df = 2; 998) \\ 
+## Observations & 15 & 15 & 15 & 15 & 15 & 15 & 15 & 15 \\ 
+## R$^{2}$ & 0.635 & 0.124 & 0.263 & 0.013 & 0.115 & 0.158 & 0.067 & 0.036 \\ 
+## Adjusted R$^{2}$ & 0.270 & 0.057 & 0.206 & $-$0.063 & 0.047 & 0.093 & $-$0.005 & $-$0.038 \\ 
+## Residual Std. Error & 8.539 (df = 7) & 10.796 (df = 13) & 9.904 (df = 13) & 11.461 (df = 13) & 10.852 (df = 13) & 10.585 (df = 13) & 11.144 (df = 13) & 11.326 (df = 13) \\ 
+## F Statistic & 1.741 (df = 7; 7) & 1.841 (df = 1; 13) & 4.633$^{*}$ (df = 1; 13) & 0.168 (df = 1; 13) & 1.687 (df = 1; 13) & 2.437 (df = 1; 13) & 0.927 (df = 1; 13) & 0.483 (df = 1; 13) \\ 
 ## \hline 
 ## \hline \\[-1.8ex] 
 ## \textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 ## \end{tabular} 
 ## \end{table}
 ```
-\begin{table}[!htbp] \centering 
-  \caption{OLS Regression Results for Economic Fundamentals Models} 
-  \label{} 
-\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
-\cline{2-9} 
-\\[-1.8ex] & \multicolumn{8}{c}{National Vote Margin} \\ 
-\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
-\hline \\[-1.8ex] 
- Jobs Growth & $-$18.450$^{***}$ & $-$5.441$^{***}$ &  &  &  &  &  &  \\ 
-  & (0.728) & (0.249) &  &  &  &  &  &  \\ 
-  & & & & & & & & \\ 
- PCE Change & 9.577$^{***}$ &  & $-$5.073$^{***}$ &  &  &  &  &  \\ 
-  & (0.672) &  & (0.287) &  &  &  &  &  \\ 
-  & & & & & & & & \\ 
- RDPI Change & 0.315 &  &  & 0.585 &  &  &  &  \\ 
-  & (0.410) &  &  & (0.360) &  &  &  &  \\ 
-  & & & & & & & & \\ 
- Incumbency & $-$11.078$^{***}$ &  &  &  & $-$4.135$^{***}$ &  &  &  \\ 
-  & (0.527) &  &  &  & (0.279) &  &  &  \\ 
-  & & & & & & & & \\ 
- ics\_agg & $-$1.835$^{***}$ &  &  &  &  & $-$2.563$^{***}$ &  &  \\ 
-  & (0.349) &  &  &  &  & (0.328) &  &  \\ 
-  & & & & & & & & \\ 
- sp500\_agg & $-$3.247$^{***}$ &  &  &  &  &  & 3.740$^{***}$ &  \\ 
-  & (0.361) &  &  &  &  &  & (0.275) &  \\ 
-  & & & & & & & & \\ 
- unemp\_agg & $-$5.981$^{***}$ &  &  &  &  &  &  & 3.912$^{***}$ \\ 
-  & (0.689) &  &  &  &  &  &  & (0.279) \\ 
-  & & & & & & & & \\ 
- incumb & 12.518$^{***}$ & 7.488$^{***}$ & 5.112$^{***}$ & 6.043$^{***}$ & 7.670$^{***}$ & 5.117$^{***}$ & 6.676$^{***}$ & 7.425$^{***}$ \\ 
-  & (0.344) & (0.325) & (0.356) & (0.446) & (0.364) & (0.418) & (0.359) & (0.365) \\ 
-  & & & & & & & & \\ 
- Constant & 0.744$^{***}$ & $-$0.351 & 0.417 & 0.541 & $-$0.321 & $-$0.196 & $-$0.484$^{*}$ & $-$0.361 \\ 
-  & (0.181) & (0.251) & (0.289) & (0.339) & (0.277) & (0.305) & (0.281) & (0.279) \\ 
-  & & & & & & & & \\ 
-\hline \\[-1.8ex] 
-Observations & 840 & 1,001 & 840 & 840 & 1,001 & 948 & 1,001 & 1,001 \\ 
-R$^{2}$ & 0.804 & 0.467 & 0.408 & 0.190 & 0.354 & 0.276 & 0.334 & 0.341 \\ 
-Adjusted R$^{2}$ & 0.803 & 0.466 & 0.407 & 0.188 & 0.352 & 0.275 & 0.333 & 0.339 \\ 
-Residual Std. Error & 4.775 (df = 831) & 7.766 (df = 998) & 8.276 (df = 837) & 9.680 (df = 837) & 8.550 (df = 998) & 9.111 (df = 945) & 8.677 (df = 998) & 8.635 (df = 998) \\ 
-F Statistic & 427.215$^{***}$ (df = 8; 831) & 436.596$^{***}$ (df = 2; 998) & 288.618$^{***}$ (df = 2; 837) & 98.325$^{***}$ (df = 2; 837) & 272.942$^{***}$ (df = 2; 998) & 180.551$^{***}$ (df = 2; 945) & 250.552$^{***}$ (df = 2; 998) & 257.808$^{***}$ (df = 2; 998) \\ 
-\hline 
-\hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; `\(^{**}\)`p$<$0.05; `\(^{***}\)`p$<$0.01} \\ 
-\end{tabular} 
-\end{table} 
+<img src="table1.png" width="50%" />
 
 
+
+
+```
+## [1] 236.8583
+```
+
+```
+## [1] 204.2256
+```
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+
+```
+## integer(0)
+```
 
 
