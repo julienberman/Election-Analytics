@@ -7,6 +7,8 @@ categories: []
 tags: []
 ---
 
+[SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}]
+
 This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
 
 Last week's model had a number of limitations. First, the outcome variable I was predicting --- two party vote share in each state --- does not actually determine who wins the state electors. Unfortunately, as much as I wish the likes of Jill Stein, Ralph Nader, and Cornell West didn't clutter up the ballot, the truth is that these third-party candidates, while rarely garnering more than a small fraction of the vote in any particular state, can have huge impacts on the overall state-wide election result. Consequently, this week, I plan to predict not two party vote _share_, but two party vote _margin_, a metric that a third-party candidate cannot distort.
@@ -33,7 +35,7 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ```
 ## 
 ## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Sun, Sep 15, 2024 - 23:02:42
+## % Date and time: Sun, Sep 15, 2024 - 23:10:20
 ## \begin{table}[!htbp] \centering 
 ##   \caption{OLS Regression Results for Economic Fundamentals Models} 
 ##   \label{} 
@@ -84,3 +86,5 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ## \end{tabular} 
 ## \end{table}
 ```
+
+
