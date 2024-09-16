@@ -66,7 +66,7 @@ The final interesting methodological choice involves the method of aggregating a
 
 The aggregation process proceeded in two steps. To start, I actually disaggregated the indicator for the S&P 500 closing price. Unfortunately, I wasn't able to find a monthly time series for this (could it potentially be in our future @Matthew?), so I assumed that the closing price for each of the three months of a given quarter was simply equal to that quarter's average closing price. Then, I wrote three separate aggregation functions. The first function, which I coin "rate aggregation," measures the percent change of a given economic indicator between period `\(t_1\)` and period `\(t_2\)`, measured in the number of months in the election cycle before the election, with `\(-47 \leq t_1, t_2 \leq 0\)` as parameters that must be manually manipulated during model training. The second function does the same thing, but takes the average value of the indicator in that time period. The third function calculates the percent change of the indicator, then subtracts off the average percent change of the indicator for all periods of length `\(t_2 - t_1 + 1\)` in that election cycle. In other words, `\(5\%\)` job growth in the period before the election seems great, but it might be terrible compared to the `\(10\%\)` job growth throughout the two years prior.
 
-Once I aggregated all the economic indicators, I then standardized them, roughly matching moments (means and variances).
+Once I aggregated all the economic indicators, I then standardized them, roughly matching moments (means and variances) so that they have roughly equal influence on the outcome variable.
 
 Finally, we are ready for the regressions. Remember, for the electoral college predictions, I run three regressions in sequence. The first regression predicts the current year's elasticity from the previous years:
 $$
@@ -83,7 +83,7 @@ $$
 \mathrm{margin} \cdot \mathrm{incumb} = \beta_0 + \beta_1\mathrm{pl} + \beta_2 \mathrm{jobs} + \beta_3 \mathrm{pce} + \beta_4\mathrm{rdpi} + \beta_5\mathrm{cpi} + \beta_6\mathrm{ics} + \beta_7\mathrm{sp500} + \beta_8\mathrm{unemp} + \mu + \gamma + \varepsilon
 $$
 
-Unfortunately, I did not have time to implement the full electoral college prediction this week, which means I was not able to optimize the model above. As a result, I settled for predicting the national vote margin with economic fundamentals alone and no additional term for the partisan lean of a state:
+Unfortunately, I did not have time to implement the full electoral college prediction this week, which means I was not able to optimize the model above. I have not yet figured out the optimal aggregation period, the optimal aggregation method, or even the optimal combination of indicators to use. That will be left for a future week. As a result, I settled for predicting the national vote margin with economic fundamentals alone and no additional term for the partisan lean of a state:
 
 $$
 \mathrm{margin_{nat}} \cdot \mathrm{incumb} = \beta_0 + \beta_1 \mathrm{jobs} + \beta_2 \mathrm{pce} + \beta_3\mathrm{rdpi} + \beta_4\mathrm{cpi} + \beta_5\mathrm{ics} + \beta_6\mathrm{sp500} + \beta_7\mathrm{unemp} + \mu + \gamma + \varepsilon
@@ -92,19 +92,20 @@ There are a few important things to note about the above regressions specificati
 
 Second, notice that there are two terms at the end of the regression before the error term. These terms represent state and year fixed effects respectively. These variables help to control for unobserved heterogeneity, ensuring that certain inherent characteristics of states or specific election years --- political culture, demographic composition, and so on --- that might affect the outcome are accounted for. Functionally, these fixed effects operate by creating dummy variables for every state and every year.
 
-
+Now, let's take a look at the regression output. Recall that the dependent variable is the national vote margin times the incumbent indicator.
 <img src="table1.png" width="90%" />
+Notice that almost none of the coefficients are statistically significant. Moreover, the standard errors for each estimate are quite large, which suggests that the indicators that I have chosen --- or perhaps the specific aggregation period that I chose --- do not have much explanatory power for vote margin. This is consistent with Nate Silver's observation that economic fundamentals are an incredibly [noisy predictor of presidential success](https://fivethirtyeight.com/features/how-fivethirtyeights-2020-presidential-forecast-works-and-whats-different-because-of-covid-19/), and may only be useful when combined with other variables that provide a more precise picture of the race.
 
+We can further test this preliminary model by running "leave-one-out" cross validation. To test the out-of-sample accuracy, I exclude a single year from the data set and train the model on all other years. Then, I use the omitted year's input variables and the trained coefficients to calculate a prediction for the omitted year. I repeat this process for all years in the dataset from 1952 to 2020. Then I calculate the average "mean squared error" (MSE) which is computed by squaring the difference between the predicted value for each of the iterations and the actual value. 
 
+Here are the in-sample and out-of-sample MSEs respectively:
+$$
+MSE_{in} = 204.23 \\
+MSE_{out} = 236.86
+$$
+Although MSE is often difficult to interpret, these values seem awfully high. It implies that my (out of sample) predictions are wrong by approximately four percentage points on average.
 
-
-```
-## [1] 236.8583
-```
-
-```
-## [1] 204.2256
-```
+Here is a graph of the predicted and actual results of the model. The graph also illustrates how elections have become much closer in the 21st century than they used to be.
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
