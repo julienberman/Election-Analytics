@@ -315,8 +315,37 @@ Third, I created a variable that measures the elasticity of a given state, which
 $$ \epsilon = \frac{\partial q}{\partial p} \cdot \frac{p}{q}$$
 But in the descrete case, we can calculate elasticity as:
 $$ \epsilon = \frac{\Delta m_{t,t-1}}{\Delta n_{t,t-1}}$$
+where $m_{t,t-1}$ represents the change in state-level vote margin from period $t-1$ to period $t$, and $n_{t,t-1}$ represents the same for national-level vote margin.
 
+The final interesting methodological choice involves the method of aggregating all the economic indicators. The Bureau of Labor Statics and the St. Louis Federal Reserve are fantastic because they provide monthly data for most of the important indicators, such as jobs, unemployment, and so on. Unfortunately, elections occur once every four years, which means that, for each index, I somehow need to distill four years worth of fluctuation for each economic indicator into a single data point. This method of aggregation is more important than one might initially think. For example, it would be a poor forecast for the 2024 election if I only included economic data that reflected the COVID crisis.
 
+The aggregation process proceeded in two steps. To start, I actually disaggregated the indicator for the S&P 500 closing price. Unfortunately, I wasn't able to find a monthly time series for this (could it potentially be in our future @Matthew?), so I assumed that the closing price for each of the three months of a given quarter was simply equal to that quarter's average closing price. Then, I wrote three separate aggregation functions. The first function, which I coin "rate aggregation," measures the percent change of a given economic indicator between period $t_1$ and period $t_2$, measured in the number of months in the election cycle before the election, with $-47 \leq t_1, t_2 \leq 0$ as parameters that must be manually manipulated during model training. The second function does the same thing, but takes the average value of the indicator in that time period. The third function calculates the percent change of the indicator, then subtracts off the average percent change of the indicator for all periods of length $t_2 - t_1 + 1$ in that election cycle. In other words, $5\%$ job growth in the period before the election seems great, but it might be terrible compared to the $10\%$ job growth throughout the two years prior.
+
+Once I aggregated all the economic indicators, I then standardized them, roughly matching moments (means and variances).
+
+Finally, we are ready for the regressions. Remember, for the electoral college predictions, I run three regressions in sequence. The first regression predicts the current year's elasticity from the previous years:
+$$
+\epsilon = \beta_0 + \beta_1 \epsilon\_lag1 + \beta_2 \epsilon\_lag2 + \mu + \varepsilon
+$$
+
+The second predicts the current year's partisan lean from previous years, incorporating adjustments based on home state advantage, resident state advantage, and the elasticity of a given state:
+$$
+\mathrm{pl} = \beta_0 + \beta_1 \mathrm{pl\_lag1} + \beta_2 \mathrm{pl\_lag2} + \beta_3\mathrm{hsa} + \beta_4\mathrm{rsa} + \beta_5\mathrm{\epsilon} + \mu + \gamma + \varepsilon
+$$
+
+Then, finally, the partisan lean for a given year is incorporated into the vote margin forecast:
+$$
+\mathrm{margin} \cdot \mathrm{incumb} = \beta_0 + \beta_1\mathrm{pl} + \beta_2 \mathrm{jobs} + \beta_3 \mathrm{pce} + \beta_4\mathrm{rdpi} + \beta_5\mathrm{cpi} + \beta_6\mathrm{ics} + \beta_7\mathrm{sp500} + \beta_8\mathrm{unemp} + \mu + \gamma + \varepsilon
+$$
+
+Unfortunately, I did not have time to implement the full electoral college prediction this week, which means I was not able to optimize the model above. As a result, I settled for predicting the national vote margin with economic fundamentals alone and no additional term for the partisan lean of a state:
+
+$$
+\mathrm{margin_{nat}} \cdot \mathrm{incumb} = \beta_0 + \beta_1 \mathrm{jobs} + \beta_2 \mathrm{pce} + \beta_3\mathrm{rdpi} + \beta_4\mathrm{cpi} + \beta_5\mathrm{ics} + \beta_6\mathrm{sp500} + \beta_7\mathrm{unemp} + \mu + \gamma + \varepsilon
+$$
+There are a few important things to note about the above regressions specifications. First, notice that the vote margin is multiplied by the incumbent dummy. This is because margin is positive when a democrat wins, and negative when a republican wins. the "incumb" variable is positive if a democrat is the incumbent and negative if the republican is the incumbent. We want to use economic conditions to predict the size of the margin favorable to the incumbent, which means we need to multiply the two outcome variables to cancel out partisan effects.
+
+Second, notice that there are two terms at the end of the regression before the error term. These terms represent state and year fixed effects respectively. These variables help to control for unobserved heterogeneity, ensuring that certain inherent characteristics of states or specific election years --- political culture, demographic composition, and so on --- that might affect the outcome are accounted for. Functionally, these fixed effects operate by creating dummy variables for every state and every year.
 
 
 ```{r ex_incl_grap_1, out.width = "90%", echo = FALSE, eval=TRUE}
