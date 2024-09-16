@@ -1,0 +1,269 @@
+---
+title: 'Blog Post 2: Economic Fundamentals'
+author: Package Build
+date: '2024-09-11'
+slug: blog-post-2
+categories: []
+tags: []
+---
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+# Load libraries.
+## install via `install.packages("name")`
+library(ggplot2)
+library(maps)
+library(tidyverse)
+library(usmap)
+library(plotly)
+library(gridExtra)
+library(sf)
+library(ggrepel)
+library(shiny)
+library(leaflet)
+library(stargazer)
+library(blogdown)
+library(car)
+library(lubridate)
+library(zoo)
+library(modelsummary)
+library(GGally)
+
+```
+This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
+
+Last week's model had a number of limitations. First, the outcome variable I was predicting --- two party vote share in each state --- does not actually determine who wins the state electors. Unfortunately, as much as I wish the likes of Jill Stein, Ralph Nader, and Cornell West didn't clutter up the ballot, the truth is that these third-party candidates, while rarely garnering more than a small fraction of the vote in any particular state, can have huge impacts on the overall state-wide election result. Consequently, this week, I plan to predict not two party vote _share_, but two party vote _margin_, a metric that a third-party candidate cannot distort.
+
+Second, my previous forecast attempted to predict vote share in a single step using the PLI from the 2020 and 2016 elections. This time, I will add an intermediate step and use the 2020 and 2016 PLIs to forecast the 2024 PLI. Then, I will use the 2024 PLI, along with a multitude of other variables, to actually predict vote margin. This two-stage approach has two advantages. First, it allows me to more seamlessly integrate polling data later down the line, because I can easily create a national "snapshot" of the election by adding the PLI to the most current polling data that provides the nationwide vote margin. Second, it allows me to disaggregate the "politics" portion of the model from the "fundamentals" portion of the model. These two portions will then coalesce to produce my final prediction of vote margin.
+
+Third, I improve my adjustments to the "partisan lean index." Now, I scale the home state advantage and resident state advantage adjustments by the size of the state, which is meant to capture the fact that candidates from smaller states tend to see larger effects. I also include a term that measures a state's elasticity, which captures the degree to which a given state "swings" from cycle to cycle. This adjustment only includes data from the 2008, 2012, 2016, and 2020 elections in order to most accurately capture the current political climate.
+
+Fourth, I include the fact that Maine and Nebraska split their electoral votes. They each allocate two electoral votes to the winner of the state's popular vote. Then, they allocate one electoral vote to the popular vote winner in each congressional district. Thus, in total, my forecasts predicts vote margin in 54 jurisdictions: the two congressional districts in Maine, the three congressional districts in Nebraska, the other 48 states, and Washington D.C.
+
+Finally, and most importantly, I construct from scratch the "fundamentals" forecast using the following six economic indicators:
+* Total non-farm jobs
+* Personal consumption expenditure
+* Real disposable personal income
+* Inflation, as measured by the annual change in the Consumer Price Index
+* The stock market, based on the closing value of the S&P 500 
+* The consumer sentiment index calculated by the University of Michigan
+Each variable in the above set serves a particular function. 
+
+
+_Inflation._ The period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s after the oil price shock in response to Iraq's invasion of Kuwait.
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+
+## set working directory here
+# setwd("~")
+
+####----------------------------------------------------------#
+#### Read, merge, and process data.
+####----------------------------------------------------------#
+state_wide <- read.csv("data/elec_state.csv")
+national <- read.csv("data/elec_national.csv")
+df_fundamentals <- read.csv("data/econ_fundamentals.csv")
+df_full <- read.csv("data/elec_full.csv")
+
+# create variables for lags, partisan lean, and vote margins at both the state and federal level
+df_full <- df_full %>% 
+  group_by(state) %>% 
+  mutate(
+    pl = d_pv - d_pv_nat,
+    pl_lag1 = lag(pl, 1),
+    pl_lag2 = lag(pl, 2),
+    r_pv = (d_pv / d_2pv) * (100 - d_2pv),
+    r_pv_nat = (d_pv_nat / d_2pv_nat) * (100 - d_2pv_nat),
+    margin = d_pv - r_pv,
+    margin_nat = d_pv_nat - r_pv_nat,
+    
+    # recode incumbency variables
+    incumb = ifelse(d_incumb == 1, 1, ifelse(r_incumb == 1, -1, 0)),
+    incumb_party = ifelse(incumb_party == 0, -1, ifelse(incumb_party == 1, 1, NA))
+  ) %>% 
+  ungroup() %>% 
+  select(year, state, abbr, electors, d_pv, r_pv, margin, pl, pl_lag1, pl_lag2, d_2pv, d_pv_nat, r_pv_nat, margin_nat, d_2pv_nat, d_cand:state_winner, incumb, incumb_party, everything()) %>% 
+  select(-d_incumb, -r_incumb)
+
+####----------------------------------------------------------#
+#### Aggregate economic fundamentals three ways
+####----------------------------------------------------------#
+
+# Method 1: percent change between t1 and t2
+rate_aggregation <- function(data, indicator, t1, t2) {
+  # t1: negative number representing months before the election (e.g., -24)
+  # t2: another negative number representing months before the election (e.g., -12)
+  subset <- data %>%
+    # only include months between t1 and t2 
+    filter(month_index >= t1 & month_index <= t2) %>%
+    group_by(election_cycle) %>% 
+    summarize(
+      year = mean(election_year),
+      # extract the value of the indicator at t1 and t2
+      value_t1 = first(.data[[indicator]][month_index == t1]),
+      value_t2 = first(.data[[indicator]][month_index == t2]),
+      # calculate percent change
+      pct_change = (value_t2 - value_t1) / value_t1 * 100
+      )
+
+  return(subset %>% select(-value_t1, -value_t2, -election_cycle))
+}
+
+# Method 2: average between t1 and t2
+mean_aggregation <- function(data, indicator, t1, t2) {
+  # t1: negative number representing months before the election (e.g., -24)
+  # t2: another negative number representing months before the election (e.g., -12)
+  
+  subset <- data %>%
+    # only include months between t1 and t2
+    filter(month_index >= t1 & month_index <= t2) %>%
+    group_by(election_cycle) %>%
+    summarize(
+      year = mean(election_year),
+      # calculate average
+      avg = mean(.data[[indicator]], na.rm = TRUE)
+    )
+  return(subset %>% select(-election_cycle))
+}
+
+
+#Method 3: percent change between t1 and t2 minus average percent change over all periods 
+# of same length within that election cycle
+rate_differential_aggregation <- function(data, indicator, t1, t2) {
+  # Use the original rate_aggregation function to get the percent change between t1 and t2
+  result <- rate_aggregation(data, indicator, t1, t2)
+  
+  # Calculate the length of the period (t2 - t1)
+  period_length <- t2 - t1
+  
+  # Find all periods of the same length before t1 for each election cycle
+  pre_t1_periods <- data %>%
+    filter(month_index <= t1) %>%
+    group_by(election_cycle) %>%
+     group_modify(~ {
+      periods <- .x %>%
+        filter(month_index >= (t1 - period_length) & month_index < t1)
+      
+      if (nrow(periods) > 0) {
+        # Calculate percent change for each found period
+        value_start <- first(periods %>% 
+                               filter(month_index == (t1 - length_period)) %>% 
+                               pull({{indicator}}), 
+                             na.rm = TRUE)
+        value_end <- first(periods %>% 
+                             filter(month_index == (t1 - 1)) %>% 
+                             pull({{indicator}}), 
+                           na.rm = TRUE)
+        
+        pct_change <- (value_end - value_start) / value_start * 100
+        return(tibble(pct_change = pct_change))
+        
+      } else {
+        return(tibble(pct_change = NA_real_)) # Handle case when no valid periods found
+      }
+     }) %>% 
+    summarize(avg_pct_change_pre_t1 = mean(pct_change, na.rm = TRUE))
+  
+  # Join the result from rate_aggregation with the pre_t1_periods data
+  final_result <- result %>%
+    left_join(pre_t1_periods, by = "election_cycle") %>%
+    mutate(adjusted_pct_change = pct_change - avg_pct_change_pre_t1)
+  
+  return(final_result)
+}
+
+# aggregate economic indicators
+period_start <- -24
+period_end <- -3 
+
+# rate aggregation
+jobs_agg <- rate_aggregation(df_fundamentals, "jobs", period_start, period_end) %>% 
+  rename(jobs_agg = pct_change)
+pce_agg <- rate_aggregation(df_fundamentals, "pce", period_start, period_end) %>% 
+  rename(pce_agg = pct_change)
+rdpi_agg <- rate_aggregation(df_fundamentals, "rdpi", period_start, period_end) %>% 
+  rename(rdpi_agg = pct_change)
+cpi_agg <- rate_aggregation(df_fundamentals, "cpi", period_start, period_end) %>% 
+  rename(cpi_agg = pct_change)
+ics_agg <- rate_aggregation(df_fundamentals, "ics", period_start, period_end) %>% 
+  rename(ics_agg = pct_change)
+
+# mean aggregation
+sp500_agg <- mean_aggregation(df_fundamentals, "sp500", period_start, period_end) %>% 
+  rename(sp500_agg = avg)
+unemp_agg <- rate_aggregation(df_fundamentals, "unemp", period_start, period_end) %>% 
+  rename(unemp_agg = pct_change)
+
+# merge and standardize
+df_full_merged <- df_full %>%
+  left_join(
+      # Merge all rate-aggregated datasets
+      reduce(
+        list(jobs_agg, pce_agg, rdpi_agg, cpi_agg, ics_agg, sp500_agg, unemp_agg),
+        full_join, 
+        by = "year"
+      ),
+    ) %>% 
+    # Standardize all numeric variables except 'year'
+    mutate(across(
+      c(jobs_agg, pce_agg, rdpi_agg, cpi_agg, ics_agg, sp500_agg, unemp_agg), 
+      ~as.numeric(scale(.))
+      )
+    )
+
+# create lags, adjustments for home state advantage, resident state advantage, and state elasticity
+df_full_merged <- df_full_merged %>% 
+  group_by(year) %>% 
+  mutate(
+    # normalize population between 0 and 1 for a given election cycle
+    pop_norm = (pop - min(pop, na.rm = TRUE)) / (max(pop, na.rm = TRUE) - min(pop, na.rm = TRUE)),
+    
+    # if there is a dem hsa, assign hsa_adjustment to the value of pop_norm. If there is a rep hsa, make it negative
+    hsa_adjustment = ifelse(d_hsa == 1, 1 / pop_norm, ifelse(r_hsa == 1, -1 / pop_norm, 0)),
+    # ... for rsa
+    rsa_adjustment = ifelse(d_rsa == 1, 1 / pop_norm, ifelse(r_rsa == 1, -1 / pop_norm, 0)),
+  ) %>% 
+  ungroup() %>% 
+  group_by(state) %>% 
+  arrange(year) %>% 
+  mutate(
+    # create elasticity metric: % change in state margin / % change in nat'l margin, set to margin / margin_nat if NA
+    elasticity = ifelse(!is.na(lag(margin)) & !is.na(lag(margin_nat)), 
+                      (margin - lag(margin)) / (margin_nat - lag(margin_nat)),
+                      margin / margin_nat),
+    
+    # Create lags for elasticity
+    elasticity_lag1 = lag(elasticity, 1),
+    elasticity_lag2 = lag(elasticity, 2)
+  )
+
+
+####----------------------------------------------------------#
+#### Model vote margin in three steps
+####----------------------------------------------------------#
+
+# Step #1: Fit a linear model to predict elasticity using elasticity_lag1 and elasticity_lag2
+elasticity_model <- lm(elasticity ~ elasticity_lag1 + elasticity_lag2, data = df_full_merged)
+
+# Step #2: Fit a linear model to predict pl using pl_lag1, pl_lag2, hsa_adjustment, rsa_adjustment, and elasticity
+pl_model <- lm(pl ~ pl_lag1 + pl_lag2 + hsa_adjustment + rsa_adjustment + elasticity, data = df_full_merged)
+
+# Step #3: use economic fundamentals to predict national vote margin
+econ_model <- lm(margin_nat ~ jobs_agg + pce_agg + rdpi_agg +
+                            cpi_agg + ics_agg + sp500_agg + unemp_agg +
+                            incumb, data = df_full_merged)
+bv_1 <- lm(margin_nat ~ jobs_agg + incumb, data = df_full_merged)
+bv_2 <- lm(margin_nat ~ pce_agg + incumb, data = df_full_merged)
+bv_3 <- lm(margin_nat ~ rdpi_agg + incumb, data = df_full_merged)
+bv_4 <- lm(margin_nat ~ cpi_agg + incumb, data = df_full_merged)
+bv_5 <- lm(margin_nat ~ ics_agg + incumb, data = df_full_merged)
+bv_6 <- lm(margin_nat ~ sp500_agg + incumb, data = df_full_merged)
+bv_7 <- lm(margin_nat ~ unemp_agg + incumb, data = df_full_merged)
+
+
+stargazer(econ_model, bv_1, bv_2, bv_3, bv_4, bv_5, bv_6, bv_7,
+          type = "latex",
+          title = "OLS Regression Results for Economic Fundamentals Models",
+          dep.var.labels = c("National Vote Margin"),
+          covariate.labels = c("Jobs Growth", "PCE Change", "RDPI Change", "Incumbency")
+          )
+
+```

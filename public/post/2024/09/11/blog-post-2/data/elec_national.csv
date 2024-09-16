@@ -1,0 +1,19 @@
+year,d_pv_nat,d_2pv_nat,d_cand,r_cand,winner,incumb_party,d_incumb,r_incumb,d_prev_admin,r_prev_admin,d_hsa,r_hsa,d_rsa,r_rsa
+1952,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York
+1956,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York
+1960,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California
+1964,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona
+1968,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York
+1972,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York
+1976,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan
+1980,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California
+1984,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California
+1988,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas
+1992,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas
+1996,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas
+2000,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas
+2004,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas
+2008,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona
+2012,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts
+2016,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York
+2020,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida

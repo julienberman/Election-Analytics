@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post 2: Economic Fundamentals | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Blog Post 2: Economic Fundamentals</span></h1>
+<h2 class="author">Package Build</h2>
+<h2 class="date">2024/09/11</h2>
+</div>
+
+<main>
+<p>This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the &ldquo;partisan lean index&rdquo; (PLI) &mdash; which measures the difference between the state&rsquo;s democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density &mdash; in the previous two election cycles to predict the electoral college results for the current election cycle.</p>
+<p>Last week&rsquo;s model had a number of limitations. First, the outcome variable I was predicting &mdash; two party vote share in each state &mdash; does not actually determine who wins the state electors. Unfortunately, as much as I wish the likes of Jill Stein, Ralph Nader, and Cornell West didn&rsquo;t clutter up the ballot, the truth is that these third-party candidates, while rarely garnering more than a small fraction of the vote in any particular state, can have huge impacts on the overall state-wide election result. Consequently, this week, I plan to predict not two party vote <em>share</em>, but two party vote <em>margin</em>, a metric that a third-party candidate cannot distort.</p>
+<p>Second, my previous forecast attempted to predict vote share in a single step using the PLI from the 2020 and 2016 elections. This time, I will add an intermediate step and use the 2020 and 2016 PLIs to forecast the 2024 PLI. Then, I will use the 2024 PLI, along with a multitude of other variables, to actually predict vote margin. This two-stage approach has two advantages. First, it allows me to more seamlessly integrate polling data later down the line, because I can easily create a national &ldquo;snapshot&rdquo; of the election by adding the PLI to the most current polling data that provides the nationwide vote margin. Second, it allows me to disaggregate the &ldquo;politics&rdquo; portion of the model from the &ldquo;fundamentals&rdquo; portion of the model. These two portions will then coalesce to produce my final prediction of vote margin.</p>
+<p>Third, I improve my adjustments to the &ldquo;partisan lean index.&rdquo; Now, I scale the home state advantage and resident state advantage adjustments by the size of the state, which is meant to capture the fact that candidates from smaller states tend to see larger effects. I also include a term that measures a state&rsquo;s elasticity, which captures the degree to which a given state &ldquo;swings&rdquo; from cycle to cycle. This adjustment only includes data from the 2008, 2012, 2016, and 2020 elections in order to most accurately capture the current political climate.</p>
+<p>Fourth, I include the fact that Maine and Nebraska split their electoral votes. They each allocate two electoral votes to the winner of the state&rsquo;s popular vote. Then, they allocate one electoral vote to the popular vote winner in each congressional district. Thus, in total, my forecasts predicts vote margin in 54 jurisdictions: the two congressional districts in Maine, the three congressional districts in Nebraska, the other 48 states, and Washington D.C.</p>
+<p>Finally, and most importantly, I construct from scratch the &ldquo;fundamentals&rdquo; forecast using the following six economic indicators:</p>
+<ul>
+<li>Total non-farm jobs</li>
+<li>Personal consumption expenditure</li>
+<li>Real disposable personal income</li>
+<li>Inflation, as measured by the annual change in the Consumer Price Index</li>
+<li>The stock market, based on the closing value of the S&amp;P 500</li>
+<li>The consumer sentiment index calculated by the University of Michigan
+Each variable in the above set serves a particular function.</li>
+</ul>
+<p><em>Inflation.</em> The period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s after the oil price shock in response to Iraq&rsquo;s invasion of Kuwait.</p>
+<pre><code>## 
+## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+## % Date and time: Sun, Sep 15, 2024 - 23:02:42
+## \begin{table}[!htbp] \centering 
+##   \caption{OLS Regression Results for Economic Fundamentals Models} 
+##   \label{} 
+## \begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
+## \\[-1.8ex]\hline 
+## \hline \\[-1.8ex] 
+##  &amp; \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
+## \cline{2-9} 
+## \\[-1.8ex] &amp; \multicolumn{8}{c}{National Vote Margin} \\ 
+## \\[-1.8ex] &amp; (1) &amp; (2) &amp; (3) &amp; (4) &amp; (5) &amp; (6) &amp; (7) &amp; (8)\\ 
+## \hline \\[-1.8ex] 
+##  Jobs Growth &amp; $-$18.450$^{***}$ &amp; $-$5.441$^{***}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; (0.728) &amp; (0.249) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  PCE Change &amp; 9.577$^{***}$ &amp;  &amp; $-$5.073$^{***}$ &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; (0.672) &amp;  &amp; (0.287) &amp;  &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  RDPI Change &amp; 0.315 &amp;  &amp;  &amp; 0.585 &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; (0.410) &amp;  &amp;  &amp; (0.360) &amp;  &amp;  &amp;  &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  Incumbency &amp; $-$11.078$^{***}$ &amp;  &amp;  &amp;  &amp; $-$4.135$^{***}$ &amp;  &amp;  &amp;  \\ 
+##   &amp; (0.527) &amp;  &amp;  &amp;  &amp; (0.279) &amp;  &amp;  &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  ics\_agg &amp; $-$1.835$^{***}$ &amp;  &amp;  &amp;  &amp;  &amp; $-$2.563$^{***}$ &amp;  &amp;  \\ 
+##   &amp; (0.349) &amp;  &amp;  &amp;  &amp;  &amp; (0.328) &amp;  &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  sp500\_agg &amp; $-$3.247$^{***}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 3.740$^{***}$ &amp;  \\ 
+##   &amp; (0.361) &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (0.275) &amp;  \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  unemp\_agg &amp; $-$5.981$^{***}$ &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; 3.912$^{***}$ \\ 
+##   &amp; (0.689) &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; (0.279) \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  incumb &amp; 12.518$^{***}$ &amp; 7.488$^{***}$ &amp; 5.112$^{***}$ &amp; 6.043$^{***}$ &amp; 7.670$^{***}$ &amp; 5.117$^{***}$ &amp; 6.676$^{***}$ &amp; 7.425$^{***}$ \\ 
+##   &amp; (0.344) &amp; (0.325) &amp; (0.356) &amp; (0.446) &amp; (0.364) &amp; (0.418) &amp; (0.359) &amp; (0.365) \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+##  Constant &amp; 0.744$^{***}$ &amp; $-$0.351 &amp; 0.417 &amp; 0.541 &amp; $-$0.321 &amp; $-$0.196 &amp; $-$0.484$^{*}$ &amp; $-$0.361 \\ 
+##   &amp; (0.181) &amp; (0.251) &amp; (0.289) &amp; (0.339) &amp; (0.277) &amp; (0.305) &amp; (0.281) &amp; (0.279) \\ 
+##   &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ 
+## \hline \\[-1.8ex] 
+## Observations &amp; 840 &amp; 1,001 &amp; 840 &amp; 840 &amp; 1,001 &amp; 948 &amp; 1,001 &amp; 1,001 \\ 
+## R$^{2}$ &amp; 0.804 &amp; 0.467 &amp; 0.408 &amp; 0.190 &amp; 0.354 &amp; 0.276 &amp; 0.334 &amp; 0.341 \\ 
+## Adjusted R$^{2}$ &amp; 0.803 &amp; 0.466 &amp; 0.407 &amp; 0.188 &amp; 0.352 &amp; 0.275 &amp; 0.333 &amp; 0.339 \\ 
+## Residual Std. Error &amp; 4.775 (df = 831) &amp; 7.766 (df = 998) &amp; 8.276 (df = 837) &amp; 9.680 (df = 837) &amp; 8.550 (df = 998) &amp; 9.111 (df = 945) &amp; 8.677 (df = 998) &amp; 8.635 (df = 998) \\ 
+## F Statistic &amp; 427.215$^{***}$ (df = 8; 831) &amp; 436.596$^{***}$ (df = 2; 998) &amp; 288.618$^{***}$ (df = 2; 837) &amp; 98.325$^{***}$ (df = 2; 837) &amp; 272.942$^{***}$ (df = 2; 998) &amp; 180.551$^{***}$ (df = 2; 945) &amp; 250.552$^{***}$ (df = 2; 998) &amp; 257.808$^{***}$ (df = 2; 998) \\ 
+## \hline 
+## \hline \\[-1.8ex] 
+## \textit{Note:}  &amp; \multicolumn{8}{r}{$^{*}$p$&lt;$0.1; $^{**}$p$&lt;$0.05; $^{***}$p$&lt;$0.01} \\ 
+## \end{tabular} 
+## \end{table}
+</code></pre>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
+</script>
+  
+  <hr/>
+  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -1,0 +1,1002 @@
+year,state,abbr,electors,d_pv,pop,area,d_pv_nat,d_2pv_nat,d_cand,r_cand,winner,incumb_party,d_incumb,r_incumb,d_prev_admin,r_prev_admin,d_hsa,r_hsa,d_rsa,r_rsa,d_2pv,state_winner,dem_hsa_advantage,rep_hsa_advantage,dem_rsa_advantage,rep_rsa_advantage,total_rep_electors,total_dem_electors
+1952,Alabama,AL,11,64.55341218,3068000,50750,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,64.82939199,1,0,0,0,0,442,89
+1956,Alabama,AL,11,56.52251792,3071000,50750,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,58.9342298,1,0,0,0,0,457,74
+1960,Alabama,AL,11,56.38941101,3274000,50750,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,57.21951377,1,0,0,0,0,220,317
+1964,Alabama,AL,10,30.55,3395000,50750,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,30.54968585,0,0,0,0,0,52,486
+1968,Alabama,AL,10,18.72328956,3446000,50750,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,57.22790552,1,0,0,0,0,320,218
+1972,Alabama,AL,9,25.53670486,3539400,50750,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,26.06703977,0,0,0,0,0,521,17
+1976,Alabama,AL,9,55.72726888,3735139,50750,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,56.66672398,1,0,0,0,0,241,297
+1980,Alabama,AL,9,47.44885907,3900368,50750,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.3236617,0,0,0,0,0,448,90
+1984,Alabama,AL,9,38.28078127,3951820,50750,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38.73660465,0,0,0,0,0,525,13
+1988,Alabama,AL,9,39.86329831,4023844,50750,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,40.2544316,0,0,0,0,0,426,112
+1992,Alabama,AL,9,40.8800635,4139269,50750,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,46.17887354,0,0,0,0,0,168,370
+1996,Alabama,AL,9,43.1560877,4290403,50750,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,46.26612885,0,0,0,0,0,159,379
+2000,Alabama,AL,9,41.56650295,4452173,50750,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,42.39305808,0,0,0,0,0,271,267
+2004,Alabama,AL,9,36.84440232,4530729,50750,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,37.10222865,0,0,0,0,0,286,252
+2008,Alabama,AL,9,38.74043429,4718206,50750,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,39.10909724,0,0,0,0,0,173,365
+2012,Alabama,AL,9,38.3590331,4815588,50750,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,38.78377147,0,0,0,0,0,206,332
+2016,Alabama,AL,9,34.35794576,4863525,50750,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,35.62585641,0,0,0,0,0,306,232
+2020,Alabama,AL,9,36.56999021,5024279,50750,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,37.08862516,0,0,0,0,0,229,307
+1960,Alaska,AK,3,49.05862217,229000,570641,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,49.05862217,0,0,0,0,0,220,317
+1964,Alaska,AK,3,65.90790824,263000,570641,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,65.90790824,1,0,0,0,0,52,486
+1968,Alaska,AK,3,42.64587222,285000,570641,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.50091082,0,0,0,0,0,320,218
+1972,Alaska,AK,3,34.62229177,324464,570641,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.32845691,0,0,0,0,0,521,17
+1976,Alaska,AK,3,35.65313092,400969,570641,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,38.10817123,0,0,0,0,0,241,297
+1980,Alaska,AK,3,26.4079018,405315,570641,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,32.70081436,0,0,0,0,0,448,90
+1984,Alaska,AK,3,29.86777775,513702,570641,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,30.94408735,0,0,0,0,0,525,13
+1988,Alaska,AK,3,36.27096284,541983,570641,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,37.83668256,0,0,0,0,0,426,112
+1992,Alaska,AK,3,30.28711132,587073,570641,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,43.42573795,0,0,0,0,0,168,370
+1996,Alaska,AK,3,33.26711365,604918,570641,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,39.5714975,0,0,0,0,0,159,379
+2000,Alaska,AK,3,27.66633982,627963,570641,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,32.06305143,0,0,0,0,0,271,267
+2004,Alaska,AK,3,35.51686191,659286,570641,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,36.77371702,0,0,0,0,0,286,252
+2008,Alaska,AK,3,37.8893736,687455,570641,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,38.93521508,0,0,0,0,0,173,365
+2012,Alaska,AK,3,40.81265911,730443,570641,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,42.68470952,0,0,0,0,0,206,332
+2016,Alaska,AK,3,36.55087129,741456,570641,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,41.61434529,0,0,0,0,0,306,232
+2020,Alaska,AK,3,42.77195227,733391,570641,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,44.73815128,0,0,0,0,0,229,307
+1952,Arizona,AZ,4,41.65022835,842000,113642,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,41.65022835,0,0,0,0,0,442,89
+1956,Arizona,AZ,4,38.90093151,1053000,113642,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.94159451,0,0,0,0,0,457,74
+1960,Arizona,AZ,4,44.36260794,1321000,113642,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,44.41488159,0,0,0,0,0,220,317
+1964,Arizona,AZ,5,49.45254488,1556000,113642,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,49.5021737,0,0,1,0,1,52,486
+1968,Arizona,AZ,5,35.0177436,1682000,113642,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,38.99825037,0,0,0,0,0,320,218
+1972,Arizona,AZ,6,30.3807928,2008291,113642,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,33.01560483,0,0,0,0,0,521,17
+1976,Arizona,AZ,6,39.79997819,2346157,113642,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,41.38669698,0,0,0,0,0,241,297
+1980,Arizona,AZ,6,28.24468359,2737774,113642,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,31.78791317,0,0,0,0,0,448,90
+1984,Arizona,AZ,7,32.54264317,3067135,113642,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,32.88327243,0,0,0,0,0,525,13
+1988,Arizona,AZ,7,38.74387412,3535183,113642,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.25650847,0,0,0,0,0,426,112
+1992,Arizona,AZ,8,36.5204526,3867333,113642,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,48.69809602,0,0,0,0,0,168,370
+1996,Arizona,AZ,8,46.51706595,4432308,113642,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,51.22377115,1,0,0,0,0,159,379
+2000,Arizona,AZ,8,44.73458502,5160586,113642,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,46.71740083,0,0,0,0,0,271,267
+2004,Arizona,AZ,10,44.39683293,5652404,113642,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,44.72499497,0,0,0,0,0,286,252
+2008,Arizona,AZ,10,45.11525087,6280362,113642,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,45.68609928,0,0,1,0,1,173,365
+2012,Arizona,AZ,11,44.58976694,6554978,113642,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,45.38661977,0,0,0,0,0,206,332
+2016,Arizona,AZ,11,45.12602184,6941072,113642,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,48.1099766,0,0,0,0,0,306,232
+2020,Arizona,AZ,11,49.36469061,7151502,113642,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,50.15683168,1,0,0,0,0,229,307
+1952,Arkansas,AR,8,55.9041502,1838000,52075,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,56.09051815,1,0,0,0,0,442,89
+1956,Arkansas,AR,8,52.45737532,1704000,52075,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,53.3774314,1,0,0,0,0,457,74
+1960,Arkansas,AR,8,50.18541034,1789000,52075,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,53.82185771,1,0,0,0,0,220,317
+1964,Arkansas,AR,6,56.06395849,1897000,52075,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,56.3621491,1,0,0,0,0,52,486
+1968,Arkansas,AR,6,30.33202644,1902000,52075,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,49.44366154,0,0,0,0,0,320,218
+1972,Arkansas,AR,6,30.7101191,2018638,52075,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.85379663,0,0,0,0,0,521,17
+1976,Arkansas,AR,6,64.96172813,2170161,52075,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,65.04885148,1,0,0,0,0,241,297
+1980,Arkansas,AR,6,47.52263062,2288738,52075,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.68029406,0,0,0,0,0,448,90
+1984,Arkansas,AR,6,38.290785,2319768,52075,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38.7724119,0,0,0,0,0,525,13
+1988,Arkansas,AR,6,42.19173217,2342656,52075,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,42.80835729,0,0,0,0,0,426,112
+1992,Arkansas,AR,6,53.20795285,2394098,52075,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,59.99226706,1,1,0,1,0,168,370
+1996,Arkansas,AR,6,53.73644915,2504858,52075,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,59.35282487,1,1,0,1,0,159,379
+2000,Arkansas,AR,6,45.86425626,2678588,52075,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,47.19931049,0,0,0,0,0,271,267
+2004,Arkansas,AR,6,44.54763045,2749686,52075,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,45.06425175,0,0,0,0,0,286,252
+2008,Arkansas,AR,6,38.86465977,2874554,52075,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,39.82827939,0,0,0,0,0,173,365
+2012,Arkansas,AR,6,36.8789903,2952164,52075,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,37.84559465,0,0,0,0,0,206,332
+2016,Arkansas,AR,6,33.65312413,2989918,52075,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,35.71486231,0,0,0,0,0,306,232
+2020,Arkansas,AR,6,34.77506195,3011524,52075,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,35.78756672,0,0,0,0,0,229,307
+1952,California,CA,32,42.26532747,11635000,155973,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,42.65155152,0,1,0,0,0,442,89
+1956,California,CA,32,44.27328631,13713000,155973,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.42405498,0,1,0,0,0,457,74
+1960,California,CA,32,49.55137708,15870000,155973,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,49.72529315,0,0,1,0,1,220,317
+1964,California,CA,40,59.11195414,18151000,155973,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,59.16729365,1,0,0,0,0,52,486
+1968,California,CA,40,44.73942049,19394000,155973,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.33621425,0,0,1,0,0,320,218
+1972,California,CA,45,41.53805357,20585469,155973,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,43.02886267,0,0,1,0,0,521,17
+1976,California,CA,45,47.95482184,21935909,155973,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.08217269,0,0,0,0,0,241,297
+1980,California,CA,45,35.91943691,23800800,155973,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,40.53337544,0,0,0,0,1,448,90
+1984,California,CA,47,41.2677757,25844393,155973,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,41.77546518,0,0,0,0,1,525,13
+1988,California,CA,47,47.55944256,28464249,155973,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.19268946,0,0,0,0,0,426,112
+1992,California,CA,54,46.00658784,30875920,155973,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,58.51672877,1,0,0,0,0,168,370
+1996,California,CA,54,51.09886562,31780829,155973,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,57.21626523,1,0,0,0,0,159,379
+2000,California,CA,54,53.44973683,33987977,155973,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,56.20299,1,0,0,0,0,271,267
+2004,California,CA,55,54.30555753,35574576,155973,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,55.04132045,1,0,0,0,0,286,252
+2008,California,CA,55,61.01263835,36604337,155973,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,62.27844959,1,0,0,0,0,173,365
+2012,California,CA,55,60.23895914,37948800,155973,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,61.87281116,1,0,0,0,0,206,332
+2016,California,CA,55,61.7263996,39167117,155973,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,66.12822054,1,0,0,0,0,306,232
+2020,California,CA,55,63.48394689,39538223,155973,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,64.90891136,1,0,0,0,0,229,307
+1952,Colorado,CO,6,38.96251883,1365000,103730,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,39.2626734,0,0,0,0,0,442,89
+1956,Colorado,CO,6,39.81410823,1625000,103730,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,40.09212181,0,0,0,0,0,457,74
+1960,Colorado,CO,6,44.90740867,1769000,103730,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,45.11421519,0,0,0,0,0,220,317
+1964,Colorado,CO,6,61.26545395,1970000,103730,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,61.59802586,1,0,0,0,0,52,486
+1968,Colorado,CO,6,41.31834482,2120000,103730,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,45.01886453,0,0,0,0,0,320,218
+1972,Colorado,CO,7,34.59330485,2404619,103730,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,35.59005963,0,0,0,0,0,521,17
+1976,Colorado,CO,7,42.609946,2632306,103730,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,44.09245617,0,0,0,0,0,241,297
+1980,Colorado,CO,7,31.0700325,2908803,103730,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,36.06965978,0,0,0,0,0,448,90
+1984,Colorado,CO,8,35.1228983,3169992,103730,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,35.63423016,0,0,0,0,0,525,13
+1988,Colorado,CO,8,45.28240432,3262281,103730,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,46.04617561,0,0,0,0,0,426,112
+1992,Colorado,CO,8,40.12802865,3459995,103730,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,52.80206552,1,0,0,0,0,168,370
+1996,Colorado,CO,8,44.42649841,3812716,103730,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,49.24079237,0,0,0,0,0,159,379
+2000,Colorado,CO,8,42.39350901,4326921,103730,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,45.51408006,0,0,0,0,0,271,267
+2004,Colorado,CO,9,47.03784225,4575013,103730,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,47.63377044,0,1,0,0,0,286,252
+2008,Colorado,CO,9,53.66023684,4889730,103730,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,54.55063469,1,0,0,0,0,173,365
+2012,Colorado,CO,9,51.49222655,5192647,103730,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,52.74798831,1,0,0,0,0,206,332
+2016,Colorado,CO,9,48.15698038,5539215,103730,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,52.68333337,1,0,0,0,0,306,232
+2020,Colorado,CO,9,55.01106714,5773714,103730,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,56.93831949,1,0,0,0,0,229,307
+1952,Connecticut,CT,8,43.90957881,2081000,4845,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.08036894,0,0,0,0,0,442,89
+1956,Connecticut,CT,8,36.260978,2316000,4845,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,36.26763338,0,0,0,0,0,457,74
+1960,Connecticut,CT,8,53.72999706,2544000,4845,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,53.73065613,1,0,0,0,0,220,317
+1964,Connecticut,CT,8,67.80600011,2798000,4845,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,67.87913889,1,0,0,0,0,52,486
+1968,Connecticut,CT,8,49.47820148,2964000,4845,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,52.75146357,1,0,0,0,0,320,218
+1972,Connecticut,CT,8,40.12910711,3068699,4845,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,40.65826369,0,0,0,0,0,521,17
+1976,Connecticut,CT,8,46.73370096,3083335,4845,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,47.38998329,0,0,0,0,0,241,297
+1980,Connecticut,CT,8,38.52220567,3113174,4845,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,44.44280368,0,0,0,0,0,448,90
+1984,Connecticut,CT,8,38.82998159,3180014,4845,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.00083124,0,0,0,0,0,525,13
+1988,Connecticut,CT,8,46.87451936,3271953,4845,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,47.41884954,0,0,0,0,0,426,112
+1992,Connecticut,CT,8,42.21857296,3274997,4845,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,54.12511671,1,0,0,0,0,168,370
+1996,Connecticut,CT,8,52.83158147,3267030,4845,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,60.36350688,1,0,0,0,0,159,379
+2000,Connecticut,CT,8,55.90962813,3411777,4845,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,59.25565805,1,0,1,0,0,271,267
+2004,Connecticut,CT,7,54.31370897,3496094,4845,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,55.27494756,1,0,1,0,0,286,252
+2008,Connecticut,CT,7,60.58882968,3545579,4845,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,61.31833825,1,0,0,0,0,173,365
+2012,Connecticut,CT,7,58.08501326,3594547,4845,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,58.77257748,1,0,0,0,0,206,332
+2016,Connecticut,CT,7,54.5663011,3578141,4845,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,57.14154752,1,0,0,0,0,306,232
+2020,Connecticut,CT,7,59.26073152,3605944,4845,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,60.19504909,1,0,0,0,0,229,307
+1952,Delaware,DE,3,47.87530527,341000,1955,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,48.0550717,0,0,0,0,0,442,89
+1956,Delaware,DE,3,44.62154752,408000,1955,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.7497718,0,0,0,0,0,457,74
+1960,Delaware,DE,3,50.63477779,449000,1955,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.82081821,1,0,0,0,0,220,317
+1964,Delaware,DE,3,60.94973177,497000,1955,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,61.11304798,1,0,0,0,0,52,486
+1968,Delaware,DE,3,41.60808333,534000,1955,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,47.97749424,0,0,0,0,0,320,218
+1972,Delaware,DE,3,39.18332512,572913,1955,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,39.66772696,0,0,0,0,0,521,17
+1976,Delaware,DE,3,51.9690887,590166,1955,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,52.73013809,1,0,0,0,0,241,297
+1980,Delaware,DE,3,44.87414498,594919,1955,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,48.73321475,0,0,0,0,0,448,90
+1984,Delaware,DE,3,39.93212136,611565,1955,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,40.0463273,0,0,0,0,0,525,13
+1988,Delaware,DE,3,43.4777563,647622,1955,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.7588104,0,0,0,0,0,426,112
+1992,Delaware,DE,3,43.52392791,690158,1955,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,55.19799271,1,0,0,0,0,168,370
+1996,Delaware,DE,3,51.82784978,727090,1955,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,58.62365663,1,0,0,0,0,159,379
+2000,Delaware,DE,3,54.97772716,786373,1955,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,56.74006478,1,0,0,0,0,271,267
+2004,Delaware,DE,3,53.3468376,830803,1955,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,53.83150625,1,0,0,0,0,286,252
+2008,Delaware,DE,3,61.94266898,883874,1955,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,62.63813865,1,0,0,0,0,173,365
+2012,Delaware,DE,3,58.61074198,915179,1955,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,59.44695492,1,0,0,0,0,206,332
+2016,Delaware,DE,3,53.35333681,948921,1955,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,55.99862145,1,0,0,0,0,306,232
+2020,Delaware,DE,3,58.74300579,989948,1955,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,59.62674416,1,0,0,1,0,229,307
+1964,District Of Columbia,DC,3,85.49776683,763956,68,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,85.49776683,1,0,0,0,0,52,486
+1968,District Of Columbia,DC,3,81.81946089,756510,68,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,81.81946089,1,0,0,0,0,320,218
+1972,District Of Columbia,DC,3,78.09706219,732874,68,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,78.36944975,1,0,0,0,0,521,17
+1976,District Of Columbia,DC,3,81.63122668,685603,68,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,83.17772239,1,0,0,0,0,241,297
+1980,District Of Columbia,DC,3,74.89317898,638333,68,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,84.81673006,1,0,0,0,0,448,90
+1984,District Of Columbia,DC,3,85.38487751,625760,68,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,86.14773395,1,0,0,0,0,525,13
+1988,District Of Columbia,DC,3,82.6469719,613187,68,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,85.2457526,1,0,0,0,0,426,112
+1992,District Of Columbia,DC,3,84.64090486,599938,68,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,90.29706962,1,0,0,0,0,168,370
+1996,District Of Columbia,DC,3,85.19001109,586014,68,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,90.12354821,1,0,0,0,0,159,379
+2000,District Of Columbia,DC,3,85.15508138,572086,68,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,90.48769448,1,1,0,0,0,271,267
+2004,District Of Columbia,DC,3,89.18386896,583940,68,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,90.52027865,1,0,0,0,0,286,252
+2008,District Of Columbia,DC,3,92.45710976,595794,68,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,93.40076833,1,0,0,0,0,173,365
+2012,District Of Columbia,DC,3,90.91311393,607648,68,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,92.5876492,1,0,0,0,0,206,332
+2016,District Of Columbia,DC,3,90.48388387,645634,68,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,95.69518834,1,0,0,0,0,306,232
+2020,District Of Columbia,DC,3,92.14969392,689546,68,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,94.46695385,1,0,0,0,0,229,307
+1952,Florida,FL,10,44.97456377,3157000,53997,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.99052565,0,0,0,0,0,442,89
+1956,Florida,FL,10,42.72927007,4047000,53997,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,42.72927007,0,0,0,0,0,457,74
+1960,Florida,FL,10,48.48540581,5004000,53997,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,48.48540581,0,0,0,0,0,220,317
+1964,Florida,FL,14,51.14854237,5781000,53997,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,51.14854237,1,0,0,0,0,52,486
+1968,Florida,FL,14,30.93484109,6433000,53997,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,43.28439919,0,0,0,0,0,320,218
+1972,Florida,FL,17,27.79861904,7511463,53997,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,27.87855471,0,0,0,0,0,521,17
+1976,Florida,FL,17,51.92610623,8667379,53997,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,52.68020187,1,0,0,0,0,241,297
+1980,Florida,FL,17,38.50021983,9839835,53997,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,40.94923705,0,0,0,0,0,448,90
+1984,Florida,FL,21,34.66024697,11039925,53997,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,34.66758679,0,0,0,0,0,525,13
+1988,Florida,FL,21,38.50721693,12306395,53997,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,38.74792835,0,0,0,0,0,426,112
+1992,Florida,FL,25,38.99012156,13504775,53997,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,48.80315891,0,0,0,0,0,168,370
+1996,Florida,FL,25,48.0255712,14426911,53997,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,53.1549612,1,0,0,0,0,159,379
+2000,Florida,FL,25,48.8378212,16047515,53997,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,49.99539059,0,0,0,0,0,271,267
+2004,Florida,FL,27,47.09111003,17415318,53997,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,47.47632043,0,0,0,0,0,286,252
+2008,Florida,FL,27,51.03330527,18527305,53997,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,51.41966003,1,0,0,0,0,173,365
+2012,Florida,FL,29,50.00786507,19297822,53997,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,50.44225214,1,0,0,0,0,206,332
+2016,Florida,FL,29,47.82331581,20613477,53997,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,49.38116453,0,0,0,0,0,306,232
+2020,Florida,FL,29,47.86145073,21538187,53997,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,48.30524534,0,0,0,0,1,229,307
+1952,Georgia,GA,12,69.65857125,3584000,57919,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,69.65867747,1,0,0,0,0,442,89
+1956,Georgia,GA,12,66.4818834,3701000,57919,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,67.06144925,1,0,0,0,0,457,74
+1960,Georgia,GA,12,62.54020937,3956000,57919,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,62.560598,1,0,0,0,0,220,317
+1964,Georgia,GA,12,45.86504771,4258000,57919,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,45.87289896,0,0,0,0,0,52,486
+1968,Georgia,GA,12,26.7495077,4482000,57919,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,46.80421691,0,0,0,0,0,320,218
+1972,Georgia,GA,12,24.64554824,4809490,57919,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,24.7244081,0,0,0,0,0,521,17
+1976,Georgia,GA,12,66.93829486,5132812,57919,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,66.93829486,1,1,0,1,0,241,297
+1980,Georgia,GA,12,55.79610535,5486174,57919,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,57.66239969,1,1,0,1,0,448,90
+1984,Georgia,GA,12,39.78530524,5834954,57919,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.80217985,0,0,0,0,0,525,13
+1988,Georgia,GA,12,39.49842844,6316142,57919,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.79638365,0,0,0,0,0,426,112
+1992,Georgia,GA,13,43.46868534,6759474,57919,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,50.34212845,1,0,0,0,0,168,370
+1996,Georgia,GA,13,45.84146585,7332225,57919,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,49.3677308,0,0,0,0,0,159,379
+2000,Georgia,GA,13,43.21099966,8227303,57919,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,44.01624638,0,0,0,0,0,271,267
+2004,Georgia,GA,15,41.37494605,8769252,57919,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,41.6457673,0,0,0,0,0,286,252
+2008,Georgia,GA,15,46.9901791,9504843,57919,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,47.37166449,0,0,0,0,0,173,365
+2012,Georgia,GA,16,45.50795967,9901430,57919,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,46.0433509,0,0,0,0,0,206,332
+2016,Georgia,GA,16,45.63998336,10301890,57919,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,47.3388274,0,0,0,0,0,306,232
+2020,Georgia,GA,16,49.47305578,10711908,57919,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,50.11932966,1,0,0,0,0,229,307
+1960,Hawaii,HI,3,50.03113072,642000,6423,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.03113072,1,0,0,0,0,220,317
+1964,Hawaii,HI,4,78.7611388,700000,6423,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,78.7611388,1,0,0,0,0,52,486
+1968,Hawaii,HI,4,59.8277862,734000,6423,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,60.71948752,1,0,0,0,0,320,218
+1972,Hawaii,HI,4,37.52081221,828331,6423,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.52081221,0,0,0,0,0,521,17
+1976,Hawaii,HI,4,50.59199934,904191,6423,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,51.28263124,1,0,0,0,0,241,297
+1980,Hawaii,HI,4,44.80211813,967710,6423,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,51.08405923,1,0,0,0,0,448,90
+1984,Hawaii,HI,4,43.81591563,1027922,6423,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,44.29627578,0,0,0,0,0,525,13
+1988,Hawaii,HI,4,54.26944008,1079828,6423,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,54.80627598,1,0,0,0,0,426,112
+1992,Hawaii,HI,4,48.09275779,1149926,6423,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,56.71997773,1,0,0,0,0,168,370
+1996,Hawaii,HI,4,56.92880151,1184434,6423,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,64.27615181,1,0,0,0,0,159,379
+2000,Hawaii,HI,4,55.79166791,1213519,6423,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,59.82729628,1,0,0,0,0,271,267
+2004,Hawaii,HI,4,54.00955216,1273569,6423,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,54.404448,1,0,0,0,0,286,252
+2008,Hawaii,HI,4,71.45291012,1332213,6423,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,72.99372588,1,1,0,0,0,173,365
+2012,Hawaii,HI,4,70.14793245,1394804,6423,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,71.7038485,1,1,0,0,0,206,332
+2016,Hawaii,HI,4,60.98079806,1427559,6423,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,67.44133745,1,0,0,0,0,306,232
+2020,Hawaii,HI,4,63.14937977,1455271,6423,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,65.03266465,1,0,0,0,0,229,307
+1952,Idaho,ID,4,34.42082894,587000,82751,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,34.47611934,0,0,0,0,0,442,89
+1956,Idaho,ID,4,38.78104979,628000,82751,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.80123293,0,0,0,0,0,457,74
+1960,Idaho,ID,4,46.21501082,671000,82751,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,46.21501082,0,0,0,0,0,220,317
+1964,Idaho,ID,4,50.91682423,680000,82751,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,50.91682423,1,0,0,0,0,52,486
+1968,Idaho,ID,4,30.65872664,695000,82751,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,35.05823862,0,0,0,0,0,320,218
+1972,Idaho,ID,4,26.04106592,763237,82751,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,28.84479497,0,0,0,0,0,521,17
+1976,Idaho,ID,4,37.11854563,856983,82751,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,38.26700937,0,0,0,0,0,241,297
+1980,Idaho,ID,4,25.19071579,947983,82751,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,27.48677321,0,0,0,0,0,448,90
+1984,Idaho,ID,4,26.39221295,990839,82751,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,26.7244288,0,0,0,0,0,525,13
+1988,Idaho,ID,4,36.01064142,985664,82751,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,36.71217715,0,0,0,0,0,426,112
+1992,Idaho,ID,4,28.41921205,1066490,82751,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,40.33851698,0,0,0,0,0,168,370
+1996,Idaho,ID,4,33.64638985,1187706,82751,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,39.20097243,0,0,0,0,0,159,379
+2000,Idaho,ID,4,27.63812884,1299430,82751,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,29.15150954,0,0,0,0,0,271,267
+2004,Idaho,ID,4,30.26491704,1391802,82751,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,30.67726182,0,0,0,0,0,286,252
+2008,Idaho,ID,4,36.09098763,1534320,82751,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,36.97541019,0,0,0,0,0,173,365
+2012,Idaho,ID,4,32.62233356,1595324,82751,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,33.57861316,0,0,0,0,0,206,332
+2016,Idaho,ID,4,27.49201382,1682380,82751,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,31.68982332,0,0,0,0,0,306,232
+2020,Idaho,ID,4,33.06640215,1839106,82751,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,34.12285707,0,0,0,0,0,229,307
+1952,Illinois,IL,27,44.94295767,8956000,55593,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,45.04157342,0,0,0,1,0,442,89
+1956,Illinois,IL,27,40.28858692,9530000,55593,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,40.3655005,0,0,0,1,0,457,74
+1960,Illinois,IL,27,49.98195446,10086000,55593,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.09330429,1,0,0,0,0,220,317
+1964,Illinois,IL,26,59.4711367,10580000,55593,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,59.47192075,1,0,0,0,0,52,486
+1968,Illinois,IL,26,44.15421704,10995000,55593,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.39889451,0,0,0,0,0,320,218
+1972,Illinois,IL,26,40.51188634,11251948,55593,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,40.697874,0,0,0,0,0,521,17
+1976,Illinois,IL,26,48.10759027,11342853,55593,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,48.99716625,0,0,0,0,0,241,297
+1980,Illinois,IL,26,41.71640818,11434702,55593,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,45.66033762,0,0,1,0,0,448,90
+1984,Illinois,IL,24,43.29655321,11412132,55593,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,43.5267467,0,0,1,0,0,525,13
+1988,Illinois,IL,24,48.60455527,11390183,55593,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.95072301,0,0,0,0,0,426,112
+1992,Illinois,IL,22,48.57967782,11635197,55593,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,58.58821821,1,0,0,0,0,168,370
+1996,Illinois,IL,22,54.31527783,11953003,55593,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,59.60509219,1,0,0,0,0,159,379
+2000,Illinois,IL,22,54.59652121,12434161,55593,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,56.18001032,1,0,0,0,0,271,267
+2004,Illinois,IL,21,54.82316021,12589773,55593,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,55.20863405,1,0,0,0,0,286,252
+2008,Illinois,IL,21,61.91811452,12747038,55593,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,62.73426405,1,0,0,1,0,173,365
+2012,Illinois,IL,20,57.60213536,12882510,55593,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,58.57752339,1,0,0,1,0,206,332
+2016,Illinois,IL,20,55.8253667,12820527,55593,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,59.02005139,1,1,0,0,0,306,232
+2020,Illinois,IL,20,57.54164538,12812508,55593,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,58.65904373,1,0,0,0,0,229,307
+1952,Indiana,IN,13,40.99216243,4148000,35870,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,41.36312055,0,0,0,0,0,442,89
+1956,Indiana,IN,13,39.69944399,4458000,35870,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,39.85866817,0,0,0,0,0,457,74
+1960,Indiana,IN,13,44.59941181,4674000,35870,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,44.76464622,0,0,0,0,0,220,317
+1964,Indiana,IN,13,55.97842041,4856000,35870,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,56.23761387,1,0,0,0,0,52,486
+1968,Indiana,IN,13,37.9855029,5093000,35870,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,43.03227878,0,0,0,0,0,320,218
+1972,Indiana,IN,13,33.33607775,5302435,35870,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,33.52228912,0,0,0,0,0,521,17
+1976,Indiana,IN,13,45.70038579,5389088,35870,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,46.15122219,0,0,0,0,0,241,297
+1980,Indiana,IN,13,37.65319244,5490721,35870,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,40.20267133,0,0,0,0,0,448,90
+1984,Indiana,IN,12,37.68271379,5458322,35870,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,37.92657088,0,0,0,0,0,525,13
+1988,Indiana,IN,12,39.68618767,5491735,35870,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.87400887,0,0,0,0,0,426,112
+1992,Indiana,IN,12,36.79390564,5648649,35870,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,46.16510546,0,0,0,0,0,168,370
+1996,Indiana,IN,12,41.55713765,5834908,35870,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,46.85159365,0,0,0,0,0,159,379
+2000,Indiana,IN,12,41.01210293,6091866,35870,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,41.99521747,0,0,0,0,0,271,267
+2004,Indiana,IN,11,39.26297467,6233007,35870,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,39.57652375,0,0,0,0,0,286,252
+2008,Indiana,IN,11,49.94591164,6424806,35870,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,50.52195344,1,0,0,0,0,173,365
+2012,Indiana,IN,11,43.9273029,6537703,35870,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,44.7996254,0,0,0,0,0,206,332
+2016,Indiana,IN,11,37.77483969,6634304,35870,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,39.88269048,0,0,0,0,0,306,232
+2020,Indiana,IN,11,40.96167706,6785528,35870,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,41.80495199,0,0,0,0,0,229,307
+1952,Iowa,IA,10,35.58658641,2626000,55875,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,35.82245269,0,0,0,0,0,442,89
+1956,Iowa,IA,10,40.65062646,2703000,55875,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,40.76682819,0,0,0,0,0,457,74
+1960,Iowa,IA,10,43.22190908,2756000,55875,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,43.25124554,0,0,0,0,0,220,317
+1964,Iowa,IA,9,61.8831461,2746000,55875,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,62.00673672,1,0,0,0,0,52,486
+1968,Iowa,IA,9,40.81568175,2803000,55875,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,43.5021742,0,0,0,0,0,320,218
+1972,Iowa,IA,8,40.47542139,2860287,55875,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,41.2675179,0,0,0,0,0,521,17
+1976,Iowa,IA,8,48.45849654,2903082,55875,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.48383415,0,0,0,0,0,241,297
+1980,Iowa,IA,8,38.60416298,2914018,55875,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,42.93684973,0,0,0,0,0,448,90
+1984,Iowa,IA,8,45.8870818,2858618,55875,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,46.27617467,0,0,0,0,0,525,13
+1988,Iowa,IA,8,54.71192398,2768388,55875,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,55.14848114,1,0,0,0,0,426,112
+1992,Iowa,IA,7,43.28583862,2806923,55875,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,53.73252911,1,0,0,0,0,168,370
+1996,Iowa,IA,7,50.26096469,2848473,55875,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,55.73338892,1,0,0,0,0,159,379
+2000,Iowa,IA,7,47.19191558,2929067,55875,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,50.16277919,1,0,0,0,0,271,267
+2004,Iowa,IA,7,49.23313168,2953635,55875,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,49.66332073,0,0,0,0,0,286,252
+2008,Iowa,IA,7,53.92802007,3016734,55875,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,54.84877779,1,0,0,0,0,173,365
+2012,Iowa,IA,6,51.98801653,3076190,55875,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,52.95935193,1,0,0,0,0,206,332
+2016,Iowa,IA,6,41.75251345,3131371,55875,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,44.93645216,0,0,0,0,0,306,232
+2020,Iowa,IA,6,44.64723286,3190369,55875,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,45.81673692,0,0,0,0,0,229,307
+1952,Kansas,KS,8,30.49613576,1977000,81823,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.72129209,0,0,1,0,0,442,89
+1956,Kansas,KS,8,34.20714511,2119000,81823,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.32793285,0,0,1,0,0,457,74
+1960,Kansas,KS,8,39.1045676,2183000,81823,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,39.27956163,0,0,0,0,0,220,317
+1964,Kansas,KS,7,54.08875849,2209000,81823,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,54.55257245,1,0,0,0,0,52,486
+1968,Kansas,KS,7,34.7160749,2216000,81823,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,38.7626492,0,0,0,0,0,320,218
+1972,Kansas,KS,7,29.50425447,2256375,81823,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.36594806,0,0,0,0,0,521,17
+1976,Kansas,KS,7,44.93639368,2301001,81823,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,46.12445924,0,0,0,0,0,241,297
+1980,Kansas,KS,7,33.28757546,2369039,81823,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,36.52451056,0,0,0,0,0,448,90
+1984,Kansas,KS,7,32.59803658,2424086,81823,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,32.97052289,0,0,0,0,0,525,13
+1988,Kansas,KS,7,42.55964489,2461996,81823,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.2724983,0,0,0,0,0,426,112
+1992,Kansas,KS,6,33.73849414,2526042,81823,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,46.45894441,0,0,0,0,0,168,370
+1996,Kansas,KS,6,36.0847994,2598266,81823,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,39.92763445,0,0,1,0,1,159,379
+2000,Kansas,KS,6,37.23839226,2693681,81823,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,39.08309253,0,0,0,0,0,271,267
+2004,Kansas,KS,6,36.62309431,2734373,81823,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,37.13290122,0,0,0,0,0,286,252
+2008,Kansas,KS,6,41.65196719,2808076,81823,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,42.38772418,0,0,0,0,0,173,365
+2012,Kansas,KS,6,37.99457055,2885257,81823,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,38.88667325,0,0,0,0,0,206,332
+2016,Kansas,KS,6,36.05237073,2910844,81823,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,38.88852965,0,0,0,0,0,306,232
+2020,Kansas,KS,6,41.55955354,2937880,81823,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,42.50657175,0,0,0,0,0,229,307
+1952,Kentucky,KY,10,49.91491701,2920000,39732,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,50.03532649,1,0,0,0,0,442,89
+1956,Kentucky,KY,10,45.21263422,2898000,39732,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,45.43510912,0,0,0,0,0,457,74
+1960,Kentucky,KY,10,46.40930507,3041000,39732,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,46.40930507,0,0,0,0,0,220,317
+1964,Kentucky,KY,9,64.01451097,3129000,39732,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,64.22749646,1,0,0,0,0,52,486
+1968,Kentucky,KY,9,37.64974292,3195000,39732,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,46.22827786,0,0,0,0,0,320,218
+1972,Kentucky,KY,9,34.76902554,3335728,39732,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,35.42928871,0,0,0,0,0,521,17
+1976,Kentucky,KY,9,52.75424927,3529257,39732,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,53.65402864,1,0,0,0,0,241,297
+1980,Kentucky,KY,9,47.65391583,3664221,39732,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.2872544,0,0,0,0,0,448,90
+1984,Kentucky,KY,9,39.40124658,3695453,39732,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.63581761,0,0,0,0,0,525,13
+1988,Kentucky,KY,9,43.88359469,3679999,39732,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,44.14623219,0,0,0,0,0,426,112
+1992,Kentucky,KY,8,44.55114207,3756358,39732,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,51.86877769,1,0,0,0,0,168,370
+1996,Kentucky,KY,8,45.84217849,3881051,39732,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,50.52905119,1,0,0,0,0,159,379
+2000,Kentucky,KY,8,41.37818259,4049021,39732,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,42.27238474,0,0,0,0,0,271,267
+2004,Kentucky,KY,8,39.68707298,4146101,39732,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,39.99238008,0,0,0,0,0,286,252
+2008,Kentucky,KY,8,41.16811378,4289878,39732,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,41.76657241,0,0,0,0,0,173,365
+2012,Kentucky,KY,8,37.80132783,4386346,39732,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,38.4572276,0,0,0,0,0,206,332
+2016,Kentucky,KY,8,32.68218833,4438182,39732,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,34.32937098,0,0,0,0,0,306,232
+2020,Kentucky,KY,8,36.15151481,4505836,39732,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,36.7998971,0,0,0,0,0,229,307
+1952,Louisiana,LA,10,52.92214764,2842000,43566,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,52.92214764,1,0,0,0,0,442,89
+1956,Louisiana,LA,10,39.50763023,3032000,43566,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,42.57709974,0,0,0,0,0,457,74
+1960,Louisiana,LA,10,50.42004429,3260000,43566,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,63.81433108,1,0,0,0,0,220,317
+1964,Louisiana,LA,10,43.18543155,3446000,43566,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,43.18543155,0,0,0,0,0,52,486
+1968,Louisiana,LA,10,28.21221924,3603000,43566,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,54.59137795,1,0,0,0,0,320,218
+1972,Louisiana,LA,10,28.35421321,3761646,43566,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.26840773,0,0,0,0,0,521,17
+1976,Louisiana,LA,10,51.77499622,3950605,43566,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,52.95957515,1,0,0,0,0,241,297
+1980,Louisiana,LA,10,45.74823178,4223101,43566,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,47.18911401,0,0,0,0,0,448,90
+1984,Louisiana,LA,10,38.17539263,4400477,43566,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38.58083884,0,0,0,0,0,525,13
+1988,Louisiana,LA,10,44.0645571,4288863,43566,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,44.80870768,0,0,0,0,0,426,112
+1992,Louisiana,LA,9,45.58453914,4270849,43566,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,52.66513786,1,0,0,0,0,168,370
+1996,Louisiana,LA,9,52.00999575,4338763,43566,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,56.56083828,1,0,0,0,0,159,379
+2000,Louisiana,LA,9,44.87533245,4471885,43566,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,46.06075403,0,0,0,0,0,271,267
+2004,Louisiana,LA,9,42.2158647,4552238,43566,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,42.66905873,0,0,0,0,0,286,252
+2008,Louisiana,LA,9,39.9329138,4435586,43566,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,40.54282584,0,0,0,0,0,173,365
+2012,Louisiana,LA,8,40.57746362,4600972,43566,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,41.25317438,0,0,0,0,0,206,332
+2016,Louisiana,LA,8,38.4495661,4678135,43566,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,39.82832276,0,0,0,0,0,306,232
+2020,Louisiana,LA,8,39.8514568,4657757,43566,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,40.53555954,0,0,0,0,0,229,307
+1952,Maine_d1,ME_d1,0,33.77223653,915000,30865,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,33.8325374,0,0,0,0,0,442,89
+1956,Maine_d1,ME_d1,0,29.13456125,938000,30865,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,29.13456125,0,0,0,0,0,457,74
+1960,Maine_d1,ME_d1,0,42.95177738,975000,30865,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,42.9523884,0,0,0,0,0,220,317
+1964,Maine_d1,ME_d1,0,68.79579037,993000,30865,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,68.84201961,1,0,0,0,0,52,486
+1968,Maine_d1,ME_d1,0,55.30468066,994000,30865,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,56.21601486,1,0,0,0,0,320,218
+1972,Maine_d1,ME_d1,1,39,1034292,30865,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,39,0,0,0,0,0,521,17
+1976,Maine_d1,ME_d1,1,48,1088412,30865,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.48453608,0,0,0,0,0,241,297
+1980,Maine_d1,ME_d1,1,42,1126860,30865,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,48.27586207,0,0,0,0,0,448,90
+1984,Maine_d1,ME_d1,1,40,1155635,30865,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,40,0,0,0,0,0,525,13
+1988,Maine_d1,ME_d1,1,43,1203840,30865,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.43434343,0,0,0,0,0,426,112
+1992,Maine_d1,ME_d1,1,40,1235748,30865,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,55.55555556,1,0,0,0,0,168,370
+1996,Maine_d1,ME_d1,1,52,1241436,30865,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,61.9047619,1,0,0,0,0,159,379
+2000,Maine_d1,ME_d1,1,51,1277072,30865,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,54.25531915,1,0,0,0,0,271,267
+2004,Maine_d1,ME_d1,1,55,1313688,30865,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,56.12244898,1,0,0,0,0,286,252
+2008,Maine_d1,ME_d1,1,61,1330509,30865,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,61.61616162,1,0,0,0,0,173,365
+2012,Maine_d1,ME_d1,1,60,1327729,30865,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,61.2244898,1,0,0,0,0,206,332
+2016,Maine_d1,ME_d1,1,54,1331317,30865,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,58.06451613,1,0,0,0,0,306,232
+2020,Maine_d1,ME_d1,1,60,1362359,30865,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,61.8556701,1,0,0,0,0,229,307
+1952,Maine_d2,ME_d2,0,33.77223653,915000,30865,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,33.8325374,0,0,0,0,0,442,89
+1956,Maine_d2,ME_d2,0,29.13456125,938000,30865,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,29.13456125,0,0,0,0,0,457,74
+1960,Maine_d2,ME_d2,0,42.95177738,975000,30865,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,42.9523884,0,0,0,0,0,220,317
+1964,Maine_d2,ME_d2,0,68.79579037,993000,30865,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,68.84201961,1,0,0,0,0,52,486
+1968,Maine_d2,ME_d2,0,55.30468066,994000,30865,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,56.21601486,1,0,0,0,0,320,218
+1972,Maine_d2,ME_d2,1,38,1034292,30865,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,38,0,0,0,0,0,521,17
+1976,Maine_d2,ME_d2,1,48,1088412,30865,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.48453608,0,0,0,0,0,241,297
+1980,Maine_d2,ME_d2,1,43,1126860,30865,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,48.31460674,0,0,0,0,0,448,90
+1984,Maine_d2,ME_d2,1,38,1155635,30865,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38,0,0,0,0,0,525,13
+1988,Maine_d2,ME_d2,1,45,1203840,30865,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,45,0,0,0,0,0,426,112
+1992,Maine_d2,ME_d2,1,38,1235748,30865,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,57.57575758,1,0,0,0,0,168,370
+1996,Maine_d2,ME_d2,1,51,1241436,30865,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,62.96296296,1,0,0,0,0,159,379
+2000,Maine_d2,ME_d2,1,47,1277072,30865,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,50.53763441,1,0,0,0,0,271,267
+2004,Maine_d2,ME_d2,1,52,1313688,30865,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,53.06122449,1,0,0,0,0,286,252
+2008,Maine_d2,ME_d2,1,55,1330509,30865,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,56.12244898,1,0,0,0,0,173,365
+2012,Maine_d2,ME_d2,1,53,1327729,30865,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,54.63917526,1,0,0,0,0,206,332
+2016,Maine_d2,ME_d2,1,41,1331317,30865,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,44.56521739,0,0,0,0,0,306,232
+2020,Maine_d2,ME_d2,1,51,1362359,30865,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,55.43478261,1,0,0,0,0,229,307
+1952,Maine_full,ME_full,5,33.77223653,915000,30865,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,33.8325374,0,0,0,0,0,442,89
+1956,Maine_full,ME_full,5,29.13456125,938000,30865,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,29.13456125,0,0,0,0,0,457,74
+1960,Maine_full,ME_full,5,42.95177738,975000,30865,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,42.9523884,0,0,0,0,0,220,317
+1964,Maine_full,ME_full,4,68.79579037,993000,30865,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,68.84201961,1,0,0,0,0,52,486
+1968,Maine_full,ME_full,4,55.30468066,994000,30865,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,56.21601486,1,0,0,0,0,320,218
+1972,Maine_full,ME_full,2,38.48434231,1034292,30865,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,38.50547427,0,0,0,0,0,521,17
+1976,Maine_full,ME_full,2,48.09407663,1088412,30865,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.56882111,0,0,0,0,0,241,297
+1980,Maine_full,ME_full,2,42.2503542,1126860,30865,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,48.09051657,0,0,0,0,0,448,90
+1984,Maine_full,ME_full,2,38.78104074,1155635,30865,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38.9308821,0,0,0,0,0,525,13
+1988,Maine_full,ME_full,2,43.88353888,1203840,30865,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,44.2289813,0,0,0,0,0,426,112
+1992,Maine_full,ME_full,2,38.7667973,1235748,30865,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,56.05587287,1,0,0,0,0,168,370
+1996,Maine_full,ME_full,2,51.62395589,1241436,30865,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,62.66212042,1,0,0,0,0,159,379
+2000,Maine_full,ME_full,2,49.08601647,1277072,30865,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,52.74784154,1,0,0,0,0,271,267
+2004,Maine_full,ME_full,2,53.57285569,1313688,30865,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,54.58301641,1,0,0,0,0,286,252
+2008,Maine_full,ME_full,2,57.7057373,1330509,30865,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,58.82952498,1,0,0,0,0,173,365
+2012,Maine_full,ME_full,2,55.37103419,1327729,30865,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,57.85992139,1,0,0,0,0,206,332
+2016,Maine_full,ME_full,2,46.3452141,1331317,30865,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,51.59679113,1,0,0,0,0,306,232
+2020,Maine_full,ME_full,2,52.52557935,1362359,30865,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,54.67040458,1,0,0,0,0,229,307
+1952,Maryland,MD,9,43.82534027,2500000,9775,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.18353057,0,0,0,0,0,442,89
+1956,Maryland,MD,9,39.96488447,2811000,9775,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,39.96488447,0,0,0,0,0,457,74
+1960,Maryland,MD,9,53.61335444,3113000,9775,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,53.61350685,1,0,0,0,0,220,317
+1964,Maryland,MD,10,65.46709815,3492000,9775,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,65.47003019,1,0,0,0,0,52,486
+1968,Maryland,MD,10,43.58647784,3815000,9775,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,50.96160673,1,0,0,0,0,320,218
+1972,Maryland,MD,10,37.35976635,4073499,9775,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.88377678,0,0,0,0,0,521,17
+1976,Maryland,MD,10,53.03541992,4150539,9775,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,53.03541992,1,0,0,0,0,241,297
+1980,Maryland,MD,10,47.13812954,4227643,9775,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,51.61913807,1,0,0,0,0,448,90
+1984,Maryland,MD,10,47.01639086,4365243,9775,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,47.24247281,0,0,0,0,0,525,13
+1988,Maryland,MD,10,48.19903427,4657904,9775,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.53556977,0,0,0,0,0,426,112
+1992,Maryland,MD,10,49.81260519,4902545,9775,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,58.29990004,1,0,0,0,0,168,370
+1996,Maryland,MD,10,54.25477435,5057142,9775,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,58.63842349,1,0,0,0,0,159,379
+2000,Maryland,MD,10,56.48830838,5311034,9775,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,58.43229894,1,0,0,0,0,271,267
+2004,Maryland,MD,10,55.97146761,5546935,9775,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,56.56558421,1,0,0,0,0,286,252
+2008,Maryland,MD,10,61.91934476,5684965,9775,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,62.93008729,1,0,0,0,0,173,365
+2012,Maryland,MD,10,61.97419078,5886992,9775,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,63.32172579,1,0,0,0,0,206,332
+2016,Maryland,MD,10,60.32574424,6003323,9775,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,64.01624969,1,0,0,0,0,306,232
+2020,Maryland,MD,10,65.36066486,6177224,9775,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,67.02904705,1,0,0,0,0,229,307
+1952,Massachusetts,MA,16,45.46135392,4650000,7838,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,45.60578319,0,0,0,0,0,442,89
+1956,Massachusetts,MA,16,40.37417831,4891000,7838,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,40.49693622,0,0,0,0,0,457,74
+1960,Massachusetts,MA,16,60.22215203,5160000,7838,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,60.35794935,1,1,0,1,0,220,317
+1964,Massachusetts,MA,14,76.18660541,5448000,7838,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,76.46866702,1,0,0,0,0,52,486
+1968,Massachusetts,MA,14,63.00918794,5618000,7838,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,65.70560208,1,0,0,0,0,320,218
+1972,Massachusetts,MA,14,54.19569896,5760302,7838,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,54.50912985,1,0,0,0,0,521,17
+1976,Massachusetts,MA,14,56.11157823,5743672,7838,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,58.11462217,1,0,0,0,0,241,297
+1980,Massachusetts,MA,14,41.74977913,5746075,7838,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.90932699,0,0,0,0,0,448,90
+1984,Massachusetts,MA,13,48.43378267,5840773,7838,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,48.60166976,0,0,0,0,0,525,13
+1988,Massachusetts,MA,13,53.22905149,5979982,7838,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,53.98258893,1,1,1,1,0,426,112
+1992,Massachusetts,MA,12,47.54141093,5993474,7838,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,62.09222867,1,0,1,0,0,168,370
+1996,Massachusetts,MA,12,61.47209871,6085393,7838,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,68.63782541,1,0,0,0,0,159,379
+2000,Massachusetts,MA,12,59.12612602,6361104,7838,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,64.78934376,1,0,0,0,0,271,267
+2004,Massachusetts,MA,12,61.6166602,6412281,7838,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,62.74285551,1,0,0,1,0,286,252
+2008,Massachusetts,MA,12,61.3631991,6468967,7838,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,63.19707821,1,0,0,0,0,173,365
+2012,Massachusetts,MA,11,60.33830832,6663005,7838,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,61.78568075,1,0,0,0,1,206,332
+2016,Massachusetts,MA,11,59.0500651,6823608,7838,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,64.65127869,1,0,0,0,0,306,232
+2020,Massachusetts,MA,11,65.1229837,7029917,7838,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,67.11554954,1,0,0,0,0,229,307
+1952,Michigan,MI,20,43.97414843,6650000,56539,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.23345528,0,0,0,0,0,442,89
+1956,Michigan,MI,20,44.1458246,7467000,56539,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.24526077,0,0,0,0,0,457,74
+1960,Michigan,MI,20,50.85050256,7834000,56539,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,51.01038577,1,0,0,0,0,220,317
+1964,Michigan,MI,21,66.70455702,8187000,56539,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,66.83674475,1,0,0,0,0,52,486
+1968,Michigan,MI,21,48.18395463,8696000,56539,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,53.75229397,1,0,0,0,0,320,218
+1972,Michigan,MI,21,41.81372795,9028944,56539,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,42.65911873,0,0,0,0,0,521,17
+1976,Michigan,MI,21,46.46507412,9129205,56539,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,47.25622595,0,0,0,0,1,241,297
+1980,Michigan,MI,21,42.4974135,9255553,56539,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,46.4535891,0,0,0,0,0,448,90
+1984,Michigan,MI,20,40.23607594,9049452,56539,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,40.453675,0,0,0,0,0,525,13
+1988,Michigan,MI,20,45.67207835,9217998,56539,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,46.02195004,0,0,0,0,0,426,112
+1992,Michigan,MI,18,43.77368748,9470323,56539,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,54.61515964,1,0,0,0,0,168,370
+1996,Michigan,MI,18,51.69482057,9739184,56539,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,57.32441336,1,0,0,0,0,159,379
+2000,Michigan,MI,18,51.27979887,9952450,56539,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,52.63460648,1,0,0,0,0,271,267
+2004,Michigan,MI,17,51.23070673,10055315,56539,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,51.72584447,1,0,0,0,0,286,252
+2008,Michigan,MI,17,57.43324731,9946889,56539,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,58.37130158,1,0,0,0,0,173,365
+2012,Michigan,MI,16,54.20820421,9897145,56539,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,54.80053207,1,0,1,0,0,206,332
+2016,Michigan,MI,16,47.27453095,9950571,56539,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,49.88233178,0,0,0,0,0,306,232
+2020,Michigan,MI,16,50.62081829,10077331,56539,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,51.41355934,1,0,0,0,0,229,307
+1952,Minnesota,MN,11,44.10768382,3030000,79617,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.35895249,0,0,0,0,0,442,89
+1956,Minnesota,MN,11,46.08378327,7467000,56539,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,46.19333691,0,0,0,0,0,457,74
+1960,Minnesota,MN,11,50.58301938,3425000,79617,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.71587049,1,0,0,0,0,220,317
+1964,Minnesota,MN,10,63.75948721,3558000,79617,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,63.91247797,1,0,0,0,0,52,486
+1968,Minnesota,MN,10,53.99638655,3703000,79617,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,56.56480792,1,0,0,1,0,320,218
+1972,Minnesota,MN,10,46.06810086,3869747,79617,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,47.17975556,0,0,0,0,0,521,17
+1976,Minnesota,MN,10,54.89630146,3964680,79617,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,56.64198197,1,0,0,0,0,241,297
+1980,Minnesota,MN,10,46.50156244,4085017,79617,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,52.21361455,1,0,0,0,0,448,90
+1984,Minnesota,MN,10,49.71884656,4157706,79617,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,50.09089077,1,1,0,1,0,525,13
+1988,Minnesota,MN,10,52.91283343,4296166,79617,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,53.55085993,1,0,0,0,0,426,112
+1992,Minnesota,MN,10,43.48465128,4471503,79617,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,57.72134023,1,0,0,0,0,168,370
+1996,Minnesota,MN,10,51.10075658,4647723,79617,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,59.38068927,1,0,0,0,0,159,379
+2000,Minnesota,MN,10,47.90557206,4933692,79617,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,51.28641198,1,0,0,0,0,271,267
+2004,Minnesota,MN,10,51.08968469,5087713,79617,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,51.76091061,1,0,0,0,0,286,252
+2008,Minnesota,MN,10,54.0602927,5247018,79617,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,55.229375,1,0,0,0,0,173,365
+2012,Minnesota,MN,10,52.65230315,5376643,79617,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,53.94122646,1,0,0,0,0,206,332
+2016,Minnesota,MN,10,46.44503396,5522744,79617,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,50.83169371,1,0,0,0,0,306,232
+2020,Minnesota,MN,10,52.39509931,5706494,79617,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,53.63951365,1,0,0,0,0,229,307
+1952,Mississippi,MS,8,60.43665859,2152000,46914,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,60.43665859,1,0,0,0,0,442,89
+1956,Mississippi,MS,8,58.23033742,2086000,46914,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,70.423963,1,0,0,0,0,457,74
+1960,Mississippi,MS,8,36.34223315,2182000,46914,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,59.56476091,1,0,0,0,0,220,317
+1964,Mississippi,MS,7,12.8604459,2241000,46914,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,12.8604459,0,0,0,0,0,52,486
+1968,Mississippi,MS,7,23.01633744,2219000,46914,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,62.98879412,1,0,0,0,0,320,218
+1972,Mississippi,MS,7,19.62682073,2307117,46914,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,20.0633954,0,0,0,0,0,521,17
+1976,Mississippi,MS,7,49.62701232,2429756,46914,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,50.96788853,1,0,0,0,0,241,297
+1980,Mississippi,MS,7,48.13916456,2525342,46914,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.32166779,0,0,0,0,0,448,90
+1984,Mississippi,MS,7,37.42328159,2578051,46914,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,37.68496494,0,0,0,0,0,525,13
+1988,Mississippi,MS,7,39.06714459,2580352,46914,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.47891705,0,0,0,0,0,426,112
+1992,Mississippi,MS,7,40.76806414,2610193,46914,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,45.07151053,0,0,0,0,0,168,370
+1996,Mississippi,MS,7,44.08110022,2709925,46914,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,47.25277625,0,0,0,0,0,159,379
+2000,Mississippi,MS,7,40.69810015,2848353,46914,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,41.39451516,0,0,0,0,0,271,267
+2004,Mississippi,MS,6,40.16111259,2889010,46914,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,40.49499923,0,0,0,0,0,286,252
+2008,Mississippi,MS,6,43.00155443,2947806,46914,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,43.35806901,0,0,0,0,0,173,365
+2012,Mississippi,MS,6,43.78935954,2983816,46914,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,44.1981008,0,0,0,0,0,206,332
+2016,Mississippi,MS,6,40.11478827,2987938,46914,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,40.91015267,0,0,0,0,0,306,232
+2020,Mississippi,MS,6,41.05760646,2961279,46914,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,41.61501417,0,0,0,0,0,229,307
+1952,Missouri,MO,13,49.14373842,3972000,68898,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,49.21665055,0,0,0,0,0,442,89
+1956,Missouri,MO,13,50.10870028,4163000,68898,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,50.10870028,1,0,0,0,0,457,74
+1960,Missouri,MO,13,50.25795819,4326000,68898,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.25795819,1,0,0,0,0,220,317
+1964,Missouri,MO,12,64.04958746,4442000,68898,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,64.04958746,1,0,0,0,0,52,486
+1968,Missouri,MO,12,43.7382219,4568000,68898,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,49.36109809,0,0,0,0,0,320,218
+1972,Missouri,MO,12,37.70566488,4758780,68898,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.70566488,0,0,0,0,0,521,17
+1976,Missouri,MO,12,51.10498567,4839029,68898,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,51.84190712,1,0,0,0,0,241,297
+1980,Missouri,MO,12,44.34571659,4921966,68898,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,46.43458566,0,0,0,0,0,448,90
+1984,Missouri,MO,11,39.97524933,4975278,68898,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.97524933,0,0,0,0,0,525,13
+1988,Missouri,MO,11,47.85044916,5081736,68898,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.00308832,0,0,0,0,0,426,112
+1992,Missouri,MO,11,44.07168576,5193686,68898,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,56.50696611,1,0,0,0,0,168,370
+1996,Missouri,MO,11,47.53957828,5367888,68898,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,53.54703747,1,0,0,0,0,159,379
+2000,Missouri,MO,11,47.08427335,5607285,68898,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,48.28805134,0,0,0,0,0,271,267
+2004,Missouri,MO,11,46.10044652,5747741,68898,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,46.38028734,0,0,0,0,0,286,252
+2008,Missouri,MO,11,49.29264787,5923916,68898,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,49.93242085,0,0,0,0,0,173,365
+2012,Missouri,MO,10,44.38348355,6024367,68898,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,45.22133325,0,0,0,0,0,206,332
+2016,Missouri,MO,10,38.13523084,6087135,68898,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,40.18143901,0,0,0,0,0,306,232
+2020,Missouri,MO,10,41.40878174,6154913,68898,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,42.16417936,0,0,0,0,0,229,307
+1952,Montana,MT,4,40.07478201,602000,145556,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,40.29217737,0,0,0,0,0,442,89
+1956,Montana,MT,4,42.86520314,656000,145556,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,42.86520314,0,0,0,0,0,457,74
+1960,Montana,MT,4,48.59553496,679000,145556,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,48.74427243,0,0,0,0,0,220,317
+1964,Montana,MT,4,58.94813156,706000,145556,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,59.23513586,1,0,0,0,0,52,486
+1968,Montana,MT,4,41.58722176,700000,145556,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,45.11409279,0,0,0,0,0,320,218
+1972,Montana,MT,4,37.84504554,718732,145556,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,39.51599912,0,0,0,0,0,521,17
+1976,Montana,MT,4,45.40418697,757317,145556,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,46.21565385,0,0,0,0,0,241,297
+1980,Montana,MT,4,32.4306502,788752,145556,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,36.33475555,0,0,0,0,0,448,90
+1984,Montana,MT,4,38.17658185,820905,145556,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,38.69860124,0,0,0,0,0,525,13
+1988,Montana,MT,4,46.19852656,800202,145556,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,47.01181028,0,0,0,0,0,426,112
+1992,Montana,MT,3,37.63112452,822436,145556,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,51.72405712,1,0,0,0,0,168,370
+1996,Montana,MT,3,41.25006448,876656,145556,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,48.31258955,0,0,0,0,0,159,379
+2000,Montana,MT,3,33.36512679,903773,145556,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,36.34363802,0,0,0,0,0,271,267
+2004,Montana,MT,3,38.56502839,930009,145556,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,39.49992382,0,0,0,0,0,286,252
+2008,Montana,MT,3,47.26846477,976415,145556,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,48.83059672,0,0,0,0,0,173,365
+2012,Montana,MT,3,41.69813737,1003783,145556,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,42.96576814,0,0,0,0,0,206,332
+2016,Montana,MT,3,35.93521878,1040859,145556,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,38.89033569,0,0,0,0,0,306,232
+2020,Montana,MT,3,40.54936936,1084225,145556,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,41.60281991,0,0,0,0,0,229,307
+2020,Nebraska,NA,NA,39.16663094,NA,NA,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,40.21594775,0,0,0,0,0,229,307
+1964,Nebraska_3,NA,NA,52.6071892,NA,NA,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,52.6071892,1,0,0,0,0,52,486
+1952,Nebraska_d1,NE_d1,0,30.84620936,1311000,76878,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.84620936,0,0,0,0,0,442,89
+1956,Nebraska_d1,NE_d1,0,34.48557275,1397000,76878,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.48557275,0,0,0,0,0,457,74
+1960,Nebraska_d1,NE_d1,0,37.92919531,1417000,76878,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,37.92919531,0,0,0,0,0,220,317
+1964,Nebraska_d1,NE_d1,0,52.6071892,1482000,76878,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,52.6071892,1,0,0,0,0,52,486
+1968,Nebraska_d1,NE_d1,0,31.8121788,1467000,76878,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,34.71593485,0,0,0,0,0,320,218
+1972,Nebraska_d1,NE_d1,0,29.49752641,1519013,76878,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,29.49752641,0,0,0,0,0,521,17
+1976,Nebraska_d1,NE_d1,0,38.4496719,1550911,76878,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,39.37354851,0,0,0,0,0,241,297
+1980,Nebraska_d1,NE_d1,0,26.02273847,1572296,76878,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,28.41755487,0,0,0,0,0,448,90
+1984,Nebraska_d1,NE_d1,0,28.80982686,1588639,76878,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,28.99524632,0,0,0,0,0,525,13
+1988,Nebraska_d1,NE_d1,0,39.19103807,1571477,76878,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.4459145,0,0,0,0,0,426,112
+1992,Nebraska_d1,NE_d1,1,29,1602406,76878,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,40.27777778,0,0,0,0,0,168,370
+1996,Nebraska_d1,NE_d1,1,38,1647657,76878,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,43.18181818,0,0,0,0,0,159,379
+2000,Nebraska_d1,NE_d1,1,36,1713820,76878,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,37.89473684,0,0,0,0,0,271,267
+2004,Nebraska_d1,NE_d1,1,36,1749370,76878,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,36.36363636,0,0,0,0,0,286,252
+2008,Nebraska_d1,NE_d1,1,44,1796378,76878,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,44.89795918,0,0,0,0,0,173,365
+2012,Nebraska_d1,NE_d1,1,41,1853303,76878,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,41.83673469,0,0,0,0,0,206,332
+2016,Nebraska_d1,NE_d1,1,36,1905616,76878,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,38.29787234,0,0,0,0,0,306,232
+2020,Nebraska_d1,NE_d1,1,41,1961504,76878,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,42.26804124,0,0,0,0,0,229,307
+1952,Nebraska_d2,NE_d2,0,30.84620936,1311000,76878,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.84620936,0,0,0,0,0,442,89
+1956,Nebraska_d2,NE_d2,0,34.48557275,1397000,76878,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.48557275,0,0,0,0,0,457,74
+1960,Nebraska_d2,NE_d2,0,37.92919531,1417000,76878,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,37.92919531,0,0,0,0,0,220,317
+1964,Nebraska_d2,NE_d2,0,52.6071892,1482000,76878,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,52.6071892,1,0,0,0,0,52,486
+1968,Nebraska_d2,NE_d2,0,31.8121788,1467000,76878,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,34.71593485,0,0,0,0,0,320,218
+1972,Nebraska_d2,NE_d2,0,29.49752641,1519013,76878,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,29.49752641,0,0,0,0,0,521,17
+1976,Nebraska_d2,NE_d2,0,38.4496719,1550911,76878,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,39.37354851,0,0,0,0,0,241,297
+1980,Nebraska_d2,NE_d2,0,26.02273847,1572296,76878,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,28.41755487,0,0,0,0,0,448,90
+1984,Nebraska_d2,NE_d2,0,28.80982686,1588639,76878,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,28.99524632,0,0,0,0,0,525,13
+1988,Nebraska_d2,NE_d2,0,39.19103807,1571477,76878,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.4459145,0,0,0,0,0,426,112
+1992,Nebraska_d2,NE_d2,1,32,1602406,76878,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,40,0,0,0,0,0,168,370
+1996,Nebraska_d2,NE_d2,1,38,1647657,76878,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,41.75824176,0,0,0,0,0,159,379
+2000,Nebraska_d2,NE_d2,1,39,1713820,76878,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,40.625,0,0,0,0,0,271,267
+2004,Nebraska_d2,NE_d2,1,38,1749370,76878,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,38.7755102,0,0,0,0,0,286,252
+2008,Nebraska_d2,NE_d2,1,50,1796378,76878,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,50.50505051,1,0,0,0,0,173,365
+2012,Nebraska_d2,NE_d2,1,46,1853303,76878,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,46.46464646,0,0,0,0,0,206,332
+2016,Nebraska_d2,NE_d2,1,46,1905616,76878,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,48.93617021,0,0,0,0,0,306,232
+2020,Nebraska_d2,NE_d2,1,52,1961504,76878,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,53.06122449,1,0,0,0,0,229,307
+1952,Nebraska_d3,NE_d3,0,30.84620936,1311000,76878,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.84620936,0,0,0,0,0,442,89
+1956,Nebraska_d3,NE_d3,0,34.48557275,1397000,76878,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.48557275,0,0,0,0,0,457,74
+1960,Nebraska_d3,NE_d3,0,37.92919531,1417000,76878,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,37.92919531,0,0,0,0,0,220,317
+1968,Nebraska_d3,NE_d3,0,31.8121788,1467000,76878,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,34.71593485,0,0,0,0,0,320,218
+1972,Nebraska_d3,NE_d3,0,29.49752641,1519013,76878,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,29.49752641,0,0,0,0,0,521,17
+1976,Nebraska_d3,NE_d3,0,38.4496719,1550911,76878,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,39.37354851,0,0,0,0,0,241,297
+1980,Nebraska_d3,NE_d3,0,26.02273847,1572296,76878,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,28.41755487,0,0,0,0,0,448,90
+1984,Nebraska_d3,NE_d3,0,28.80982686,1588639,76878,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,28.99524632,0,0,0,0,0,525,13
+1988,Nebraska_d3,NE_d3,0,39.19103807,1571477,76878,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.4459145,0,0,0,0,0,426,112
+1992,Nebraska_d3,NE_d3,1,24,1602406,76878,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,32.43243243,0,0,0,0,0,168,370
+1996,Nebraska_d3,NE_d3,1,29,1647657,76878,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,32.95454545,0,0,0,0,0,159,379
+2000,Nebraska_d3,NE_d3,1,25,1713820,76878,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,26.04166667,0,0,0,0,0,271,267
+2004,Nebraska_d3,NE_d3,1,24,1749370,76878,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,24.24242424,0,0,0,0,0,286,252
+2008,Nebraska_d3,NE_d3,1,30,1796378,76878,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,30.3030303,0,0,0,0,0,173,365
+2012,Nebraska_d3,NE_d3,1,28,1853303,76878,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,28.57142857,0,0,0,0,0,206,332
+2016,Nebraska_d3,NE_d3,1,20,1905616,76878,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,21.27659574,0,0,0,0,0,306,232
+2020,Nebraska_d3,NE_d3,1,22,1961504,76878,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,22.68041237,0,0,0,0,0,229,307
+1952,Nebraska_full,NE_full,6,30.84620936,1311000,76878,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.84620936,0,0,0,0,0,442,89
+1956,Nebraska_full,NE_full,6,34.48557275,1397000,76878,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.48557275,0,0,0,0,0,457,74
+1960,Nebraska_full,NE_full,6,37.92919531,1417000,76878,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,37.92919531,0,0,0,0,0,220,317
+1964,Nebraska_full,NE_full,5,52.6071892,1482000,76878,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,52.6071892,1,0,0,0,0,52,486
+1968,Nebraska_full,NE_full,5,31.8121788,1467000,76878,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,34.71593485,0,0,0,0,0,320,218
+1972,Nebraska_full,NE_full,5,29.49752641,1519013,76878,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,29.49752641,0,0,0,0,0,521,17
+1976,Nebraska_full,NE_full,5,38.44967194,1550911,76878,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,39.37354855,0,0,0,0,0,241,297
+1980,Nebraska_full,NE_full,5,26.02273847,1572296,76878,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,28.41755487,0,0,0,0,0,448,90
+1984,Nebraska_full,NE_full,5,28.80982686,1588639,76878,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,28.99524632,0,0,0,0,0,525,13
+1988,Nebraska_full,NE_full,5,39.19103807,1571477,76878,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.4459145,0,0,0,0,0,426,112
+1992,Nebraska_full,NE_full,2,29.40345416,1602406,76878,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,38.68826957,0,0,0,0,0,168,370
+1996,Nebraska_full,NE_full,2,34.95065802,1647657,76878,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,39.4451775,0,0,0,0,0,159,379
+2000,Nebraska_full,NE_full,2,33.25303901,1713820,76878,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,34.82051914,0,0,0,0,0,271,267
+2004,Nebraska_full,NE_full,2,32.68216082,1749370,76878,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,33.15266274,0,0,0,0,0,286,252
+2008,Nebraska_full,NE_full,2,41.59826578,1796378,76878,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,42.39092558,0,0,0,0,0,173,365
+2012,Nebraska_full,NE_full,2,38.02731442,1853303,76878,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,38.87060973,0,0,0,0,0,206,332
+2016,Nebraska_full,NE_full,2,33.69875638,1905616,76878,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,36.45232589,0,0,0,0,0,306,232
+1952,Nevada,NV,3,38.55456868,181000,109806,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,38.55456868,0,0,0,0,0,442,89
+1956,Nevada,NV,3,42.03166855,250000,109806,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,42.03166855,0,0,0,0,0,457,74
+1960,Nevada,NV,3,51.16205357,291000,109806,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,51.16205357,1,0,0,0,0,220,317
+1964,Nevada,NV,3,58.58173414,426000,109806,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,58.58173414,1,0,0,0,0,52,486
+1968,Nevada,NV,3,39.29372706,464000,109806,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,45.29472441,0,0,0,0,0,320,218
+1972,Nevada,NV,3,36.31922362,546789,109806,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,36.31922362,0,0,0,0,0,521,17
+1976,Nevada,NV,3,45.80980404,646975,109806,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,47.73060407,0,0,0,0,0,241,297
+1980,Nevada,NV,3,27.35666333,810215,109806,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,30.07267134,0,0,0,0,0,448,90
+1984,Nevada,NV,4,32.41934514,924922,109806,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,32.68431845,0,0,0,0,0,525,13
+1988,Nevada,NV,4,38.6841254,1075022,109806,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.18141084,0,0,0,0,0,426,112
+1992,Nevada,NV,4,37.35755,1330694,109806,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,51.82477752,1,0,0,0,0,168,370
+1996,Nevada,NV,4,43.93349688,1596476,109806,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,50.58653135,1,0,0,0,0,159,379
+2000,Nevada,NV,4,45.94126276,2018741,109806,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,48.1431615,0,0,0,0,0,271,267
+2004,Nevada,NV,5,47.87804052,2346222,109806,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,48.68240427,0,0,0,0,0,286,252
+2008,Nevada,NV,5,55.14667592,2653630,109806,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,56.38673812,1,0,0,0,0,173,365
+2012,Nevada,NV,6,52.35624947,2743996,109806,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,53.40754216,1,0,0,0,0,206,332
+2016,Nevada,NV,6,47.91782368,2917563,109806,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,51.29370942,1,0,0,0,0,306,232
+2020,Nevada,NV,6,50.05678196,3104614,109806,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,51.22311734,1,0,0,0,0,229,307
+1952,New Hampshire,NH,4,39.07785309,535000,8969,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,39.07785309,0,0,0,0,0,442,89
+1956,New Hampshire,NH,4,33.84495532,566000,8969,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,33.85903186,0,0,0,0,0,457,74
+1960,New Hampshire,NH,4,46.58220658,609000,8969,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,46.58220658,0,0,0,0,0,220,317
+1964,New Hampshire,NH,4,63.89047981,663000,8969,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,63.89047981,1,0,0,0,0,52,486
+1968,New Hampshire,NH,4,43.92513934,709000,8969,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,45.74173707,0,0,0,0,0,320,218
+1972,New Hampshire,NH,4,34.85462149,781107,8969,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,35.26634137,0,0,0,0,0,521,17
+1976,New Hampshire,NH,4,43.4726921,845248,8969,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,44.26074705,0,0,0,0,0,241,297
+1980,New Hampshire,NH,4,28.3507383,924250,8969,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,32.93230763,0,0,0,0,0,448,90
+1984,New Hampshire,NH,4,30.94516899,976864,8969,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,31.06554775,0,0,0,0,0,525,13
+1988,New Hampshire,NH,4,36.33449864,1082577,8969,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,36.76636727,0,0,0,0,0,426,112
+1992,New Hampshire,NH,4,38.91179509,1112766,8969,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,50.79655136,1,0,0,0,0,168,370
+1996,New Hampshire,NH,4,49.57057735,1160768,8969,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,55.61163171,1,0,0,0,0,159,379
+2000,New Hampshire,NH,4,46.80317916,1239882,8969,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,49.3321998,0,0,0,0,0,271,267
+2004,New Hampshire,NH,4,50.20161082,1290121,8969,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,50.69028862,1,0,0,0,0,286,252
+2008,New Hampshire,NH,4,54.12689706,1315906,8969,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,54.86854112,1,0,0,0,0,173,365
+2012,New Hampshire,NH,4,51.97968415,1324232,8969,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,52.83375198,1,0,0,0,0,206,332
+2016,New Hampshire,NH,4,46.82626267,1342307,8969,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,50.19702844,1,0,0,0,0,306,232
+2020,New Hampshire,NH,4,52.70782528,1377529,8969,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,53.74834772,1,0,0,0,0,229,307
+1952,New Jersey,NJ,16,41.98715962,5125000,7419,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,42.49720249,0,0,0,0,0,442,89
+1956,New Jersey,NJ,16,34.22826924,5615000,7419,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,34.60482103,0,0,0,0,0,457,74
+1960,New Jersey,NJ,16,49.9588729,6103000,7419,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.4018388,1,0,0,0,0,220,317
+1964,New Jersey,NJ,17,65.60667002,6660000,7419,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,65.96015418,1,0,0,0,0,52,486
+1968,New Jersey,NJ,17,43.96634202,7005000,7419,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.81720588,0,0,0,0,0,320,218
+1972,New Jersey,NJ,17,36.77433389,7335042,7419,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.39207311,0,0,0,0,0,521,17
+1976,New Jersey,NJ,17,47.92391503,7339745,7419,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,48.89933153,0,0,0,0,0,241,297
+1980,New Jersey,NJ,17,38.55799204,7376330,7419,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,42.59085548,0,0,0,0,0,448,90
+1984,New Jersey,NJ,16,39.19754794,7515473,7419,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.47860892,0,0,0,0,0,525,13
+1988,New Jersey,NJ,16,42.59814238,7712333,7419,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.09884239,0,0,0,0,0,426,112
+1992,New Jersey,NJ,15,42.95395912,7827770,7419,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,51.42031835,1,0,0,0,0,168,370
+1996,New Jersey,NJ,15,53.72029286,8009624,7419,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,59.96679321,1,0,0,0,0,159,379
+2000,New Jersey,NJ,15,56.12560892,8430621,7419,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,58.21140942,1,0,0,0,0,271,267
+2004,New Jersey,NJ,15,52.92340901,8634561,7419,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,53.37053632,1,0,0,0,0,286,252
+2008,New Jersey,NJ,15,57.27213715,8711090,7419,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,57.86462987,1,0,0,0,0,173,365
+2012,New Jersey,NJ,14,58.34235491,8844942,7419,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,58.95196555,1,0,0,0,0,206,332
+2016,New Jersey,NJ,14,55.45308445,8870827,7419,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,57.28419014,1,0,0,0,0,306,232
+2020,New Jersey,NJ,14,57.33419675,9288994,7419,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,58.07128358,1,0,0,0,0,229,307
+1952,New Mexico,NM,4,44.28225374,735000,121365,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,44.426925,0,0,0,0,0,442,89
+1956,New Mexico,NM,4,41.78303915,806000,121365,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,41.95487295,0,0,0,0,0,457,74
+1960,New Mexico,NM,4,50.15219844,954000,121365,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,50.37028668,1,0,0,0,0,220,317
+1964,New Mexico,NM,4,59.22103689,1006000,121365,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,59.5409001,1,0,0,0,0,52,486
+1968,New Mexico,NM,4,39.74596753,994000,121365,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,43.39316749,0,0,0,0,0,320,218
+1972,New Mexico,NM,4,36.55679383,1078697,121365,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,37.45360907,0,0,0,0,0,521,17
+1976,New Mexico,NM,4,48.28440433,1189295,121365,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,48.75523248,0,0,0,0,0,241,297
+1980,New Mexico,NM,4,36.78482894,1309400,121365,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,40.09173326,0,0,0,0,0,448,90
+1984,New Mexico,NM,5,39.22643233,1416717,121365,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,39.65040187,0,0,0,0,0,525,13
+1988,New Mexico,NM,5,46.89357425,1490337,121365,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,47.49008426,0,0,0,0,0,426,112
+1992,New Mexico,NM,5,45.89884664,1580750,121365,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,55.14215677,1,0,0,0,0,168,370
+1996,New Mexico,NM,5,49.18320224,1706151,121365,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,54.02413056,1,0,0,0,0,159,379
+2000,New Mexico,NM,5,47.90855405,1821204,121365,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,50.03192603,1,0,0,0,0,271,267
+2004,New Mexico,NM,5,49.04667964,1903808,121365,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,49.59966411,0,0,0,0,0,286,252
+2008,New Mexico,NM,5,56.90748026,2010662,121365,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,57.66490002,1,0,0,0,0,173,365
+2012,New Mexico,NM,5,52.99276052,2087309,121365,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,55.29520465,1,0,0,0,0,206,332
+2016,New Mexico,NM,5,48.25564718,2091630,121365,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,54.65079494,1,0,0,0,0,306,232
+2020,New Mexico,NM,5,54.28928585,2117522,121365,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,55.51849015,1,0,0,0,0,229,307
+1952,New York,NY,45,43.55353586,15192000,47224,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,43.99061923,0,0,0,0,1,442,89
+1956,New York,NY,45,38.77962358,16112000,47224,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.79180252,0,0,0,0,1,457,74
+1960,New York,NY,45,52.53111371,16838000,47224,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,52.6363347,1,0,0,0,0,220,317
+1964,New York,NY,43,68.56189947,17589000,47224,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,68.65099421,1,0,0,0,0,52,486
+1968,New York,NY,43,49.75607012,18051000,47224,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,52.90099183,1,0,0,0,1,320,218
+1972,New York,NY,41,41.20572535,18339400,47224,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,41.3093646,0,0,0,0,1,521,17
+1976,New York,NY,41,48.65083286,17940541,47224,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,53.44519461,1,0,0,0,0,241,297
+1980,New York,NY,41,43.99209992,17566754,47224,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,50.84486381,1,0,0,0,0,448,90
+1984,New York,NY,36,44.09238689,17745684,47224,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,47.05828213,0,0,0,0,0,525,13
+1988,New York,NY,36,50.19497561,17941309,47224,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,53.42205264,1,0,0,0,0,426,112
+1992,New York,NY,33,47.27630691,18082032,47224,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,62.1108254,1,0,0,0,0,168,370
+1996,New York,NY,33,56.67893903,18143805,47224,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,67.73202938,1,0,0,0,0,159,379
+2000,New York,NY,33,56.63927048,19001780,47224,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,63.57599159,1,0,0,0,0,271,267
+2004,New York,NY,31,56.13058127,19171567,47224,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,59.82979066,1,0,0,0,0,286,252
+2008,New York,NY,31,60.15696154,19212436,47224,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,65.76385738,1,0,0,0,0,173,365
+2012,New York,NY,29,60.76098417,19572932,47224,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,66.04269487,1,0,0,0,0,206,332
+2016,New York,NY,29,56.1361426,19633428,47224,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,63.4115065,1,0,1,1,1,306,232
+2020,New York,NY,29,60.39188454,20201249,47224,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,61.71683489,1,0,1,0,0,229,307
+1952,North Carolina,NC,14,53.91011718,4109000,48718,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,53.91011718,1,0,0,0,0,442,89
+1956,North Carolina,NC,14,50.66352549,4309000,48718,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,50.66352549,1,0,0,0,0,457,74
+1960,North Carolina,NC,14,52.1086459,4573000,48718,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,52.1086459,1,0,0,0,0,220,317
+1964,North Carolina,NC,13,56.15077513,4802000,48718,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,56.15077513,1,0,0,0,0,52,486
+1968,North Carolina,NC,13,29.23559348,5004000,48718,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,42.52825745,0,0,0,0,0,320,218
+1972,North Carolina,NC,13,28.88855086,5301150,48718,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,29.3724399,0,0,0,0,0,521,17
+1976,North Carolina,NC,13,55.26918671,5607964,48718,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,55.5532925,1,0,0,0,0,241,297
+1980,North Carolina,NC,13,47.18285535,5898980,48718,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,48.90031737,0,0,0,0,0,448,90
+1984,North Carolina,NC,13,37.89196368,6164006,48718,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,37.97213705,0,0,0,0,0,525,13
+1988,North Carolina,NC,13,41.70631146,6480594,48718,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,41.84246213,0,0,0,0,0,426,112
+1992,North Carolina,NC,14,42.6533683,6831850,48718,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,49.54153572,0,0,0,0,0,168,370
+1996,North Carolina,NC,14,44.03553214,7307658,48718,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,47.47001333,0,0,0,0,0,159,379
+2000,North Carolina,NC,14,43.14567117,8081614,48718,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,43.53600302,0,0,0,0,0,271,267
+2004,North Carolina,NC,15,43.58314622,8553152,48718,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,43.758028,0,0,0,0,0,286,252
+2008,North Carolina,NC,15,49.7036664,9309449,48718,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,50.1659633,1,0,0,0,0,173,365
+2012,North Carolina,NC,15,48.35096858,9749476,48718,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,48.9659651,0,0,0,0,0,206,332
+2016,North Carolina,NC,15,46.17286617,10154788,48718,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,48.0962542,0,0,0,0,0,306,232
+2020,North Carolina,NC,15,48.58621178,10439388,48718,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,49.31581747,0,0,0,0,0,229,307
+1952,North Dakota,ND,4,28.39183051,608000,68994,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,28.57387689,0,0,0,0,0,442,89
+1956,North Dakota,ND,4,38.08875118,613000,68994,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.16132035,0,0,0,0,0,457,74
+1960,North Dakota,ND,4,44.52198211,634000,68994,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,44.54726114,0,0,0,0,0,220,317
+1964,North Dakota,ND,4,57.96841197,649000,68994,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,58.05783923,1,0,0,0,0,52,486
+1968,North Dakota,ND,4,38.23149724,621000,68994,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,40.59707502,0,0,0,0,0,320,218
+1972,North Dakota,ND,3,35.78573618,631119,68994,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,36.57069579,0,0,0,0,0,521,17
+1976,North Dakota,ND,3,45.77004319,645797,68994,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,46.9619895,0,0,0,0,0,241,297
+1980,North Dakota,ND,3,26.2985029,654380,68994,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,29.01929025,0,0,0,0,0,448,90
+1984,North Dakota,ND,3,33.79896495,680497,68994,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,34.26541762,0,0,0,0,0,525,13
+1988,North Dakota,ND,3,42.97200104,655331,68994,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.40464428,0,0,0,0,0,426,112
+1992,North Dakota,ND,3,32.18350517,635427,68994,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,42.12529523,0,0,0,0,0,168,370
+1996,North Dakota,ND,3,40.12784757,642858,68994,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,46.08868099,0,0,0,0,0,159,379
+2000,North Dakota,ND,3,33.0553397,642023,68994,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,35.27260343,0,0,0,0,0,271,267
+2004,North Dakota,ND,3,35.49881247,644705,68994,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,36.09064585,0,0,0,0,0,286,252
+2008,North Dakota,ND,3,44.62054001,657569,68994,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,45.59134371,0,0,0,0,0,173,365
+2012,North Dakota,ND,3,38.69731089,701176,68994,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,39.88879171,0,0,0,0,0,206,332
+2016,North Dakota,ND,3,27.22673946,754434,68994,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,30.1907571,0,0,0,0,0,306,232
+2020,North Dakota,ND,3,31.75676236,779094,68994,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,32.78259158,0,0,0,0,0,229,307
+1952,Ohio,OH,25,43.24430292,8275000,40953,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,43.24430292,0,0,0,0,0,442,89
+1956,Ohio,OH,25,38.88579019,9207000,40953,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.88579019,0,0,0,0,0,457,74
+1960,Ohio,OH,25,46.71585462,9734000,40953,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,46.71585462,0,0,0,0,0,220,317
+1964,Ohio,OH,26,62.94299904,10080000,40953,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,62.94299904,1,0,0,0,0,52,486
+1968,Ohio,OH,26,42.94736619,10516000,40953,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.70506358,0,0,0,0,0,320,218
+1972,Ohio,OH,25,38.07008765,10746993,40953,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,38.96525022,0,0,0,0,0,521,17
+1976,Ohio,OH,25,48.89868667,10752662,40953,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,50.1163546,1,0,0,0,0,241,297
+1980,Ohio,OH,25,40.90981354,10800650,40953,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,44.26451499,0,0,0,0,0,448,90
+1984,Ohio,OH,23,40.00319948,10737746,40953,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,40.52931628,0,0,0,0,0,525,13
+1988,Ohio,OH,23,44.14684136,10798552,40953,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,44.52593535,0,0,0,0,0,426,112
+1992,Ohio,OH,21,40.18128056,11007609,40953,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,51.16816334,1,0,0,0,0,168,370
+1996,Ohio,OH,21,47.37574745,11187032,40953,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,53.59694918,1,0,0,0,0,159,379
+2000,Ohio,OH,21,46.44042809,11363543,40953,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,48.16127778,0,0,0,0,0,271,267
+2004,Ohio,OH,20,48.70668524,11452251,40953,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,48.94125599,0,0,0,0,0,286,252
+2008,Ohio,OH,20,51.50427006,11515391,40953,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,52.33384076,1,0,0,0,0,173,365
+2012,Ohio,OH,18,50.66674766,11548923,40953,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,51.51405677,1,0,0,0,0,206,332
+2016,Ohio,OH,18,43.55807628,11634370,40953,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,45.73231542,0,0,0,0,0,306,232
+2020,Ohio,OH,18,45.23933834,11799448,40953,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,45.92330235,0,0,0,0,0,229,307
+1952,Oklahoma,OK,8,45.4105654,2219000,68679,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,45.4105654,0,0,0,0,0,442,89
+1956,Oklahoma,OK,8,44.86891255,2273000,68679,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.86891255,0,0,0,0,0,457,74
+1960,Oklahoma,OK,8,40.98001439,2336000,68679,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,40.98001439,0,0,0,0,0,220,317
+1964,Oklahoma,OK,8,55.74633324,2446000,68679,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,55.74633324,1,0,0,0,0,52,486
+1968,Oklahoma,OK,8,31.98626636,2503000,68679,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,40.14853165,0,0,0,0,0,320,218
+1972,Oklahoma,OK,8,23.99718419,2658646,68679,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,24.56309656,0,0,0,0,0,521,17
+1976,Oklahoma,OK,8,48.74722019,2826815,68679,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.38477948,0,0,0,0,0,241,297
+1980,Oklahoma,OK,8,34.96766135,3040758,68679,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,36.62786672,0,0,0,0,0,448,90
+1984,Oklahoma,OK,8,30.66714662,3285533,68679,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,30.89017415,0,0,0,0,0,525,13
+1988,Oklahoma,OK,8,41.28165146,3167057,68679,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,41.61018773,0,0,0,0,0,426,112
+1992,Oklahoma,OK,8,34.0247375,3204174,68679,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,44.3778817,0,0,0,0,0,168,370
+1996,Oklahoma,OK,8,40.44913745,3289634,68679,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,45.59939089,0,0,0,0,0,159,379
+2000,Oklahoma,OK,8,38.42690457,3454365,68679,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,38.91932878,0,0,0,0,0,271,267
+2004,Oklahoma,OK,7,34.42959834,3525233,68679,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,34.42959834,0,0,0,0,0,286,252
+2008,Oklahoma,OK,7,34.35491888,3668976,68679,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,34.35491888,0,0,0,0,0,173,365
+2012,Oklahoma,OK,7,33.22768026,3818814,68679,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,33.22768026,0,0,0,0,0,206,332
+2016,Oklahoma,OK,7,28.93168028,3926331,68679,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,30.69526276,0,0,0,0,0,306,232
+2020,Oklahoma,OK,7,32.28617434,3959353,68679,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,33.05996051,0,0,0,0,0,229,307
+1952,Oregon,OR,6,38.92892546,1582000,96003,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,39.13528321,0,0,0,0,0,442,89
+1956,Oregon,OR,6,44.75330922,1698000,96003,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.75330922,0,0,0,0,0,457,74
+1960,Oregon,OR,6,47.31994627,1772000,96003,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,47.378466,0,0,0,0,0,220,317
+1964,Oregon,OR,6,63.71789573,1888000,96003,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,63.92186232,1,0,0,0,0,52,486
+1968,Oregon,OR,6,43.78432985,2004000,96003,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,46.77003358,0,0,0,0,0,320,218
+1972,Oregon,OR,6,42.32573878,2197297,96003,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,44.65993364,0,0,0,0,0,521,17
+1976,Oregon,OR,6,47.61806276,2378262,96003,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.91282683,0,0,0,0,0,241,297
+1980,Oregon,OR,6,38.66981065,2641218,96003,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,44.44740615,0,0,0,0,0,448,90
+1984,Oregon,OR,7,43.73968123,2666588,96003,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,43.89528866,0,0,0,0,0,525,13
+1988,Oregon,OR,7,51.2781124,2741297,96003,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,52.3836808,1,0,0,0,0,426,112
+1992,Oregon,OR,7,42.47885506,2973934,96003,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,56.63389152,1,0,0,0,0,168,370
+1996,Oregon,OR,7,47.15197132,3195087,96003,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,54.69311572,1,0,0,0,0,159,379
+2000,Oregon,OR,7,46.95994002,3429708,96003,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,50.23589198,1,0,0,0,0,271,267
+2004,Oregon,OR,7,51.34866304,3569463,96003,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,52.10862577,1,0,0,0,0,286,252
+2008,Oregon,OR,7,56.74880626,3768748,96003,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,58.41372118,1,0,0,0,0,173,365
+2012,Oregon,OR,7,54.23932665,3899001,96003,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,56.27116718,1,0,0,0,0,206,332
+2016,Oregon,OR,7,50.071852,4089976,96003,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,56.15583895,1,0,0,0,0,306,232
+2020,Oregon,OR,7,56.45331865,4237256,96003,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,58.30715698,1,0,0,0,0,229,307
+1952,Pennsylvania,PA,32,46.85185602,10503000,44820,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,47.04607,0,0,0,0,0,442,89
+1956,Pennsylvania,PA,32,43.30312905,10972000,44820,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,43.39303454,0,0,0,0,0,457,74
+1960,Pennsylvania,PA,32,51.05884482,11329000,44820,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,51.16413589,1,0,0,0,0,220,317
+1964,Pennsylvania,PA,29,64.92131984,11519000,44820,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,65.16560862,1,0,0,0,0,52,486
+1968,Pennsylvania,PA,29,47.58717908,11741000,44820,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,51.94724724,1,0,0,0,0,320,218
+1972,Pennsylvania,PA,27,39.13131342,11908233,44820,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,39.83070271,0,0,0,0,0,521,17
+1976,Pennsylvania,PA,27,50.39567935,11897378,44820,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,51.35713909,1,0,0,0,0,241,297
+1980,Pennsylvania,PA,27,42.47593062,11868305,44820,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,46.13836413,0,0,0,0,0,448,90
+1984,Pennsylvania,PA,25,45.98917667,11815172,44820,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,46.29926853,0,0,0,0,0,525,13
+1988,Pennsylvania,PA,25,48.3867405,11845752,44820,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.830453,0,0,0,0,0,426,112
+1992,Pennsylvania,PA,23,45.14616487,11980819,44820,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,55.54852946,1,0,0,0,0,168,370
+1996,Pennsylvania,PA,23,49.22612477,12038008,44820,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,55.16120536,1,0,0,0,0,159,379
+2000,Pennsylvania,PA,23,50.60817131,12284173,44820,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,52.14847871,1,0,0,0,0,271,267
+2004,Pennsylvania,PA,21,50.92380914,12410722,44820,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,51.2582821,1,0,0,0,0,286,252
+2008,Pennsylvania,PA,21,54.48552801,12612285,44820,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,55.22970381,1,0,0,0,0,173,365
+2012,Pennsylvania,PA,20,52.0768577,12767118,44820,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,52.731934,1,0,0,0,0,206,332
+2016,Pennsylvania,PA,20,47.85361616,12782275,44820,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,49.62446419,0,0,0,0,0,306,232
+2020,Pennsylvania,PA,20,50.00849568,13002700,44820,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,50.58920526,1,1,0,0,0,229,307
+1952,Rhode Island,RI,4,49.0455925,802000,1034,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,49.07756115,0,0,0,0,0,442,89
+1956,Rhode Island,RI,4,41.74030149,840000,1034,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,41.74051686,0,0,0,0,0,457,74
+1960,Rhode Island,RI,4,63.62755373,855000,1034,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,63.62771062,1,0,0,0,0,220,317
+1964,Rhode Island,RI,4,80.86907927,885000,1034,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,80.87177436,1,0,0,0,0,52,486
+1968,Rhode Island,RI,4,64.03064935,922000,1034,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,66.82932251,1,0,0,0,0,320,218
+1972,Rhode Island,RI,4,46.81126866,974790,1034,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,46.89924535,0,0,0,0,0,521,17
+1976,Rhode Island,RI,4,55.44200456,946089,1034,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,55.67237732,1,0,0,0,0,241,297
+1980,Rhode Island,RI,4,47.68214786,948773,1034,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,56.16605547,1,0,0,0,0,448,90
+1984,Rhode Island,RI,4,48.01736466,961894,1034,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,48.17026976,0,0,0,0,0,525,13
+1988,Rhode Island,RI,4,55.63785459,996408,1034,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,55.87787055,1,0,0,0,0,426,112
+1992,Rhode Island,RI,4,47.04796356,1000571,1034,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,61.84372282,1,0,0,0,0,168,370
+1996,Rhode Island,RI,4,59.71858848,987858,1034,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,69.00421338,1,0,0,0,0,159,379
+2000,Rhode Island,RI,4,60.98770019,1050268,1034,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,65.64911607,1,0,0,0,0,271,267
+2004,Rhode Island,RI,4,59.42342623,1074579,1034,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,60.57751058,1,0,0,0,0,286,252
+2008,Rhode Island,RI,4,62.86400461,1055003,1034,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,64.19813751,1,0,0,0,0,173,365
+2012,Rhode Island,RI,4,62.70095886,1054621,1034,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,64.01674598,1,0,0,0,0,206,332
+2016,Rhode Island,RI,4,54.40660657,1056770,1034,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,58.31070409,1,0,0,0,0,306,232
+2020,Rhode Island,RI,4,59.47619877,1097379,1034,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,60.59935989,1,0,0,0,0,229,307
+1952,South Carolina,SC,8,50.72151891,2178000,30111,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,50.72151891,1,0,0,0,0,442,89
+1956,South Carolina,SC,8,45.36916592,2229000,30111,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,64.3045758,1,0,0,0,0,457,74
+1960,South Carolina,SC,8,51.23743173,2392000,30111,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,51.23756423,1,0,0,0,0,220,317
+1964,South Carolina,SC,8,41.10481824,2475000,30111,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,41.1054449,0,0,0,0,0,52,486
+1968,South Carolina,SC,8,29.60889499,2559000,30111,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,43.73532825,0,0,0,0,0,320,218
+1972,South Carolina,SC,8,27.92087095,2719197,30111,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,28.34669019,0,0,0,0,0,521,17
+1976,South Carolina,SC,8,56.16951767,2943657,30111,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,56.56610905,1,0,0,0,0,241,297
+1980,South Carolina,SC,8,48.20896631,3134502,30111,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.36270673,0,0,0,0,0,448,90
+1984,South Carolina,SC,8,35.56517151,3271868,30111,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,35.88122058,0,0,0,0,0,525,13
+1988,South Carolina,SC,8,37.58119855,3412096,30111,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,37.92785444,0,0,0,0,0,426,112
+1992,South Carolina,SC,8,42.76254117,3600576,30111,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,47.64315457,0,0,0,0,0,168,370
+1996,South Carolina,SC,8,44.00625292,3738974,30111,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,46.88802408,0,0,0,0,0,159,379
+2000,South Carolina,SC,8,40.90152337,4024223,30111,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,41.83789393,0,0,0,0,0,271,267
+2004,South Carolina,SC,8,40.90183594,4210921,30111,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,41.36354174,0,0,0,0,0,286,252
+2008,South Carolina,SC,8,44.89656002,4528996,30111,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,45.45557081,0,0,0,0,0,173,365
+2012,South Carolina,SC,9,44.08803341,4717354,30111,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,44.6917453,0,0,0,0,0,206,332
+2016,South Carolina,SC,9,40.67341979,4957968,30111,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,42.53974364,0,0,0,0,0,306,232
+2020,South Carolina,SC,9,43.4168385,5118425,30111,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,44.07339125,0,0,0,0,0,229,307
+1952,South Dakota,SD,4,30.72756496,651000,75898,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,30.72756496,0,0,0,0,0,442,89
+1956,South Dakota,SD,4,41.61479903,670000,75898,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,41.61479903,0,0,0,0,0,457,74
+1960,South Dakota,SD,4,41.78643792,683000,75898,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,41.78643792,0,0,0,0,0,220,317
+1964,South Dakota,SD,4,55.61241548,701000,75898,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,55.61241548,1,0,0,0,0,52,486
+1968,South Dakota,SD,4,41.96164458,669000,75898,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,44.06079205,0,1,0,0,0,320,218
+1972,South Dakota,SD,4,45.52315274,677234,75898,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,45.67082543,0,1,0,1,0,521,17
+1976,South Dakota,SD,4,48.91212526,686390,75898,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.25696563,0,0,0,0,0,241,297
+1980,South Dakota,SD,4,31.6918063,690851,75898,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,34.36654114,0,0,0,0,0,448,90
+1984,South Dakota,SD,3,36.52879978,697249,75898,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,36.70048676,0,0,0,0,0,525,13
+1988,South Dakota,SD,3,46.50612957,698165,75898,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,46.80762119,0,0,0,0,0,426,112
+1992,South Dakota,SD,3,37.14097081,708698,75898,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,47.73896623,0,0,0,0,0,168,370
+1996,South Dakota,SD,3,43.0271195,730699,75898,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,48.0664146,0,0,0,0,0,159,379
+2000,South Dakota,SD,3,37.56422539,755844,75898,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,38.38528743,0,0,0,0,0,271,267
+2004,South Dakota,SD,3,38.44364592,770396,75898,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,39.0867092,0,0,0,0,0,286,252
+2008,South Dakota,SD,3,44.74743111,799124,75898,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,45.70429276,0,0,0,0,0,173,365
+2012,South Dakota,SD,3,39.86614076,833566,75898,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,40.78150086,0,0,0,0,0,206,332
+2016,South Dakota,SD,3,31.73742816,862996,75898,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,34.02814192,0,0,0,0,0,306,232
+2020,South Dakota,SD,3,35.60525214,886667,75898,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,36.56522014,0,0,0,0,0,229,307
+1952,Tennessee,TN,11,49.71245405,3352000,41220,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,49.86306788,0,0,0,0,0,442,89
+1956,Tennessee,TN,11,48.59538601,3415000,41220,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,49.68540317,0,0,0,0,0,457,74
+1960,Tennessee,TN,11,45.77454478,3575000,41220,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,46.3814148,0,0,0,0,0,220,317
+1964,Tennessee,TN,11,55.50498013,3771000,41220,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,55.50662988,1,0,0,0,0,52,486
+1968,Tennessee,TN,11,28.12976277,3878000,41220,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,42.63441871,0,0,0,0,0,320,218
+1972,Tennessee,TN,10,29.74511773,4094611,41220,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.52638324,0,0,0,0,0,521,17
+1976,Tennessee,TN,10,55.94074831,4346928,41220,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,56.57294458,1,0,0,0,0,241,297
+1980,Tennessee,TN,10,48.40771852,4600252,41220,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,49.85007754,0,0,0,0,0,448,90
+1984,Tennessee,TN,11,41.57224942,4686737,41220,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,41.8181519,0,0,0,0,0,525,13
+1988,Tennessee,TN,11,41.5458518,4822437,41220,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,41.7813595,0,0,0,0,0,426,112
+1992,Tennessee,TN,11,47.08479309,5013999,41220,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,52.59803665,1,0,0,0,0,168,370
+1996,Tennessee,TN,11,47.99871179,5313576,41220,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,51.28664234,1,0,0,0,0,159,379
+2000,Tennessee,TN,11,47.28489472,5703719,41220,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,48.03713322,0,0,0,1,0,271,267
+2004,Tennessee,TN,11,42.52529111,5910809,41220,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,42.81455455,0,0,0,0,0,286,252
+2008,Tennessee,TN,11,41.82853806,6247411,41220,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,42.3685282,0,0,0,0,0,173,365
+2012,Tennessee,TN,11,39.07581499,6453898,41220,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,39.64892847,0,0,0,0,0,206,332
+2016,Tennessee,TN,11,34.7163328,6646010,41220,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,36.37565696,0,0,0,0,0,306,232
+2020,Tennessee,TN,11,37.45143427,6910840,41220,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,38.17222963,0,0,0,0,0,229,307
+1952,Texas,TX,24,46.68849768,8314000,261914,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,46.7750202,0,0,0,0,0,442,89
+1956,Texas,TX,24,43.97536237,8830000,261914,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,44.31455181,0,0,0,0,0,457,74
+1960,Texas,TX,24,50.5203186,9624000,261914,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,51.01047369,1,0,0,0,0,220,317
+1964,Texas,TX,25,63.31574674,10270000,261914,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,63.43794663,1,1,0,1,0,52,486
+1968,Texas,TX,25,41.13793374,10819000,261914,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,50.78087169,1,0,0,0,0,320,218
+1972,Texas,TX,26,33.23887311,11759148,261914,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,33.4268315,0,0,0,0,0,521,17
+1976,Texas,TX,26,51.13895681,12904089,261914,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,51.59850323,1,0,0,0,0,241,297
+1980,Texas,TX,26,41.42003014,14338208,261914,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,42.83265921,0,0,0,0,0,448,90
+1984,Texas,TX,29,36.11394829,16007086,261914,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,36.21369482,0,0,0,0,0,525,13
+1988,Texas,TX,29,43.34936922,16667022,261914,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,43.65366707,0,0,0,0,1,426,112
+1992,Texas,TX,32,37.07845833,17650479,261914,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,47.75783683,0,0,0,0,1,168,370
+1996,Texas,TX,32,43.83177194,19006240,261914,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,47.33937662,0,0,0,0,0,159,379
+2000,Texas,TX,32,37.98195809,20944499,261914,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,39.04372985,0,0,0,0,1,271,267
+2004,Texas,TX,34,38.22426046,22394023,261914,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,38.4898081,0,0,0,0,1,286,252
+2008,Texas,TX,34,43.68312145,24309039,261914,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,44.06406325,0,0,0,0,0,173,365
+2012,Texas,TX,38,41.38335828,26084481,261914,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,41.99210278,0,0,0,0,0,206,332
+2016,Texas,TX,38,43.23525798,27914410,261914,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,45.28677442,0,0,0,0,0,306,232
+2020,Texas,TX,38,46.47900991,29145505,261914,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,47.16927876,0,0,0,0,0,229,307
+1952,Utah,UT,4,41.0749073,724000,82168,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,41.0749073,0,0,0,0,0,442,89
+1956,Utah,UT,4,35.43885388,809000,82168,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,35.43885388,0,0,0,0,0,457,74
+1960,Utah,UT,4,45.16785025,900000,82168,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,45.17990758,0,0,0,0,0,220,317
+1964,Utah,UT,4,54.86448003,978000,82168,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,54.86448003,1,0,0,0,0,52,486
+1968,Utah,UT,4,37.07450635,1029000,82168,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,39.62260333,0,0,0,0,0,320,218
+1972,Utah,UT,4,26.39296433,1135449,82168,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,28.06766431,0,0,0,0,0,521,17
+1976,Utah,UT,4,33.64817874,1274928,82168,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,35.01994162,0,0,0,0,0,241,297
+1980,Utah,UT,4,20.56866484,1472595,82168,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,22.03481496,0,0,0,0,0,448,90
+1984,Utah,UT,5,24.67521948,1622342,82168,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,24.87997899,0,0,0,0,0,525,13
+1988,Utah,UT,5,32.04643528,1689372,82168,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,32.61212516,0,0,0,0,0,426,112
+1992,Utah,UT,5,24.65450176,1821498,82168,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,36.24642089,0,0,0,0,0,168,370
+1996,Utah,UT,5,33.29677643,2022253,82168,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,37.98051218,0,0,0,0,0,159,379
+2000,Utah,UT,5,26.34472218,2244502,82168,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,28.27449457,0,0,0,0,0,271,267
+2004,Utah,UT,5,25.99564151,2401580,82168,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,26.65356084,0,0,0,0,0,286,252
+2008,Utah,UT,5,34.40574567,2663029,82168,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,35.47363863,0,0,0,0,0,173,365
+2012,Utah,UT,6,24.74966583,2853375,82168,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,25.37381111,0,0,0,0,0,206,332
+2016,Utah,UT,6,27.46126859,3041868,82168,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,37.61710165,0,0,0,0,0,306,232
+2020,Utah,UT,6,37.64604858,3271616,82168,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,39.30639488,0,0,0,0,0,229,307
+1952,Vermont,VT,3,28.23381546,375000,9249,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,28.32327271,0,0,0,0,0,442,89
+1956,Vermont,VT,3,27.81380329,377000,9249,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,27.82089591,0,0,0,0,0,457,74
+1960,Vermont,VT,3,41.34852143,389000,9249,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,41.35025132,0,0,0,0,0,220,317
+1964,Vermont,VT,3,66.29938255,399000,9249,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,66.307514,1,0,0,0,0,52,486
+1968,Vermont,VT,3,43.52742187,430000,9249,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,45.21001049,0,0,0,0,0,320,218
+1972,Vermont,VT,3,36.46721513,463143,9249,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,36.78658342,0,0,0,0,0,521,17
+1976,Vermont,VT,3,42.30405325,484928,9249,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,43.66136319,0,0,0,0,0,241,297
+1980,Vermont,VT,3,38.42118341,512524,9249,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,46.41069204,0,0,0,0,0,448,90
+1984,Vermont,VT,3,40.81241127,526660,9249,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,41.33508927,0,0,0,0,0,525,13
+1988,Vermont,VT,3,47.57980997,549763,9249,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,48.21828692,0,0,0,0,0,426,112
+1992,Vermont,VT,3,46.11375176,570115,9249,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,60.25420135,1,0,0,0,0,168,370
+1996,Vermont,VT,3,53.35443356,586352,9249,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,63.18283038,1,0,0,0,0,159,379
+2000,Vermont,VT,3,50.63470922,609618,9249,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,55.4403509,1,0,0,0,0,271,267
+2004,Vermont,VT,3,58.93746258,619920,9249,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,60.30100214,1,0,0,0,0,286,252
+2008,Vermont,VT,3,67.4556832,624151,9249,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,68.89918174,1,0,0,0,0,173,365
+2012,Vermont,VT,3,66.5705503,626090,9249,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,68.24725882,1,0,0,0,0,206,332
+2016,Vermont,VT,3,55.72274212,623657,9249,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,65.18642632,1,0,0,0,0,306,232
+2020,Vermont,VT,3,65.45578055,643077,9249,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,68.29918655,1,0,0,0,0,229,307
+1952,Virginia,VA,12,43.3567483,3504000,39598,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,43.49537164,0,0,0,0,0,442,89
+1956,Virginia,VA,12,38.36224064,3722000,39598,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,40.92819071,0,0,0,0,0,457,74
+1960,Virginia,VA,12,46.96707106,3986000,39598,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,47.2488681,0,0,0,0,0,220,317
+1964,Virginia,VA,12,53.54079137,4357000,39598,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,53.68992045,1,0,0,0,0,52,486
+1968,Virginia,VA,12,32.49283322,4558000,39598,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,42.83765176,0,0,0,0,0,320,218
+1972,Virginia,VA,12,30.12225647,4824472,39598,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.74773361,0,0,0,0,0,521,17
+1976,Virginia,VA,12,47.95821563,5121863,39598,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,49.31358114,0,0,0,0,0,241,297
+1980,Virginia,VA,12,40.30874069,5368334,39598,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,43.18413947,0,0,0,0,0,448,90
+1984,Virginia,VA,12,37.09293848,5643870,39598,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,37.32431206,0,0,0,0,0,525,13
+1988,Virginia,VA,12,39.23140487,6036909,39598,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,39.64105394,0,0,0,0,0,426,112
+1992,Virginia,VA,13,40.5860744,6383315,39598,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,47.44498707,0,0,0,0,0,168,370
+1996,Virginia,VA,13,45.14777116,6665491,39598,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,48.93940549,0,0,0,0,0,159,379
+2000,Virginia,VA,13,44.43561054,7105817,39598,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,45.85276369,0,0,0,0,0,271,267
+2004,Virginia,VA,13,45.5259176,7475575,39598,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,45.86630328,0,0,0,0,0,286,252
+2008,Virginia,VA,13,52.62946987,7833496,39598,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,53.1825844,1,0,0,0,0,173,365
+2012,Virginia,VA,13,51.1564568,8185080,39598,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,51.96737669,1,0,0,0,0,206,332
+2016,Virginia,VA,13,49.75135283,8410106,39598,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,52.82637628,1,0,0,0,0,306,232
+2020,Virginia,VA,13,54.10951718,8631393,39598,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,55.154687,1,0,0,0,0,229,307
+1952,Washington,WA,9,44.69406225,2448000,66582,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,45.13430993,0,0,0,0,0,442,89
+1956,Washington,WA,9,45.44330513,2668000,66582,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,45.73966794,0,0,0,0,0,457,74
+1960,Washington,WA,9,48.26929087,2855000,66582,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,48.78008679,0,0,0,0,0,220,317
+1964,Washington,WA,9,61.96633284,2961000,66582,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,62.37815407,1,0,0,0,0,52,486
+1968,Washington,WA,9,47.23192318,3270000,66582,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,51.14262872,1,0,0,0,0,320,218
+1972,Washington,WA,9,38.63991292,3447885,66582,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,40.43732021,0,0,0,0,0,521,17
+1976,Washington,WA,9,46.11426044,3693610,66582,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,47.97970643,0,0,0,0,0,241,297
+1980,Washington,WA,9,37.31607203,4154678,66582,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,42.90465391,0,0,0,0,0,448,90
+1984,Washington,WA,10,42.58081721,4343656,66582,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,43.15364898,0,0,0,0,0,525,13
+1988,Washington,WA,10,50.0476879,4639893,66582,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,50.80771175,1,0,0,0,0,426,112
+1992,Washington,WA,11,43.41022004,5139011,66582,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,57.59170107,1,0,0,0,0,168,370
+1996,Washington,WA,11,49.84047205,5509963,66582,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,57.19465285,1,0,0,0,0,159,379
+2000,Washington,WA,11,50.15821532,5910512,66582,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,52.94477101,1,0,0,0,0,271,267
+2004,Washington,WA,11,52.82114831,6178645,66582,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,53.64653768,1,0,0,0,0,286,252
+2008,Washington,WA,11,57.65289221,6562231,66582,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,58.7520268,1,0,0,0,0,173,365
+2012,Washington,WA,12,56.1633983,6897058,66582,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,57.62829827,1,0,0,0,0,206,332
+2016,Washington,WA,12,52.53868006,7294771,66582,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,58.7869312,1,0,0,0,0,306,232
+2020,Washington,WA,12,57.97030114,7705281,66582,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,59.92550319,1,0,0,0,0,229,307
+1952,West Virginia,WV,8,51.9236493,1957000,24087,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,51.9236493,1,0,0,0,0,442,89
+1956,West Virginia,WV,8,45.92197451,1857000,24087,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,45.92197451,0,0,0,0,0,457,74
+1960,West Virginia,WV,8,52.7328741,1853000,24087,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,52.7328741,1,0,0,0,0,220,317
+1964,West Virginia,WV,7,67.93684662,1797000,24087,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,67.93684662,1,0,0,0,0,52,486
+1968,West Virginia,WV,7,49.60063961,1763000,24087,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,54.88053917,1,0,0,0,0,320,218
+1972,West Virginia,WV,6,36.38973818,1797648,24087,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,36.38973818,0,0,0,0,0,521,17
+1976,West Virginia,WV,6,58.06951865,1879503,24087,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,58.06951865,1,0,0,0,0,241,297
+1980,West Virginia,WV,6,49.81083481,1951349,24087,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,52.36978172,1,0,0,0,0,448,90
+1984,West Virginia,WV,6,44.59783457,1927697,24087,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,44.72756568,0,0,0,0,0,525,13
+1988,West Virginia,WV,6,52.19811085,1830215,24087,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,52.37689319,1,0,0,0,0,426,112
+1992,West Virginia,WV,5,48.41482162,1805462,24087,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,57.76883809,1,0,0,0,0,168,370
+1996,West Virginia,WV,5,51.5055958,1818983,24087,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,58.35466518,1,0,0,0,0,159,379
+2000,West Virginia,WV,5,45.59266437,1807021,24087,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,46.75792598,0,0,0,0,0,271,267
+2004,West Virginia,WV,5,43.2051411,1816438,24087,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,43.52028937,0,0,0,0,0,286,252
+2008,West Virginia,WV,5,42.58975038,1840310,24087,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,43.32625623,0,0,0,0,0,173,365
+2012,West Virginia,WV,5,35.53930416,1856872,24087,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,36.32570237,0,0,0,0,0,206,332
+2016,West Virginia,WV,5,26.47692802,1831023,24087,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,27.83894775,0,0,0,0,0,306,232
+2020,West Virginia,WV,5,29.69652124,1793716,24087,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,30.20146768,0,0,0,0,0,229,307
+1952,Wisconsin,WI,12,38.70764043,3469000,54314,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,38.83935455,0,0,0,0,0,442,89
+1956,Wisconsin,WI,12,37.84237674,3742000,54314,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,38.06197668,0,0,0,0,0,457,74
+1960,Wisconsin,WI,12,48.04890688,3962000,54314,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,48.13526229,0,0,0,0,0,220,317
+1964,Wisconsin,WI,12,62.08858534,4165000,54314,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,62.19504902,1,0,0,0,0,52,486
+1968,Wisconsin,WI,12,44.26764282,4345000,54314,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,48.03717729,0,0,0,0,0,320,218
+1972,Wisconsin,WI,11,43.72488383,4502412,54314,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,45.01957097,0,0,0,0,0,521,17
+1976,Wisconsin,WI,11,49.50336357,4595904,54314,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,50.86164367,1,0,0,0,0,241,297
+1980,Wisconsin,WI,11,43.18031551,4712045,54314,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,47.40969142,0,0,0,0,0,448,90
+1984,Wisconsin,WI,11,45.02170061,4735563,54314,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,45.37798429,0,0,0,0,0,525,13
+1988,Wisconsin,WI,11,51.41403025,4822388,54314,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,51.8234663,1,0,0,0,0,426,112
+1992,Wisconsin,WI,11,41.13155574,5004636,54314,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,52.7945085,1,0,0,0,0,168,370
+1996,Wisconsin,WI,11,48.81095216,5173828,54314,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,55.91919666,1,0,0,0,0,159,379
+2000,Wisconsin,WI,11,47.83281966,5373999,54314,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,50.1150683,1,0,0,0,0,271,267
+2004,Wisconsin,WI,10,49.69971708,5514026,54314,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,50.19180327,1,0,0,0,0,286,252
+2008,Wisconsin,WI,10,56.21778652,5640996,54314,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,57.05567825,1,0,0,0,0,173,365
+2012,Wisconsin,WI,10,52.77616254,5719960,54314,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,53.46342999,1,0,0,0,0,206,332
+2016,Wisconsin,WI,10,46.45384137,5772628,54314,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,49.59201096,0,0,0,0,0,306,232
+2020,Wisconsin,WI,10,49.44953686,5893718,54314,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,50.31906327,1,0,0,0,0,229,307
+1952,Wyoming,WY,3,37.08597999,293000,97105,44.37787914,44.71055631,"Stevenson, Adlai","Eisenhower, Dwight",0,1,0,0,0,0,California,Kansas,Illinois,New York,37.16361324,0,0,0,0,0,442,89
+1956,Wyoming,WY,3,39.92201536,312000,97105,41.95397262,42.23566032,"Stevenson, Adlai","Eisenhower, Dwight",0,0,1,1,0,0,California,Kansas,Illinois,New York,39.92201536,0,0,0,0,0,457,74
+1960,Wyoming,WY,3,44.98515435,331000,97105,49.72053533,50.08675949,"Kennedy, John F.","Nixon, Richard M.",1,0,0,0,0,1,Massachusetts,California,Massachusetts,California,44.98515435,0,0,0,0,0,220,317
+1964,Wyoming,WY,3,56.55847978,339000,97105,61.05147582,61.34396784,"Johnson, Lyndon B.","Goldwater, Barry",1,1,1,0,1,0,Texas,Arizona,Texas,Arizona,56.55847978,1,0,0,0,0,52,486
+1968,Wyoming,WY,3,35.51196887,324000,97105,42.71870649,49.59537839,"Humphrey, Hubert","Nixon, Richard M.",0,1,0,0,0,1,South Dakota,California,Minnesota,New York,38.9086994,0,0,0,0,0,320,218
+1972,Wyoming,WY,3,30.4719379,347345,97105,37.53335786,38.21099117,"McGovern, George","Nixon, Richard M.",0,0,0,1,0,1,South Dakota,California,South Dakota,New York,30.62932428,0,0,0,0,0,521,17
+1976,Wyoming,WY,3,39.80926553,396952,97105,49.85266664,51.13734917,"Carter, Jimmy","Ford, Gerald",1,0,0,1,0,1,Georgia,Nebraska,Georgia,Michigan,40.1655954,0,0,0,0,0,241,297
+1980,Wyoming,WY,3,27.97021159,474185,97105,41.01993031,44.84244123,"Carter, Jimmy","Reagan, Ronald",0,1,1,0,0,0,Georgia,Illinois,Georgia,California,30.86737402,0,0,0,0,0,448,90
+1984,Wyoming,WY,3,28.2428771,504896,97105,40.41861657,40.87664881,"Mondale, Walter","Reagan, Ronald",0,0,0,1,1,0,Minnesota,Illinois,Minnesota,California,28.59960024,0,0,0,0,0,525,13
+1988,Wyoming,WY,3,38.01337857,465101,97105,45.54877735,46.16754471,"Dukakis, Michael","Bush, George H.W.",0,0,0,0,0,1,Massachusetts,Massachusetts,Massachusetts,Texas,38.57512358,0,0,0,0,0,426,112
+1992,Wyoming,WY,3,34.09977787,463491,97105,42.88416955,53.62069584,"Clinton, Bill","Bush, George H.W.",1,0,0,1,0,1,Arkansas,Massachusetts,Arkansas,Texas,46.20797657,0,0,0,0,0,168,370
+1996,Wyoming,WY,3,36.83586125,480085,97105,49.06674998,54.80402403,"Clinton, Bill","Dole, Robert",1,1,1,0,0,0,Arkansas,Kansas,Arkansas,Kansas,42.51208257,0,0,0,0,0,159,379
+2000,Wyoming,WY,3,28.29838204,494300,97105,48.14325143,50.25952345,"Gore, Al","Bush, George W.",0,1,0,0,1,0,District Of Columbia,Connecticut,Tennessee,Texas,29.01769436,0,0,0,0,0,271,267
+2004,Wyoming,WY,3,29.02309102,509106,97105,48.0664567,48.73068404,"Kerry, John","Bush, George W.",0,0,0,1,0,0,Colorado,Connecticut,Massachusetts,Texas,29.68729683,0,0,0,0,0,286,252
+2008,Wyoming,WY,3,32.50949377,546043,97105,52.76155846,53.77076728,"Obama, Barack H.","McCain, John",1,0,0,0,0,0,Hawaii,Arizona,Illinois,Arizona,33.43797664,0,0,0,0,0,173,365
+2012,Wyoming,WY,3,27.63690612,576305,97105,50.87488268,51.91525804,"Obama, Barack H.","Romney, Mitt",1,1,1,0,1,0,Hawaii,Michigan,Illinois,Massachusetts,28.83936599,0,0,0,0,0,206,332
+2016,Wyoming,WY,3,21.62890088,584215,97105,47.05731122,51.16249044,"Clinton, Hillary","Trump, Donald J.",0,1,0,0,1,0,Illinois,New York,New York,New York,24.29468038,0,0,0,0,0,306,232
+2020,Wyoming,WY,3,26.38786656,576851,97105,51.31570891,52.26985906,"Biden, Joseph R.","Trump, Donald J.",1,0,0,1,0,1,Pennsylvania,New York,Delaware,Florida,27.51956563,0,0,0,0,0,229,307
