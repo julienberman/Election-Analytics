@@ -47,10 +47,10 @@
 <li>Real disposable personal income</li>
 <li>Inflation, as measured by the annual change in the Consumer Price Index</li>
 <li>The stock market, based on the closing value of the S&amp;P 500</li>
-<li>The consumer sentiment index calculated by the University of Michigan
-Each variable in the above set serves a particular function.</li>
+<li>The consumer sentiment index calculated by the University of Michigan</li>
 <li>The unemployment rate</li>
 </ul>
+<p>Each variable in the above set serves a particular function.</p>
 <p><em>Jobs.</em> Total non-farm jobs typically reflect overall employment health, with more jobs typically signaling economic growth, which can benefit the incumbent.</p>
 <p><em>Personal Consumption Expenditure.</em> Expenditure data helps measures consumer spending, a key indication of economic vitality. If the economy is strong, consumers spend more on goods and services that they might otherwise forego. This metric is a key indicator for aggregate demand.</p>
 <p><em>Real Disposable Personal Income.</em> Like personal consumption expenditure, real disposable personal income also measures the financial health of the consumer. However, rather than only measuring the total amount of money spent, RDPI measures the total amount of money earned, some of which the consumer will be able to save.</p>
@@ -90,6 +90,7 @@ $$
 $$<p>
 There are a few important things to note about the above regressions specifications. First, notice that the vote margin is multiplied by the incumbent dummy. This is because margin is positive when a democrat wins, and negative when a republican wins. the &ldquo;incumb&rdquo; variable is positive if a democrat is the incumbent and negative if the republican is the incumbent. We want to use economic conditions to predict the size of the margin favorable to the incumbent, which means we need to multiply the two outcome variables to cancel out partisan effects.</p>
 <p>Second, notice that there are two terms at the end of the regression before the error term. These terms represent state and year fixed effects respectively. These variables help to control for unobserved heterogeneity, ensuring that certain inherent characteristics of states or specific election years &mdash; political culture, demographic composition, and so on &mdash; that might affect the outcome are accounted for. Functionally, these fixed effects operate by creating dummy variables for every state and every year.</p>
+<h1 id="results">Results</h1>
 <p>Now, let&rsquo;s take a look at the regression output. Recall that the dependent variable is the national vote margin times the incumbent indicator.
 <img src="table1.png" width="90%" />
 Notice that almost none of the coefficients are statistically significant. Moreover, the standard errors for each estimate are quite large, which suggests that the indicators that I have chosen &mdash; or perhaps the specific aggregation period that I chose &mdash; do not have much explanatory power for vote margin. This is consistent with Nate Silver&rsquo;s observation that economic fundamentals are an incredibly <a href="https://fivethirtyeight.com/features/how-fivethirtyeights-2020-presidential-forecast-works-and-whats-different-because-of-covid-19/">noisy predictor of presidential success</a>, and may only be useful when combined with other variables that provide a more precise picture of the race.</p>

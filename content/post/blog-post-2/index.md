@@ -29,8 +29,10 @@ Finally, and most importantly, I construct from scratch the "fundamentals" forec
 * Inflation, as measured by the annual change in the Consumer Price Index
 * The stock market, based on the closing value of the S&P 500 
 * The consumer sentiment index calculated by the University of Michigan
-Each variable in the above set serves a particular function.
 * The unemployment rate
+
+
+Each variable in the above set serves a particular function.
 
 _Jobs._ Total non-farm jobs typically reflect overall employment health, with more jobs typically signaling economic growth, which can benefit the incumbent.
 
@@ -92,6 +94,7 @@ There are a few important things to note about the above regressions specificati
 
 Second, notice that there are two terms at the end of the regression before the error term. These terms represent state and year fixed effects respectively. These variables help to control for unobserved heterogeneity, ensuring that certain inherent characteristics of states or specific election years --- political culture, demographic composition, and so on --- that might affect the outcome are accounted for. Functionally, these fixed effects operate by creating dummy variables for every state and every year.
 
+# Results
 Now, let's take a look at the regression output. Recall that the dependent variable is the national vote margin times the incumbent indicator.
 <img src="table1.png" width="90%" />
 Notice that almost none of the coefficients are statistically significant. Moreover, the standard errors for each estimate are quite large, which suggests that the indicators that I have chosen --- or perhaps the specific aggregation period that I chose --- do not have much explanatory power for vote margin. This is consistent with Nate Silver's observation that economic fundamentals are an incredibly [noisy predictor of presidential success](https://fivethirtyeight.com/features/how-fivethirtyeights-2020-presidential-forecast-works-and-whats-different-because-of-covid-19/), and may only be useful when combined with other variables that provide a more precise picture of the race.

@@ -52,8 +52,10 @@ Finally, and most importantly, I construct from scratch the "fundamentals" forec
 * Inflation, as measured by the annual change in the Consumer Price Index
 * The stock market, based on the closing value of the S&P 500 
 * The consumer sentiment index calculated by the University of Michigan
-Each variable in the above set serves a particular function.
 * The unemployment rate
+
+
+Each variable in the above set serves a particular function.
 
 _Jobs._ Total non-farm jobs typically reflect overall employment health, with more jobs typically signaling economic growth, which can benefit the incumbent.
 
@@ -345,6 +347,7 @@ There are a few important things to note about the above regressions specificati
 
 Second, notice that there are two terms at the end of the regression before the error term. These terms represent state and year fixed effects respectively. These variables help to control for unobserved heterogeneity, ensuring that certain inherent characteristics of states or specific election years --- political culture, demographic composition, and so on --- that might affect the outcome are accounted for. Functionally, these fixed effects operate by creating dummy variables for every state and every year.
 
+# Results
 Now, let's take a look at the regression output. Recall that the dependent variable is the national vote margin times the incumbent indicator.
 ```{r ex_incl_grap_1, out.width = "90%", echo = FALSE, eval=TRUE}
 knitr::include_graphics("table1.png")
