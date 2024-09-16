@@ -13,7 +13,7 @@
       <link>https://example.org/post/2024/09/11/blog-post-2/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/09/11/blog-post-2/</guid>
-      <description>[SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}]&#xA;This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the &amp;ldquo;partisan lean index&amp;rdquo; (PLI) &amp;mdash; which measures the difference between the state&amp;rsquo;s democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density &amp;mdash; in the previous two election cycles to predict the electoral college results for the current election cycle.</description>
+      <description>\(SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}\)&#xA;This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the &amp;ldquo;partisan lean index&amp;rdquo; (PLI) &amp;mdash; which measures the difference between the state&amp;rsquo;s democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density &amp;mdash; in the previous two election cycles to predict the electoral college results for the current election cycle.</description>
     </item>
     <item>
       <title>Blog Post 1: Historical Election Data</title>

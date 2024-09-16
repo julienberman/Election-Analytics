@@ -28,7 +28,7 @@ library(modelsummary)
 library(GGally)
 
 ```
-[SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}]
+$SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}$
 
 This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
 

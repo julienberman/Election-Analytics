@@ -7,7 +7,7 @@ categories: []
 tags: []
 ---
 
-[SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}]
+`\(SE = \sqrt{\frac{s_{1}^{2}}{n_{1}}+\frac{s_{2}^{2}}{n_{2}}}\)`
 
 This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
 
@@ -35,7 +35,7 @@ _Inflation._ The period from February 2021 to June 2022 was the first time consu
 ```
 ## 
 ## % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-## % Date and time: Sun, Sep 15, 2024 - 23:10:20
+## % Date and time: Sun, Sep 15, 2024 - 23:12:03
 ## \begin{table}[!htbp] \centering 
 ##   \caption{OLS Regression Results for Economic Fundamentals Models} 
 ##   \label{} 
