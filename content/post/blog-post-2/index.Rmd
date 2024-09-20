@@ -30,7 +30,7 @@ library(lubridate)
 library(zoo)
 library(modelsummary)
 library(GGally)
-
+setwd("~")
 ```
 
 # Overview
@@ -192,8 +192,8 @@ rate_differential_aggregation <- function(data, indicator, t1, t2) {
 }
 
 # aggregate economic indicators
-period_start <- -24
-period_end <- -3 
+period_start <- -12
+period_end <- -2 
 
 # rate aggregation
 jobs_agg <- rate_aggregation(df_fundamentals, "jobs", period_start, period_end) %>% 
@@ -222,7 +222,7 @@ df_full_merged <- df_full %>%
         full_join, 
         by = "year"
       ),
-    ) %>% 
+    )
     # Standardize all numeric variables except 'year'
     mutate(across(
       c(jobs_agg, pce_agg, rdpi_agg, cpi_agg, ics_agg, sp500_agg, unemp_agg), 
@@ -256,6 +256,9 @@ df_full_merged <- df_full_merged %>%
     elasticity_lag2 = lag(elasticity, 2)
   )
 
+```
+
+```{r}
 ####----------------------------------------------------------#
 #### Model vote margin in three steps
 ####----------------------------------------------------------#
@@ -281,10 +284,11 @@ df_collapsed <- df_full_merged %>%
     ics_agg = first(ics_agg), 
     sp500_agg = first(sp500_agg), 
     unemp_agg = first(unemp_agg), 
-    incumb = first(incumb)
+    incumb = first(incumb),
+    incumb_party = first(incumb_party)
   )
 
-econ_model <- lm(margin_nat * incumb ~ jobs_agg + pce_agg + rdpi_agg +
+econ_model <- lm(margin_nat * incumb_party ~ jobs_agg + pce_agg + rdpi_agg +
                             cpi_agg + ics_agg + sp500_agg + unemp_agg, data = df_collapsed)
 bv_1 <- lm(margin_nat ~ jobs_agg , data = df_collapsed)
 bv_2 <- lm(margin_nat ~ pce_agg, data = df_collapsed)
@@ -301,6 +305,8 @@ bv_7 <- lm(margin_nat ~ unemp_agg, data = df_collapsed)
 #          dep.var.labels = c("National Vote Margin"),
 #          covariate.labels = c("Jobs Growth", "PCE Growth", "RDPI Growth", "CPI Growth", "Sentiment Change", "S&P 500 #Closing Price", "Unemployment")
 #          )
+
+cor(df_collapsed$rdpi_agg, df_collapsed$margin_nat * df_collapsed$incumb_party)
 ```
 
 # Methodology
@@ -386,7 +392,7 @@ for (year in years) {
   test_data <- df_collapsed %>% filter(year == !!year)
   
   # Fit the linear model on the training data
-  model <- lm(margin_nat*incumb ~ jobs_agg + pce_agg + rdpi_agg + cpi_agg +
+  model <- lm(margin_nat*incumb_party ~ jobs_agg + pce_agg + rdpi_agg + cpi_agg +
                             ics_agg + sp500_agg + unemp_agg, 
               data = train_data)
   
@@ -401,8 +407,10 @@ for (year in years) {
 actuals <- df_collapsed$margin_nat
 mse_out <- mean((predictions - actuals)^2)
 
-
 # Calculate the MSE of the in-sample fit
+model <-  lm(margin_nat*incumb_party ~ jobs_agg + pce_agg + rdpi_agg + cpi_agg +
+                            ics_agg + sp500_agg + unemp_agg, 
+              data = df_collapsed)
 predictions_in_sample <- predict(model, newdata = df_collapsed)
 residuals <- df_collapsed$margin_nat - predictions_in_sample
 mse_in <- mean(residuals^2)
@@ -419,6 +427,7 @@ plot(df_collapsed$year,
 points(df_collapsed$year, predictions_in_sample, 
        pch = 16, 
        col = "red")
+
 
 ```
 
