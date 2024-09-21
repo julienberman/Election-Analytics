@@ -1,0 +1,58 @@
+---
+title: 'Blog Post 2: Economic Fundamentals'
+author: Package Build
+date: '2024-09-11'
+slug: blog-post-2
+categories: []
+tags: []
+---
+
+
+
+
+# Overview
+
+This week, I will expand the predictive model for the 2024 presidential election that I developed last week. In my previous model, I used the "partisan lean index" (PLI) --- which measures the difference between the state's democratic two-party vote share and the two party democratic vote share nationwide, and includes adjustments for home state advantage and state-level population density --- in the previous two election cycles to predict the electoral college results for the current election cycle.
+
+Last week's model had a number of limitations. First, the outcome variable I was predicting --- two party vote share in each state --- does not actually determine who wins the state electors. Unfortunately, as much as I wish the likes of Jill Stein, Ralph Nader, and Cornell West didn't clutter up the ballot, the truth is that these third-party candidates, while rarely garnering more than a small fraction of the vote in any particular state, can have huge impacts on the overall state-wide election result. Consequently, this week, I plan to predict not two party vote _share_, but two party vote _margin_, a metric that a third-party candidate cannot distort.
+
+Second, my previous forecast attempted to predict vote share in a single step using the PLI from the 2020 and 2016 elections. This time, I will add an intermediate step and use the 2020 and 2016 PLIs to forecast the 2024 PLI. Then, I will use the 2024 PLI, along with a multitude of other variables, to actually predict vote margin. This two-stage approach has two advantages. First, it allows me to more seamlessly integrate polling data later down the line, because I can easily create a national "snapshot" of the election by adding the PLI to the most current polling data that provides the nationwide vote margin. Second, it allows me to disaggregate the "politics" portion of the model from the "fundamentals" portion of the model. These two portions will then coalesce to produce my final prediction of vote margin.
+
+Third, I improve my adjustments to the "partisan lean index." Now, I scale the home state advantage and resident state advantage adjustments by the size of the state, which is meant to capture the fact that candidates from smaller states tend to see larger effects. I also include a term that measures a state's elasticity, which captures the degree to which a given state "swings" from cycle to cycle. This adjustment only includes data from the 2008, 2012, 2016, and 2020 elections in order to most accurately capture the current political climate.
+
+Fourth, I include the fact that Maine and Nebraska split their electoral votes. They each allocate two electoral votes to the winner of the state's popular vote. Then, they allocate one electoral vote to the popular vote winner in each congressional district. Thus, in total, my forecasts predicts vote margin in 54 jurisdictions: the two congressional districts in Maine, the three congressional districts in Nebraska, the other 48 states, and Washington D.C.
+
+Finally, and most importantly, I construct from scratch the "fundamentals" forecast using the following six economic indicators:
+* Total non-farm jobs
+* Personal consumption expenditure
+* Real disposable personal income
+* Inflation, as measured by the annual change in the Consumer Price Index
+* The stock market, based on the closing value of the S&P 500 
+* The consumer sentiment index calculated by the University of Michigan
+* The unemployment rate
+
+
+Each variable in the above set serves a particular function.
+
+_Jobs._ Total non-farm jobs typically reflect overall employment health, with more jobs typically signaling economic growth, which can benefit the incumbent.
+
+_Personal Consumption Expenditure._ Expenditure data helps measures consumer spending, a key indication of economic vitality. If the economy is strong, consumers spend more on goods and services that they might otherwise forego. This metric is a key indicator for aggregate demand.
+
+_Real Disposable Personal Income._ Like personal consumption expenditure, real disposable personal income also measures the financial health of the consumer. However, rather than only measuring the total amount of money spent, RDPI measures the total amount of money earned, some of which the consumer will be able to save. 
+
+_Inflation._ Unlike job growth, which primarily affects those not already in a job, inflation affects everyone, because it affects the cost of living. Higher inflation reduces voters' purchasing power. In particular, due to a combination of the government's aggressive fiscal policy response to the COVID pandemic and a series of exogenous supply shocks, inflation skyrocketed during 2021 and 2022. Now, when people are surveyed about the economy, their primary concern is rising prices, inflation, and high cost of living ([Pew Research Center (2024)](https://www.pewresearch.org/politics/2024/05/23/publics-positive-economic-ratings-slip-inflation-still-widely-viewed-as-major-problem/), [Stantcheva (2024)](https://www.nber.org/papers/w32300)).
+
+_Stock market._ The stock market --- specifically the closing value of the S&P 500, the largest 500 companies listed on the New York Stock Exchange --- serves as a proxy for economic optimism, particularly among wealthier voters and investors. Unlike the other economic indicators which typically reflect how voters are feeling about the economy as a whole, and therefore their views of the incumbent president, part of the stock market's predictive power comes from investors who are actively attempting to find trades projected to shoot sky-high in the event that one candidate or another comes to power. 
+
+_Consumer Sentiment._ Recently, consumer sentiment about the economy --- i.e. how people think the economy is doing --- is drastically different from the actual state of the economy ([Radcliffe et. al. (2024)](https://abcnews.go.com/538/vibes-americans-perception-economy-completely-changed/story?id=111211869)). There are many explanations for this "sentiment gap." Perhaps its because of the recent interest rate hikes that increase the cost of borrowing ([Summers et. al. (2024)](https://www.nber.org/system/files/working_papers/w32163/w32163.pdf)) Perhaps it's because the period from February 2021 to June 2022 was the first time consumers in the United States experienced prolonged high levels of inflation since the 1990s, after the oil price shock in response to Iraq's invasion of Kuwait. Regardless, this divergence suggests that traditional economic indicators may not entirely capture voters' underlying  behavior, because they may have a warped understanding of the economy. I thus include the "Index of Consumer Sentiment," aggregated from a University of Michigan survey.
+
+_Unemployment._ Unemployment measures the percentage of the labor force that is actively seeking work but unable to find it. The unemployment rate also providing insight into labor market inefficiencies that total non-farm jobs do not capture. While job growth reflects the overall number of positions added to the economy, unemployment highlights the share of people left behind.
+
+
+
+
+
+
+
+
+

@@ -12,6 +12,101 @@ tags: []
 
 
 ```{r}
-# code goes here
+# Load libraries.
+## install via `install.packages("name")`
+library(ggplot2)
+library(maps)
+library(tidyverse)
+library(usmap)
+library(plotly)
+library(gridExtra)
+library(sf)
+library(ggrepel)
+library(shiny)
+library(leaflet)
+library(stargazer)
+library(blogdown)
+library(car)
+library(lubridate)
+library(zoo)
+library(modelsummary)
+library(GGally)
+setwd("~/Documents/0 - Election Analytics/")
+```
+
+
+```{r}
+df_full <- read.csv("data/elec_full.csv")
+
+# Read both dataframes in R
+nat_polls <- read.csv("data/national_polls_1968-2024.csv")
+state_polls <- read.csv("data/state_polls_1968-2024.csv")
+
+state_polls_wider <- state_polls %>%
+  pivot_wider(
+    id_cols = c(year, state, weeks_left, days_left, poll_date), 
+    names_from = party, 
+    values_from = c(poll_state, before_convention),
+  ) %>% 
+  rename(
+    "d_poll_state" = "poll_state_DEM",
+    "r_poll_state" = "poll_state_REP",
+    "d_convention" = "before_convention_DEM",
+    "r_convention" = "before_convention_REP"
+  ) %>% 
+  mutate(
+    d_poll_state = map_dbl(d_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_poll_state = map_dbl(r_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+  )
+
+nat_polls_wider <- nat_polls %>% 
+  pivot_wider(
+    id_cols = c(year, state, weeks_left, days_left, poll_date), 
+    names_from = party, 
+    values_from = c(poll_nat, before_convention)
+  ) %>% 
+  rename(
+    "d_poll_nat" = "poll_nat_DEM",
+    "r_poll_nat" = "poll_nat_REP",
+    "d_convention" = "before_convention_DEM",
+    "r_convention" = "before_convention_REP"
+  ) %>% 
+  mutate(
+    d_poll_nat = map_dbl(d_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_poll_nat = map_dbl(r_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+  )
+
+polls_merged_v1 <- state_polls_wider %>% 
+  left_join(nat_polls_wider, by = c("year", "weeks_left", "days_left", "poll_date", "d_convention", "r_convention")) %>%
+  select(-c("state.y")) %>% 
+  rename(
+    "state" = "state.x"
+  ) %>% 
+  group_by(year, weeks_left, state) %>% 
+  summarize(
+    d_poll_state = mean(d_poll_state, na.rm = TRUE),
+    r_poll_state = mean(r_poll_state, na.rm = TRUE),
+    d_poll_nat = mean(d_poll_nat, na.rm = TRUE),
+    r_poll_nat = mean(r_poll_nat, na.rm = TRUE),
+    r_convention = first(r_convention),
+    d_convention = first(d_convention)
+  ) %>%
+  ungroup() %>% 
+  arrange(desc(year), desc(weeks_left), state)
+
+write_csv(polls_merged_v1, "polls_merged_v1.csv")
 
 ```
+
+
+```{r}
+# clean presidential approval
+
+
+
+```
+
