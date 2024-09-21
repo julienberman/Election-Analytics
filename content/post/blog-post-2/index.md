@@ -50,6 +50,11 @@ _Unemployment._ Unemployment measures the percentage of the labor force that is 
 
 
 
+
+```
+## [1] 0.6380144
+```
+
 # Methodology
 
 Now, let's get into the weeds of the methodology. Much of my work this week was compiling and aggregating many different variables into a full election history that we will include in future regression analyses.
@@ -110,7 +115,7 @@ Although MSE is often difficult to interpret, these values seem awfully high. It
 
 Here is a graph of the predicted and actual results of the model. The graph also illustrates how elections have become much closer in the 21st century than they used to be.
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 ```
 ## integer(0)

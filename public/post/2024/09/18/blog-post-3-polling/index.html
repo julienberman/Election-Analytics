@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post 3: Polling | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Blog Post 3: Polling</span></h1>
+<h2 class="author">Package Build</h2>
+<h2 class="date">2024/09/18</h2>
+</div>
+
+<main>
+<pre><code class="language-r"># Load libraries.
+## install via `install.packages(&quot;name&quot;)`
+library(ggplot2)
+library(maps)
+library(tidyverse)
+</code></pre>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ lubridate 1.9.3     ✔ tibble    3.2.1
+## ✔ purrr     1.0.2     ✔ tidyr     1.3.1
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ✖ purrr::map()    masks maps::map()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+</code></pre>
+<pre><code class="language-r">library(usmap)
+library(plotly)
+</code></pre>
+<pre><code>## 
+## Attaching package: 'plotly'
+## 
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+## 
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## 
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+</code></pre>
+<pre><code class="language-r">library(gridExtra)
+</code></pre>
+<pre><code>## 
+## Attaching package: 'gridExtra'
+## 
+## The following object is masked from 'package:dplyr':
+## 
+##     combine
+</code></pre>
+<pre><code class="language-r">library(sf)
+</code></pre>
+<pre><code>## Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE
+</code></pre>
+<pre><code class="language-r">library(ggrepel)
+library(shiny)
+library(leaflet)
+library(stargazer)
+</code></pre>
+<pre><code>## 
+## Please cite as: 
+## 
+##  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+##  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer
+</code></pre>
+<pre><code class="language-r">library(blogdown)
+library(car)
+</code></pre>
+<pre><code>## Loading required package: carData
+## 
+## Attaching package: 'car'
+## 
+## The following object is masked from 'package:dplyr':
+## 
+##     recode
+## 
+## The following object is masked from 'package:purrr':
+## 
+##     some
+</code></pre>
+<pre><code class="language-r">library(lubridate)
+library(zoo)
+</code></pre>
+<pre><code>## 
+## Attaching package: 'zoo'
+## 
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+</code></pre>
+<pre><code class="language-r">library(modelsummary)
+</code></pre>
+<pre><code>## `modelsummary` 2.0.0 now uses `tinytable` as its default table-drawing
+##   backend. Learn more at: https://vincentarelbundock.github.io/tinytable/
+## 
+## Revert to `kableExtra` for one session:
+## 
+##   options(modelsummary_factory_default = 'kableExtra')
+##   options(modelsummary_factory_latex = 'kableExtra')
+##   options(modelsummary_factory_html = 'kableExtra')
+## 
+## Silence this message forever:
+## 
+##   config_modelsummary(startup_message = FALSE)
+</code></pre>
+<pre><code class="language-r">library(GGally)
+</code></pre>
+<pre><code>## Registered S3 method overwritten by 'GGally':
+##   method from   
+##   +.gg   ggplot2
+</code></pre>
+<pre><code class="language-r">setwd(&quot;~/Documents/0 - Election Analytics/&quot;)
+</code></pre>
+<pre><code class="language-r">df_full &lt;- read.csv(&quot;data/elec_full.csv&quot;)
+
+# Read both dataframes in R
+nat_polls &lt;- read.csv(&quot;data/national_polls_1968-2024.csv&quot;)
+state_polls &lt;- read.csv(&quot;data/state_polls_1968-2024.csv&quot;)
+
+state_polls_wider &lt;- state_polls %&gt;%
+  pivot_wider(
+    id_cols = c(year, state, weeks_left, days_left, poll_date), 
+    names_from = party, 
+    values_from = c(poll_state, before_convention),
+  ) %&gt;% 
+  rename(
+    &quot;d_poll_state&quot; = &quot;poll_state_DEM&quot;,
+    &quot;r_poll_state&quot; = &quot;poll_state_REP&quot;,
+    &quot;d_convention&quot; = &quot;before_convention_DEM&quot;,
+    &quot;r_convention&quot; = &quot;before_convention_REP&quot;
+  ) %&gt;% 
+  mutate(
+    d_poll_state = map_dbl(d_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_poll_state = map_dbl(r_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+  )
+</code></pre>
+<pre><code>## Warning: Values from `before_convention` and `poll_state` are not uniquely identified;
+## output will contain list-cols.
+## • Use `values_fn = list` to suppress this warning.
+## • Use `values_fn = {summary_fun}` to summarise duplicates.
+## • Use the following dplyr code to identify duplicates.
+##   {data} |&gt;
+##   dplyr::summarise(n = dplyr::n(), .by = c(year, state, weeks_left, days_left,
+##   poll_date, party)) |&gt;
+##   dplyr::filter(n &gt; 1L)
+</code></pre>
+<pre><code class="language-r">nat_polls_wider &lt;- nat_polls %&gt;% 
+  pivot_wider(
+    id_cols = c(year, state, weeks_left, days_left, poll_date), 
+    names_from = party, 
+    values_from = c(poll_nat, before_convention)
+  ) %&gt;% 
+  rename(
+    &quot;d_poll_nat&quot; = &quot;poll_nat_DEM&quot;,
+    &quot;r_poll_nat&quot; = &quot;poll_nat_REP&quot;,
+    &quot;d_convention&quot; = &quot;before_convention_DEM&quot;,
+    &quot;r_convention&quot; = &quot;before_convention_REP&quot;
+  ) %&gt;% 
+  mutate(
+    d_poll_nat = map_dbl(d_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_poll_nat = map_dbl(r_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
+  )
+</code></pre>
+<pre><code>## Warning: Values from `before_convention` and `poll_nat` are not uniquely identified;
+## output will contain list-cols.
+## • Use `values_fn = list` to suppress this warning.
+## • Use `values_fn = {summary_fun}` to summarise duplicates.
+## • Use the following dplyr code to identify duplicates.
+##   {data} |&gt;
+##   dplyr::summarise(n = dplyr::n(), .by = c(year, state, weeks_left, days_left,
+##   poll_date, party)) |&gt;
+##   dplyr::filter(n &gt; 1L)
+</code></pre>
+<pre><code class="language-r">polls_merged_v1 &lt;- state_polls_wider %&gt;% 
+  left_join(nat_polls_wider, by = c(&quot;year&quot;, &quot;weeks_left&quot;, &quot;days_left&quot;, &quot;poll_date&quot;, &quot;d_convention&quot;, &quot;r_convention&quot;)) %&gt;%
+  select(-c(&quot;state.y&quot;)) %&gt;% 
+  rename(
+    &quot;state&quot; = &quot;state.x&quot;
+  ) %&gt;% 
+  group_by(year, weeks_left, state) %&gt;% 
+  summarize(
+    d_poll_state = mean(d_poll_state, na.rm = TRUE),
+    r_poll_state = mean(r_poll_state, na.rm = TRUE),
+    d_poll_nat = mean(d_poll_nat, na.rm = TRUE),
+    r_poll_nat = mean(r_poll_nat, na.rm = TRUE),
+    r_convention = first(r_convention),
+    d_convention = first(d_convention)
+  ) %&gt;%
+  ungroup() %&gt;% 
+  arrange(desc(year), desc(weeks_left), state)
+</code></pre>
+<pre><code>## `summarise()` has grouped output by 'year', 'weeks_left'. You can override
+## using the `.groups` argument.
+</code></pre>
+<pre><code class="language-r">write_csv(polls_merged_v1, &quot;polls_merged_v1.csv&quot;)
+</code></pre>
+<pre><code class="language-r"># clean presidential approval
+</code></pre>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
+</script>
+  
+  <hr/>
+  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

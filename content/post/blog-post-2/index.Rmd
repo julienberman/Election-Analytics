@@ -222,7 +222,7 @@ df_full_merged <- df_full %>%
         full_join, 
         by = "year"
       ),
-    )
+    ) %>% 
     # Standardize all numeric variables except 'year'
     mutate(across(
       c(jobs_agg, pce_agg, rdpi_agg, cpi_agg, ics_agg, sp500_agg, unemp_agg), 
