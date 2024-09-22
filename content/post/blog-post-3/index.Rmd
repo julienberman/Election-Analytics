@@ -6,11 +6,6 @@ slug: blog-post-3-polling
 categories: []
 tags: []
 ---
-
-
-
-
-
 ```{r}
 # Load libraries.
 ## install via `install.packages("name")`
@@ -31,82 +26,102 @@ library(lubridate)
 library(zoo)
 library(modelsummary)
 library(GGally)
+library(readxl)
 setwd("~/Documents/0 - Election Analytics/")
+df <- read_csv("data/merged_v3.csv")
+df_econ <- read_csv("data/econ_fundamentals.csv")
+```
+```{r}
+rate_aggregation <- function(data, indicator, t1, t2) {
+  subset <- data %>%
+    filter(month_index >= t1 & month_index <= t2) %>%
+    group_by(election_cycle) %>% 
+    summarize(
+      year = mean(election_year),
+      value_t1 = first(.data[[indicator]][month_index == t1]),
+      value_t2 = first(.data[[indicator]][month_index == t2]),
+      # Dynamic naming of the aggregated variable
+      !!paste0(indicator, "_agg") := (value_t2 - value_t1) / value_t1 * 100
+    )
+  return(subset %>% select(-value_t1, -value_t2, -election_cycle))
+}
+aggregate_indicators <- function(df_full, df_fundamentals, indicators, period_start, period_end, aggregation_method) {
+  agg_results <- map(indicators, ~aggregation_method(df_fundamentals, .x, period_start, period_end))
+  combined_agg <- reduce(agg_results, full_join, by = "year") %>% 
+    mutate(across(ends_with("_agg"), ~as.numeric(scale(.))))
+  df_full_merged <- df_full %>%
+    left_join(combined_agg, by = "year") %>%
+  return(df_full_merged)
+}
 ```
 
 
 ```{r}
-df_full <- read.csv("data/elec_full.csv")
 
-# Read both dataframes in R
-nat_polls <- read.csv("data/national_polls_1968-2024.csv")
-state_polls <- read.csv("data/state_polls_1968-2024.csv")
+# merge economic indicators
+indicators <- c("jobs", "pce", "rdpi", "cpi", "ics", "sp500", "unemp")
+period_start <- -30
+period_end <- -8 #if want 2024, can't set this super close
 
-state_polls_wider <- state_polls %>%
-  pivot_wider(
-    id_cols = c(year, state, weeks_left, days_left, poll_date), 
-    names_from = party, 
-    values_from = c(poll_state, before_convention),
-  ) %>% 
-  rename(
-    "d_poll_state" = "poll_state_DEM",
-    "r_poll_state" = "poll_state_REP",
-    "d_convention" = "before_convention_DEM",
-    "r_convention" = "before_convention_REP"
-  ) %>% 
-  mutate(
-    d_poll_state = map_dbl(d_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    r_poll_state = map_dbl(r_poll_state, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-  )
-
-nat_polls_wider <- nat_polls %>% 
-  pivot_wider(
-    id_cols = c(year, state, weeks_left, days_left, poll_date), 
-    names_from = party, 
-    values_from = c(poll_nat, before_convention)
-  ) %>% 
-  rename(
-    "d_poll_nat" = "poll_nat_DEM",
-    "r_poll_nat" = "poll_nat_REP",
-    "d_convention" = "before_convention_DEM",
-    "r_convention" = "before_convention_REP"
-  ) %>% 
-  mutate(
-    d_poll_nat = map_dbl(d_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    r_poll_nat = map_dbl(r_poll_nat, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    d_convention = 1 - map_dbl(d_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-    r_convention = 1 - map_dbl(r_convention, ~ifelse(is.null(.x), NA_real_, as.numeric(.x))),
-  )
-
-polls_merged_v1 <- state_polls_wider %>% 
-  left_join(nat_polls_wider, by = c("year", "weeks_left", "days_left", "poll_date", "d_convention", "r_convention")) %>%
-  select(-c("state.y")) %>% 
-  rename(
-    "state" = "state.x"
-  ) %>% 
-  group_by(year, weeks_left, state) %>% 
-  summarize(
-    d_poll_state = mean(d_poll_state, na.rm = TRUE),
-    r_poll_state = mean(r_poll_state, na.rm = TRUE),
-    d_poll_nat = mean(d_poll_nat, na.rm = TRUE),
-    r_poll_nat = mean(r_poll_nat, na.rm = TRUE),
-    r_convention = first(r_convention),
-    d_convention = first(d_convention)
-  ) %>%
-  ungroup() %>% 
-  arrange(desc(year), desc(weeks_left), state)
-
-write_csv(polls_merged_v1, "polls_merged_v1.csv")
-
+df <- aggregate_indicators(df, df_econ, indicators, period_start, period_end, rate_aggregation)
 ```
 
 
 ```{r}
-# clean presidential approval
 
+# leave-one-out cross validation
+loocv <- function(df, formula) {
+  years <- unique(df$year)
+  predictions_out <- numeric(length(years))
+  
+  for (i in seq_along(years)) {
+    year <- years[i]
+    # Create training data by excluding all rows from the current year
+    train_data <- df %>% filter(year != !!year)
+    test_data <- df %>% filter(year == !!year)
+    
+    # Fit the model on the training data
+    model <- lm(formula, data = train_data)
+    
+    # Predict for the left-out year
+    prediction <- predict(model, newdata = test_data)
+    predictions_out[i] <- prediction
+  }
 
+  # Extract the response variable(s) from the formula
+  response_vars <- as.character(formula.tools::lhs(formula))
+  
+  # Function to evaluate the response
+  eval_response <- function(data) {
+    eval(parse(text = response_vars), data)
+  }
+
+  # Calculate the MSE of out-of-sample fit 
+  actuals <- eval_response(df)
+  mse_out <- mean((predictions_out - actuals)^2)
+  
+  # Calculate the MSE of the in-sample fit
+  model_in <- lm(formula, data = df)
+  predictions_in <- predict(model_in)
+  mse_in <- mean((actuals - predictions_in)^2)
+  
+  return(list(mse_out = mse_out, mse_in = mse_in))
+}
+
+formula <- 
+error <- result <- loocv_mse(df, formula)
+
+print(paste("Out-of-sample MSE:", error$mse_out))
+print(paste("In-sample MSE:", error$mse_in))
 
 ```
+
+
+
+
+
+
+
+
+
 
