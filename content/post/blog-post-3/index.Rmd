@@ -221,7 +221,7 @@ Previously, my forecasts only included autoregressive components, home state adv
 
 Most of my polling data comes from 538's historical polling averages. These averages --- at least in recent years --- also include 538's ratings for each pollster on a scale from zero to three. When I aggregated the polls, I gave more emphasis to stellar polls like the New York Times/Siena poll. To incorporate the traditional polling data, which measures the percentage of the electorate that supports a given candidate, I created a distinct variable that measured the poll margin (percent supporting the Democrat minus the percent supporting the Republican) for each week in the 250 days before the election. One set of these 36 variables measured the national poll margin, and one set of 36 variables measured the state-level poll margin.
 
-To incorporate the polling data on the president's approval rating, because so much data was missing, I took a different approach, instead attempting to aggregate the time series into a single score that measures the president's approval during the election year. To do this, I used an exponential decay function to up-weight presidential approval measurements more recent to the election and down-weight presidential approval measurements that were taken many months before election day. This function takes the form $a = e^{-kw}$, where $a$ is the approval rating, $w$ represents the number of weeks prior to the election, and $k$ represents the decay factor. I used a decay factor of 0.01, which gives polls from about 2-3 months prior to the election roughly half the weight of the polls taken on election day.
+To incorporate the polling data on the president's approval rating, because so much data was missing, I took a different approach, instead attempting to aggregate the time series into a single score that measures the president's approval during the election year. To do this, I used an exponential decay function to up-weight presidential approval measurements more recent to the election and down-weight presidential approval measurements that were taken many months before election day. This function takes the form $a = e^{-kw}$, where $a$ is the approval rating, $w$ represents the number of weeks prior to the election, and $k$ represents the decay factor. I used a decay factor of 0.01, which gives polls from about 2-3 months prior to the election roughly half the weight of the polls taken on election day. A similar version of exponential weighting is described [here](https://fivethirtyeight.com/methodology/how-our-polling-averages-work/).
 
 Now let's take a look at the updated regression specifications.
 
@@ -245,22 +245,37 @@ Unlike last week, I did not include either state fixed effects or year fixed eff
 
 Models two and three were both _elastic net regressions_, which means that they incorporated regularization techniques used to select the most important and most predictive features. Given that my prediction matrix contains substantially more columns than it does rows (we only have data for the past 18 presidential elections), regularization is necessary both to generate a solution for the regression and to prevent overfitting.
 
-Elastic net regression combines Lasso regression, which adds an L1 penalty to the OLS optimization, and Ridge regression, which adds an L2 penalty. The balance between Lasso and Ridge is controlled by a mixing parameter, $\alpha$, which I set to $0.5$. In future iterations of my model, this parameter will need to be further optimized. 
+Elastic net regression combines Lasso regression, which adds an L1 penalty to the OLS optimization, and Ridge regression, which adds an L2 penalty. The balance between Lasso and Ridge is controlled by a mixing parameter, $\alpha$, which I set to $0.5$. In future iterations of my model, this parameter will need to be further optimized.
 
 # Results
 
-Please find below tables with the coefficients of the models behind forecasts two and three.
+The table below reports the the coefficients of the model for the national vote-margin forecast. As you can see, the elastic net shrunk a large majority of the coefficients to zero, particularly the polling margin data taken long before election day. Most of the economic fundamentals remained in the model, except for unemployment and personal consumption expenditures, which disappeared likely because it is so highly correlated with real disposable personal income.
 ```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("natl_forecast.png")
 ```
 
-```{r, echo=FALSE, warning=FALSE, message = FALSE}
-```
+And here are the results from the partisan lean forecast at the state-level. As with the national forecast, the partisan lean forecast also shrunk many of the poll margin variables, as well as the resident state advantage adjustment, entirely to zero.
 
 ```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("state_forecast.png")
 ```
 
+For each of the models, I also ran leave-one-out cross validation, like last week, in order to get both the in-sample and out-of-sample mean squared errors.
+
 ```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("mse_natl_state.png")
 ```
+
+And then I used the model to make predictions for both the 2024 national popular vote margin and the 2024 partisan lean of each state. My model predicts that Trump will win the popular vote by $2.5$ points. Here are the partisan leans for each state: 
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("table_pt1.png")
+```
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("table_pt2.png")
+```
+
+
+Here is the graph of the in-sample predictions and the actual values for the national popular vote margin model:
 
 ```{r, echo=FALSE, warning=FALSE, message = FALSE}
 plot(national_data$train$year, 
@@ -270,7 +285,7 @@ plot(national_data$train$year,
      lwd = 2,
      xlab = "Year", 
      ylab = "Vote Margin", 
-     main = "True Vote Margin (Line) v. Predicted Vote Margin (Dots) for Each Election") +
+     main = "True Vote Margin (Line) v. Predicted Vote Margin (Dots)") +
 points(national_data$train$year, national_loocv$predictions_in, 
        pch = 16, 
        col = "red")
@@ -278,6 +293,11 @@ points(national_data$train$year, national_loocv$predictions_in,
 ```
 
 
+Clearly, there is something seriously wrong with these two models. For one, the in-sample MSE is significantly smaller than the out-of-sample MSE, which suggests overfitting. Futhermore, in the national model, the national poll margin variables seem to be _negative_ predictors of the true national vote margin, which doesn't really make sense. These variables should be highly correlated with the outcome, because if a candidate is polling well, they should be more likely to win.
+
+In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn't make sense for the elastic net to shring the $\mathrm{pl_lag2}$ variable entirely to zero.
+
+Next week, I will begin my analysis by exploring these issues, and I will make sure to provide a prettier visualization of the electoral college results!
 
 
 
