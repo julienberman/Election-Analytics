@@ -61,15 +61,15 @@ Unlike last week, I did not include either state fixed effects or year fixed eff
 <p>Models two and three were both <em>elastic net regressions</em>, which means that they incorporated regularization techniques used to select the most important and most predictive features. Given that my prediction matrix contains substantially more columns than it does rows (we only have data for the past 18 presidential elections), regularization is necessary both to generate a solution for the regression and to prevent overfitting.</p>
 <p>Elastic net regression combines Lasso regression, which adds an L1 penalty to the OLS optimization, and Ridge regression, which adds an L2 penalty. The balance between Lasso and Ridge is controlled by a mixing parameter, <code>\(\alpha\)</code>, which I set to <code>\(0.5\)</code>. In future iterations of my model, this parameter will need to be further optimized.</p>
 <h1 id="results">Results</h1>
-<p>The table below reports the the coefficients of the model for the national vote-margin forecast. As you can see, the elastic net shrunk a large majority of the coefficients to zero, particularly the polling margin data taken long before election day. Most of the economic fundamentals remained in the model, except for unemployment and personal consumption expenditures, which disappeared likely because it is so highly correlated with real disposable personal income.
-<img src="natl_forecast.png" width="262" /></p>
+<p>The table below reports the the coefficients of the model for the national vote-margin forecast. As you can see, the elastic net shrunk a large majority of the coefficients to zero, particularly the polling margin data taken long before election day. Most of the economic fundamentals remained in the model, except for unemployment and personal consumption expenditures, which disappeared likely because it is so highly correlated with real disposable personal income.</p>
+<img src="natl_forecast.png" width="262" />
 <p>And here are the results from the partisan lean forecast at the state-level. As with the national forecast, the partisan lean forecast also shrunk many of the poll margin variables, as well as the resident state advantage adjustment, entirely to zero.</p>
 <img src="state_forecast.png" width="205" />
 <p>For each of the models, I also ran leave-one-out cross validation, like last week, in order to get both the in-sample and out-of-sample mean squared errors.</p>
 <img src="mse_natl_state.png" width="442" />
-<p>And then I used the model to make predictions for both the 2024 national popular vote margin and the 2024 partisan lean of each state. My model predicts that Trump will win the popular vote by <code>\(2.5\)</code> points. Here are the partisan leans for each state:
+<p>And then I used the model to make predictions for both the 2024 national popular vote margin and the 2024 partisan lean of each state. My model predicts that Trump will win the popular vote by <code>\(2.5\)</code> points. Here are the partisan leans for each state:</p>
 <img src="table_pt1.png" width="351" />
-<img src="table_pt2.png" width="297" /></p>
+<img src="table_pt2.png" width="297" />
 <p>Here is the graph of the in-sample predictions and the actual values for the national popular vote margin model:</p>
 <img src="https://example.org/post/2024/09/18/blog-post-3-polling/index_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 <pre><code>## integer(0)

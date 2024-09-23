@@ -59,6 +59,7 @@ Elastic net regression combines Lasso regression, which adds an L1 penalty to th
 # Results
 
 The table below reports the the coefficients of the model for the national vote-margin forecast. As you can see, the elastic net shrunk a large majority of the coefficients to zero, particularly the polling margin data taken long before election day. Most of the economic fundamentals remained in the model, except for unemployment and personal consumption expenditures, which disappeared likely because it is so highly correlated with real disposable personal income.
+
 <img src="natl_forecast.png" width="262" />
 
 And here are the results from the partisan lean forecast at the state-level. As with the national forecast, the partisan lean forecast also shrunk many of the poll margin variables, as well as the resident state advantage adjustment, entirely to zero.
@@ -70,6 +71,7 @@ For each of the models, I also ran leave-one-out cross validation, like last wee
 <img src="mse_natl_state.png" width="442" />
 
 And then I used the model to make predictions for both the 2024 national popular vote margin and the 2024 partisan lean of each state. My model predicts that Trump will win the popular vote by `\(2.5\)` points. Here are the partisan leans for each state: 
+
 <img src="table_pt1.png" width="351" />
 <img src="table_pt2.png" width="297" />
 
@@ -88,11 +90,3 @@ Clearly, there is something seriously wrong with these two models. For one, the 
 In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn't make sense for the elastic net to shring the `\(\mathrm{pl_lag2}\)` variable entirely to zero.
 
 Next week, I will begin my analysis by exploring these issues, and I will make sure to provide a prettier visualization of the electoral college results!
-
-
-
-
-
-
-
-
