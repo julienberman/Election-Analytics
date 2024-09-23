@@ -75,7 +75,7 @@ Unlike last week, I did not include either state fixed effects or year fixed eff
 <pre><code>## integer(0)
 </code></pre>
 <p>Clearly, there is something seriously wrong with these two models. For one, the in-sample MSE is significantly smaller than the out-of-sample MSE, which suggests overfitting. Futhermore, in the national model, the national poll margin variables seem to be <em>negative</em> predictors of the true national vote margin, which doesn&rsquo;t really make sense. These variables should be highly correlated with the outcome, because if a candidate is polling well, they should be more likely to win.</p>
-<p>In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn&rsquo;t make sense for the elastic net to shring the <code>\(\mathrm{pl_lag2}\)</code> variable entirely to zero.</p>
+<p>In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn&rsquo;t make sense for the elastic net to shring the <code>\(\mathrm{pl\_lag2}\)</code> variable entirely to zero.</p>
 <p>Next week, I will begin my analysis by exploring these issues, and I will make sure to provide a prettier visualization of the electoral college results!</p>
 
 </main>

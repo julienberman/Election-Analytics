@@ -73,6 +73,7 @@ For each of the models, I also ran leave-one-out cross validation, like last wee
 And then I used the model to make predictions for both the 2024 national popular vote margin and the 2024 partisan lean of each state. My model predicts that Trump will win the popular vote by `\(2.5\)` points. Here are the partisan leans for each state: 
 
 <img src="table_pt1.png" width="351" />
+
 <img src="table_pt2.png" width="297" />
 
 
@@ -87,6 +88,6 @@ Here is the graph of the in-sample predictions and the actual values for the nat
 
 Clearly, there is something seriously wrong with these two models. For one, the in-sample MSE is significantly smaller than the out-of-sample MSE, which suggests overfitting. Futhermore, in the national model, the national poll margin variables seem to be _negative_ predictors of the true national vote margin, which doesn't really make sense. These variables should be highly correlated with the outcome, because if a candidate is polling well, they should be more likely to win.
 
-In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn't make sense for the elastic net to shring the `\(\mathrm{pl_lag2}\)` variable entirely to zero.
+In addition, the state level model for partisan lean shrinks variables that likely should not disappear. For example, many previous forecasters have indicated that the partisan lean of a given state is (roughly) a linear combination of its partisan lean in the two previous election cycles. Thus, it doesn't make sense for the elastic net to shring the `\(\mathrm{pl\_lag2}\)` variable entirely to zero.
 
 Next week, I will begin my analysis by exploring these issues, and I will make sure to provide a prettier visualization of the electoral college results!
