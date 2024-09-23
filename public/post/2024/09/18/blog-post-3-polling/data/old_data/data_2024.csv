@@ -1,0 +1,57 @@
+﻿year,state,abbr,electors,d_cand,r_cand,incumb,incumb_party,d_prev_admin,r_prev_admin,d_hsa,r_hsa,d_rsa,r_rsa,pop,area
+2024,Alabama,AL,9,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,5143033,52420
+2024,Alaska,AK,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,733536,665384
+2024,Arizona,AZ,11,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,7497004,113990
+2024,Arkansas,AR,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,3089060,53179
+2024,California,CA,54,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,38889770,163696
+2024,Colorado,CO,10,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,5914181,104094
+2024,Connecticut,CT,7,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,3625646,5543
+2024,Delaware,DE,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,1,0,1044321,2489
+2024,District Of Columbia,DC,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,"671,803",68
+2024,Florida,FL,30,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,1,22975931,65758
+2024,Georgia,GA,16,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,11145304,59425
+2024,Hawaii,HI,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1430877,10932
+2024,Idaho,ID,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1990456,83569
+2024,Illinois,IL,19,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,12516863,57914
+2024,Indiana,IN,11,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,6892124,36420
+2024,Iowa,IA,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,3214315,56273
+2024,Kansas,KS,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,2944376,82278
+2024,Kentucky,KY,8,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,4540745,40408
+2024,Louisiana,LA,8,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,4559475,52378
+2024,Maine,ME,2,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1402106,35380
+2024,Maine_d1,ME_d1,1,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1402106,35380
+2024,Maine_d2,ME_d2,1,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1402106,35380
+2024,Maryland,MD,10,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,6196525,12406
+2024,Massachusetts,MA,11,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,7020058,10554
+2024,Michigan,MI,15,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,10041241,96714
+2024,Minnesota,MN,10,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,5761530,86936
+2024,Mississippi,MS,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,2940452,48432
+2024,Missouri,MO,10,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,6215144,69707
+2024,Montana,MT,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1142746,147040
+2024,Nebraska,NE,2,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1988698,77348
+2024,Nebraska_d1,NE_d1,1,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1988698,77348
+2024,Nebraska_d2,NE_d2,1,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1988698,77348
+2024,Nebraska_d3,NE_d3,1,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1988698,77348
+2024,Nevada,NV,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,3210931,110572
+2024,New Hampshire,NH,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1405105,9349
+2024,New Jersey,NJ,14,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,9320865,8723
+2024,New Mexico,NM,5,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,2115266,121590
+2024,New York,NY,28,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,1,0,0,19469232,54555
+2024,North Carolina,NC,16,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,10975017,53819
+2024,North Dakota,ND,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,788940,70698
+2024,Ohio,OH,17,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,11812173,44826
+2024,Oklahoma,OK,7,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,4088377,69899
+2024,Oregon,OR,8,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,4227337,98379
+2024,Pennsylvania,PA,19,"Harris, Kamala","Trump, Donald J.",1,1,1,0,1,0,0,0,12951275,46054
+2024,Rhode Island,RI,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1098082,1545
+2024,South Carolina,SC,9,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,5464155,32020
+2024,South Dakota,SD,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,928767,77116
+2024,Tennessee,TN,11,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,7204002,42144
+2024,Texas,TX,40,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,30976754,268596
+2024,Utah,UT,6,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,3454232,84897
+2024,Vermont,VT,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,647818,9616
+2024,Virginia,VA,13,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,8752297,42775
+2024,Washington,WA,12,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,7841283,71298
+2024,West Virginia,WV,4,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,1766107,24230
+2024,Wisconsin,WI,10,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,5931367,65496
+2024,Wyoming,WY,3,"Harris, Kamala","Trump, Donald J.",1,1,1,0,0,0,0,0,97813,6

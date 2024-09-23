@@ -13,7 +13,7 @@
       <link>https://example.org/post/2024/09/18/blog-post-3-polling/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/09/18/blog-post-3-polling/</guid>
-      <description># Load libraries. ## install via `install.packages(&amp;quot;name&amp;quot;)` library(ggplot2) library(maps) library(tidyverse) ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ── ## ✔ dplyr 1.1.4 ✔ readr 2.1.5 ## ✔ forcats 1.0.0 ✔ stringr 1.5.1 ## ✔ lubridate 1.9.3 ✔ tibble 3.2.1 ## ✔ purrr 1.0.2 ✔ tidyr 1.3.1 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() ## ✖ purrr::map() masks maps::map() ## ℹ Use the conflicted package (&amp;lt;http://conflicted.</description>
+      <description>Overview Last week, I developed a comprehensive structure that can be used to build a model that combines the fundamentals with a current snapshot of the political climate in order to forecast the electoral college. The model proceeded in three steps:&#xA;Forecast each state&amp;rsquo;s elasticity, which represents the change in state-level vote margin between two election cycles. This metric measures the &amp;ldquo;swinginess&amp;rdquo; of a state. Forecast each state&amp;rsquo;s partisan lean, which measures the extent to which a state is either more democratic or more republican than the national popular vote.</description>
     </item>
     <item>
       <title>Blog Post 2: Economic Fundamentals</title>
