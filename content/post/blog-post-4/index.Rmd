@@ -473,26 +473,27 @@ $$
 \hat{\beta} = \mathrm{argmin}\left\{E(y - \vec{x}\cdot\vec{b})^2 + \lambda\sum_{j = 1}^{k}\left[(1 - \alpha)b_j^2 + \alpha |b_j| \right]\right\}
 $$
 
-where the expectation calculates the mean squared error --- the squared distance between the actual output and the predictions --- and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by $\alpha$, and determines the best mix of LASSO regression ($\alpha = 1$) and ridge regression ($\alpha = 0$). The tuning parameter $\lambda$ controls the overall strength of the penalty.
+where the expectation calculates the mean squared error --- the squared distance between the actual output and the predictions --- and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by $\alpha$, and determines the best mix of LASSO regression ( $\alpha = 1$ ) and ridge regression ( $\alpha = 0$ ). The tuning parameter $\lambda$ controls the overall strength of the penalty.
 
 To optimize these two simultaneously, I developped the following algorithm:
-1. Split the data into a training subset ($\mathrm{year} < 2024$) and a testing subset ($\mathrm{year} == 2024$).
-2. Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of $\alpha$ from $\alpha_{min}$ to $\alpha_{max}$. The second dimension is for each value of $\lambda$ from $\lambda_{min}$ to $\lambda_{max}$. The third dimension is for each year I left out during cross validation. (I set $\alpha$ to range between $0$ and $1$, and I set $\lambda$ to range between $0$ and $5$.)
-3. Loop over each combination of $alpha$ and $\lambda$. Perform leave-one-out cross-validation for each year.
+1. Split the data into a training subset ( $\mathrm{year} < 2024$ ) and a testing subset ($\mathrm{year} == 2024$).
+2. Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of $\alpha$ from $\alpha_{min}$ to $\alpha_{max}$. The second dimension is for each value of $\lambda$ from $\lambda_{min}$ to $\lambda_{max}$. (I set $0 \leq \alpha \leq 1$ and $0 \leq \lambda \leq 5$.) The third dimension is for each year I left out during cross validation. 
+3. Loop over each combination of $\alpha$ and $\lambda$. Perform leave-one-out cross-validation for each year.
 a. Train the elastic net model on the data excluding the K-th year, using that specific $\alpha$ and $\lambda$. This gives you a vector of coefficients for that combination.
 b. Calculate the out-of-sample  mean squared error using the left-out year.
 c. store the MSE in a 3D matrix. Dimensions will be $[p, m, n]$, where $p$ is the number of alpha values,  $m$ is the number of lambda values, and $n$ is the number of years, or the number of leave-one-out splits.
-4. Calculate the average MSE for each pair ($\alpha$, $\lambda$). Average across the third dimension (the years) to get a 2D matrix of average MSEs for each combination of $\alpha$ and $\lambda$.
-5. Select the pair ($\alpha$, $\lambda$) that minimizes the average MSE.
-6. Train on the full training data Using ($\alpha^*$, $\lambda^*$), retrain the model on the entire training set to obtain the final coefficients.
+4. Calculate the expected MSE for each pair ( $\alpha$, $\lambda$ ) by averaging across the third dimension (the years). The result will be a 2D matrix of average MSEs for each combination of $\alpha$ and $\lambda$.
+5. Select the pair ( $\alpha$, $\lambda$ ) that minimizes the average MSE.
+6. Train on the full training data Using ( $\alpha^*$, $\lambda^*$ ), retrain the model on the entire training set to obtain the final coefficients.
 
-Below are the coeffients of each model, as well as heatmaps to illustrate the optimization process. The red $x$ represents the ($\alpha$, $\lambda$) pair with the lowest MSE.
+Below are the coeffients of each model, as well as heatmaps to illustrate the optimization process. The red $x$ represents the ( $\alpha$, $\lambda$ ) pair with the lowest MSE.
 
 Here is the state-level model:
 ```{r, echo=FALSE, warning=FALSE, message = FALSE}
 print(coef(state_model_info$model))
 print(state_model_info$mse_plot)
 ```
+
 Interestingly, only two poll leans seem to matter: the poll lean from the seventh week out, which is the closest data point we have to the election, and the poll lean from the nineteenth week out. In addition, the coefficient for solid_d is very strongly positive (Democrat) and the coefficient for solid_r is very strongly negative (Republican). These make sense --- the Cook Political Report gets states that are not battleground states mostly correct, so their predictions should be very highly correlated with vote margin in those states.
 
 Now the national-level fundamentals model:
@@ -500,6 +501,7 @@ Now the national-level fundamentals model:
 print(coef(nat_fund_model_info$model))
 print(nat_fund_model_info$mse_plot)
 ```
+
 Interestingly, all indicators drop out except real disposable personal income and the S&P 500 closing price. 
 
 And finally the national-level polling model:
@@ -507,8 +509,6 @@ And finally the national-level polling model:
 print(coef(nat_polls_model_info$model))
 print(nat_polls_model_info$mse_plot)
 ```
-
-
 
 And now, the prediction results. First, here are the results of the national models for vote margin:
 

@@ -80,20 +80,20 @@ Which gave the following output:</p>
 </p>
 $$
 \hat{\beta} = \mathrm{argmin}\left\{E(y - \vec{x}\cdot\vec{b})^2 + \lambda\sum_{j = 1}^{k}\left[(1 - \alpha)b_j^2 + \alpha |b_j| \right]\right\}
-$$<p>where the expectation calculates the mean squared error &mdash; the squared distance between the actual output and the predictions &mdash; and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by <code>\(\alpha\)</code>, and determines the best mix of LASSO regression ($\alpha = 1$) and ridge regression ($\alpha = 0$). The tuning parameter <code>\(\lambda\)</code> controls the overall strength of the penalty.</p>
+$$<p>where the expectation calculates the mean squared error &mdash; the squared distance between the actual output and the predictions &mdash; and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by <code>\(\alpha\)</code>, and determines the best mix of LASSO regression ( <code>\(\alpha = 1\)</code> ) and ridge regression ( <code>\(\alpha = 0\)</code> ). The tuning parameter <code>\(\lambda\)</code> controls the overall strength of the penalty.</p>
 <p>To optimize these two simultaneously, I developped the following algorithm:</p>
 <ol>
-<li>Split the data into a training subset ($\mathrm{year} &lt; 2024$) and a testing subset ($\mathrm{year} == 2024$).</li>
-<li>Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of <code>\(\alpha\)</code> from <code>\(\alpha_{min}\)</code> to <code>\(\alpha_{max}\)</code>. The second dimension is for each value of <code>\(\lambda\)</code> from <code>\(\lambda_{min}\)</code> to <code>\(\lambda_{max}\)</code>. The third dimension is for each year I left out during cross validation. (I set <code>\(\alpha\)</code> to range between <code>\(0\)</code> and <code>\(1\)</code>, and I set <code>\(\lambda\)</code> to range between <code>\(0\)</code> and <code>\(5\)</code>.)</li>
-<li>Loop over each combination of <code>\(alpha\)</code> and <code>\(\lambda\)</code>. Perform leave-one-out cross-validation for each year.
+<li>Split the data into a training subset ( <code>\(\mathrm{year} &lt; 2024\)</code> ) and a testing subset ($\mathrm{year} == 2024$).</li>
+<li>Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of <code>\(\alpha\)</code> from <code>\(\alpha_{min}\)</code> to <code>\(\alpha_{max}\)</code>. The second dimension is for each value of <code>\(\lambda\)</code> from <code>\(\lambda_{min}\)</code> to <code>\(\lambda_{max}\)</code>. (I set <code>\(0 \leq \alpha \leq 1\)</code> and <code>\(0 \leq \lambda \leq 5\)</code>.) The third dimension is for each year I left out during cross validation.</li>
+<li>Loop over each combination of <code>\(\alpha\)</code> and <code>\(\lambda\)</code>. Perform leave-one-out cross-validation for each year.
 a. Train the elastic net model on the data excluding the K-th year, using that specific <code>\(\alpha\)</code> and <code>\(\lambda\)</code>. This gives you a vector of coefficients for that combination.
 b. Calculate the out-of-sample  mean squared error using the left-out year.
 c. store the MSE in a 3D matrix. Dimensions will be <code>\([p, m, n]\)</code>, where <code>\(p\)</code> is the number of alpha values,  <code>\(m\)</code> is the number of lambda values, and <code>\(n\)</code> is the number of years, or the number of leave-one-out splits.</li>
-<li>Calculate the average MSE for each pair ($\alpha$, <code>\(\lambda\)</code>). Average across the third dimension (the years) to get a 2D matrix of average MSEs for each combination of <code>\(\alpha\)</code> and <code>\(\lambda\)</code>.</li>
-<li>Select the pair ($\alpha$, <code>\(\lambda\)</code>) that minimizes the average MSE.</li>
-<li>Train on the full training data Using ($\alpha^*$, <code>\(\lambda^*\)</code>), retrain the model on the entire training set to obtain the final coefficients.</li>
+<li>Calculate the expected MSE for each pair ( <code>\(\alpha\)</code>, <code>\(\lambda\)</code> ) by averaging across the third dimension (the years). The result will be a 2D matrix of average MSEs for each combination of <code>\(\alpha\)</code> and <code>\(\lambda\)</code>.</li>
+<li>Select the pair ( <code>\(\alpha\)</code>, <code>\(\lambda\)</code> ) that minimizes the average MSE.</li>
+<li>Train on the full training data Using ( <code>\(\alpha^*\)</code>, <code>\(\lambda^*\)</code> ), retrain the model on the entire training set to obtain the final coefficients.</li>
 </ol>
-<p>Below are the coeffients of each model, as well as heatmaps to illustrate the optimization process. The red <code>\(x\)</code> represents the ($\alpha$, <code>\(\lambda\)</code>) pair with the lowest MSE.</p>
+<p>Below are the coeffients of each model, as well as heatmaps to illustrate the optimization process. The red <code>\(x\)</code> represents the ( <code>\(\alpha\)</code>, <code>\(\lambda\)</code> ) pair with the lowest MSE.</p>
 <p>Here is the state-level model:</p>
 <pre><code>## 43 x 1 sparse Matrix of class &quot;dgCMatrix&quot;
 ##                          s0
@@ -142,7 +142,7 @@ c. store the MSE in a 3D matrix. Dimensions will be <code>\([p, m, n]\)</code>, 
 ## poll_lean_36    .
 </code></pre>
 <img src="https://example.org/post/2024/09/25/blog-post-4/index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
-Interestingly, only two poll leans seem to matter: the poll lean from the seventh week out, which is the closest data point we have to the election, and the poll lean from the nineteenth week out. In addition, the coefficient for solid_d is very strongly positive (Democrat) and the coefficient for solid_r is very strongly negative (Republican). These make sense --- the Cook Political Report gets states that are not battleground states mostly correct, so their predictions should be very highly correlated with vote margin in those states.
+<p>Interestingly, only two poll leans seem to matter: the poll lean from the seventh week out, which is the closest data point we have to the election, and the poll lean from the nineteenth week out. In addition, the coefficient for solid_d is very strongly positive (Democrat) and the coefficient for solid_r is very strongly negative (Republican). These make sense &mdash; the Cook Political Report gets states that are not battleground states mostly correct, so their predictions should be very highly correlated with vote margin in those states.</p>
 <p>Now the national-level fundamentals model:</p>
 <pre><code>## 8 x 1 sparse Matrix of class &quot;dgCMatrix&quot;
 ##                               s0
@@ -156,7 +156,7 @@ Interestingly, only two poll leans seem to matter: the poll lean from the sevent
 ## incumb_party:unemp_agg  .
 </code></pre>
 <img src="https://example.org/post/2024/09/25/blog-post-4/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
-Interestingly, all indicators drop out except real disposable personal income and the S&P 500 closing price. 
+<p>Interestingly, all indicators drop out except real disposable personal income and the S&amp;P 500 closing price.</p>
 <p>And finally the national-level polling model:</p>
 <pre><code>## 32 x 1 sparse Matrix of class &quot;dgCMatrix&quot;
 ##                                              s0
