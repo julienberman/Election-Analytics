@@ -88,7 +88,7 @@ $$
 where the expectation calculates the mean squared error --- the squared distance between the actual output and the predictions --- and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by `\(\alpha\)`, and determines the best mix of LASSO regression ( `\(\alpha = 1\)` ) and ridge regression ( `\(\alpha = 0\)` ). The tuning parameter `\(\lambda\)` controls the overall strength of the penalty.
 
 To optimize these two simultaneously, I developped the following algorithm:
-1. Split the data into a training subset ( `\(\mathrm{year} < 2024\)` ) and a testing subset ($\mathrm{year} == 2024$).
+1. Split the data into a training subset ( `\(\mathrm{year} < 2024\)` ) and a testing subset ( `\(\mathrm{year} == 2024\)` ).
 2. Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of `\(\alpha\)` from `\(\alpha_{min}\)` to `\(\alpha_{max}\)`. The second dimension is for each value of `\(\lambda\)` from `\(\lambda_{min}\)` to `\(\lambda_{max}\)`. (I set `\(0 \leq \alpha \leq 1\)` and `\(0 \leq \lambda \leq 5\)`.) The third dimension is for each year I left out during cross validation. 
 3. Loop over each combination of `\(\alpha\)` and `\(\lambda\)`. Perform leave-one-out cross-validation for each year.
 a. Train the elastic net model on the data excluding the K-th year, using that specific `\(\alpha\)` and `\(\lambda\)`. This gives you a vector of coefficients for that combination.
