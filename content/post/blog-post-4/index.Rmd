@@ -1,0 +1,531 @@
+---
+title: 'Blog Post 4: Model Improvements'
+author: Package Build
+date: '2024-09-25'
+slug: blog-post-4
+categories: []
+tags: []
+---
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+# Load libraries.
+## install via `install.packages("name")`
+library(ggplot2)
+library(maps)
+library(tidyverse)
+library(usmap)
+library(plotly)
+library(gridExtra)
+library(sf)
+library(ggrepel)
+library(shiny)
+library(leaflet)
+library(stargazer)
+library(blogdown)
+library(car)
+library(lubridate)
+library(zoo)
+library(modelsummary)
+library(GGally)
+library(readxl)
+library(caret)
+library(CVXR)
+library(glmnet)
+library(stats)
+library(formula.tools)
+df <- read_csv("data/ec_merged.csv")
+df_econ <- read_csv("data/econ_fundamentals.csv")
+df_polls <- read_csv("data/polls.csv")
+df_ratings <- read_csv("data/cpr_ratings.csv")
+```
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+# Fix partisan lean
+df <- df %>%
+  mutate(
+    pl = margin - margin_nat,
+    )
+
+
+# clean CPR data:
+df_ratings <- df_ratings %>%  
+  mutate(rating_numeric = case_when(Rating == "Solid D" ~ 7,
+                                    Rating == "Likely D" ~ 6,
+                                    Rating == "Lean D" ~ 5,
+                                    Rating == "Toss Up" ~ 4,
+                                    Rating == "Lean R" ~ 3,
+                                    Rating == "Likely R" ~ 2,
+                                    Rating == "Solid R" ~ 1)
+         ) %>% 
+  mutate(solid_D = as.numeric(rating_numeric == 7),
+         likely_D = as.numeric(rating_numeric == 6),
+         lean_D = as.numeric(rating_numeric == 5),
+         toss_up = as.numeric(rating_numeric == 4),
+         lean_R = as.numeric(rating_numeric == 3),
+         likely_R = as.numeric(rating_numeric == 2),
+         solid_R = as.numeric(rating_numeric == 1)) 
+
+# merge CPR predictions
+df <- df %>% 
+  left_join(df_ratings %>%  
+              select(year, 
+                     state = State, 
+                     cpr_rating = rating_numeric, 
+                     cpr_solid_d = solid_D, 
+                     cpr_likely_d = likely_D, 
+                     cpr_lean_d = lean_D,
+                     cpr_toss_up = toss_up,
+                     cpr_lean_r = lean_R,
+                     cpr_likely_r = likely_R, 
+                     cpr_solid_r = solid_R
+                     ), 
+            by = c("year", "state"))
+
+# Fix polling
+df_polls_pivoted <- df_polls %>%
+  # collapse to get national dataset
+  group_by(year, weeks_left) %>% 
+  summarize(
+    poll_margin_nat = first(poll_margin_nat)
+  ) %>% 
+  pivot_wider(
+    names_from = c("weeks_left"),
+    values_from = c("poll_margin_nat"),
+    names_prefix = "poll_margin_nat_"
+  )
+
+# merge polling fix into full dataset
+df <- df %>% 
+  # drop previous national polling columns
+  select(-starts_with("poll_margin_nat")) %>% 
+  # merge in new data
+  left_join(df_polls_pivoted, by = "year")
+
+# Create a vector of column names for poll_margin and poll_margin_nat
+margin_cols <- paste0("poll_margin_", 1:36)
+margin_nat_cols <- paste0("poll_margin_nat_", 1:36)
+
+# Create new columns for poll_lean
+for (i in 1:36) {
+  new_col_name <- paste0("poll_lean_", i)
+  df[[new_col_name]] <- df[[margin_cols[i]]] - df[[margin_nat_cols[i]]]
+}
+
+write_csv(df, "data/ec_merged_updated.csv")
+```
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+
+# Aggregate economic indicators
+
+rate_aggregation <- function(data, indicator, t1, t2) {
+  subset <- data %>%
+    filter(month_index >= t1 & month_index <= t2) %>%
+    group_by(election_cycle) %>% 
+    summarize(
+      year = mean(election_year),
+      value_t1 = first(.data[[indicator]][month_index == t1]),
+      value_t2 = first(.data[[indicator]][month_index == t2]),
+      # Dynamic naming of the aggregated variable
+      !!paste0(indicator, "_agg") := (value_t2 - value_t1) / value_t1 * 100
+    )
+  return(subset %>% select(-value_t1, -value_t2, -election_cycle))
+}
+aggregate_indicators <- function(df_full, df_fundamentals, indicators, period_start, period_end, aggregation_method) {
+  agg_results <- map(indicators, ~aggregation_method(df_fundamentals, .x, period_start, period_end))
+  combined_agg <- reduce(agg_results, full_join, by = "year") %>% 
+    mutate(across(ends_with("_agg"), ~as.numeric(scale(.))))
+  df_full_merged <- df_full %>%
+    left_join(combined_agg, by = "year") %>%
+  return(df_full_merged)
+}
+
+# merge economic indicators
+indicators <- c("jobs", "pce", "rdpi", "cpi", "ics", "sp500", "unemp")
+period_start <- -30
+period_end <- -8 #if want 2024, can't set this super close
+
+df <- aggregate_indicators(df, df_econ, indicators, period_start, period_end, rate_aggregation)
+```
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+# Function to split state-level prediction data
+split_state <- function(df, y) {
+  subset <- df %>% 
+    select(
+      year,
+      state,
+      pl,
+      pl_lag1, 
+      pl_lag2, 
+      hsa_adjustment, 
+      rsa_adjustment, 
+      elasticity, 
+      all_of(starts_with("cpr_")),
+      all_of(paste0("poll_lean_", 7:36))
+    )
+  train_data <- subset %>% filter(year < y)
+  test_data <- subset %>% filter(year == y)
+  return(list(train = train_data, test = test_data))
+}
+
+# Function to split national-level prediction data
+split_national <- function(df, y) {
+  subset <- df %>% 
+    select(-c(all_of(paste0("poll_margin_nat_", 0:6)))) %>% 
+    group_by(year) %>% 
+      summarize(
+        margin_nat = first(margin_nat),
+        jobs_agg = first(jobs_agg), 
+        pce_agg = first(pce_agg), 
+        rdpi_agg = first(rdpi_agg), 
+        cpi_agg = first(cpi_agg), 
+        ics_agg = first(ics_agg), 
+        sp500_agg = first(sp500_agg), 
+        unemp_agg = first(unemp_agg),
+        weighted_avg_approval = first(weighted_avg_approval),
+        incumb = first(incumb),
+        incumb_party = first(incumb_party),
+        across(starts_with("poll_margin_nat_"), ~ mean(.x, na.rm = TRUE))
+      )
+  
+  train_data <- subset %>% filter(year < y)
+  test_data <- subset %>% filter(year == y)
+  return(list(train = train_data, test = test_data))
+}
+
+train_elastic_net <- function(df, formula) {
+  
+  # Create matrix of MSE for every alpha, lambda, year left out during cross validation
+  alpha_range <- seq(0, 1, length.out = 11)
+  lambda_range <- seq(0, 5, length.out = 101)
+  years <- unique(df %>% pull(year))
+  mse_matrix <- expand_grid(year = years, alpha = alpha_range, lambda = lambda_range) %>% 
+    # create column for MSE, set to NA
+    mutate(mse = NA_real_)
+  
+  count <- 1
+  # iterate over the years
+  for (year in years) {
+    
+    # Create validation data by excluding all rows from the current year
+    train_data <- df %>% filter(year != !!year)
+    val_data <- df %>% filter(year == !!year)
+
+    # Create training model matrix from formula and training data
+    mf_train <- model.frame(formula, data = train_data, na.action = na.pass) # keep NA values
+    X_train <- model.matrix(formula, mf_train)[, -1]  # Remove intercept column
+    y_train <- model.response(mf_train)
+
+        # Create validation model matrix from formula and validation data
+    mf_val <- model.frame(formula, data = val_data, na.action = na.pass) # keep columns with NA values
+    X_val <- model.matrix(formula, mf_val)[, -1]  # Remove intercept column
+    y_val <- model.response(mf_val)
+    
+    # Handle missing predictors
+    X_train[is.na(X_train)] <- 0  # Replace NA with 0
+    X_val[is.na(X_val)] <- 0
+    
+    # Iterate over alpha and lambda values
+    for (alpha in alpha_range) {
+      for (lambda in lambda_range) {
+        
+        # train the model at the given alpha and lambda levels
+        model <- glmnet(X_train, y_train, alpha = alpha, lambda = lambda)
+
+        # compute out of sample MSE on validation data
+        predictions_val <- predict(model, newx = X_val)
+        mse_val <- mean((predictions_val - y_val)^2, na.rm = TRUE)
+        
+        # store in corresponding slot of MSE matrix
+        mse_matrix$mse[mse_matrix$year == year & 
+                     mse_matrix$alpha == alpha & 
+                     mse_matrix$lambda == lambda] <- mse_val
+        
+        #print(paste("Results: Iteration #", count))
+        #print(paste("MSE: ", mse_val, ". alpha: ", alpha, ". lambda: ", lambda))
+        #count <- count + 1
+      }
+    }
+  }
+  
+  # calculate the minimum average MSE for each alpha and lambda
+  avg_mse <- mse_matrix %>%
+    group_by(alpha, lambda) %>%
+    summarize(avg_mse = mean(mse, na.rm = TRUE), .groups = "drop")
+  
+  best_params <- avg_mse %>%
+    filter(avg_mse == min(avg_mse)) %>%
+    slice(1)
+  
+  best_alpha <- best_params$alpha
+  best_lambda <- best_params$lambda
+  min_avg_mse <- best_params$avg_mse
+  
+  # create full model matrix
+  mf <- model.frame(formula, data = df, na.action = na.pass) # keep NA values
+  X <- model.matrix(formula, mf)[, -1]  # Remove intercept column
+  y <- model.response(mf)
+
+  # Handle missing predictors
+  X[is.na(X)] <- 0  # Replace NA with 0
+  
+  # train on full data
+  model <- glmnet(X, y, alpha = best_alpha, lambda = best_lambda)
+  
+  # Calculate adjusted R-squared
+  y_pred <- predict(model, newx = X)
+  n <- nrow(X)
+  p <- sum(coef(model) != 0) - 1  # number of non-zero coefficients (excluding intercept)
+  tss <- sum((y - mean(y))^2)
+  rss <- sum((y - y_pred)^2)
+  r_squared <- 1 - (rss / tss)
+  adj_r_squared <- 1 - ((1 - r_squared) * (n - 1) / (n - p - 1))
+  
+  mse_plot <- avg_mse %>%
+    ggplot(aes(x = alpha, y = lambda, fill = avg_mse)) +
+    geom_tile() +
+    scale_fill_viridis_c(trans = "log10") +
+    labs(title = "Average MSE for different alpha and lambda values",
+         x = "Alpha", y = "Lambda", fill = "Average MSE") +
+    theme_minimal() +
+    geom_point(data = best_params, aes(x = alpha, y = lambda), 
+               color = "red", size = 3, shape = 4)
+  
+  # return the model, optimal alpha and lamba, R^2 and other in-sample errors, and out-of-sample MSE 
+  list(
+    model = model,
+    formula = formula,
+    alpha = best_alpha,
+    lambda = best_lambda,
+    y_pred = as.vector(y_pred),
+    y_actual = as.vector(y),
+    tss = tss,
+    rss = rss,
+    r_squared = r_squared,
+    adj_r_squared = adj_r_squared,
+    out_of_sample_mse = min_avg_mse,
+    mse_plot = mse_plot
+  )
+}
+
+# get model coefficients
+get_coef <- function(model_info) {
+  return(as.vector(coef(model_info$model))) 
+}
+
+make_prediction <- function(model_info, new_data) {
+  # Handle missing or NaN values
+  new_data[is.na(new_data) | is.nan(as.matrix(new_data))] <- 0
+  
+  # Create the model matrix using the stored formula
+  X_new <- model.matrix(model_info$formula, data = new_data, na.action = na.pass)[, -1]
+  
+  # Predict using the glmnet model
+  return(predict(model_info$model, newx = X_new, s = model_info$lambda))
+}
+
+# Stack models to create an ensemble prediction
+train_ensemble <- function(model_infos) {
+  
+  # extract in-sample predictions
+  in_sample_predictions <- lapply(model_infos, function(model_info) model_info$y_pred)
+  
+  # combine predictions into a new dataset
+  meta_features <- do.call(cbind, in_sample_predictions) %>% as.data.frame()
+  colnames(meta_features) <- paste0("model_", seq_along(model_infos))
+  
+  # train the meta-model
+  y <- model_infos[[1]]$y_actual
+  meta_model <- lm(y ~ ., data = meta_features) # train on all columns
+  
+  # calculate y_pred
+  y_pred <- predict(meta_model, newdata = meta_features)
+  
+  # calculate r_squared and adjusted r_squared
+  n <- length(y)
+  p <- length(coef(meta_model)) - 1  # number of predictors (excluding intercept)
+  tss <- sum((y - mean(y))^2)
+  rss <- sum((y - y_pred)^2)
+  r_squared <- 1 - (rss / tss)
+  adj_r_squared <- 1 - ((1 - r_squared) * (n - 1) / (n - p - 1))
+  
+  # Return the meta-model and associated statistics
+  list(
+    model = meta_model,
+    sub_models = model_infos,
+    y_pred = as.vector(y_pred),
+    y_actual = as.vector(y),
+    tss = tss,
+    rss = rss,
+    r_squared = r_squared,
+    adj_r_squared = adj_r_squared
+  )
+}
+
+# function to make prediction for ensemble model
+make_ensemble_prediction <- function(ensemble_model_info, new_data) {
+  # Make predictions using each sub-model
+  predictions <- lapply(ensemble_model_info$sub_models, 
+                        function(model_info) make_prediction(model_info, new_data))
+  
+  # Combine predictions into a data frame
+  meta_features <- do.call(cbind, predictions) %>% as.data.frame()
+  colnames(meta_features) <- paste0("model_", seq_along(predictions))
+  
+  # Use the meta-model to make the final prediction
+  final_prediction <- predict(ensemble_model_info$model, newdata = meta_features)
+  
+  return(final_prediction)
+}
+
+# implementation
+state_data <- split_state(df, 2024)
+national_data <- split_national(df, 2024)
+
+# Define formulas
+state_formula <- as.formula(paste("pl ~ pl_lag1 + pl_lag2 + hsa_adjustment +",
+                                  "rsa_adjustment + elasticity +", 
+                                  "cpr_solid_d + cpr_likely_d	+ cpr_lean_d +", 
+                                  "cpr_toss_up + cpr_lean_r + cpr_likely_r	+ cpr_solid_r + ",
+                                  paste0("poll_lean_", 7:36, collapse = " + ")))
+
+nat_fund_formula <- as.formula("margin_nat ~ incumb_party:(jobs_agg + 
+                                     pce_agg + rdpi_agg + cpi_agg + ics_agg + 
+                                     sp500_agg + unemp_agg)")
+
+nat_polls_formula <- as.formula(paste("margin_nat ~ incumb_party:(weighted_avg_approval) + ", 
+                                           paste0("poll_margin_nat_", 7:36, collapse = " + ")))
+
+# Train models
+state_model_info <- train_elastic_net(state_data$train, state_formula)
+nat_fund_model_info <- train_elastic_net(national_data$train, nat_fund_formula)
+nat_polls_model_info <- train_elastic_net(national_data$train, nat_polls_formula)
+ensemble <- train_ensemble(list(nat_fund_model_info, nat_polls_model_info))
+
+# Make predictions
+state_predictions <- make_prediction(state_model_info, state_data$test)
+nat_fund_predictions <- make_prediction(nat_fund_model_info, national_data$test)
+nat_polls_predictions <- make_prediction(nat_polls_model_info, national_data$test)
+ensemble_predictions <- make_ensemble_prediction(ensemble, national_data$test)
+```
+
+# Overview
+
+This week, I plan to take a step back and fully refine and optimize my model that I have created over the past few weeks. I will only include a single new source of already clean data --- the Cook Political Report expert ratings --- which means that I plan to devote the full post to code and methodological improvements.
+
+As a reminder, my current model proceeds in three steps. First, I fit a model to predict each state's elasticity based on its elasticity in the previous two election cycles. Then, I train a model to predict each state's partisan lean, which incorporates the predicted value for elasticity. Finally, I train a separate model on national level data to predict the national vote margin.
+
+This framework one big flaw. First of all, it doesn't distinguish between the relative importance of polling data --- which creates a snapshot of the political climate --- and fundamentals data. The reason for this is that both polls and fundamentals are simultaneously incorporated as independent variables in the model that predicts a state's partisan lean and the model that predicts the national popular vote margin.
+
+To fix this issue, I will deploy a technique called ensemble learning, which lets me train multiple models to predict the same outcome variable, and then compute the weighted average of these multiple predictions that best minimizes out-of-sample error. Ensemble learning will allow me to split up the forecasts into separate fundamentals-based forecasts and polling-based forecasts.
+
+In addition to the structural flaw with my previous approach, there were also a few implementation errors that likely affected my predictions:
+
+First, partisan lean was calculated incorrectly. Previously, I defined it as the difference between the state-level popular vote and the national-level popular vote. However, this is a mistake. If my goal is truly to predict both state- and national-level vote _margin_, then partisan lean should measure the difference between the state-level popular vote _margin_ and the national-level popular vote _margin_. 
+
+To see the difference between the two, consider the following example. In 2020, Biden won the popular vote 50.3 to 46.9, and he won Pennsylvania 50.0 to 48.8. Thus, the national margin is +3.4, and the Pennsylvania margin is +1.2. Previously, I calculated Pennsylvania's partisan lean by calculating the difference in the popular vote: $$\mathrm{pl_{wrong}} = 50.0 - 50.3 = -0.3$$. However, a better metric would be to calculate the difference in the popular vote margins: $$\mathrm{pl_{correct}} = 1.2 - 3.4 = -1.2$$
+
+Second, in a similar vein, state-level polling --- which is fundamentally a survey that tries to guess the state's popular vote --- is not a good predictor of partisan lean. Rather, I should calculate the "polling lean," which would calculate the difference between the state level poll margin and the national level poll margin, just as the partisan lean of a state calculates the difference between the actual vote margins at the state and national level.
+
+Third, recall that in my last blog post, I noticed that the national poll margin variables seemed to be _negatively_ correlated with the true national vote margin --- a very odd occurrence indeed. I realized that this issue likely arose because I was training the national polling margins, which are positive if the Democrat is winning and negative if the Republican is winning, on the product of the incumbency indicator and the true national vote margin, an interaction term that is positive if the incumbent is winning and negative if the challenger is winning. This discrepancy means that the national polling margins were likely being trained on the entirely wrong outcome!
+
+In addition to correcting these fixes, I also spend time further optimizing and tuning the hyperparameters in my model. For example, I attempt to optimize alpha, the mixing parameter that helps determine whether I prioritize a Ridge penalty or a LASSO penalty when implementing regularization.
+
+# Methodology
+
+This week, we have the following regressions:
+
+$$
+\mathrm{pl} = \beta_0 + \beta_1 \mathrm{pl\_lag1} + \beta_2 \mathrm{pl\_lag2} + \beta_3\mathrm{hsa} + \beta_4\mathrm{rsa} + \beta_5\mathrm{\epsilon} + \vec{\beta_6}\chi + \varepsilon
+$$
+$$
+\mathrm{margin\_nat} = \beta_0 + \mathrm{incumb} \cdot (\beta_1\mathrm{pl} + \beta_2 \mathrm{jobs} + \beta_3 \mathrm{pce} + \beta_4\mathrm{rdpi} + \beta_5\mathrm{cpi} + \beta_6\mathrm{ics} + \beta_7\mathrm{sp500} + \beta_8\mathrm{unemp}) + \varepsilon
+$$
+
+$$
+ \mathrm{margin\_nat} = \beta_0 + \beta_1 \mathrm{incumb} \cdot \mathrm{approval} + \vec{\beta_{2}}\chi + \varepsilon
+$$
+Notice that the incumbency indicator is much more carefully interacted with the various predictors --- it only is interacting with the variables are positive for the incumbent and negative for the challenger. (Sidenote: incumb here refers to incumbent party, which is explained in last week's blog post.) In addition, in the first model, the matrix $\chi$ now refers not to poll margins, but rather poll _lean_, as articulated above.
+
+Notice that we split up the predictions for the national vote into two. That is because we implement something called stacking, where we train a meta model using the predictions from the two models above. For the sake of simplicity, I will call the first model for national margin the "fundamentals model" and the second model for national margin the "polls model."
+
+There are many ways we can combine our predictions from these two models. Most simply, we could average the two:
+
+$$
+\mathrm{pred\_final} = \frac{1}{2} \left(\mathrm{pred\_fundamentals} + \mathrm{pred\_polls}\right)
+$$
+Alternatively, we could adopt the hypothesis of Gelman and King (1993) that the fundamentals matter more as we get closer to November, or Nate Silver's claim that polls matter more as we get closer to November. Of course, all these are estimates, and it doesn't make much intuitive sense to set these weights manually in such an arbitrary way.
+
+So, I trained a model to figure out the weights for me:
+$$
+\mathrm{margin\_nat} = \beta_0 + \beta_1 \mathrm{pred\_model\_1} + \beta_2\mathrm{pred\_model\_2} + \varepsilon
+$$
+Which gave the following output:
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+print(ensemble$model)
+```
+In other words, the fundamentals have a slightly higher weight than the polls do. Now, I'm not sure I agree with this, and we'll see soon just how much tinkering with the weights matter. Oh, and one last thing before I move on to the hyperparameter tuning: the weights do _not_ have to sum to one. The regression is simply trying to minimize the prediction error, and the resulting weights represent how much each base model contributes to the final prediction. These weights are not probabilities and are not constrained in any specific way.
+
+Finally, I spent a lot of time trying to figure out how to tune the regularization hyperparameters. Recall that we compute our vector of coefficients, $\hat{\beta}$, as follows: 
+$$
+\hat{\beta} = \mathrm{argmin}\left\{E(y - \vec{x}\cdot\vec{b})^2 + \lambda\sum_{j = 1}^{k}\left[(1 - \alpha)b_j^2 + \alpha |b_j| \right]\right\}
+$$
+
+where the expectation calculates the mean squared error --- the squared distance between the actual output and the predictions --- and the term in the sum is a penalty term that shrinks each coefficient. The elastic net penalty is controlled by $\alpha$, and determines the best mix of LASSO regression ($\alpha = 1$) and ridge regression ($\alpha = 0$). The tuning parameter $\lambda$ controls the overall strength of the penalty.
+
+To optimize these two simultaneously, I developped the following algorithm:
+1. Split the data into a training subset ($\mathrm{year} < 2024$) and a testing subset ($\mathrm{year} == 2024$).
+2. Create a three dimensional matrix to search for both alpha and lambda simultaneously. The first dimension is for each value of $\alpha$ from $\alpha_{min}$ to $\alpha_{max}$. The second dimension is for each value of $\lambda$ from $\lambda_{min}$ to $\lambda_{max}$. The third dimension is for each year I left out during cross validation. (I set $\alpha$ to range between $0$ and $1$, and I set $\lambda$ to range between $0$ and $5$.)
+3. Loop over each combination of $alpha$ and $\lambda$. Perform leave-one-out cross-validation for each year.
+a. Train the elastic net model on the data excluding the K-th year, using that specific $\alpha$ and $\lambda$. This gives you a vector of coefficients for that combination.
+b. Calculate the out-of-sample  mean squared error using the left-out year.
+c. store the MSE in a 3D matrix. Dimensions will be $[p, m, n]$, where $p$ is the number of alpha values,  $m$ is the number of lambda values, and $n$ is the number of years, or the number of leave-one-out splits.
+4. Calculate the average MSE for each pair ($\alpha$, $\lambda$). Average across the third dimension (the years) to get a 2D matrix of average MSEs for each combination of $\alpha$ and $\lambda$.
+5. Select the pair ($\alpha$, $\lambda$) that minimizes the average MSE.
+6. Train on the full training data Using ($\alpha^*$, $\lambda^*$), retrain the model on the entire training set to obtain the final coefficients.
+
+Below are the coeffients of each model, as well as heatmaps to illustrate the optimization process. The red $x$ represents the ($\alpha$, $\lambda$) pair with the lowest MSE.
+
+Here is the state-level model:
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+print(coef(state_model_info$model))
+print(state_model_info$mse_plot)
+```
+Interestingly, only two poll leans seem to matter: the poll lean from the seventh week out, which is the closest data point we have to the election, and the poll lean from the nineteenth week out. In addition, the coefficient for solid_d is very strongly positive (Democrat) and the coefficient for solid_r is very strongly negative (Republican). These make sense --- the Cook Political Report gets states that are not battleground states mostly correct, so their predictions should be very highly correlated with vote margin in those states.
+
+Now the national-level fundamentals model:
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+print(coef(nat_fund_model_info$model))
+print(nat_fund_model_info$mse_plot)
+```
+Interestingly, all indicators drop out except real disposable personal income and the S&P 500 closing price. 
+
+And finally the national-level polling model:
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+print(coef(nat_polls_model_info$model))
+print(nat_polls_model_info$mse_plot)
+```
+
+
+
+And now, the prediction results. First, here are the results of the national models for vote margin:
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("national_margin_predictions.png")
+```
+
+And here are the results of the electoral college. Note that I add the predicted partisan lean of each state to the predicted national vote margin as calculated by the ensemble model. In this model, Harris wins the popular vote by half a percentage point, but she loses the electoral college --- Michigan, Pennsylvania, and Wisconsin all go to Trump by approximately two percentage points.
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("election_prediction_part1.png")
+```
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+knitr::include_graphics("election_prediction_part2.png")
+```
+
+Now, I am still suspicious of my ensembling method. For some reason, it seems to think that fundamentals are more important than polling, which seems intuitively wrong, given that economic fundamentals are such noisy predictors. But in this specific iteration of the model, the exact ensembling approach doesn't matter much --- if I used Nate Silver's weighting, it would be a closer electoral college for Harris, but even upweighting recent polls still isn't enough to tip her over the edge.
+
+

@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
+*.content/post/blog-post-4/data/cpr_ratings.csv
 *.Rproj
 *.Rprofile

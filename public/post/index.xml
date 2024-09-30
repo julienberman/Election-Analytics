@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 4: Model Improvements</title>
+      <link>https://example.org/post/2024/09/25/blog-post-4/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/09/25/blog-post-4/</guid>
+      <description>Overview This week, I plan to take a step back and fully refine and optimize my model that I have created over the past few weeks. I will only include a single new source of already clean data &amp;mdash; the Cook Political Report expert ratings &amp;mdash; which means that I plan to devote the full post to code and methodological improvements.&#xA;As a reminder, my current model proceeds in three steps.</description>
+    </item>
     <item>
       <title>Blog Post 3: Polling</title>
       <link>https://example.org/post/2024/09/18/blog-post-3-polling/</link>
