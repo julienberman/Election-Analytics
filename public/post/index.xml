@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 5: Quantifying Uncertainty</title>
+      <link>https://example.org/post/2024/10/06/blog-post-5/</link>
+      <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/06/blog-post-5/</guid>
+      <description>Last week, I finally completed the full extent of my model architecture! We have now incorporated most of the data that we will use in our final model, multiple layers of prediction using an elastic net regression with optimized parameters, and model ensembling. Three items are on our agenda for this week. First, I will fix a few lingering errors that I noticed in last week’s model. Then, I will build a visualization for my 2024 election predictions.</description>
+    </item>
     <item>
       <title>Blog Post 4: Model Improvements</title>
       <link>https://example.org/post/2024/09/25/blog-post-4/</link>
