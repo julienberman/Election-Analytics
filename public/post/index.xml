@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 6: Simulation</title>
+      <link>https://example.org/post/2024/10/12/blog-post-6/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/12/blog-post-6/</guid>
+      <description># define formulas state_formula &amp;lt;- as.formula(paste(&amp;quot;pl_d_2pv ~ pl_d_2pv_lag1 + pl_d_2pv_lag2 + hsa_adjustment +&amp;quot;, &amp;quot;rsa_adjustment + elasticity +&amp;quot;, &amp;quot;cpr_solid_d + cpr_likely_d&#x9;+ cpr_lean_d +&amp;quot;, &amp;quot;cpr_toss_up + cpr_lean_r + cpr_likely_r&#x9;+ cpr_solid_r + &amp;quot;, paste0(&amp;quot;poll_pv_lean_&amp;quot;, 7:36, collapse = &amp;quot; + &amp;quot;))) nat_fund_formula &amp;lt;- as.formula(&amp;quot;d_2pv_nat ~ incumb_party:(jobs_agg + pce_agg + rdpi_agg + cpi_agg + ics_agg + sp500_agg + unemp_agg)&amp;quot;) nat_polls_formula &amp;lt;- as.formula(paste(&amp;quot;d_2pv_nat ~ incumb_party:(weighted_avg_approval) + &amp;quot;, paste0(&amp;quot;poll_pv_nat_&amp;quot;, 7:36, collapse = &amp;quot; + &amp;quot;))) # Split data, using the 1972 subset state_data &amp;lt;- split_state(df_subset_1972, 2024) national_data &amp;lt;- split_national(df_subset_1972, 2024) # Predict state elasticities state_data$test &amp;lt;- predict_elasticity(state_data$train, state_data$test) # Train models state_model_info &amp;lt;- train_elastic_net_fast(state_data$train, state_formula) nat_fund_model_info &amp;lt;- train_elastic_net_fast(national_data$train, nat_fund_formula) nat_polls_model_info &amp;lt;- train_elastic_net_fast(national_data$train, nat_polls_formula) ensemble &amp;lt;- train_ensemble(list(nat_fund_model_info, nat_polls_model_info)) # Make predictions state_predictions &amp;lt;- make_prediction(state_model_info, state_data$test) nat_fund_predictions &amp;lt;- make_prediction(nat_fund_model_info, national_data$test) nat_polls_predictions &amp;lt;- make_prediction(nat_polls_model_info, national_data$test) # ensemble_predictions &amp;lt;- make_ensemble_prediction(ensemble, national_data$test) # Create the prediction tibble df_2024 &amp;lt;- tibble( state = state_data$test$state, abbr = state_data$test$abbr, electors = state_data$test$electors, partisan_lean = as.</description>
+    </item>
     <item>
       <title>Blog Post 5: Quantifying Uncertainty</title>
       <link>https://example.org/post/2024/10/06/blog-post-5/</link>
