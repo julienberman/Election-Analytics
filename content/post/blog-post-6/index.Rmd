@@ -93,7 +93,7 @@ df_subset_2000 <- df %>% filter(year >= 2000)
 ```
 
 
-```{r}{r, echo=FALSE, warning=FALSE, message = FALSE}
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
 # define formulas
 state_formula <- as.formula(paste("pl_d_2pv ~ pl_d_2pv_lag1 + pl_d_2pv_lag2 + hsa_adjustment +",
                                   "rsa_adjustment + elasticity +", 
