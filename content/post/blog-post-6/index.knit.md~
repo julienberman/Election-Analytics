@@ -1,0 +1,118 @@
+---
+title: 'Blog Post 6: Simulation'
+author: Package Build
+date: '2024-10-12'
+slug: blog-post-6
+categories: []
+tags: []
+---
+
+
+
+
+```{r}{r, echo=FALSE, warning=FALSE, message = FALSE}
+# define formulas
+state_formula <- as.formula(paste("pl_d_2pv ~ pl_d_2pv_lag1 + pl_d_2pv_lag2 + hsa_adjustment +",
+                                  "rsa_adjustment + elasticity +", 
+                                  "cpr_solid_d + cpr_likely_d	+ cpr_lean_d +", 
+                                  "cpr_toss_up + cpr_lean_r + cpr_likely_r	+ cpr_solid_r + ",
+                                  paste0("poll_pv_lean_", 7:36, collapse = " + ")))
+
+nat_fund_formula <- as.formula("d_2pv_nat ~ incumb_party:(jobs_agg + 
+                                     pce_agg + rdpi_agg + cpi_agg + ics_agg + 
+                                     sp500_agg + unemp_agg)")
+
+
+nat_polls_formula <- as.formula(paste("d_2pv_nat ~ incumb_party:(weighted_avg_approval) + ", 
+                                           paste0("poll_pv_nat_", 7:36, collapse = " + ")))
+
+# Split data, using the 1972 subset
+state_data <- split_state(df_subset_1972, 2024)
+national_data <- split_national(df_subset_1972, 2024)
+
+# Predict state elasticities
+state_data$test <- predict_elasticity(state_data$train, state_data$test)
+
+# Train models
+state_model_info <- train_elastic_net_fast(state_data$train, state_formula)
+nat_fund_model_info <- train_elastic_net_fast(national_data$train, nat_fund_formula)
+nat_polls_model_info <- train_elastic_net_fast(national_data$train, nat_polls_formula)
+ensemble <- train_ensemble(list(nat_fund_model_info, nat_polls_model_info))
+
+# Make predictions
+state_predictions <- make_prediction(state_model_info, state_data$test)
+nat_fund_predictions <- make_prediction(nat_fund_model_info, national_data$test)
+nat_polls_predictions <- make_prediction(nat_polls_model_info, national_data$test)
+# ensemble_predictions <- make_ensemble_prediction(ensemble, national_data$test)
+
+# Create the prediction tibble
+df_2024 <- tibble(
+  state = state_data$test$state,
+  abbr = state_data$test$abbr,
+  electors = state_data$test$electors,
+  partisan_lean = as.vector(state_predictions)
+  ) %>%
+  # Add national predictions - using first value since they're the same for all states
+  mutate(
+    d_2pv_polls = first(as.vector(nat_polls_predictions)),
+    d_2pv_fund = first(as.vector(nat_fund_predictions))
+ #   d_2pv_ensemble = first(as.vector(ensemble_predictions))
+  ) %>%
+  # Calculate final margins and color categories
+  mutate(
+    d_2pv_final = partisan_lean + d_2pv_polls,
+    d_pv = d_2pv_final,
+    r_pv = 100 - d_2pv_final,
+    category = case_when(
+      d_pv > 60 ~ "Strong D",
+      d_pv > 55 & d_pv < 60 ~ "Likely D",
+      d_pv > 50 & d_pv < 55 ~ "Lean D",
+      d_pv > 45 & d_pv < 50 ~ "Lean R",
+      d_pv > 40 & d_pv < 45 ~ "Likely R",
+      TRUE ~ "Strong R"
+    ),
+    # Convert to factor with specific ordering
+    category = factor(
+      category,
+      levels = c("Strong R", "Likely R", "Lean R", "Lean D", "Likely D", "Strong D")
+    ),
+    # calculate electors that each party wins
+    d_electors = sum(ifelse(category %in% c("Lean D", "Likely D", "Strong D"), electors, 0)),
+    r_electors = sum(ifelse(category %in% c("Lean R", "Likely R", "Strong R"), electors, 0))
+  ) %>% 
+  # filter unnecessary districts
+  filter(!abbr %in% c("ME_d1", "NE_d1", "NE_d3"))
+
+# run simulation
+election <- simulate_election(nat_polls_model_info, state_model_info, national_data$test, state_data$test)
+
+
+write_csv(df_2024, "df_2024.csv")
+```
+
+# Overview
+Okay, something is seriously wrong with my model. Recall that my final model's predictions involve an ensemble between the fundamentals model and the polling model. Well, this week when I ran the model, I realized that the ensemble assigned a _negative_ weight to the fundamentals model. Admittedly it was only slightly negative, but still --- that shouldn't happen. Immediately, alarm bells went off. First of all, I modified the ensemble model from performing ordinary least squares, your classic regression, to non-negative least squares, which imposes an added restriction that all coefficients must be non-negative. I solved the optimization problem using [this](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1099-128X(199709/10)11:5%3C393::AID-CEM483%3E3.0.CO;2-L) method. Still, though, the ensemble model shrank the fundamentals model to zero, and assigned the polls model a weight of $1$.
+
+Odd.
+
+I confess, I spent a lot of time trying to find out why the fundamentals model was so bad, and I couldn't entirely figure it out. I tried multiple different permutations of the regression specification, I tried aggregating the economic fundamentals a different way, I tried adding the base terms to the regression in addition to the cross terms. Nothing worked. Consistently, I would get $R^2$ as low as $0.3$, and an adjusted $R^2$ in the negatives. The out-of-sample MSE was often over four times as large as the in-sample MSE. And worst of all, the expected sign on the coefficients were the wrong direction --- somehow, real disposable personal income was a negative predictor of vote margin, not a positive one.
+
+Perhaps I will figure out what's up with the fundamentals in a future week. In the mean time, it doesn't actually affect my predictions that much --- the polls model seems to be quite accurate:
+- $R^2 = 0.879$
+- $R_{\mathrm{adj}}^{2} = 0.793$
+- $MSE_{\mathrm{out}} = 4.8$
+
+One nice thing about this bug is that it actually inspired me to rerun the entire model, except instead of vote margin, I used vote share. While it didn't solve the issue with the fundamentals model, it did reveal something: the vote share model is actually more accurate than the vote margin one! Moving forward, I will be using the vote share model instead. (This also has the added benefit of inadvertently resolving my Washington D.C. vote share issue from last week.)
+
+I also fixed two other small mistakes. First, I realized that I was calculating a state's elasticity incorrectly. Rather than measuring it in absolute terms, I changed it to be in relative terms:
+
+$$
+\varepsilon_t = \frac{\frac{s_{t} - s_{t-1}}{s_{t-1}}}{\frac{n_{t} - n_{t-1}}{n_{t-1}}}
+$$
+where $s_{t}$ is the state's vote in year $t$ and $n_{t}$ is the national vote in year $t$.
+
+Second, I noticed that my state level forecast for the partisan lead included significant coefficients for several of Cook Political Report forecasts metics. However, I had neglected to include these forecasts in the testing data, so my results were somewhat biased. All these changes came together to give me the following map of the 2024 election:
+
+
+
+
