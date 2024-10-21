@@ -12,17 +12,6 @@ tags: []
 
 
 
-```
-## Dimensions of new_data: 56 53
-```
-
-```
-## Dimensions of new_data: 1 73
-```
-
-```
-## Dimensions of new_data: 1 73
-```
 
 # Introduction
 
@@ -35,7 +24,7 @@ This week, I return to a simulation approach that involves varying the predictio
 # Theory
 When I run a Monte Carlo simulation for predicting both the national vote share and the state-level vote shares, I am essentially creating many "what-if" scenarios based on my model's predictions. Think of the actual predictions  that I compute by plugging in the 2024 predictors into the model as _point estimates_. They are the most likely result, but there is also some uncertainty on either side of the prediction. To quantify the spread of this uncertainty, I need to find some way to calculate the "standard error of the prediction," otherwise known as the "forecast variance." Let's try to derive a reasonable result for this value. We'll start with basic OLS regression, and then see if we can generalize to the elastic net case, which is the model that I currently use to generate these predictions.
 
-In Ordinary Least Squares, we have that `\(Y ~ N(X\vec{\beta}, \sigma^2I\)`, where `\(y\)` is an `\(n \times 1\)` vector of outcomes, `\(X\)` is a `\(n \times p\)` matrix of predictors, `\(\beta\)` is a `\(p x 1\)` vector of coefficients, and `\(\sigma^2 I\)` is a `\(n \times n\)`  diagonal matrix with diagonal elements equal to the variance of the data around its mean, `\(X\vec{\beta}\)`. Recall also that we can estimate `\(\vec{\beta}\)` with `\(\hat{\beta} = (X^TX)^{-1}X^TY\)`. Then, for some `\(x_i\)`, a `\(1 \times p\)` vector, we can predict `\(y_i\)` with `\(\hat{y_i} = x_i \hat{\beta}\)`.
+In Ordinary Least Squares, we have that `\(Y \~ N(X\vec{\beta}, \sigma^2I)\)`, where `\(y\)` is an `\(n \times 1\)` vector of outcomes, `\(X\)` is a `\(n \times p\)` matrix of predictors, `\(\beta\)` is a `\(p \times 1\)` vector of coefficients, and `\(\sigma^2 I\)` is a `\(n \times n\)`  diagonal matrix with diagonal elements equal to the variance of the data around its mean, `\(X\vec{\beta}\)`. Recall also that we can estimate `\(\vec{\beta}\)` with `\(\hat{\beta} = (X^TX)^{-1}X^TY\)`. Then, for some `\(x_i\)`, a `\(1 \times p\)` vector, we can predict `\(y_i\)` with `\(\hat{y_i} = x_i \hat{\beta}\)`.
 
 Now, let's try to find an expression for the variance of our prediction:
 $$

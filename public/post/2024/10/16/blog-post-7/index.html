@@ -34,19 +34,13 @@
 </div>
 
 <main>
-<pre><code>## Dimensions of new_data: 56 53
-</code></pre>
-<pre><code>## Dimensions of new_data: 1 73
-</code></pre>
-<pre><code>## Dimensions of new_data: 1 73
-</code></pre>
 <h1 id="introduction">Introduction</h1>
 <p>Simulation has become the bane of my existence. Two weeks ago, I implemented a simple simulation approach, in which I set the predicted value for each state to be the mean of a normal random variable with a standard deviation of 3 percent. Of course, the 3 percent number was entirely arbitrary, so last week, I tried a more complicated approach, where I introduced uncertainty in my estimates &mdash; the vector of coefficients <code>\(\vec{\beta}\)</code> &mdash; rather than the predictions themselves.</p>
 <p>This methodology turned out to be an absolute failure &mdash; for some reason, the most common result was to for the Democrats to win something like 500 electoral votes and for the Republicans to win just 20 or 30. Ridiculous, clearly.</p>
 <p>This week, I return to a simulation approach that involves varying the predictions themselves, rather than the estimates. However, I avoid the problem of setting a 3 percent standard deviation by attempting to come up with a good estimate for the standard error of the prediction. Much of the work this was actually math, not coding, so I thought I would show a little bit of what I have been thinking about.</p>
 <h1 id="theory">Theory</h1>
 <p>When I run a Monte Carlo simulation for predicting both the national vote share and the state-level vote shares, I am essentially creating many &ldquo;what-if&rdquo; scenarios based on my model&rsquo;s predictions. Think of the actual predictions  that I compute by plugging in the 2024 predictors into the model as <em>point estimates</em>. They are the most likely result, but there is also some uncertainty on either side of the prediction. To quantify the spread of this uncertainty, I need to find some way to calculate the &ldquo;standard error of the prediction,&rdquo; otherwise known as the &ldquo;forecast variance.&rdquo; Let&rsquo;s try to derive a reasonable result for this value. We&rsquo;ll start with basic OLS regression, and then see if we can generalize to the elastic net case, which is the model that I currently use to generate these predictions.</p>
-<p>In Ordinary Least Squares, we have that <code>\(Y ~ N(X\vec{\beta}, \sigma^2I\)</code>, where <code>\(y\)</code> is an <code>\(n \times 1\)</code> vector of outcomes, <code>\(X\)</code> is a <code>\(n \times p\)</code> matrix of predictors, <code>\(\beta\)</code> is a <code>\(p x 1\)</code> vector of coefficients, and <code>\(\sigma^2 I\)</code> is a <code>\(n \times n\)</code>  diagonal matrix with diagonal elements equal to the variance of the data around its mean, <code>\(X\vec{\beta}\)</code>. Recall also that we can estimate <code>\(\vec{\beta}\)</code> with <code>\(\hat{\beta} = (X^TX)^{-1}X^TY\)</code>. Then, for some <code>\(x_i\)</code>, a <code>\(1 \times p\)</code> vector, we can predict <code>\(y_i\)</code> with <code>\(\hat{y_i} = x_i \hat{\beta}\)</code>.</p>
+<p>In Ordinary Least Squares, we have that <code>\(Y \~ N(X\vec{\beta}, \sigma^2I)\)</code>, where <code>\(y\)</code> is an <code>\(n \times 1\)</code> vector of outcomes, <code>\(X\)</code> is a <code>\(n \times p\)</code> matrix of predictors, <code>\(\beta\)</code> is a <code>\(p \times 1\)</code> vector of coefficients, and <code>\(\sigma^2 I\)</code> is a <code>\(n \times n\)</code>  diagonal matrix with diagonal elements equal to the variance of the data around its mean, <code>\(X\vec{\beta}\)</code>. Recall also that we can estimate <code>\(\vec{\beta}\)</code> with <code>\(\hat{\beta} = (X^TX)^{-1}X^TY\)</code>. Then, for some <code>\(x_i\)</code>, a <code>\(1 \times p\)</code> vector, we can predict <code>\(y_i\)</code> with <code>\(\hat{y_i} = x_i \hat{\beta}\)</code>.</p>
 <p>Now, let&rsquo;s try to find an expression for the variance of our prediction:
 </p>
 $$

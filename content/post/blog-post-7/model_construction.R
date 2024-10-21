@@ -391,8 +391,6 @@ get_coef <- function(model_info) {
 }
 
 make_prediction <- function(model_info, new_data) {
-  cat("Dimensions of new_data:", dim(new_data), "\n")
-  
   # Handle missing or NaN values
   new_data[is.na(new_data) | is.nan(as.matrix(new_data))] <- 0
   
