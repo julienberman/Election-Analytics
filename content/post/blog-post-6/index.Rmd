@@ -16,12 +16,6 @@ df <- read_csv("data/ec_merged_updated.csv")
 df_econ <- read_csv("data/econ_fundamentals.csv")
 df_polls <- read_csv("data/polls.csv")
 
-indicators <- c("jobs", "pce", "rdpi", "cpi", "ics", "sp500", "unemp")
-period_start <- -30
-period_end <- -8 #if want 2024, can't set this super close
-
-df <- aggregate_indicators(df, df_econ, indicators, period_start, period_end, rate_aggregation)
-
 # add new partisan lean variables for vote share analysis
 df <- df %>% 
   mutate(
@@ -85,6 +79,19 @@ df <- df %>%
     elasticity_lag1 = lag(elasticity),
     elasticity_lag2 = lag(elasticity_lag1)
   )
+
+write_csv(df, "data/ec_merged_updated_real.csv")
+```
+
+```{r, echo=FALSE, warning=FALSE, message = FALSE}
+df <- read_csv("data/ec_merged_updated_real.csv")
+
+indicators <- c("jobs", "pce", "rdpi", "cpi", "ics", "sp500", "unemp")
+period_start <- -30
+period_end <- -8 #if want 2024, can't set this super close
+
+df <- aggregate_indicators(df, df_econ, indicators, period_start, period_end, rate_aggregation)
+
 
 # create dataframe subsets
 df_subset_1972 <- df %>% filter(year >= 1972)

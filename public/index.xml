@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 7: More Simulation</title>
+      <link>https://example.org/post/2024/10/16/blog-post-7/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/16/blog-post-7/</guid>
+      <description>## Dimensions of new_data: 56 53 ## Dimensions of new_data: 1 73 ## Dimensions of new_data: 1 73 Introduction Simulation has become the bane of my existence. Two weeks ago, I implemented a simple simulation approach, in which I set the predicted value for each state to be the mean of a normal random variable with a standard deviation of 3 percent. Of course, the 3 percent number was entirely arbitrary, so last week, I tried a more complicated approach, where I introduced uncertainty in my estimates &amp;mdash; the vector of coefficients \(\vec{\beta}\) &amp;mdash; rather than the predictions themselves.</description>
+    </item>
     <item>
       <title>Blog Post 6: Simulation</title>
       <link>https://example.org/post/2024/10/12/blog-post-6/</link>
