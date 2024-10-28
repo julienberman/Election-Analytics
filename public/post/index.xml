@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 8: Final Touch Ups</title>
+      <link>https://example.org/post/2024/10/26/blog-post-8/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/26/blog-post-8/</guid>
+      <description>Unfortunately, for this blog, I am largely out of material. This week I have made several touch ups to the raw data files — I noticed that some population totals were incorrect, as well as some of the voting results in Maine’s two districts and Nebraska’s three districts. I also replaced the 2024 CPR forecast with their most up-to-date electoral college predictions. Neither of these updates strongly affected my predictions either at the state level or the national level.</description>
+    </item>
     <item>
       <title>Blog Post 7: More Simulation</title>
       <link>https://example.org/post/2024/10/16/blog-post-7/</link>
