@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Election Prediction</title>
+      <link>https://example.org/post/2024/10/30/final-election-prediction/</link>
+      <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/30/final-election-prediction/</guid>
+      <description>Overview Election week has come! It is a very scary time. We are all biting our nails in anticipation of the result on Tuesday and, of course, in anticipation of the predictions from the Election Analytics class. This entire semester, I have been developing a three-stage model that predicts the election results, and I am excited to provide a brief overview of my methodology, as well as my final predictions and simulations.</description>
+    </item>
     <item>
       <title>Blog Post 8: Final Touch Ups</title>
       <link>https://example.org/post/2024/10/26/blog-post-8/</link>
