@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>model-evaluation | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">model-evaluation</span></h1>
+<h2 class="author">Package Build</h2>
+<h2 class="date">2024/11/18</h2>
+</div>
+
+<main>
+<pre><code class="language-r"># merge shit in and format the dataframe
+df_2024 &lt;- df_2024 %&gt;% 
+  left_join(results_2024, by = &quot;state&quot;) %&gt;% 
+    mutate(
+    d_pv_actual = (d_votes / (d_votes + r_votes)) * 100,
+    r_pv_actual = (r_votes / (d_votes + r_votes)) * 100,
+    binary_pred = ifelse(d_pv &gt; r_pv, 1, 0),
+    binary_actual = ifelse(d_pv_actual &gt; r_pv_actual, 1, 0)
+  ) %&gt;% 
+  rename(
+    d_pv_pred = d_pv,
+    r_pv_pred = r_pv
+  ) %&gt;% 
+  relocate(c(&quot;d_pv_pred&quot;, &quot;d_pv_actual&quot;, &quot;binary_pred&quot;, &quot;binary_actual&quot;), .after = &quot;electors&quot;) %&gt;% 
+  # Add prediction metrics
+  group_by() %&gt;%  
+  mutate(
+    brier_score = mean(((d_pv_pred / 100)- binary_actual)^2),
+    bias = mean(d_pv_pred - d_pv_actual),
+    mse = mean((d_pv_pred - d_pv_actual)^2),
+    mae = mean(abs(d_pv_pred - d_pv_actual)),
+    accuracy = mean(binary_pred == binary_actual)
+  ) %&gt;%
+  ungroup()
+
+
+view(df_2024)
+</code></pre>
+<p>The election is over. Trump has won. Now we must mourn our dead&hellip; and evaluate our model. This will be a comparatively shorter post, just because there simply isn&rsquo;t that much to say. As a reminder, here is the map that I predicted in the final days before the election:</p>
+<pre><code class="language-r">knitr::include_graphics(&quot;fig8 copy.png&quot;)
+</code></pre>
+<img src="fig8 copy.png" width="390" />
+<p>And here is the actual map:</p>
+<pre><code class="language-r">knitr::include_graphics(&quot;actual_map.png&quot;)
+</code></pre>
+<img src="actual_map.png" width="380" />
+<p>Here are the predictions that I missed:</p>
+<ul>
+<li>Wisconsin</li>
+<li>Michigan</li>
+<li>Pennsylvania</li>
+<li>Maine District 2</li>
+<li>Nevada</li>
+</ul>
+<p>All of these predictions were biased toward the Democrats. In other words, I thought Harris would win those states, but Trump actually won them.</p>
+<p>Now, let&rsquo;s evaluate the performance of my model more concretely. For this, I will only be measuring the accuracy of my state-level predictions, because the national popular vote still hasn&rsquo;t been fully tabulated.</p>
+<p>Please see the below table:</p>
+<pre><code class="language-r">knitr::include_graphics(&quot;model_stats.png&quot;)
+</code></pre>
+<img src="model_stats.png" width="776" />
+Let's go through each statistic one-by-one and unpack what it means.
+<p>First, the Brier Score. This is a measure of the accuracy of my probabilistic predictions. In other words, how well does my probabilistic forecast measure what actually happened? For example, suppose I predict a 90 percent chance of democratic victory in a given state, and then the Democratic candidate ends up winning. Then my Brier score is <code>\((0.9 - 1)^2 = 0.01\)</code>, which is very good. But if it turns out that the Democratic candidate loses, my Brier score is <code>\((0.9 - 0)^2 = 0.81\)</code>, which is very bad. A lower score is better. Thus, my score of 0.182 suggests reasonably good probabilistic predictions, though there was some miscalibration in my confidence levels.</p>
+<p>One thing that is important to note: Brier scores may not be the best metric to measure accuracy in this particular case. This is because my vote share predictions are not actually probabilistic. I.e. if I predict that Harris wins 54 percent of the vote, I am not saying that she wins the state 54 percent of the time. In fact, it is likely that if my model spits out a 54 percent vote share that she wins singificantly more often than 54 percent of the time. In order to get a probabilistic forecast, I would have to run simulations on each individual state.</p>
+<p>Second, the Bias. This indicates your model had a systematic overestimation of about 2.19 percentage points in favor of Democratic vote share across states. In other words, on average, your model predicted Democratic candidates would do better than they actually did by about 2.2 points. Interestingly, this is consistent with the bias in the polling error for the Democrats. On average, the polls were biased by a touch over 2 points toward the Democrats. Without this polling bias, my model would have likely performed signficantly better.</p>
+<p>Third, Mean Absolute Error. This is fairly straightforward: On average, my predictions for the Democratic two-party vote share were off by about 2.7 percentage points in either direction.</p>
+<p>Fourth, Mean Squared Error (10.368): MSE penalizes larger errors more heavily than small ones by squaring the differences. A value of 10.368 means my typical vote share prediction was off by about <code>\(\sqrt(10.368) = 3.22\)</code>  percentage points, but this average includes some predictions that were further off (which got penalized more heavily in the calculation).</p>
+<p>Accuracy: If we treat my election as a binary classification problem (predicting whether Democrats won each state or not), my model correctly predicted the winner in about 91.1 percent of states. The states I got wrong are listed above.</p>
+<p>Overall, these metrics suggest my model was quite good at predicting winners, but had a consistent Democratic bias and was typically off by about 2-3 percentage points in its exact vote share predictions.</p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
+</script>
+  
+  <hr/>
+  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

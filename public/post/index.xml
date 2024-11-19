@@ -6,8 +6,15 @@
     <description>Recent content in Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>model-evaluation</title>
+      <link>https://example.org/post/2024/11/18/model-evaluation/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/11/18/model-evaluation/</guid>
+      <description># merge shit in and format the dataframe df_2024 &amp;lt;- df_2024 %&amp;gt;% left_join(results_2024, by = &amp;quot;state&amp;quot;) %&amp;gt;% mutate( d_pv_actual = (d_votes / (d_votes + r_votes)) * 100, r_pv_actual = (r_votes / (d_votes + r_votes)) * 100, binary_pred = ifelse(d_pv &amp;gt; r_pv, 1, 0), binary_actual = ifelse(d_pv_actual &amp;gt; r_pv_actual, 1, 0) ) %&amp;gt;% rename( d_pv_pred = d_pv, r_pv_pred = r_pv ) %&amp;gt;% relocate(c(&amp;quot;d_pv_pred&amp;quot;, &amp;quot;d_pv_actual&amp;quot;, &amp;quot;binary_pred&amp;quot;, &amp;quot;binary_actual&amp;quot;), .after = &amp;quot;electors&amp;quot;) %&amp;gt;% # Add prediction metrics group_by() %&amp;gt;% mutate( brier_score = mean(((d_pv_pred / 100)- binary_actual)^2), bias = mean(d_pv_pred - d_pv_actual), mse = mean((d_pv_pred - d_pv_actual)^2), mae = mean(abs(d_pv_pred - d_pv_actual)), accuracy = mean(binary_pred == binary_actual) ) %&amp;gt;% ungroup() view(df_2024) The election is over.</description>
+    </item>
     <item>
       <title>Final Election Prediction</title>
       <link>https://example.org/post/2024/10/30/final-election-prediction/</link>
