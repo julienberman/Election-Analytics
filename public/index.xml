@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Campaign Narrative</title>
+      <link>https://example.org/post/2024/12/06/campaign-narrative/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/12/06/campaign-narrative/</guid>
+      <description>In my final post of the semester, I analyze why Michigan&amp;rsquo;s 2024 presidential election results deviated from my pre-election forecast. First, I examine the state&amp;rsquo;s demographics and electoral history. Then, I will compare the forecasted outcome with the actual results and examine specific campaign activities that may have contributed to the results.&#xA;Demographics and Electoral History Michigan was a crucial swing state during the 2024 election. Many polls conducted on the eve of the election, including 538&amp;rsquo;s polling average, had the presidential race as a complete 50-50 toss up.</description>
+    </item>
     <item>
       <title>model-evaluation</title>
       <link>https://example.org/post/2024/11/18/model-evaluation/</link>
